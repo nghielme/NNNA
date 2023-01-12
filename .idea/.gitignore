@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/data/
+/model_1/
+/.*/
+/profiling_data/
+/jettagging/
+/datasets/
