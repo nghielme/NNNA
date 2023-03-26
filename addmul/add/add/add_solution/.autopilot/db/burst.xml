@@ -1,4 +1,0 @@
-<VitisHLS:BurstInfo>
-    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="../ac_types/include/ac_int.h:2139:29" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="../ac_types/include/ac_int.h:2139:29" LoopName="VITIS_LOOP_2139_1" ParentFunc="void ac_float&lt;25, 2, 8, (ac_q_mode)0&gt;::adjust&lt;9&gt;(ac_int&lt;9, true&gt;, bool, bool)"/>
-</VitisHLS:BurstInfo>
-

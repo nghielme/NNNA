@@ -13,5 +13,6 @@ puts "***** C/RTL SYNTHESIS *****"
 csynth_design
 puts "***** C/RTL SIMULATION *****"
 # add_files -tb mul_test.cpp -cflags "-DRTL_SIM -Iac_types/include -D__BAMBU__ -D__VIVADO__ -std=c++14"
-cosim_design -trace_level all -setup
-quit
+cosim_design -tool xsim -rtl verilog -trace_level none
+export_design -evaluate verilog -format ip_catalog
+exit
