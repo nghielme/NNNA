@@ -1,0 +1,562 @@
+<profile>
+    <ReportVersion>
+        <Version>2021.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>add_top</TopModelName>
+        <TargetClockPeriod>50.00</TargetClockPeriod>
+        <ClockUncertainty>13.50</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <FF>0</FF>
+            <LUT>0</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_local_block</name>
+            <Object>add_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_local_deadlock</name>
+            <Object>add_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>add_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>add_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>add_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>add_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a</name>
+            <Object>a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>128</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b</name>
+            <Object>b</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>128</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>res</name>
+            <Object>res</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>128</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>res_ap_vld</name>
+            <Object>res</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="1">
+            <ModuleName>add_top</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>add_top</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>50.00</TargetClockPeriod>
+                    <ClockUncertainty>13.50</ClockUncertainty>
+                    <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>0</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>0</UTIL_FF>
+                    <LUT>0</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_compile name_max_length="60"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="a" index="0" direction="in" srcType="ac_float&lt;25, 2, 8, AC_TRN&gt; const &amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="port" interface="a" name="a" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="b" index="1" direction="in" srcType="ac_float&lt;25, 2, 8, AC_TRN&gt; const &amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="port" interface="b" name="b" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="res" index="2" direction="out" srcType="ac_float&lt;25, 2, 8, AC_TRN&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="port" interface="res" name="res" usage="data" direction="out"/>
+                <hwRef type="port" interface="res_ap_vld" name="res_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="a" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="128">
+            <portMaps>
+                <portMap portMapName="a">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>a</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="b" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="128">
+            <portMaps>
+                <portMap portMapName="b">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>b</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="res" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="128">
+            <portMaps>
+                <portMap portMapName="res">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>res</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="res"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="REGISTER">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="a">ap_none, 128</column>
+                    <column name="b">ap_none, 128</column>
+                    <column name="res">ap_none, 128</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="a">in, ac_float&lt;25 2 8 AC_TRN&gt; const &amp;</column>
+                    <column name="b">in, ac_float&lt;25 2 8 AC_TRN&gt; const &amp;</column>
+                    <column name="res">out, ac_float&lt;25 2 8 AC_TRN&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="a">a, port</column>
+                    <column name="b">b, port</column>
+                    <column name="res">res, port</column>
+                    <column name="res">res_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings."/>
+    </ReportBurst>
+    <PragmaReport>
+        <Pragma type="unroll" location="../ac_types/include/ac_fixed.h:155" status="warning" parentFunction="overflow_adjust" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_fixed.h:160" status="warning" parentFunction="overflow_adjust" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_fixed.h:172" status="warning" parentFunction="overflow_adjust" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:376" status="warning" parentFunction="ldexpr32" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:380" status="warning" parentFunction="ldexpr32" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:422" status="warning" parentFunction="ldexpr32" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:426" status="warning" parentFunction="ldexpr32" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:488" status="warning" parentFunction="assign_int64" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:498" status="warning" parentFunction="assign_uint64" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:521" status="warning" parentFunction="iv_base&lt;n, c&gt;" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:523" status="warning" parentFunction="iv_base&lt;n, c&gt;" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:550" status="warning" parentFunction="assign_int64" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:560" status="warning" parentFunction="assign_uint64" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:593" status="warning" parentFunction="iv_base&lt;n, true&gt;" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:595" status="warning" parentFunction="iv_base&lt;n, true&gt;" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1024" status="warning" parentFunction="iv_copy" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1034" status="warning" parentFunction="iv_equal_zero" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1045" status="warning" parentFunction="iv_equal_ones" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1063" status="warning" parentFunction="iv_equal" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1070" status="warning" parentFunction="iv_equal" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1128" status="warning" parentFunction="iv_compare" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1145" status="warning" parentFunction="iv_compare" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1168" status="warning" parentFunction="iv_extend" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1236" status="warning" parentFunction="iv_mult" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1250" status="warning" parentFunction="iv_mult" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1261" status="warning" parentFunction="iv_mult" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1294" status="warning" parentFunction="iv_uadd_carry" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1318" status="warning" parentFunction="iv_add_int_carry" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1334" status="warning" parentFunction="iv_uadd_n" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1382" status="warning" parentFunction="iv_sub_int_borrow" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1409" status="warning" parentFunction="iv_sub_int_borrow" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1425" status="warning" parentFunction="iv_usub_n" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1458" status="warning" parentFunction="iv_neg" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1492" status="warning" parentFunction="iv_udiv" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1506" status="warning" parentFunction="iv_udiv" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1512" status="warning" parentFunction="iv_udiv" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1513" status="warning" parentFunction="iv_udiv" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1531" status="warning" parentFunction="iv_udiv" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1535" status="warning" parentFunction="iv_udiv" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1700" status="warning" parentFunction="iv_bitwise_complement_n" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1715" status="warning" parentFunction="iv_bitwise_and_n" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1741" status="warning" parentFunction="iv_bitwise_or_n" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1767" status="warning" parentFunction="iv_bitwise_xor_n" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1799" status="warning" parentFunction="iv_shift_l" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1807" status="warning" parentFunction="iv_shift_l" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1820" status="warning" parentFunction="iv_shift_r" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1828" status="warning" parentFunction="iv_shift_r" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1865" status="warning" parentFunction="iv_const_shift_l" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1871" status="warning" parentFunction="iv_const_shift_l" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1887" status="warning" parentFunction="iv_const_shift_l" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1911" status="warning" parentFunction="iv_const_shift_r" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1919" status="warning" parentFunction="iv_const_shift_r" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1933" status="warning" parentFunction="iv_conv_from_fraction" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:1958" status="warning" parentFunction="iv_conv_from_fraction" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:2404" status="warning" parentFunction="to_double" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:2416" status="warning" parentFunction="to_float" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:2563" status="warning" parentFunction="set_slc" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:2603" status="warning" parentFunction="set_slc2" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:4289" status="warning" parentFunction="xor_reduce" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:4333" status="warning" parentFunction="bit_fill_oct" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:4384" status="warning" parentFunction="bit_fill_hex" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:4424" status="warning" parentFunction="bit_fill" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+        <Pragma type="unroll" location="../ac_types/include/ac_int.h:4873" status="warning" parentFunction="bit_fill_bin" variable="" isDirective="0" options="">
+            <Msg msg_id="207-4699" msg_severity="WARNING" msg_body="self-comparison always evaluates to true"/>
+        </Pragma>
+    </PragmaReport>
+</profile>
+

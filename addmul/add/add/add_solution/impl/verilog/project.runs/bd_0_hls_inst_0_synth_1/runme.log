@@ -1,0 +1,306 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1073161
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2688.535 ; gain = 0.000 ; free physical = 3001 ; free virtual = 35911
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'add_top' [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bcc/hdl/verilog/add_top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'add_top' (1#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9bcc/hdl/verilog/add_top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (2#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+WARNING: [Synth 8-7129] Port a[127] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[126] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[125] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[124] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[123] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[122] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[121] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[120] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[119] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[118] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[117] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[116] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[115] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[114] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[113] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[112] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[111] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[110] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[109] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[108] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[107] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[106] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[105] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[104] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[103] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[102] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[101] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[100] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[99] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[98] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[97] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[96] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[95] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[94] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[93] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[92] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[91] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[90] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[89] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[88] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[87] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[86] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[85] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[84] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[83] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[82] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[81] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[80] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[79] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[78] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[77] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[76] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[75] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[74] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[73] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[72] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[71] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[70] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[69] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[68] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[67] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[66] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[65] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[64] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[63] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[62] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[61] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[60] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[59] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[58] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[57] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[56] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[55] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[54] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[53] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[52] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[51] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[50] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[49] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[48] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[47] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[46] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[45] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[44] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[43] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[42] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[41] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[40] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[39] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[38] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[37] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[36] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[35] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[34] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[33] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[32] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module add_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module add_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2688.535 ; gain = 0.000 ; free physical = 2591 ; free virtual = 35501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2688.535 ; gain = 0.000 ; free physical = 2590 ; free virtual = 35501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2688.535 ; gain = 0.000 ; free physical = 2590 ; free virtual = 35501
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2688.535 ; gain = 0.000 ; free physical = 2584 ; free virtual = 35495
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/add_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/add_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2752.566 ; gain = 0.000 ; free physical = 3436 ; free virtual = 36346
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2752.566 ; gain = 0.000 ; free physical = 3436 ; free virtual = 36346
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3512 ; free virtual = 36423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3512 ; free virtual = 36423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3515 ; free virtual = 36425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3514 ; free virtual = 36425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3508 ; free virtual = 36423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3388 ; free virtual = 36302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3388 ; free virtual = 36302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3386 ; free virtual = 36301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 257 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2752.566 ; gain = 0.000 ; free physical = 3444 ; free virtual = 36359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.566 ; gain = 64.031 ; free physical = 3444 ; free virtual = 36359
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2752.566 ; gain = 0.000 ; free physical = 3437 ; free virtual = 36352
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2752.566 ; gain = 0.000 ; free physical = 3465 ; free virtual = 36380
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 33fc8e8b
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 2752.566 ; gain = 64.238 ; free physical = 3658 ; free virtual = 36573
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = f1ecf702a04a0eca
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 18:39:55 2023...

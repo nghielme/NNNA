@@ -1,0 +1,1601 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2021.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'nghielme' on host 'yavin.cern.ch' (Linux_x86_64 version 5.4.0-144-generic) on Sun Mar 26 18:38:19 CEST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/nghielme/PycharmProjects/thesis-project/addmul/add'
+Sourcing Tcl script 'add.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset add 
+INFO: [HLS 200-10] Creating and opening project '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add'.
+INFO: [HLS 200-1510] Running: set_top add_top 
+INFO: [HLS 200-1510] Running: add_files add.cpp -cflags -O2 -I../ac_types/include -D__BAMBU__ -D__VIVADO__ -std=c++14 
+INFO: [HLS 200-10] Adding design file 'add.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb add_test.cpp -cflags -O2 -I../ac_types/include -D__BAMBU__ -D__VIVADO__ -std=c++14 
+INFO: [HLS 200-10] Adding test bench file 'add_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset add_solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/add_solution.aps file found.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [HLS 200-1510] Running: create_clock -period 50 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+***** C SIMULATION *****
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../add_test.cpp in debug mode
+   Compiling ../../../../add.cpp in debug mode
+   Generating csim.exe
+a = 2.100000
+b = 2.200000
+a + b = 4.300000
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.19 seconds. CPU system time: 0.28 seconds. Elapsed time: 1.75 seconds; current allocated memory: -937.109 MB.
+***** C/RTL SYNTHESIS *****
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 210.020 MB.
+INFO: [HLS 200-10] Analyzing design file 'add.cpp' ... 
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:376:73)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:380:72)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:422:73)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:426:72)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:488:79)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:498:61)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:521:72)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:523:70)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:550:79)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:560:65)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:593:72)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:595:74)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1024:71)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1034:72)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1045:75)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1063:79)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1070:77)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1128:70)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1145:68)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1168:69)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:51)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:210)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:105)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:193)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:131)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:279)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1294:108)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1318:120)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1334:134)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1382:120)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1409:120)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1425:134)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1458:137)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1492:143)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1506:143)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1512:63)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1513:66)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1531:66)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1535:74)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1700:72)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1715:77)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1741:77)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1767:77)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1799:160)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1807:103)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1820:173)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1828:108)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1865:74)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1871:147)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1887:83)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1911:175)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1919:103)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1933:63)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1958:63)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2404:69)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2416:69)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2563:144)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2603:144)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4289:71)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4333:250)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4384:346)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4424:116)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4873:257)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_fixed.h:155:80)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_fixed.h:160:79)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_fixed.h:172:80)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:488:97)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:550:97)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1024:90)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1034:91)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1045:94)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1063:98)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1070:96)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1128:89)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1145:87)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:70)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:229)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:124)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:213)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:125)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:151)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:299)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1318:139)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1334:153)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1382:139)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1409:139)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1425:153)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1458:156)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1492:162)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1506:162)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1512:82)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1513:85)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1531:85)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1535:94)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1700:91)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1715:96)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1741:96)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1767:96)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1799:179)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1807:122)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1820:192)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1828:127)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1911:194)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1919:122)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2404:88)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4289:90)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4424:135)
+WARNING: [HLS 207-5287] unused parameter 'x' (../ac_types/include/ac_int.h:4898:105)
+WARNING: [HLS 207-5287] unused parameter 'x' (../ac_types/include/ac_int.h:4918:99)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_fixed.h:155:98)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_fixed.h:160:97)
+WARNING: [HLS 207-4699] self-comparison always evaluates to true (../ac_types/include/ac_fixed.h:172:98)
+WARNING: [HLS 207-5287] unused parameter 'x' (../ac_types/include/ac_fixed.h:1830:116)
+WARNING: [HLS 207-5287] unused parameter 'x' (../ac_types/include/ac_fixed.h:1839:110)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.91 seconds. CPU system time: 0.27 seconds. Elapsed time: 5.2 seconds; current allocated memory: 215.930 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<26, true>()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_l<23, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::const_shift_l<23, 1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2493:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_l<23, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:333:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::base()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, true>(ac_int<32, true> const&)' (../ac_types/include/ac_fixed.h:371:15)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, true>(ac_int<32, true> const&)' (../ac_types/include/ac_fixed.h:372:18)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' (../ac_types/include/ac_fixed.h:410:18)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, true>(ac_int<32, true> const&)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' (../ac_types/include/ac_fixed.h:410:18)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_r<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2483:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<26, true>()' into 'ac_int<26, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'ac_int<26, true> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<26>(int) const' (../ac_types/include/ac_fixed.h:1316:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<26, true>::bit_adjust()' into 'ac_int<26, true> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<26>(int) const' (../ac_types/include/ac_fixed.h:1317:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::set_slc<1, false>(unsigned int, int, ac_private::iv<1, false> const&)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<26, true>(int, ac_int<26, true> const&)' (../ac_types/include/ac_fixed.h:1354:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<26, true>(int, ac_int<26, true> const&)' (../ac_types/include/ac_fixed.h:1355:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<8, true>()' into 'ac_int<8, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<32, true>()' into 'ac_int<32, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_uadd_n<0, 1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1360:26)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_extend<1, 2, false>(ac_private::iv_base<2, false>&, int)' into 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1362:13)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_add_int_carry<0, 1, false, 2, false>(ac_private::iv_base<1, false> const&, int, bool, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1361:21)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<1, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2440:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<8, true>::rt<32, true>::plus const ac_int<8, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3553:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<8, true>::rt<32, true>::plus const ac_int<8, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3558:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<8, true>::rt<32, true>::plus const ac_int<8, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3555:20)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<8, true>::rt<32, true>::plus const ac_int<8, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3557:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<8, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<8, true>(ac_int<8, true> const&, int)' (../ac_types/include/ac_int.h:5075:819)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::rt<32, true>::plus const ac_int<8, true>::operator+<32, true>(ac_int<32, true> const&) const' into 'ac_int<8, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<8, true>(ac_int<8, true> const&, int)' (../ac_types/include/ac_int.h:5075:808)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_usub_n<0, 2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_sub<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1445:27)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_sub_int_borrow<2, 0, 2, false, 2, false>(ac_private::iv_base<2, false> const&, int, bool, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_sub<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1447:25)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_sub<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<2, false>::sub<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2445:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<33, true>::rt<32, true>::minus const ac_int<33, true>::operator-<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3565:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<33, true>::rt<32, true>::minus const ac_int<33, true>::operator-<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3567:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<34, true>::bit_adjust()' into 'ac_int<33, true>::rt<32, true>::minus const ac_int<33, true>::operator-<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3570:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::sub<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<33, true>::rt<32, true>::minus const ac_int<33, true>::operator-<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3569:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<33, true>::rt<32, true>::minus ac::ops_with_other_types::operator-<33, true>(ac_int<33, true> const&, int)' (../ac_types/include/ac_int.h:5075:1239)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::rt<32, true>::minus const ac_int<33, true>::operator-<32, true>(ac_int<32, true> const&) const' into 'ac_int<33, true>::rt<32, true>::minus ac::ops_with_other_types::operator-<33, true>(ac_int<33, true> const&, int)' (../ac_types/include/ac_int.h:5075:1228)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_uadd_n<0, 2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1360:26)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_add_int_carry<0, 2, false, 2, false>(ac_private::iv_base<2, false> const&, int, bool, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1361:21)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_add<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<2, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2440:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<34, true>::bit_adjust()' into 'ac_int<34, true>::rt<32, true>::plus const ac_int<34, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3553:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<34, true>::rt<32, true>::plus const ac_int<34, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3555:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<35, true>::bit_adjust()' into 'ac_int<34, true>::rt<32, true>::plus const ac_int<34, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3558:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<34, true>::rt<32, true>::plus const ac_int<34, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3557:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<34, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<34, true>(ac_int<34, true> const&, int)' (../ac_types/include/ac_int.h:5075:819)
+INFO: [HLS 214-131] Inlining function 'ac_int<34, true>::rt<32, true>::plus const ac_int<34, true>::operator+<32, true>(ac_int<32, true> const&) const' into 'ac_int<34, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<34, true>(ac_int<34, true> const&, int)' (../ac_types/include/ac_int.h:5075:808)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<2, false>::to_int64() const' into 'ac_private::iv<2, false>::to_int64() const' (../ac_types/include/ac_int.h:2393:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::to_int64() const' into 'ac_private::iv_conv<2, true, true, false, 35>::operator long long() const' (../ac_types/include/ac_int.h:2694:34)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_neg<1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::neg<1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2468:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<27, true>()' into 'ac_fixed<27, 4, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::neg<1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator-() const' (../ac_types/include/ac_fixed.h:882:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 4, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator-() const' (../ac_types/include/ac_fixed.h:883:12)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 4, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 4, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_equal_zero<0, 1, 1, false>(ac_private::iv_base<1, false> const&)' into 'ac_private::iv<1, false>::equal_zero() const' (../ac_types/include/ac_int.h:2537:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::equal_zero() const' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' (../ac_types/include/ac_fixed.h:889:23)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' into 'ac_float<25, 2, 8, (ac_q_mode)0>::operator!() const' (./../ac_types/include/ac_float.h:773:17)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_l<24, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::const_shift_l<24, 1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2493:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<27, true>()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_l<24, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:333:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::base()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, true>(ac_int<32, true> const&)' (../ac_types/include/ac_fixed.h:371:15)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, true>(ac_int<32, true> const&)' (../ac_types/include/ac_fixed.h:372:18)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' (../ac_types/include/ac_fixed.h:410:18)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<32, true>(ac_int<32, true> const&)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' (../ac_types/include/ac_fixed.h:410:18)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_bitwise_complement_n<1, 0, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv_bitwise_complement<1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' (../ac_types/include/ac_int.h:1708:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_bitwise_complement<1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::bitwise_complement<1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2503:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::bitwise_complement<1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator~() const' (../ac_types/include/ac_fixed.h:896:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator~() const' (../ac_types/include/ac_fixed.h:897:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<32, true>::to_int() const' (../ac_types/include/ac_int.h:3401:20)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_r<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv_shift_l2<true, 1, false, 1, false>(ac_private::iv_base<1, false> const&, int, ac_private::iv_base<1, false>&)' (../ac_types/include/ac_int.h:1836:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_l<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv_shift_l2<true, 1, false, 1, false>(ac_private::iv_base<1, false> const&, int, ac_private::iv_base<1, false>&)' (../ac_types/include/ac_int.h:1838:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_l2<true, 1, false, 1, false>(ac_private::iv_base<1, false> const&, int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::shift_l2<1, false>(int, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2478:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::to_int() const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator<<<32>(ac_int<32, true> const&) const' (../ac_types/include/ac_fixed.h:988:29)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_l2<1, false>(int, ac_private::iv<1, false>&) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator<<<32>(ac_int<32, true> const&) const' (../ac_types/include/ac_fixed.h:988:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator<<<32>(ac_int<32, true> const&) const' (../ac_types/include/ac_fixed.h:989:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<32, 32, true>::arg1 ac::ops_with_other_types::operator<<<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&, int)' (../ac_types/include/ac_fixed.h:1942:2665)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator<<<32>(ac_int<32, true> const&) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<32, 32, true>::arg1 ac::ops_with_other_types::operator<<<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&, int)' (../ac_types/include/ac_fixed.h:1942:2653)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_l<1, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::const_shift_l<1, 1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2493:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_l<1, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<1>::shiftl ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>() const' (../ac_types/include/ac_fixed.h:380:25)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_bitwise_and_n<1, 1, false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv_bitwise_and<1, false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' (../ac_types/include/ac_int.h:1730:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_copy<1, 1, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv_bitwise_and<1, false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' (../ac_types/include/ac_int.h:1732:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_bitwise_and<1, false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::bitwise_and<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2508:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::bitwise_and<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<27, 3, true>::logic ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator&<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:923:30)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<27, 3, true>::logic ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator&<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:924:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_r<1, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::const_shift_r<1, 1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2498:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_r<1, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:322:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<27, 3, true>::logic ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator&<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator&=<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:967:24)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator&=<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:967:18)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::equal_zero() const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' (../ac_types/include/ac_fixed.h:889:23)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_l<1, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:333:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<1, true>()' into 'ac_int<1, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'ac_int<1, true> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<1>(int) const' (../ac_types/include/ac_fixed.h:1316:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, true>::bit_adjust()' into 'ac_int<1, true> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<1>(int) const' (../ac_types/include/ac_fixed.h:1317:12)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::equal_zero() const' into 'ac_int<1, true>::operator bool() const' (../ac_types/include/ac_int.h:3441:24)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_l<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv_shift_r2<true, 1, false, 1, false>(ac_private::iv_base<1, false> const&, int, ac_private::iv_base<1, false>&)' (../ac_types/include/ac_int.h:1845:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_r<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv_shift_r2<true, 1, false, 1, false>(ac_private::iv_base<1, false> const&, int, ac_private::iv_base<1, false>&)' (../ac_types/include/ac_int.h:1847:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_r2<true, 1, false, 1, false>(ac_private::iv_base<1, false> const&, int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::shift_r2<1, false>(int, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2488:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::to_int() const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<32>(ac_int<32, true> const&)' (../ac_types/include/ac_fixed.h:1045:29)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r2<1, false>(int, ac_private::iv<1, false>&) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<32>(ac_int<32, true> const&)' (../ac_types/include/ac_fixed.h:1045:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<32>(ac_int<32, true> const&)' (../ac_types/include/ac_fixed.h:1047:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac::ops_with_other_types::operator>>=<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>&, int)' (../ac_types/include/ac_fixed.h:1942:7958)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<32>(ac_int<32, true> const&)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac::ops_with_other_types::operator>>=<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>&, int)' (../ac_types/include/ac_fixed.h:1942:7945)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_add<1, false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::add<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2440:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<28, true>()' into 'ac_fixed<28, 4, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::add<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<26, 3, true>::plus ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:759:19)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 4, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<26, 3, true>::plus ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:762:12)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<28, 4, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<28, 4, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<28, 4, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<28, 4, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+=<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:823:18)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_bitref::operator=(int)' (../ac_types/include/ac_fixed.h:1398:21)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<1, false>()' into 'ac_int<1, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, false>::bit_adjust()' into 'ac_int<1, false>::to_uint() const' (../ac_types/include/ac_int.h:3407:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, false>::to_uint() const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<1>(ac_int<1, false> const&)' (../ac_types/include/ac_fixed.h:1055:28)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<1>(ac_int<1, false> const&)' (../ac_types/include/ac_fixed.h:1055:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<1>(ac_int<1, false> const&)' (../ac_types/include/ac_fixed.h:1057:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, false>::ac_int(bool)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac::ops_with_other_types::operator>>=<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>&, bool)' (../ac_types/include/ac_fixed.h:1936:7945)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<1>(ac_int<1, false> const&)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac::ops_with_other_types::operator>>=<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>&, bool)' (../ac_types/include/ac_fixed.h:1936:7932)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<28, true>()' into 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_l<1, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:333:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_bitref::operator=(int)' (../ac_types/include/ac_fixed.h:1398:21)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<28, true>()' into 'ac_int<28, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'ac_int<28, true> ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<28>(int) const' (../ac_types/include/ac_fixed.h:1316:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<28, true>::bit_adjust()' into 'ac_int<28, true> ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<28>(int) const' (../ac_types/include/ac_fixed.h:1317:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<28, true>()' into 'ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::set_slc<1, false>(unsigned int, int, ac_private::iv<1, false> const&)' into 'ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<28, true>(int, ac_int<28, true> const&)' (../ac_types/include/ac_fixed.h:1354:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<28, true>(int, ac_int<28, true> const&)' (../ac_types/include/ac_fixed.h:1355:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_r<3, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::const_shift_r<3, 1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2498:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<25, true>()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_r<3, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:322:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, true, true, false, 9>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2706:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<9, true>()' into 'ac_int<9, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 9>::iv_conv<int>(int const&)' into 'ac_int<9, true>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::bit_adjust()' into 'ac_int<9, true>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, true, true, false, 1>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2706:80)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 1>::iv_conv<int>(int const&)' into 'ac_int<1, true>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, true>::bit_adjust()' into 'ac_int<1, true>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<10, true>()' into 'ac_int<10, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::bit_adjust()' into 'ac_int<9, true>::rt<1, false>::plus const ac_int<9, true>::operator+<1, false>(ac_int<1, false> const&) const' (../ac_types/include/ac_int.h:3553:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<10, true>::bit_adjust()' into 'ac_int<9, true>::rt<1, false>::plus const ac_int<9, true>::operator+<1, false>(ac_int<1, false> const&) const' (../ac_types/include/ac_int.h:3558:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::add<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_int<9, true>::rt<1, false>::plus const ac_int<9, true>::operator+<1, false>(ac_int<1, false> const&) const' (../ac_types/include/ac_int.h:3557:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, false>::bit_adjust()' into 'ac_int<9, true>::rt<1, false>::plus const ac_int<9, true>::operator+<1, false>(ac_int<1, false> const&) const' (../ac_types/include/ac_int.h:3555:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, false>::ac_int(bool)' into 'ac_int<9, true>::rt<1, false>::plus ac::ops_with_other_types::operator+<9, true>(ac_int<9, true> const&, bool)' (../ac_types/include/ac_int.h:5069:823)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::rt<1, false>::plus const ac_int<9, true>::operator+<1, false>(ac_int<1, false> const&) const' into 'ac_int<9, true>::rt<1, false>::plus ac::ops_with_other_types::operator+<9, true>(ac_int<9, true> const&, bool)' (../ac_types/include/ac_int.h:5069:812)
+INFO: [HLS 214-131] Inlining function 'ac_int<10, true>::bit_adjust()' into 'ac_int<10, true>::rt<32, true>::plus const ac_int<10, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3553:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<10, true>::rt<32, true>::plus const ac_int<10, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3558:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<10, true>::rt<32, true>::plus const ac_int<10, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3555:20)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<10, true>::rt<32, true>::plus const ac_int<10, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3557:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<10, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<10, true>(ac_int<10, true> const&, int)' (../ac_types/include/ac_int.h:5075:819)
+INFO: [HLS 214-131] Inlining function 'ac_int<10, true>::rt<32, true>::plus const ac_int<10, true>::operator+<32, true>(ac_int<32, true> const&) const' into 'ac_int<10, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<10, true>(ac_int<10, true> const&, int)' (../ac_types/include/ac_int.h:5075:808)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_bitwise_and_n<1, 1, false, 2, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_bitwise_and<1, false, 2, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1730:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_copy<2, 1, 2, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_bitwise_and<1, false, 2, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1732:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_extend<1, 2, false>(ac_private::iv_base<2, false>&, int)' into 'void ac_private::iv_bitwise_and<1, false, 2, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1734:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_bitwise_and<1, false, 2, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<1, false>::bitwise_and<2, false, 2, false>(ac_private::iv<2, false> const&, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2508:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, true>::bit_adjust()' into 'ac_int<1, true>::rt<33, true>::logic const ac_int<1, true>::operator&<33, true>(ac_int<33, true> const&) const' (../ac_types/include/ac_int.h:3788:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<1, true>::rt<33, true>::logic const ac_int<1, true>::operator&<33, true>(ac_int<33, true> const&) const' (../ac_types/include/ac_int.h:3793:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<1, true>::rt<33, true>::logic const ac_int<1, true>::operator&<33, true>(ac_int<33, true> const&) const' (../ac_types/include/ac_int.h:3790:20)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::bitwise_and<2, false, 2, false>(ac_private::iv<2, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<1, true>::rt<33, true>::logic const ac_int<1, true>::operator&<33, true>(ac_int<33, true> const&) const' (../ac_types/include/ac_int.h:3792:26)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_copy<1, 0, 2, false, 1, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false>&)' into 'ac_private::iv<1, false>::iv<2, false>(ac_private::iv<2, false> const&)' (../ac_types/include/ac_int.h:2322:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv<2, false>(ac_private::iv<2, false> const&)' into 'ac_int<9, true>::ac_int<33, true>(ac_int<33, true> const&)' (../ac_types/include/ac_int.h:3279:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::bit_adjust()' into 'ac_int<9, true>::ac_int<33, true>(ac_int<33, true> const&)' (../ac_types/include/ac_int.h:3280:10)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, false, true, false, 8>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2682:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<8, false>()' into 'ac_int<8, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 8>::iv_conv<int>(int const&)' into 'ac_int<8, false>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::bit_adjust()' into 'ac_int<8, false>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::ac_bitref::ac_bitref(ac_int<8, false>*, unsigned int)' into 'ac_int<8, false>::operator[](int)' (../ac_types/include/ac_int.h:4201:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::bit_adjust()' into 'ac_int<8, false>::ac_bitref::operator=(int)' (../ac_types/include/ac_int.h:4172:21)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::bit_adjust()' into 'ac_int<9, true>::rt<8, false>::plus const ac_int<9, true>::operator+<8, false>(ac_int<8, false> const&) const' (../ac_types/include/ac_int.h:3553:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<10, true>::bit_adjust()' into 'ac_int<9, true>::rt<8, false>::plus const ac_int<9, true>::operator+<8, false>(ac_int<8, false> const&) const' (../ac_types/include/ac_int.h:3558:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::add<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_int<9, true>::rt<8, false>::plus const ac_int<9, true>::operator+<8, false>(ac_int<8, false> const&) const' (../ac_types/include/ac_int.h:3557:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::bit_adjust()' into 'ac_int<9, true>::rt<8, false>::plus const ac_int<9, true>::operator+<8, false>(ac_int<8, false> const&) const' (../ac_types/include/ac_int.h:3555:20)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_compare<false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&)' into 'bool ac_private::iv<1, false>::less_than<1, false>(ac_private::iv<1, false> const&) const' (../ac_types/include/ac_int.h:2533:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<10, true>::bit_adjust()' into 'bool ac_int<10, true>::operator<<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3979:20)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv<1, false>::less_than<1, false>(ac_private::iv<1, false> const&) const' into 'bool ac_int<10, true>::operator<<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3982:33)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'bool ac_int<10, true>::operator<<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3981:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'bool ac::ops_with_other_types::operator<<10, true>(ac_int<10, true> const&, int)' (../ac_types/include/ac_int.h:5075:5637)
+INFO: [HLS 214-131] Inlining function 'bool ac_int<10, true>::operator<<32, true>(ac_int<32, true> const&) const' into 'bool ac::ops_with_other_types::operator<<10, true>(ac_int<10, true> const&, int)' (../ac_types/include/ac_int.h:5075:5626)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_usub_n<0, 1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_sub<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1445:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_extend<1, 2, false>(ac_private::iv_base<2, false>&, int)' into 'void ac_private::iv_sub<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1450:13)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_sub_int_borrow<1, 0, 1, false, 2, false>(int, ac_private::iv_base<1, false> const&, bool, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_sub<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1449:25)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_sub<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<1, false>::sub<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2445:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<32, true>::rt<9, true>::minus const ac_int<32, true>::operator-<9, true>(ac_int<9, true> const&) const' (../ac_types/include/ac_int.h:3565:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<32, true>::rt<9, true>::minus const ac_int<32, true>::operator-<9, true>(ac_int<9, true> const&) const' (../ac_types/include/ac_int.h:3570:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::bit_adjust()' into 'ac_int<32, true>::rt<9, true>::minus const ac_int<32, true>::operator-<9, true>(ac_int<9, true> const&) const' (../ac_types/include/ac_int.h:3567:20)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::sub<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<32, true>::rt<9, true>::minus const ac_int<32, true>::operator-<9, true>(ac_int<9, true> const&) const' (../ac_types/include/ac_int.h:3569:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<32, true>::rt<9, true>::minus ac::ops_with_other_types::operator-<9, true>(int, ac_int<9, true> const&)' (../ac_types/include/ac_int.h:5075:1015)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::rt<9, true>::minus const ac_int<32, true>::operator-<9, true>(ac_int<9, true> const&) const' into 'ac_int<32, true>::rt<9, true>::minus ac::ops_with_other_types::operator-<9, true>(int, ac_int<9, true> const&)' (../ac_types/include/ac_int.h:5075:1038)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<33, true>::to_int() const' (../ac_types/include/ac_int.h:3401:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::to_int() const' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<33>(ac_int<33, true> const&)' (../ac_types/include/ac_fixed.h:1045:29)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r2<1, false>(int, ac_private::iv<1, false>&) const' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<33>(ac_int<33, true> const&)' (../ac_types/include/ac_fixed.h:1045:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<33>(ac_int<33, true> const&)' (../ac_types/include/ac_fixed.h:1047:10)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, true, true, false, 8>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2706:80)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 8>::iv_conv<int>(int const&)' into 'ac_int<8, true>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<8, true>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<9, false>()' into 'ac_int<9, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false>::ac_int<10, true>(ac_int<10, true> const&)' (../ac_types/include/ac_int.h:3280:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<25, true>()' into 'ac_int<25, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' (../ac_types/include/ac_fixed.h:1316:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true>::bit_adjust()' into 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' (../ac_types/include/ac_fixed.h:1317:12)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<1, false>::to_int64() const' into 'ac_private::iv<1, false>::to_uint64() const' (../ac_types/include/ac_int.h:2397:29)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_uint64() const' into 'ac_private::iv_conv<1, false, true, false, 9>::operator unsigned long long() const' (../ac_types/include/ac_int.h:2670:34)
+INFO: [HLS 214-131] Inlining function 'unsigned int ac_private::iv_leading_bits_base<1, false>(ac_private::iv_base<1, false> const&, bool, int)' into 'unsigned int ac_private::iv_leading_bits<1, false>(ac_private::iv_base<1, false> const&, bool)' (../ac_types/include/ac_int.h:2142:49)
+INFO: [HLS 214-131] Inlining function 'unsigned int ac_private::iv_leading_bits<1, false>(ac_private::iv_base<1, false> const&, bool)' into 'ac_private::iv<1, false>::leading_bits(bool) const' (../ac_types/include/ac_int.h:2619:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(unsigned int)' into 'ac_private::iv_conv<1, false, true, false, 5>::iv_conv<unsigned int>(unsigned int const&)' (../ac_types/include/ac_int.h:2682:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<5, false>()' into 'ac_int<5, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 5>::iv_conv<unsigned int>(unsigned int const&)' into 'ac_int<5, false>::ac_int(unsigned int)' (../ac_types/include/ac_int.h:3311:80)
+INFO: [HLS 214-131] Inlining function 'ac_int<5, false>::bit_adjust()' into 'ac_int<5, false>::ac_int(unsigned int)' (../ac_types/include/ac_int.h:3313:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<5, false>::ac_int(unsigned int)' into 'ac_int<25, true>::leading_sign() const' (../ac_types/include/ac_int.h:4244:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_uint64() const' into 'ac_private::iv_conv<1, false, true, false, 5>::operator unsigned long long() const' (../ac_types/include/ac_int.h:2670:34)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_int<9, false>& ac_int<9, false>::set_val<(ac_special_val)2>()' (../ac_types/include/ac_int.h:3370:29)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_sub<1, false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::sub<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2445:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false>::rt<9, false>::minus const ac_int<9, false>::operator-<9, false>(ac_int<9, false> const&) const' (../ac_types/include/ac_int.h:3565:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<10, true>::bit_adjust()' into 'ac_int<9, false>::rt<9, false>::minus const ac_int<9, false>::operator-<9, false>(ac_int<9, false> const&) const' (../ac_types/include/ac_int.h:3570:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::sub<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_int<9, false>::rt<9, false>::minus const ac_int<9, false>::operator-<9, false>(ac_int<9, false> const&) const' (../ac_types/include/ac_int.h:3569:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false>::rt<9, false>::minus const ac_int<9, false>::operator-<9, false>(ac_int<9, false> const&) const' (../ac_types/include/ac_int.h:3567:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<1, false>::to_int64() const' into 'ac_private::iv<1, false>::to_int64() const' (../ac_types/include/ac_int.h:2393:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_int64() const' into 'ac_private::iv_conv<1, true, true, false, 10>::operator long long() const' (../ac_types/include/ac_int.h:2694:34)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, false, true, false, 9>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2682:80)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 9>::iv_conv<int>(int const&)' into 'ac_int<9, false>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_l<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::shift_l<1, false>(unsigned int, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2473:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 9>::operator unsigned long long() const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3156:21)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true>::bit_adjust()' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3181:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_l<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3179:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true>::leading_sign() const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3157:23)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 5>::operator unsigned long long() const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3157:23)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>& ac_int<9, false>::set_val<(ac_special_val)2>()' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3160:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::rt<9, false>::minus const ac_int<9, false>::operator-<9, false>(ac_int<9, false> const&) const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3161:30)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 10>::operator long long() const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3161:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::ac_int(int)' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3164:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 9>::operator unsigned long long() const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3164:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 9>::operator unsigned long long() const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3165:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::equal_zero() const' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3172:19)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::ac_int(int)' into 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' (../ac_types/include/ac_int.h:3177:16)
+INFO: [HLS 214-131] Inlining function 'bool ac_int<25, true>::normalize_private<9, false>(ac_int<9, false>&, bool)' into 'bool ac_int<25, true>::normalize<9, false>(ac_int<9, false>&)' (../ac_types/include/ac_int.h:4257:17)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::set_slc<1, false>(unsigned int, int, ac_private::iv<1, false> const&)' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<25, true>(int, ac_int<25, true> const&)' (../ac_types/include/ac_fixed.h:1354:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<25, true>(int, ac_int<25, true> const&)' (../ac_types/include/ac_fixed.h:1355:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' into 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<9, false>(ac_int<9, false>&)' (../ac_types/include/ac_fixed.h:1472:42)
+INFO: [HLS 214-131] Inlining function 'bool ac_int<25, true>::normalize<9, false>(ac_int<9, false>&)' into 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<9, false>(ac_int<9, false>&)' (../ac_types/include/ac_fixed.h:1473:21)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<25, true>(int, ac_int<25, true> const&)' into 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<9, false>(ac_int<9, false>&)' (../ac_types/include/ac_fixed.h:1474:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false>& ac_int<9, false>::operator-=<8, false>(ac_int<8, false> const&)' (../ac_types/include/ac_int.h:3651:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false>& ac_int<9, false>::operator-=<8, false>(ac_int<8, false> const&)' (../ac_types/include/ac_int.h:3657:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::sub<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_int<9, false>& ac_int<9, false>::operator-=<8, false>(ac_int<8, false> const&)' (../ac_types/include/ac_int.h:3655:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::bit_adjust()' into 'ac_int<9, false>& ac_int<9, false>::operator-=<8, false>(ac_int<8, false> const&)' (../ac_types/include/ac_int.h:3653:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::ac_bitref::ac_bitref(ac_int<9, false>*, unsigned int)' into 'ac_int<9, false>::operator[](int)' (../ac_types/include/ac_int.h:4201:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false> const ac_int<9, false>::operator>><32>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3886:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false> const ac_int<9, false>::operator>><32>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3891:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r2<1, false>(int, ac_private::iv<1, false>&) const' into 'ac_int<9, false> const ac_int<9, false>::operator>><32>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3890:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<9, false> const ac_int<9, false>::operator>><32>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3888:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::to_int() const' into 'ac_int<9, false> const ac_int<9, false>::operator>><32>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3890:45)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<9, false>::rt<32, true>::arg1 ac::ops_with_other_types::operator>><9, false>(ac_int<9, false> const&, int)' (../ac_types/include/ac_int.h:5075:2493)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false> const ac_int<9, false>::operator>><32>(ac_int<32, true> const&) const' into 'ac_int<9, false>::rt<32, true>::arg1 ac::ops_with_other_types::operator>><9, false>(ac_int<9, false> const&, int)' (../ac_types/include/ac_int.h:5075:2481)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::bit_adjust()' into 'ac_int<9, false>::operator!() const' (../ac_types/include/ac_int.h:3761:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::equal_zero() const' into 'ac_int<9, false>::operator!() const' (../ac_types/include/ac_int.h:3762:33)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<8, true>::ac_int<9, false>(ac_int<9, false> const&)' (../ac_types/include/ac_int.h:3280:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_l<23, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<1, false>::const_shift_l<23, 2, false>(ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2493:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::const_shift_l<23, 2, false>(ac_private::iv<2, false>&) const' into 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<23>::shiftl ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<23>() const' (../ac_types/include/ac_fixed.h:380:25)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_compare<false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false> const&)' into 'bool ac_private::iv<1, false>::less_than<2, false>(ac_private::iv<2, false> const&) const' (../ac_types/include/ac_int.h:2533:20)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv<1, false>::less_than<2, false>(ac_private::iv<2, false> const&) const' into 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator<<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:1102:26)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' into 'bool ac::ops_with_other_types::operator<<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&, int)' (../ac_types/include/ac_fixed.h:1942:6191)
+INFO: [HLS 214-131] Inlining function 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator<<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' into 'bool ac::ops_with_other_types::operator<<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&, int)' (../ac_types/include/ac_fixed.h:1942:6180)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_val<(ac_special_val)2>()' (../ac_types/include/ac_fixed.h:532:29)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_val<(ac_special_val)2>()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> value<(ac_special_val)2, 25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>)' (../ac_types/include/ac_fixed.h:2089:25)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_val<(ac_special_val)3>()' (../ac_types/include/ac_fixed.h:550:29)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_val<(ac_special_val)3>()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> value<(ac_special_val)3, 25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>)' (../ac_types/include/ac_fixed.h:2089:25)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::ac_int(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:527:39)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::operator[](int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:528:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> value<(ac_special_val)3, 25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:548:54)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::ac_bitref::operator=(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:528:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::rt<8, false>::plus const ac_int<9, true>::operator+<8, false>(ac_int<8, false> const&) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:529:46)
+INFO: [HLS 214-131] Inlining function 'bool ac::ops_with_other_types::operator<<10, true>(ac_int<10, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:530:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::rt<9, true>::minus ac::ops_with_other_types::operator-<9, true>(int, ac_int<9, true> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:532:31)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator>>=<33>(ac_int<33, true> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:532:18)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:533:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::ac_int<10, true>(ac_int<10, true> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:539:40)
+INFO: [HLS 214-131] Inlining function 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<9, false>(ac_int<9, false>&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:541:21)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>& ac_int<9, false>::operator-=<8, false>(ac_int<8, false> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:542:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::operator[](int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:543:19)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::ac_bitref::operator bool() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:543:19)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::rt<32, true>::arg1 ac::ops_with_other_types::operator>><9, false>(ac_int<9, false> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:543:39)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, false>::operator!() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:543:33)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int<9, false>(ac_int<9, false> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:544:23)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:547:23)
+INFO: [HLS 214-131] Inlining function 'bool ac::ops_with_other_types::operator<<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:548:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> value<(ac_special_val)2, 25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:548:31)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:641:61)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:642:23)
+INFO: [HLS 214-131] Inlining function 'ac_int<26, true> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<26>(int) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:643:44)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<26, true>(int, ac_int<26, true> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:643:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<8, true>(ac_int<8, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:644:28)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::rt<32, true>::minus ac::ops_with_other_types::operator-<33, true>(ac_int<33, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:644:32)
+INFO: [HLS 214-131] Inlining function 'ac_int<34, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<34, true>(ac_int<34, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:644:37)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<2, true, true, false, 35>::operator long long() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:644:22)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:646:62)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:647:23)
+INFO: [HLS 214-131] Inlining function 'ac_int<26, true> ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<26>(int) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:648:44)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<26, true>(int, ac_int<26, true> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:648:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator-() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:650:21)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 4, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 4, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:650:21)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<8, true>(ac_int<8, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:651:32)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::rt<32, true>::minus ac::ops_with_other_types::operator-<33, true>(ac_int<33, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:651:37)
+INFO: [HLS 214-131] Inlining function 'ac_int<34, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<34, true>(ac_int<34, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:651:42)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<2, true, true, false, 35>::operator long long() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:651:22)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:661:29)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator~() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:661:28)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<32, 32, true>::arg1 ac::ops_with_other_types::operator<<<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:661:38)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator~() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:661:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator&=<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:661:22)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:662:29)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:663:39)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, true> ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<1>(int) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:663:60)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, true>::operator bool() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:663:39)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac::ops_with_other_types::operator>>=<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:664:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:668:20)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+=<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:669:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator[](int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:670:10)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_bitref::operator=(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:670:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator[](int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:673:36)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> ac::ops_with_other_types::operator>>=<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>&, bool)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:674:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:675:20)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator[](int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:676:10)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_bitref::operator=(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:676:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<28, true> ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::slc<28>(int) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:678:36)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<28, true>(int, ac_int<28, true> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:678:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<28, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:680:18)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::ac_int(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:681:33)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, true>::ac_int(int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:682:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::rt<1, false>::plus ac::ops_with_other_types::operator+<9, true>(ac_int<9, true> const&, bool)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:682:62)
+INFO: [HLS 214-131] Inlining function 'ac_int<10, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<10, true>(ac_int<10, true> const&, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:682:74)
+INFO: [HLS 214-131] Inlining function 'ac_int<1, true>::rt<33, true>::logic const ac_int<1, true>::operator&<33, true>(ac_int<33, true> const&) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:682:55)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::ac_int<33, true>(ac_int<33, true> const&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:682:16)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1024_1' (../ac_types/include/ac_int.h:1024:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../ac_types/include/ac_int.h:1168:30) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1715_1' (../ac_types/include/ac_int.h:1715:42) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1911_1' (../ac_types/include/ac_int.h:1911:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1828_3' (../ac_types/include/ac_int.h:1828:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../ac_types/include/ac_int.h:1871:38) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1820_1' (../ac_types/include/ac_int.h:1820:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1799_1' (../ac_types/include/ac_int.h:1799:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1807_3' (../ac_types/include/ac_int.h:1807:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1034_1' (../ac_types/include/ac_int.h:1034:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1700_1' (../ac_types/include/ac_int.h:1700:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1799_1' (../ac_types/include/ac_int.h:1799:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' completely with a factor of 1 (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1807_3' (../ac_types/include/ac_int.h:1807:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' completely with a factor of 1 (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1820_1' (../ac_types/include/ac_int.h:1820:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' completely with a factor of 1 (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1828_3' (../ac_types/include/ac_int.h:1828:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' completely with a factor of 1 (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../ac_types/include/ac_int.h:1168:30) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' completely with a factor of 1 (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1145_3' (../ac_types/include/ac_int.h:1145:50) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' completely with a factor of 1 (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1034_1' (../ac_types/include/ac_int.h:1034:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' completely with a factor of 1 (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../ac_types/include/ac_int.h:1871:38) in function 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<23>' completely with a factor of 1 (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../ac_types/include/ac_int.h:1871:38) in function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>' completely with a factor of 1 (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1034_1' (../ac_types/include/ac_int.h:1034:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::operator!' completely with a factor of 1 (./../ac_types/include/ac_float.h:772:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const' into 'ac_float<25, 2, 8, (ac_q_mode)0>::operator!() const' (./../ac_types/include/ac_float.h:772:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const (.9)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<1>::shiftl ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>() const' (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int) (.15)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<1>::shiftl ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>() const' (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<1>::shiftl ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>() const (.3)' (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int) (.15)' into 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<1>::shiftl ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>() const (.3)' (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<1>::shiftl ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>() const (.3)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<26, 3, true>::plus ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:749:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<26, 3, true>::plus ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:749:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const (.9)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<26, 3, true>::plus ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:749:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int) (.15)' into 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<26, 3, true>::plus ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (../ac_types/include/ac_fixed.h:749:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const (.9)' into 'ac_private::iv<1, false>::leading_bits(bool) const' (../ac_types/include/ac_int.h:2618:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const (.9)' into 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<23>::shiftl ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<23>() const' (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::set(int, int)' into 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<23>::shiftl ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<23>() const' (../ac_types/include/ac_fixed.h:377:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int) (.15)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const (.9)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::set(int, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<33, true>()' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::operator[](int) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv<1, false>::leading_bits(bool) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<23>::shiftl ac_fixed<32, 32, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<23>() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>(ac_int<9, true>, bool, bool)' (./../ac_types/include/ac_float.h:518:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const (.9)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int) (.15)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_float<25, 2, 8, (ac_q_mode)0>::exp() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<33, true>()' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::operator[](int) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<34, true>()' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<35, true>()' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_float<25, 2, 8, (ac_q_mode)0>::operator!() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt_priv<1>::shiftl ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>::shiftl<1>() const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::rt<26, 3, true>::plus ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::operator+<26, 3, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<26, 3, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_bitref::ac_bitref(ac_fixed<27, 3, true, (ac_q_mode)0, (ac_o_mode)0>*, unsigned int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>::ac_bitref::ac_bitref(ac_fixed<28, 3, true, (ac_q_mode)0, (ac_o_mode)0>*, unsigned int)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&, bool) const' (./../ac_types/include/ac_float.h:613:0)
+INFO: [HLS 214-178] Inlining function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float(ac_float<25, 2, 8, (ac_q_mode)0> const&)' into 'ac_float<25, 2, 8, (ac_q_mode)0> ac_float<25, 2, 8, (ac_q_mode)0>::add<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0> const&)' (./../ac_types/include/ac_float.h:690:0)
+INFO: [HLS 214-178] Inlining function 'ac_float<25, 2, 8, (ac_q_mode)0> ac_float<25, 2, 8, (ac_q_mode)0>::add<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0> const&)' into 'void add<ac_float<25, 2, 8, (ac_q_mode)0>, ac_float<25, 2, 8, (ac_q_mode)0>, ac_float<25, 2, 8, (ac_q_mode)0> >(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&)' (./add.h:5:0)
+INFO: [HLS 214-178] Inlining function 'void add<ac_float<25, 2, 8, (ac_q_mode)0>, ac_float<25, 2, 8, (ac_q_mode)0>, ac_float<25, 2, 8, (ac_q_mode)0> >(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&)' into 'add_top(ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&)' (add.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'res' with compact=bit mode in 128-bits (add.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'b' with compact=bit mode in 128-bits (add.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'a' with compact=bit mode in 128-bits (add.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.3 seconds. CPU system time: 0.36 seconds. Elapsed time: 5.95 seconds; current allocated memory: 221.340 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 221.457 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 229.012 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 235.934 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_2139_1' (../ac_types/include/ac_int.h:2139) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::adjust<9>' automatically.
+INFO: [XFORM 203-102] Partitioning array 'r_t.0.1' automatically.
+INFO: [XFORM 203-602] Inlining function 'ac_float<25, 2, 8, (ac_q_mode)0>::plus_minus<25, 2, 8, (ac_q_mode)0, 25, 2, 8, (ac_q_mode)0>' into 'add_top' (./../ac_types/include/ac_float.h:691) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 264.574 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 264.574 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'add_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 264.574 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 264.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'add_top/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'add_top/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'add_top/res' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'add_top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'add_top/a' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'add_top/b' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add_top'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 264.574 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 264.574 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.26 seconds; current allocated memory: 264.574 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for add_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for add_top.
+INFO: [HLS 200-789] **** Estimated Fmax: 0.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.9 seconds. CPU system time: 0.68 seconds. Elapsed time: 11.94 seconds; current allocated memory: 54.555 MB.
+***** C/RTL SIMULATION *****
+INFO: [HLS 200-1510] Running: cosim_design -tool xsim -rtl verilog -trace_level none 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling add_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_add_top.cpp
+   Compiling add.cpp_pre.cpp.tb.cpp
+   Compiling apatb_add_top_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+a = 2.100000
+b = 2.200000
+a + b = 4.300000
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_add_top_top glbl -Oenable_linking_all_libraries -prj add_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s add_top 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_add_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.add_top
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_add_top_top
+Compiling module work.glbl
+Built simulation snapshot add_top
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/add_top/xsim_script.tcl
+# xsim {add_top} -autoloadwcfg -tclbatch {add_top.tcl}
+Time resolution is 1 ps
+source add_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "225000"
+// RTL Simulation : 1 / 1 [n/a] @ "325000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 625 ns : File "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top.autotb.v" Line 232
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Mar 26 18:38:48 2023...
+INFO: [COSIM 212-316] Starting C post checking ...
+a = 2.100000
+b = 2.200000
+a + b = 0.000000
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 13.5 seconds. CPU system time: 1.1 seconds. Elapsed time: 14.56 seconds; current allocated memory: 2.043 MB.
+INFO: [HLS 200-1510] Running: export_design -evaluate verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 18:38:59 2023...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_vivado.tcl
+# source ./settings.tcl
+## set top_module add_top
+## set language verilog
+## set family zynq
+## set device xc7z020
+## set package -clg400
+## set speed -1
+## set clock ""
+## set fsm_ext "off"
+## set add_io_buffers false ;
+# source -notrace ./extraction.tcl
+# set vivado_proj_name project
+# set vivado_proj_dir .
+# set target_device "${device}${package}${speed}"
+# set target_clk_period_ns "50.000"
+# set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
+# set ip_vlnv xilinx.com:hls:add_top:1.0
+# set ip_repo_path ../ip
+# set bd_design_name bd_0
+# set bd_inst_name hls_inst
+# set bd_props {}
+# set has_synth true
+# set synth_design_args {-directive sdx_optimization_effort_high}
+# set synth_dcp ""
+# set synth_props {}
+# set has_impl 1
+# set impl_props {}
+# set report_options [dict create]
+# dict set report_options report_level 2
+# dict set report_options report_max_paths 10
+# dict set report_options stdout_hls_reports 1
+# dict set report_options stdout_vivado_reports 0
+# dict set report_options hls_project add
+# dict set report_options hls_solution add_solution
+# dict set report_options has_synth $has_synth
+# dict set report_options has_impl $has_impl
+# dict set report_options vivado_reportbasename $top_module
+# dict set report_options vivado_reportdir ./report
+# dict set report_options hls_impl_dir ..
+# dict set report_options hls_reportdir ../report/$language
+# dict set report_options target_clk_period $target_clk_period_ns
+# dict set report_options target_device $target_device
+# dict set report_options language $language
+# dict set report_options clock_name $clock
+# dict set report_options error_if_impl_timing_fails false
+# dict set report_options bindmodules {}
+# dict set report_options max_module_depth 4
+# create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
+# set_property target_language $language [current_project]
+# if { ![file exists $ip_repo_path] } {
+#   error "Cannot find packaged HLS IP"
+# }
+# set_property ip_repo_paths [file normalize $ip_repo_path] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+# create_bd_design $bd_design_name
+Wrote  : </home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
+INFO: [BD 41-2613] The output directory /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0 for bd_0 cannot be found.
+# set cell_inst [create_bd_cell -type ip -vlnv $ip_vlnv $bd_inst_name]
+# if { [llength $bd_props] } { 
+#   set_property -dict $bd_props $cell_inst 
+# }
+# make_bd_pins_external $cell_inst
+# make_bd_intf_pins_external $cell_inst
+WARNING: [BD 5-236] No ports matched 'get_bd_ports -filter TYPE==clk'
+# set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
+# if { [llength $bd_clk_ports] && $target_clk_freq_hz ne "" } { 
+#   set_property CONFIG.FREQ_HZ $target_clk_freq_hz $bd_clk_ports 
+# }
+# foreach bd_port [get_bd_intf_ports] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# foreach bd_port [get_bd_ports -filter {INTF!=TRUE}] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# set s_axi_addr_width_min 32
+WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}'
+# foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
+#   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
+#   if { $bd_port_addr_width < $s_axi_addr_width_min } {
+#     puts "INFO: Updating $bd_port CONFIG.ADDR_WIDTH to $s_axi_addr_width_min"
+#     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
+#   }
+# }
+# set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
+# assign_bd_address
+Wrote  : </home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
+VHDL Output written to : /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+VHDL Output written to : /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+VHDL Output written to : /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+# set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
+# add_files -norecurse $toprtl
+# set top_inst_name [file root [file tail $toprtl]]
+# puts "Using BD top: $top_inst_name"
+Using BD top: bd_0_wrapper
+# set xdc_files [glob -nocomplain ./*.xdc]
+# if { [llength $xdc_files] } {
+#     add_files -fileset constrs_1 -norecurse $xdc_files
+# }
+# launch_runs synth_1 -scripts_only
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+VHDL Output written to : /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+VHDL Output written to : /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Hardware Definition File /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+# foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+#   reset_run [get_runs $run]
+# }
+# set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
+# hls_vivado_reports_setup $report_options
+TIMESTAMP: HLS-REPORT: initialize report directories: 2023-03-26 18:39:26 CEST
+# if { $has_synth || $has_impl } {
+#   # synth properties setting
+#   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+#   set ip_inst [get_ips -quiet ${bd_design_name}*${bd_inst_name}*]
+#   if { ![llength $ip_inst] } {
+#       error "Cannot find HLS IP instance: ${bd_design_name}*${bd_inst_name}*"
+#   }
+#   set synth_run [get_runs -filter {IS_SYNTHESIS == 1} ${ip_inst}*]
+#   if { ![llength $synth_run] } {
+#       error "Cannot find synth run for HLS IP: ${ip_inst}*"
+#   }
+# 
+#   if { [llength $synth_design_args] } {
+#       set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value $synth_design_args -objects $synth_run
+#   }
+# 
+#   if { [llength $synth_props] } {
+#     set_property -dict $synth_props $synth_run
+#   }
+# 
+#   # launch run synth
+#   launch_runs synth_1
+#   wait_on_run synth_1
+#   # synth reports
+#   hls_vivado_reports_synth synth_1 $report_options
+#   if { $synth_dcp ne "" } {
+#     file mkdir [file dirname $synth_dcp]
+#     set run_dcp [glob -nocomplain [get_property DIRECTORY $synth_run]/*.dcp]
+#     if { [llength $run_dcp] != 1 } { error "Cannot find single dcp file for run $synth_run" }
+#     file copy -force $run_dcp $synth_dcp
+#   }
+# }
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sun Mar 26 18:39:26 2023] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Sun Mar 26 18:39:26 2023] Launched synth_1...
+Run output will be captured here: /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/synth_1/runme.log
+[Sun Mar 26 18:39:26 2023] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top bd_0_wrapper -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1074619
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2689.531 ; gain = 0.000 ; free physical = 3050 ; free virtual = 35976
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'bd_0' [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/synth_1/.Xil/Vivado-1074108-yavin/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (1#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/synth_1/.Xil/Vivado-1074108-yavin/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0' (2#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (3#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2689.531 ; gain = 0.000 ; free physical = 2573 ; free virtual = 35500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2689.531 ; gain = 0.000 ; free physical = 2565 ; free virtual = 35491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2689.531 ; gain = 0.000 ; free physical = 2565 ; free virtual = 35491
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2689.531 ; gain = 0.000 ; free physical = 2558 ; free virtual = 35485
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/add_top.xdc]
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/add_top.xdc]
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2753.562 ; gain = 0.000 ; free physical = 3413 ; free virtual = 36342
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2753.562 ; gain = 0.000 ; free physical = 3413 ; free virtual = 36342
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3482 ; free virtual = 36409
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3482 ; free virtual = 36409
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i/hls_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3485 ; free virtual = 36412
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3484 ; free virtual = 36412
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3469 ; free virtual = 36402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3360 ; free virtual = 36283
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3360 ; free virtual = 36283
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3359 ; free virtual = 36282
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3355 ; free virtual = 36286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3355 ; free virtual = 36286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3355 ; free virtual = 36286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3355 ; free virtual = 36286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3355 ; free virtual = 36286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3355 ; free virtual = 36286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |bd_0_hls_inst_0 |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |bd_0_hls_inst |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3355 ; free virtual = 36286
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2753.562 ; gain = 0.000 ; free physical = 3413 ; free virtual = 36345
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2753.562 ; gain = 64.031 ; free physical = 3414 ; free virtual = 36345
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2753.562 ; gain = 0.000 ; free physical = 3407 ; free virtual = 36338
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2753.562 ; gain = 0.000 ; free physical = 3436 ; free virtual = 36367
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1430d051
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2753.562 ; gain = 64.238 ; free physical = 3629 ; free virtual = 36561
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 18:40:34 2023...
+[Sun Mar 26 18:40:44 2023] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 2830.145 ; gain = 0.000 ; free physical = 4563 ; free virtual = 37483
+TIMESTAMP: HLS-REPORT: synthesis open_run: 2023-03-26 18:40:44 CEST
+INFO: HLS-REPORT: Opening synthesis design database: open_run synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2830.145 ; gain = 0.000 ; free physical = 4405 ; free virtual = 37330
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/add_top.xdc]
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/add_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2830.145 ; gain = 0.000 ; free physical = 4299 ; free virtual = 37224
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+TIMESTAMP: HLS-REPORT: synthesis generate_reports_vivado: 2023-03-26 18:40:47 CEST
+INFO: HLS-REPORT: Running report: report_utilization -file ./report/add_top_utilization_synth.rpt
+INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 4 -file ./report/add_top_utilization_hierarchical_synth.rpt
+INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/add_top_timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/add_top_timing_paths_synth.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/add_top_design_analysis_synth.rpt
+INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report synth -file ./report/add_top_failfast_synth.rpt
+ -E- no leaf primitive found under the request. Cannot continue
+WARNING: HLS-REPORT: Did not find report output file ./report/add_top_failfast_synth.rpt
+TIMESTAMP: HLS-REPORT: synthesis gen_data_dict_vivado: 2023-03-26 18:40:52 CEST
+TIMESTAMP: HLS-REPORT: synth get_timing_paths: 2023-03-26 18:40:52 CEST
+TIMESTAMP: HLS-REPORT: synth process timing paths: 2023-03-26 18:40:52 CEST
+TIMESTAMP: HLS-REPORT: synth get_all_vv_rpt_files: 2023-03-26 18:40:52 CEST
+TIMESTAMP: HLS-REPORT: synthesis write_reports_vivado: 2023-03-26 18:40:52 CEST
+HLS EXTRACTION: synth area_totals:  13300 53200 106400 220 280 0 0
+HLS EXTRACTION: synth area_current: 0 0 0 0 0 0 0 0 0 0
+HLS EXTRACTION: synth resources_dict: AVAIL_SLICE 13300 SLICE 0 AVAIL_LUT 53200 LUT 0 AVAIL_FF 106400 FF 0 AVAIL_DSP 220 DSP 0 AVAIL_BRAM 280 BRAM 0 AVAIL_URAM 0 URAM 0 LATCH 0 SRL 0 AVAIL_CLB 0 CLB 0
+INFO: HLS-REPORT: generated /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/report/vivado_syn.xml
+INFO: HLS-REPORT: generated /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/report/verilog/add_top_export.rpt
+
+
+Implementation tool: Xilinx Vivado v.2021.2
+Project:             add
+Solution:            add_solution
+Device target:       xc7z020-clg400-1
+Report date:         Sun Mar 26 18:40:52 CEST 2023
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:              0
+FF:               0
+DSP:              0
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:              0
+CLB:              0
+
+#=== Final timing ===
+CP required:                     50.000
+CP achieved post-synthesis:      NA
+No Sequential Path
+
+TIMESTAMP: HLS-REPORT: synthesis end: 2023-03-26 18:40:52 CEST
+# if { $has_impl } {
+#   # launch run impl
+#   if { [llength $impl_props] } {
+#     set_property -dict $impl_props [get_runs impl_1]
+#   }
+#   launch_runs impl_1
+#   wait_on_run impl_1
+#   # impl reports
+#   hls_vivado_reports_impl impl_1 $report_options
+# }
+INFO: [Timing 38-480] Writing timing data to binary archive.
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Sun Mar 26 18:40:52 2023] Launched impl_1...
+Run output will be captured here: /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/runme.log
+[Sun Mar 26 18:40:52 2023] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log bd_0_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+Command: open_checkpoint /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2692.273 ; gain = 2.969 ; free physical = 2703 ; free virtual = 35628
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2692.504 ; gain = 0.000 ; free physical = 3252 ; free virtual = 36177
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2756.535 ; gain = 0.000 ; free physical = 2760 ; free virtual = 35685
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2021.2 (64-bit) build 3367213
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2756.535 ; gain = 73.168 ; free physical = 2760 ; free virtual = 35685
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2820.566 ; gain = 64.031 ; free physical = 2755 ; free virtual = 35680
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: c5db7f67
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2820.566 ; gain = 0.000 ; free physical = 2755 ; free virtual = 35681
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: c5db7f67
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2990.566 ; gain = 9.906 ; free physical = 2527 ; free virtual = 35452
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: c5db7f67
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2990.566 ; gain = 9.906 ; free physical = 2527 ; free virtual = 35452
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: f48917df
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2990.566 ; gain = 9.906 ; free physical = 2527 ; free virtual = 35452
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: f48917df
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2990.566 ; gain = 9.906 ; free physical = 2527 ; free virtual = 35452
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: f48917df
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2990.566 ; gain = 9.906 ; free physical = 2527 ; free virtual = 35452
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: f48917df
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2990.566 ; gain = 9.906 ; free physical = 2527 ; free virtual = 35452
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2990.566 ; gain = 0.000 ; free physical = 2527 ; free virtual = 35452
+Ending Logic Optimization Task | Checksum: 93af5e38
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2990.566 ; gain = 9.906 ; free physical = 2527 ; free virtual = 35452
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 93af5e38
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2990.566 ; gain = 0.000 ; free physical = 2527 ; free virtual = 35452
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 93af5e38
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2990.566 ; gain = 0.000 ; free physical = 2527 ; free virtual = 35452
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2990.566 ; gain = 0.000 ; free physical = 2527 ; free virtual = 35452
+Ending Netlist Obfuscation Task | Checksum: 93af5e38
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2990.566 ; gain = 0.000 ; free physical = 2527 ; free virtual = 35452
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
+Command: report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2504 ; free virtual = 35429
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2504 ; free virtual = 35429
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2504 ; free virtual = 35429
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2507 ; free virtual = 35432
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: e73f1132
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2502 ; free virtual = 35428
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: e73f1132
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2501 ; free virtual = 35426
+Phase 1 Placer Initialization | Checksum: e73f1132
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2500 ; free virtual = 35426
+
+Phase 2 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2500 ; free virtual = 35426
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2500 ; free virtual = 35426
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2500 ; free virtual = 35426
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file bd_0_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2497 ; free virtual = 35422
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_wrapper_utilization_placed.rpt -pb bd_0_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3142.113 ; gain = 0.000 ; free physical = 2507 ; free virtual = 35432
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 0 ConstDB: 0 ShapeSum: 0 RouteDB: 0
+Post Restoration Checksum: NetGraph: 0 NumContArr: 0 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3181.770 ; gain = 39.656 ; free physical = 2366 ; free virtual = 35287
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3197.578 ; gain = 55.465 ; free physical = 2367 ; free virtual = 35288
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3205.578 ; gain = 63.465 ; free physical = 2334 ; free virtual = 35254
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3205.578 ; gain = 63.465 ; free physical = 2334 ; free virtual = 35254
+
+Phase 2.4 Timing Verification
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3228.492 ; gain = 86.379 ; free physical = 2329 ; free virtual = 35250
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=49.027 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.4 Timing Verification | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3228.492 ; gain = 86.379 ; free physical = 2329 ; free virtual = 35250
+INFO: [Route 35-61] The design met the timing requirement.
+
+Phase 2.5 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2.5 Route finalize | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3228.492 ; gain = 86.379 ; free physical = 2329 ; free virtual = 35250
+
+Phase 2.6 Verifying routed nets
+
+ Verification completed successfully
+Phase 2.6 Verifying routed nets | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3228.492 ; gain = 86.379 ; free physical = 2328 ; free virtual = 35248
+
+Phase 2.7 Depositing Routes
+Phase 2.7 Depositing Routes | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2328 ; free virtual = 35248
+Phase 2 Router Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2328 ; free virtual = 35248
+
+Phase 3 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 3 Route finalize | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2328 ; free virtual = 35248
+
+Phase 4 Verifying routed nets
+
+ Verification completed successfully
+Phase 4 Verifying routed nets | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2328 ; free virtual = 35248
+
+Phase 5 Depositing Routes
+Phase 5 Depositing Routes | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2328 ; free virtual = 35248
+
+Phase 6 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=49.027 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 6 Post Router Timing | Checksum: 00000000
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2328 ; free virtual = 35248
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2362 ; free virtual = 35282
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+68 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3244.500 ; gain = 102.387 ; free physical = 2362 ; free virtual = 35282
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+Command: report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/project.runs/impl_1/bd_0_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx
+Command: report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+80 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file bd_0_wrapper_route_status.rpt -pb bd_0_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file bd_0_wrapper_timing_summary_routed.rpt -pb bd_0_wrapper_timing_summary_routed.pb -rpx bd_0_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file bd_0_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file bd_0_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file bd_0_wrapper_bus_skew_routed.rpt -pb bd_0_wrapper_bus_skew_routed.pb -rpx bd_0_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 18:41:29 2023...
+[Sun Mar 26 18:41:40 2023] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:48 . Memory (MB): peak = 2918.395 ; gain = 0.000 ; free physical = 3926 ; free virtual = 36846
+TIMESTAMP: HLS-REPORT: implementation open_run: 2023-03-26 18:41:40 CEST
+INFO: HLS-REPORT: Opening implementation design database: open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2918.395 ; gain = 0.000 ; free physical = 3914 ; free virtual = 36834
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3036.023 ; gain = 0.000 ; free physical = 3656 ; free virtual = 36734
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+TIMESTAMP: HLS-REPORT: implementation generate_reports_vivado: 2023-03-26 18:41:40 CEST
+INFO: HLS-REPORT: Running report: report_utilization -file ./report/add_top_utilization_routed.rpt
+INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 4 -file ./report/add_top_utilization_hierarchical_routed.rpt
+INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/add_top_timing_routed.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: HLS-REPORT: Running report: report_route_status -file ./report/add_top_status_routed.rpt
+INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/add_top_timing_paths_routed.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/add_top_design_analysis_routed.rpt
+INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report impl -file ./report/add_top_failfast_routed.rpt
+ -E- no leaf primitive found under the request. Cannot continue
+WARNING: HLS-REPORT: Did not find report output file ./report/add_top_failfast_routed.rpt
+TIMESTAMP: HLS-REPORT: implementation gen_data_dict_vivado: 2023-03-26 18:41:41 CEST
+TIMESTAMP: HLS-REPORT: impl get_timing_paths: 2023-03-26 18:41:41 CEST
+TIMESTAMP: HLS-REPORT: impl process timing paths: 2023-03-26 18:41:41 CEST
+TIMESTAMP: HLS-REPORT: impl get_all_vv_rpt_files: 2023-03-26 18:41:41 CEST
+TIMESTAMP: HLS-REPORT: implementation write_reports_vivado: 2023-03-26 18:41:41 CEST
+HLS EXTRACTION: impl area_totals:  13300 53200 106400 220 280 0 0
+HLS EXTRACTION: impl area_current: 0 0 0 0 0 0 0 0 0 0
+HLS EXTRACTION: impl resources_dict: AVAIL_SLICE 13300 SLICE 0 AVAIL_LUT 53200 LUT 0 AVAIL_FF 106400 FF 0 AVAIL_DSP 220 DSP 0 AVAIL_BRAM 280 BRAM 0 AVAIL_URAM 0 URAM 0 LATCH 0 SRL 0 AVAIL_CLB 0 CLB 0
+INFO: HLS-REPORT: generated /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/verilog/report/vivado_impl.xml
+INFO: HLS-REPORT: generated /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/impl/report/verilog/add_top_export.rpt
+
+
+Implementation tool: Xilinx Vivado v.2021.2
+Project:             add
+Solution:            add_solution
+Device target:       xc7z020-clg400-1
+Report date:         Sun Mar 26 18:41:41 CEST 2023
+
+#=== Post-Implementation Resource usage ===
+SLICE:            0
+LUT:              0
+FF:               0
+DSP:              0
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:              0
+CLB:              0
+
+#=== Final timing ===
+CP required:                     50.000
+CP achieved post-synthesis:      NA
+CP achieved post-implementation: NA
+No Sequential Path
+
+TIMESTAMP: HLS-REPORT: implementation end: 2023-03-26 18:41:41 CEST
+INFO: HLS-REPORT: impl run complete: worst setup slack (WNS)=49.027000, worst hold slack (WHS)=0.000000, total pulse width slack(TPWS)=0.000000, number of unrouted nets=0
+# hls_vivado_reports_finalize $report_options
+TIMESTAMP: HLS-REPORT: all reports complete: 2023-03-26 18:41:41 CEST
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 18:41:41 2023...
+INFO: [HLS 200-802] Generated output file add/add_solution/impl/export.zip
+WARNING: [HLS 200-484] The 'export_design -evaluate' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 105.88 seconds. CPU system time: 6.35 seconds. Elapsed time: 182.44 seconds; current allocated memory: 4.477 MB.
+INFO: [HLS 200-112] Total CPU user time: 134.01 seconds. Total CPU system time: 8.75 seconds. Total elapsed time: 211.93 seconds; peak allocated memory: 271.094 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Mar 26 18:41:51 2023...

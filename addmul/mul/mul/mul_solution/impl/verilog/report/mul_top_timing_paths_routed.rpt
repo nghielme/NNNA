@@ -1,0 +1,100 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Sun Mar 26 18:45:53 2023
+| Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_timing -max_paths 10 -file ./report/mul_top_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             49.027ns  (required time - arrival time)
+  Source:                 ap_ctrl_start
+                            (input port)
+  Destination:            ap_ctrl_done
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        0.973ns  (logic 0.000ns (0.000%)  route 0.973ns (100.000%))
+  Logic Levels:           0  
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_ctrl_start (IN)
+                         net (fo=-1, unset)           0.973     0.973    ap_ctrl_done
+                                                                      r  ap_ctrl_done (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                          -0.973    
+  -------------------------------------------------------------------
+                         slack                                 49.027    
+
+Slack (MET) :             49.027ns  (required time - arrival time)
+  Source:                 ap_ctrl_start
+                            (input port)
+  Destination:            ap_ctrl_ready
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        0.973ns  (logic 0.000ns (0.000%)  route 0.973ns (100.000%))
+  Logic Levels:           0  
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_ctrl_start (IN)
+                         net (fo=-1, unset)           0.973     0.973    ap_ctrl_ready
+                                                                      r  ap_ctrl_ready (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                          -0.973    
+  -------------------------------------------------------------------
+                         slack                                 49.027    
+
+Slack (MET) :             49.027ns  (required time - arrival time)
+  Source:                 ap_ctrl_start
+                            (input port)
+  Destination:            res_ap_vld
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        0.973ns  (logic 0.000ns (0.000%)  route 0.973ns (100.000%))
+  Logic Levels:           0  
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_ctrl_start (IN)
+                         net (fo=-1, unset)           0.973     0.973    res_ap_vld
+                                                                      r  res_ap_vld (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                          -0.973    
+  -------------------------------------------------------------------
+                         slack                                 49.027    
+
+
+
+

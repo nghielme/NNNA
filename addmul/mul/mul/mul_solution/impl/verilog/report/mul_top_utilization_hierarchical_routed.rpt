@@ -1,0 +1,33 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Sun Mar 26 18:45:53 2023
+| Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file ./report/mul_top_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------+-------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|     Instance     |          Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------+-------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper     |                   (top) |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   bd_0_i         |                    bd_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|     hls_inst     |         bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       (hls_inst) |         bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       inst       | bd_0_hls_inst_0_mul_top |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
++------------------+-------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
