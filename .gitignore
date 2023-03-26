@@ -1,1 +1,6 @@
 /addmul/.vscode/
+/addmul/add/add/add_solution/.autopilot/
+/addmul/add/add/add_solution/.debug/
+/addmul/mul/mul/mul_solution/.autopilot/
+/addmul/mul/mul/mul_solution/.debug/
+/.pytest_cache/
