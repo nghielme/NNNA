@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/./sim/autowrap/testbench/add.cpp_pre.cpp.tb.cpp
