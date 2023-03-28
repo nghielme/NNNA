@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../mul_fixed_test.cpp in debug mode
+   Compiling ../../../../mul_fixed.cpp in debug mode
+   Generating csim.exe
+a = 2.100000000000000088817841970012523233890533447265625
+b = 2.20000000000000017763568394002504646778106689453125
+a * b = 4.62000000000000056843418860808016447411751848273610823457130565572459346412870218046009540557861328125
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

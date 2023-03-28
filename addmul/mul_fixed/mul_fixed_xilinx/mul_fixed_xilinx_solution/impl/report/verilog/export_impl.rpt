@@ -1,0 +1,541 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Tue Mar 28 15:18:20 CEST 2023
+    * Version:         2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:         mul_fixed_xilinx
+    * Solution:        mul_fixed_xilinx_solution (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  50 ns
+    * C-Synthesis target clock:    50 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       none
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              27844
+FF:               3695
+DSP:              220
+BRAM:             2
+URAM:             0
+SRL:              0
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 50.000      |
+| Post-Synthesis | 25.875      |
+| Post-Route     | 36.363      |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++---------------------------------------------------------+-------+------+-----+------+------+-----+--------+------+---------+---------------+-----------------------------------+
+| Name                                                    | LUT   | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable      | Source                            |
++---------------------------------------------------------+-------+------+-----+------+------+-----+--------+------+---------+---------------+-----------------------------------+
+| inst                                                    | 27844 | 3695 | 220 | 2    |      |     |        |      |         |               |                                   |
+|   (inst)                                                | 4349  | 775  |     |      |      |     |        |      |         |               |                                   |
+|   grp_operator_mul_281_127_true_0_0_fu_172              | 23495 | 2920 | 220 |      |      |     |        |      |         |               |                                   |
+|     (grp_operator_mul_281_127_true_0_0_fu_172)          | 1896  | 2706 |     |      |      |     |        |      |         |               |                                   |
+|     grp_operator_281_127_true_0_0_Pipeline_1_fu_300     | 28    | 7    |     |      |      |     |        |      |         |               |                                   |
+|       (grp_operator_281_127_true_0_0_Pipeline_1_fu_300) |       | 5    |     |      |      |     |        |      |         |               |                                   |
+|       flow_control_loop_pipe_sequential_init_U          | 28    | 2    |     |      |      |     |        |      |         |               |                                   |
+|     mul_25s_25s_50_1_1_U82                              | 83    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1198    | ../ac_types/include/ac_int.h:1198 |
+|     mul_32ns_25s_57_1_1_U38                             | 73    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190    | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U46                             | 1169  | 17   | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194    | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_25s_57_1_1_U47                             | 120   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190_1  | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U54                             | 62    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194_1  | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_25s_57_1_1_U55                             |       |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190_2  | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U61                             | 66    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194_2  | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_25s_57_1_1_U62                             | 240   | 17   | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190_3  | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U67                             | 62    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194_3  | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_25s_57_1_1_U68                             | 33    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190_4  | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U72                             | 62    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194_4  | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_25s_57_1_1_U76                             | 343   | 17   | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190_5  | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U77                             | 143   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194_5  | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_25s_57_1_1_U78                             | 66    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190_6  | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U79                             |       |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194_6  | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_25s_57_1_1_U80                             | 28    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1190_7  | ../ac_types/include/ac_int.h:1190 |
+|     mul_32ns_25s_57_1_1_U81                             | 41    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1194_7  | ../ac_types/include/ac_int.h:1194 |
+|     mul_32ns_32ns_64_1_1_U10                            | 436   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_8  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U11                            | 412   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_9  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U12                            | 381   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_10 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U13                            | 412   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_11 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U14                            | 345   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_12 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U15                            | 345   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_13 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U16                            | 345   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_14 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U17                            | 473   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_15 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U18                            | 177   |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_16 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U19                            | 156   |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_17 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U2                             | 49    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186    | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U20                            | 453   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_18 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U21                            | 464   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_19 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U22                            | 434   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_20 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U23                            | 378   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_21 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U24                            | 406   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_22 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U25                            | 80    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_23 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U26                            | 52    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_24 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U27                            | 345   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_25 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U28                            | 407   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_26 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U29                            | 407   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_27 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U3                             | 143   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_1  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U30                            | 411   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_28 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U31                            | 112   |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_29 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U32                            | 346   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_30 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U33                            | 140   |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_31 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U34                            | 47    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_32 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U35                            | 380   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_33 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U36                            | 1666  | 21   | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_34 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U37                            | 1456  | 17   | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_35 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U39                            | 441   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_36 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U4                             | 112   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_2  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U40                            | 377   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_37 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U41                            | 55    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_38 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U42                            | 48    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_39 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U43                            | 108   |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_40 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U44                            | 1951  | 33   | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_41 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U45                            | 409   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_42 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U48                            | 377   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_43 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U49                            | 49    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_44 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U5                             | 175   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_3  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U50                            | 82    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_45 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U51                            | 47    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_46 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U52                            | 47    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_47 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U53                            | 347   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_48 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U56                            | 82    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_49 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U57                            | 80    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_50 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U58                            | 76    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_51 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U59                            | 110   |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_52 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U6                             | 114   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_4  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U60                            | 47    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_53 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U63                            | 80    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_54 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U64                            | 366   | 34   | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_55 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U65                            | 389   | 17   | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_56 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U66                            | 81    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_57 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U69                            | 82    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_58 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U7                             | 52    |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_5  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U70                            | 50    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_59 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U71                            | 47    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_60 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U73                            | 477   | 34   | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_61 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U74                            | 47    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_62 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U75                            | 47    |      | 4   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_63 | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U8                             | 438   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_6  | ../ac_types/include/ac_int.h:1186 |
+|     mul_32ns_32ns_64_1_1_U9                             | 409   |      | 2   |      |      |     |        |      |         |               |                                   |
+|       bind_op mul                                       |       |      |     |      |      |     |        | auto | 0       | mul_ln1186_7  | ../ac_types/include/ac_int.h:1186 |
+|   ref_tmp1_i_U                                          | 1     |      |     | 2    |      |     |        |      |         |               |                                   |
+|     bind_storage ram_t2p                                |       |      |     |      |      |     |        | auto | 1       | ref_tmp1_i    |                                   |
++---------------------------------------------------------+-------+------+-----+------+------+-----+--------+------+---------+---------------+-----------------------------------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+---------+--------+
+| Criteria                                                  | Guideline | Actual  | Status |
++-----------------------------------------------------------+-----------+---------+--------+
+| LUT                                                       | 70%       | 52.34%  | OK     |
+| FD                                                        | 50%       | 3.47%   | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.00%   | OK     |
+| MUXF7                                                     | 15%       | 0.00%   | OK     |
+| LUT Combining                                             | 20%       | 27.92%  | REVIEW |
+| DSP                                                       | 80%       | 100.00% | REVIEW |
+| RAMB/FIFO                                                 | 80%       | 0.71%   | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 50.35%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0       | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0       | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0       | OK     |
+| Control Sets                                              | 998       | 17      | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 0       | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0       | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0       | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0       | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0       | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0       | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+--------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  |  SLACK | STARTPOINT PIN                                                                        | ENDPOINT PIN                                                              | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |        |                                                                                       |                                                                           |              |            |                |          DELAY |        DELAY |
++-------+--------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 13.637 | grp_operator_mul_281_127_true_0_0_fu_172/tmp_11_reg_6075_reg[22]/C                    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_16_reg_6297_reg[1]/D         |           43 |        131 |         36.388 |         12.905 |       23.483 |
+| Path2 | 13.721 | grp_operator_mul_281_127_true_0_0_fu_172/tmp_11_reg_6075_reg[22]/C                    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_16_reg_6297_reg[2]/D         |           43 |        131 |         36.304 |         12.821 |       23.483 |
+| Path3 | 13.741 | grp_operator_mul_281_127_true_0_0_fu_172/tmp_11_reg_6075_reg[22]/C                    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_16_reg_6297_reg[0]/D         |           43 |        131 |         36.284 |         12.801 |       23.483 |
+| Path4 | 15.328 | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout[-1111111103]/C | grp_operator_mul_281_127_true_0_0_fu_172/add_ln1236_45_reg_6197_reg[29]/D |           38 |        180 |         34.650 |         11.822 |       22.828 |
+| Path5 | 15.349 | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout[-1111111103]/C | grp_operator_mul_281_127_true_0_0_fu_172/add_ln1236_45_reg_6197_reg[31]/D |           38 |        180 |         34.629 |         11.801 |       22.828 |
++-------+--------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_11_reg_6075_reg[22]                                      | FLOP_LATCH.flop.FDRE |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U37/dout__204_i_2__8                    | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__204                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250_i_4__8                    | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250_i_8__8                    | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259_i_3__8                    | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259_i_7__8                    | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259                           | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U22/dout_carry__1_i_5                                                            | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__1_i_1__32               | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__1                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__2                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222[31]_i_16     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222[31]_i_20     | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222_reg[31]_i_10 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222[31]_i_2      | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222[31]_i_6      | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_81_reg_6313_reg[11]_i_50 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313[11]_i_38     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313[11]_i_41     | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313_reg[11]_i_24 | CARRY.others.CARRY4  |
+    | add_ln1236_81_reg_6313[7]_i_22                                                                        | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313[7]_i_15      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[7]_i_13  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[11]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[15]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_11     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_3      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_7      | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[11]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[15]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[19]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[23]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297[2]_i_68             | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297[2]_i_72             | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297_reg[2]_i_46         | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297_reg[2]_i_26         | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297[2]_i_19             | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297[2]_i_23             | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_5          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_2          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_1          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_16_reg_6297_reg[1]                                       | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_11_reg_6075_reg[22]                                      | FLOP_LATCH.flop.FDRE |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U37/dout__204_i_2__8                    | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__204                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250_i_4__8                    | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250_i_8__8                    | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259_i_3__8                    | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259_i_7__8                    | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259                           | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U22/dout_carry__1_i_5                                                            | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__1_i_1__32               | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__1                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__2                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222[31]_i_16     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222[31]_i_20     | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222_reg[31]_i_10 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222[31]_i_2      | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222[31]_i_6      | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_81_reg_6313_reg[11]_i_50 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313[11]_i_38     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313[11]_i_41     | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313_reg[11]_i_24 | CARRY.others.CARRY4  |
+    | add_ln1236_81_reg_6313[7]_i_22                                                                        | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313[7]_i_15      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[7]_i_13  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[11]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[15]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_11     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_3      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_7      | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[11]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[15]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[19]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[23]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297[2]_i_68             | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297[2]_i_72             | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297_reg[2]_i_46         | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297_reg[2]_i_26         | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297[2]_i_19             | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297[2]_i_23             | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_5          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_2          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_1          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_16_reg_6297_reg[2]                                       | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_11_reg_6075_reg[22]                                      | FLOP_LATCH.flop.FDRE |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U37/dout__204_i_2__8                    | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__204                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250_i_4__8                    | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250_i_8__8                    | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__250                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259_i_3__8                    | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259_i_7__8                    | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout__259                           | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U22/dout_carry__1_i_5                                                            | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__1_i_1__32               | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__1                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/dout_carry__2                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222[31]_i_16     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222[31]_i_20     | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U18/add_ln1236_60_reg_6222_reg[31]_i_10 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222[31]_i_2      | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222[31]_i_6      | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_60_reg_6222_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U21/add_ln1236_81_reg_6313_reg[11]_i_50 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313[11]_i_38     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313[11]_i_41     | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U22/add_ln1236_81_reg_6313_reg[11]_i_24 | CARRY.others.CARRY4  |
+    | add_ln1236_81_reg_6313[7]_i_22                                                                        | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313[7]_i_15      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[7]_i_13  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[11]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U20/add_ln1236_81_reg_6313_reg[15]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_11     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_3      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313[11]_i_7      | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[11]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[15]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[19]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U28/add_ln1236_81_reg_6313_reg[23]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297[2]_i_68             | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297[2]_i_72             | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297_reg[2]_i_46         | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U29/tmp_16_reg_6297_reg[2]_i_26         | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297[2]_i_19             | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297[2]_i_23             | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_5          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_2          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U24/tmp_16_reg_6297_reg[2]_i_1          | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/tmp_16_reg_6297_reg[0]                                       | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout[-1111111103]                   | FLOP_LATCH.flop.FDRE |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout__206_i_2__14                   | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout__206_i_6__14                   | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__206                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__207                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__253_i_4__14                   | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__253_i_8__14                   | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__253                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__262_i_1__14                   | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__262_i_5__14                   | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__262                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__263                           | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__4_i_6                                                            | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__5_i_6                                                            | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__5_i_7                                                            | LUT.others.LUT2      |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__5_i_5                                                            | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__6_i_5                                                            | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout_carry__6_i_1__46               | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout_carry__6                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout_carry__7                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192[23]_i_18     | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192[23]_i_22     | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192_reg[23]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192_reg[27]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192[23]_i_12     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192[23]_i_4      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192_reg[23]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192_reg[27]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/tmp_7_reg_6187_reg[2]_i_1           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197[3]_i_3       | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[3]_i_1   | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[7]_i_1   | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[11]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[15]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[19]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[23]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[27]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/add_ln1236_45_reg_6197_reg[29]                               | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                           | Primitive Type       |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout[-1111111103]                   | FLOP_LATCH.flop.FDRE |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout__206_i_2__14                   | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U36/dout__206_i_6__14                   | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__206                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__207                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__253_i_4__14                   | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__253_i_8__14                   | LUT.others.LUT4      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__253                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__262_i_1__14                   | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__262_i_5__14                   | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__262                           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout__263                           | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__4_i_6                                                            | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__5_i_6                                                            | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__5_i_7                                                            | LUT.others.LUT2      |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__5_i_5                                                            | CARRY.others.CARRY4  |
+    | mul_32ns_32ns_64_1_1_U10/dout_carry__6_i_5                                                            | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout_carry__6_i_1__46               | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout_carry__6                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/dout_carry__7                       | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192[23]_i_18     | LUT.others.LUT6      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192[23]_i_22     | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192_reg[23]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U10/add_ln1236_41_reg_6192_reg[27]_i_13 | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192[23]_i_12     | LUT.others.LUT3      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192[23]_i_4      | LUT.others.LUT5      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192_reg[23]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192_reg[27]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/add_ln1236_41_reg_6192_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U13/tmp_7_reg_6187_reg[2]_i_1           | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197[3]_i_3       | LUT.others.LUT2      |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[3]_i_1   | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[7]_i_1   | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[11]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[15]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[19]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[23]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[27]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/mul_32ns_32ns_64_1_1_U12/add_ln1236_45_reg_6197_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | grp_operator_mul_281_127_true_0_0_fu_172/add_ln1236_45_reg_6197_reg[31]                               | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+-----------------------------------------------------------------------+
+| Report Type              | Report Location                                                       |
++--------------------------+-----------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/mul_fixed_top_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/mul_fixed_top_failfast_routed.rpt                 |
+| status                   | impl/verilog/report/mul_fixed_top_status_routed.rpt                   |
+| timing                   | impl/verilog/report/mul_fixed_top_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/mul_fixed_top_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/mul_fixed_top_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/mul_fixed_top_utilization_hierarchical_routed.rpt |
++--------------------------+-----------------------------------------------------------------------+
+
+

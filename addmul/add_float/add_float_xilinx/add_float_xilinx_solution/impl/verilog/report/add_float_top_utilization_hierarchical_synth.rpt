@@ -1,0 +1,41 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Mar 28 15:12:31 2023
+| Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 8 -file ./report/add_float_top_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                            Instance                            |                                Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                                   |                                                                (top) |       1090 |       1090 |       0 |    0 | 298 |      0 |      0 |          0 |
+|   bd_0_i                                                       |                                                                 bd_0 |       1090 |       1090 |       0 |    0 | 298 |      0 |      0 |          0 |
+|     hls_inst                                                   |                                                      bd_0_hls_inst_0 |       1090 |       1090 |       0 |    0 | 298 |      0 |      0 |          0 |
+|       (hls_inst)                                               |                                                      bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       inst                                                     |                                        bd_0_hls_inst_0_add_float_top |       1090 |       1090 |       0 |    0 | 298 |      0 |      0 |          0 |
+|         (inst)                                                 |                                        bd_0_hls_inst_0_add_float_top |        137 |        137 |       0 |    0 |  83 |      0 |      0 |          0 |
+|         grp_plus_minus_25_2_8_0_25_2_8_0_s_fu_49               |         bd_0_hls_inst_0_add_float_top_plus_minus_25_2_8_0_25_2_8_0_s |        953 |        953 |       0 |    0 | 215 |      0 |      0 |          0 |
+|           (grp_plus_minus_25_2_8_0_25_2_8_0_s_fu_49)           |         bd_0_hls_inst_0_add_float_top_plus_minus_25_2_8_0_25_2_8_0_s |        414 |        414 |       0 |    0 |  87 |      0 |      0 |          0 |
+|           grp_adjust_9_s_fu_252                                |                             bd_0_hls_inst_0_add_float_top_adjust_9_s |        539 |        539 |       0 |    0 | 128 |      0 |      0 |          0 |
+|             (grp_adjust_9_s_fu_252)                            |                             bd_0_hls_inst_0_add_float_top_adjust_9_s |        195 |        195 |       0 |    0 |  91 |      0 |      0 |          0 |
+|             grp_adjust_9_Pipeline_VITIS_LOOP_2139_1_fu_186     |    bd_0_hls_inst_0_add_float_top_adjust_9_Pipeline_VITIS_LOOP_2139_1 |        228 |        228 |       0 |    0 |  34 |      0 |      0 |          0 |
+|               (grp_adjust_9_Pipeline_VITIS_LOOP_2139_1_fu_186) |    bd_0_hls_inst_0_add_float_top_adjust_9_Pipeline_VITIS_LOOP_2139_1 |        189 |        189 |       0 |    0 |  32 |      0 |      0 |          0 |
+|               flow_control_loop_pipe_sequential_init_U         | bd_0_hls_inst_0_add_float_top_flow_control_loop_pipe_sequential_init |         39 |         39 |       0 |    0 |   2 |      0 |      0 |          0 |
+|             tab_U                                              |             bd_0_hls_inst_0_add_float_top_adjust_9_s_tab_ROM_AUTO_1R |        116 |        116 |       0 |    0 |   3 |      0 |      0 |          0 |
++----------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

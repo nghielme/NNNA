@@ -1,0 +1,370 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 41939
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 537665
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2449.625 ; gain = 363.766 ; free physical = 39837 ; free virtual = 54689
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3453.406; parent = 2453.598; children = 999.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'add_fixed_top' [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a06f/hdl/verilog/add_fixed_top.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'add_fixed_top' (0#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a06f/hdl/verilog/add_fixed_top.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-7129] Port a[319] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[318] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[317] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[316] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[315] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[314] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[313] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[312] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[311] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[310] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[309] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[308] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[307] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[306] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[305] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[304] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[303] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[302] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[301] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[300] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[299] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[298] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[297] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[296] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[295] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[294] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[293] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[292] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[291] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[290] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[289] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[288] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[287] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[286] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[285] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[284] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[283] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[282] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[281] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[319] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[318] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[317] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[316] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[315] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[314] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[313] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[312] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[311] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[310] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[309] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[308] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[307] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[306] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[305] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[304] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[303] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[302] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[301] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[300] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[299] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[298] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[297] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[296] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[295] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[294] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[293] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[292] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[291] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[290] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[289] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[288] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[287] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[286] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[285] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[284] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[283] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[282] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[281] in module add_fixed_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2530.562 ; gain = 444.703 ; free physical = 39880 ; free virtual = 54734
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3530.375; parent = 2530.566; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2548.375 ; gain = 462.516 ; free physical = 39869 ; free virtual = 54723
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3548.188; parent = 2548.379; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2548.375 ; gain = 462.516 ; free physical = 39868 ; free virtual = 54722
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3548.188; parent = 2548.379; children = 999.809
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2548.375 ; gain = 0.000 ; free physical = 39862 ; free virtual = 54716
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/add_fixed_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/add_fixed_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2695.156 ; gain = 0.000 ; free physical = 39728 ; free virtual = 54592
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2695.156 ; gain = 0.000 ; free physical = 39729 ; free virtual = 54594
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 39307 ; free virtual = 54185
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 39277 ; free virtual = 54155
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 39253 ; free virtual = 54131
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 39038 ; free virtual = 53918
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 7     
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 7     
+	   3 Input   25 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               25 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port a[319] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[318] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[317] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[316] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[315] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[314] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[313] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[312] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[311] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[310] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[309] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[308] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[307] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[306] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[305] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[304] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[303] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[302] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[301] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[300] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[299] in module add_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[298] in module add_fixed_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 38790 ; free virtual = 53674
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1809.417; parent = 1623.651; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 38467 ; free virtual = 53352
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1886.035; parent = 1707.136; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 38464 ; free virtual = 53349
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1886.817; parent = 1708.027; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 38461 ; free virtual = 53347
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37858 ; free virtual = 52744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37853 ; free virtual = 52738
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37835 ; free virtual = 52721
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37821 ; free virtual = 52705
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37802 ; free virtual = 52687
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37834 ; free virtual = 52719
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   142|
+|2     |LUT2   |   538|
+|3     |LUT3   |     1|
+|4     |LUT4   |     1|
+|5     |FDRE   |   309|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37779 ; free virtual = 52663
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1887.436; parent = 1709.095; children = 185.766
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3662.953; parent = 2663.145; children = 999.809
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2695.156 ; gain = 462.516 ; free physical = 37888 ; free virtual = 52772
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2695.156 ; gain = 609.297 ; free physical = 37851 ; free virtual = 52736
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2695.156 ; gain = 0.000 ; free physical = 37920 ; free virtual = 52805
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2695.156 ; gain = 0.000 ; free physical = 37836 ; free virtual = 52721
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 614a455b
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2695.156 ; gain = 938.891 ; free physical = 38047 ; free virtual = 52933
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 8a8440def1294506
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/add_fixed/add_fixed_xilinx/add_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 15:10:53 2023...

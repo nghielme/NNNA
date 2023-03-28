@@ -1,0 +1,516 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Mar 28 15:13:31 2023
+| Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_timing -max_paths 10 -file ./report/mul_float_top_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[0]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[0]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[0]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[0]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[0]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[0]
+                                                                      r  res[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[10]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[10]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[10]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[10]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[10]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[10]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[10]
+                                                                      r  res[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[11]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[11]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[11]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[11]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[11]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[11]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[11]
+                                                                      r  res[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[12]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[12]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[12]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[12]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[12]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[12]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[12]
+                                                                      r  res[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[13]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[13]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[13]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[13]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[13]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[13]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[13]
+                                                                      r  res[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[14]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[14]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[14]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[14]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[14]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[14]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[14]
+                                                                      r  res[14] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[15]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[15]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[15]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[15]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[15]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[15]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[15]
+                                                                      r  res[15] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[16]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[16]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[16]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[16]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[16]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[16]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[16]
+                                                                      r  res[16] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[17]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[17]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[17]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[17]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[17]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[17]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[17]
+                                                                      r  res[17] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+Slack (MET) :             37.744ns  (required time - arrival time)
+  Source:                 b[24]
+                            (input port)
+  Destination:            res[18]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            50.000ns  (MaxDelay Path 50.000ns)
+  Data Path Delay:        12.256ns  (logic 6.669ns (54.415%)  route 5.587ns (45.585%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 50.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+                         DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[20])
+                                                      1.518     6.582 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[20]
+                         net (fo=12, unplaced)        0.800     7.382    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[12]
+                         LUT6 (Prop_lut6_I5_O)        0.124     7.506 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, unplaced)         0.449     7.955    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.079 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, unplaced)         0.449     8.528    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     8.652 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, unplaced)         0.449     9.101    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124     9.225 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, unplaced)         0.460     9.685    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.124     9.809 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, unplaced)        0.530    10.339    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    10.463 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[18]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.449    10.912    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[18]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    11.036 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[18]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000    11.036    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[18]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.283 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[18]_INST_0/O
+                         net (fo=0)                   0.973    12.256    res[18]
+                                                                      r  res[18] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   50.000    50.000    
+                         clock pessimism              0.000    50.000    
+                         output delay                -0.000    50.000    
+  -------------------------------------------------------------------
+                         required time                         50.000    
+                         arrival time                         -12.256    
+  -------------------------------------------------------------------
+                         slack                                 37.744    
+
+
+
+

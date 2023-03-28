@@ -1,0 +1,6 @@
+   Build using "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling add_fixed_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_add_fixed_top.cpp
+   Compiling add_fixed.cpp_pre.cpp.tb.cpp
+   Compiling apatb_add_fixed_top_ir.ll
+   Generating cosim.tv.exe

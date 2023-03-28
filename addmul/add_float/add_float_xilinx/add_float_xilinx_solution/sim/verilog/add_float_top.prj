@@ -1,0 +1,11 @@
+sv work "glbl.v"
+sv xil_defaultlib "add_float_top_flow_control_loop_pipe_sequential_init.v"
+sv xil_defaultlib "add_float_top_plus_minus_25_2_8_0_25_2_8_0_s.v"
+sv xil_defaultlib "add_float_top_adjust_9_Pipeline_VITIS_LOOP_2139_1.v"
+sv xil_defaultlib "add_float_top_set.v"
+sv xil_defaultlib "add_float_top.v"
+sv xil_defaultlib "add_float_top_adjust_9_s_tab_ROM_AUTO_1R.v"
+sv xil_defaultlib "add_float_top_adjust_9_s.v"
+sv xil_defaultlib "add_float_top.autotb.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

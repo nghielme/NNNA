@@ -1,0 +1,94 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling mul_fixed.cpp_pre.cpp.tb.cpp
+   Compiling apatb_mul_fixed_top.cpp
+   Compiling mul_fixed_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_mul_fixed_top_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+a = 2.100000000000000088817841970012523233890533447265625
+b = 2.20000000000000017763568394002504646778106689453125
+a * b = 4.62000000000000056843418860808016447411751848273610823457130565572459346412870218046009540557861328125
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_mul_fixed_top_top glbl -Oenable_linking_all_libraries -prj mul_fixed_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s mul_fixed_top 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top_operator_281_127_true_0_0_Pipeline_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top_operator_281_127_true_0_0_Pipeline_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top_ref_tmp1_i_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top_ref_tmp1_i_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top_mul_25s_25s_50_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top_mul_25s_25s_50_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top_mul_32ns_32ns_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top_mul_32ns_32ns_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top_mul_32ns_25s_57_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top_mul_32ns_25s_57_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top_operator_mul_281_127_true_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top_operator_mul_281_127_true_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fixed_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_mul_fixed_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.mul_fixed_top_ref_tmp1_i_RAM_AUT...
+Compiling module xil_defaultlib.mul_fixed_top_flow_control_loop_...
+Compiling module xil_defaultlib.mul_fixed_top_operator_281_127_t...
+Compiling module xil_defaultlib.mul_fixed_top_mul_32ns_32ns_64_1...
+Compiling module xil_defaultlib.mul_fixed_top_mul_32ns_25s_57_1_...
+Compiling module xil_defaultlib.mul_fixed_top_mul_25s_25s_50_1_1...
+Compiling module xil_defaultlib.mul_fixed_top_operator_mul_281_1...
+Compiling module xil_defaultlib.mul_fixed_top
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_mul_fixed_top_top
+Compiling module work.glbl
+Built simulation snapshot mul_fixed_top
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/mul_fixed_top/xsim_script.tcl
+# xsim {mul_fixed_top} -autoloadwcfg -tclbatch {mul_fixed_top.tcl}
+Time resolution is 1 ps
+source mul_fixed_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "225000"
+// RTL Simulation : 1 / 1 [100.00%] @ "2025000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2325 ns : File "/home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/sim/verilog/mul_fixed_top.autotb.v" Line 341
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Mar 28 15:10:52 2023...
+a = 2.100000000000000088817841970012523233890533447265625
+b = 2.20000000000000017763568394002504646778106689453125
+a * b = 4.62000000000000056843418860808016447411751848273610823457130565572459346412870218046009540557861328125
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

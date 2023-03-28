@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/nghielme/PycharmProjects/thesis-project/addmul/mul_fixed/mul_fixed_xilinx/mul_fixed_xilinx_solution/./sim/autowrap/testbench/mul_fixed.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,160 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2022.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>50.000</TargetClockPeriod>
+    <AchievedClockPeriod>NA</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>NA</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>NA</CP_SYNTH>
+    <CP_TARGET>50.000</CP_TARGET>
+    <SLACK_FINAL>NA</SLACK_FINAL>
+    <SLACK_ROUTE>NA</SLACK_ROUTE>
+    <SLACK_SYNTH>NA</SLACK_SYNTH>
+    <TIMING_MET>NA</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>35.625</WNS_FINAL>
+    <WNS_ROUTE>35.625</WNS_ROUTE>
+    <WNS_SYNTH>37.744</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>2</DSP>
+      <FF>0</FF>
+      <LATCH>0</LATCH>
+      <LUT>206</LUT>
+      <SLICE>59</SLICE>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <SLICE>13300</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="mul_float_top" DISPNAME="inst" RTLNAME="mul_float_top">
+      <SubModules count="1">mul_25s_25s_50_1_1_U1</SubModules>
+      <Resources DSP="2" LUT="206"/>
+      <LocalResources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_25s_25s_50_1_1_U1" BINDMODULE="mul_float_top_mul_25s_25s_50_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_25s_25s_50_1_1" DISPNAME="mul_25s_25s_50_1_1_U1" RTLNAME="mul_float_top_mul_25s_25s_50_1_1">
+      <Resources DSP="2" LUT="198"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_25s_25s_50_1_1_U1" SOURCE="../ac_types/include/ac_int.h:654" URAM="0" VARIABLE="mul_ln654"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="14.375" DATAPATH_LOGIC_DELAY="6.636" DATAPATH_NET_DELAY="7.739" ENDPOINT_PIN="res[20]" LOGIC_LEVELS="10" MAX_FANOUT="48" SLACK="35.625" STARTPOINT_PIN="b[24]">
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[20]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[20]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[20]_INST_0" PRIMITIVE_TYPE="MUXFX.others.MUXF7" LINE_NUMBER="143"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="14.203" DATAPATH_LOGIC_DELAY="6.639" DATAPATH_NET_DELAY="7.564" ENDPOINT_PIN="res[11]" LOGIC_LEVELS="10" MAX_FANOUT="48" SLACK="35.797" STARTPOINT_PIN="b[24]">
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[11]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[11]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[11]_INST_0" PRIMITIVE_TYPE="MUXFX.others.MUXF7" LINE_NUMBER="143"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="13.948" DATAPATH_LOGIC_DELAY="6.636" DATAPATH_NET_DELAY="7.312" ENDPOINT_PIN="res[17]" LOGIC_LEVELS="10" MAX_FANOUT="48" SLACK="36.052" STARTPOINT_PIN="b[24]">
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[17]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[17]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[17]_INST_0" PRIMITIVE_TYPE="MUXFX.others.MUXF7" LINE_NUMBER="143"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="13.749" DATAPATH_LOGIC_DELAY="6.667" DATAPATH_NET_DELAY="7.082" ENDPOINT_PIN="res[12]" LOGIC_LEVELS="10" MAX_FANOUT="48" SLACK="36.251" STARTPOINT_PIN="b[24]">
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[12]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[12]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[12]_INST_0" PRIMITIVE_TYPE="MUXFX.others.MUXF7" LINE_NUMBER="143"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="13.632" DATAPATH_LOGIC_DELAY="6.515" DATAPATH_NET_DELAY="7.117" ENDPOINT_PIN="res[8]" LOGIC_LEVELS="9" MAX_FANOUT="48" SLACK="36.368" STARTPOINT_PIN="b[24]">
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/dout__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="19"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[8]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="143"/>
+      <CELL NAME="mul_25s_25s_50_1_1_U1/res[8]_INST_0" PRIMITIVE_TYPE="MUXFX.others.MUXF7" LINE_NUMBER="143"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/mul_float_top_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/mul_float_top_failfast_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/mul_float_top_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/mul_float_top_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/mul_float_top_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/mul_float_top_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/mul_float_top_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Tue Mar 28 15:14:40 CEST 2023"/>
+    <item NAME="Version" VALUE="2022.2 (Build 3670227 on Oct 13 2022)"/>
+    <item NAME="Project" VALUE="mul_float_xilinx"/>
+    <item NAME="Solution" VALUE="mul_float_xilinx_solution (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="50 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="50 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="none"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

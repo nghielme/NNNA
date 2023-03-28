@@ -1,0 +1,522 @@
+
+
+================================================================
+== Synthesis Summary Report of 'mul_fixed_top'
+================================================================
++ General Information: 
+    * Date:           Tue Mar 28 15:10:37 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        mul_fixed_xilinx
+    * Solution:       mul_fixed_xilinx_solution (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+------------+-----------+-------------+-----+
+    |                  Modules                 | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |            |           |             |     |
+    |                  & Loops                 | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |     DSP    |     FF    |     LUT     | URAM|
+    +------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+------------+-----------+-------------+-----+
+    |+ mul_fixed_top                           |     -|   0.78|       37|  1.850e+03|         -|       38|     -|        no|     -|  225 (102%)|  4463 (4%)|  14517 (27%)|    -|
+    | + operator_mul_281_127_true_0_0          |     -|   0.78|       30|  1.500e+03|         -|       30|     -|        no|     -|  225 (102%)|  3598 (3%)|  14340 (26%)|    -|
+    |  + operator_281_127_true_0_0_Pipeline_1  |     -|  33.13|       19|    950.000|         -|       19|     -|        no|     -|           -|    7 (~0%)|     49 (~0%)|    -|
+    |   o Loop 1                               |     -|  36.50|       17|    850.000|         1|        1|    17|       yes|     -|           -|          -|            -|    -|
+    +------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+------------+-----------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| a         | ap_none | 320      |
+| b         | ap_none | 320      |
+| res       | ap_vld  | 320      |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------------------------------+
+| Argument | Direction | Datatype                                          |
++----------+-----------+---------------------------------------------------+
+| a        | in        | ac_fixed<281, 127, true, AC_TRN, AC_WRAP> const & |
+| b        | in        | ac_fixed<281, 127, true, AC_TRN, AC_WRAP> const & |
+| res      | out       | ac_fixed<281, 127, true, AC_TRN, AC_WRAP>&        |
++----------+-----------+---------------------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| a        | a            | port    |
+| b        | b            | port    |
+| res      | res          | port    |
+| res      | res_ap_vld   | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------+-----+--------+----------------+-----+--------+---------+
+| Name                                     | DSP | Pragma | Variable       | Op  | Impl   | Latency |
++------------------------------------------+-----+--------+----------------+-----+--------+---------+
+| + mul_fixed_top                          | 225 |        |                |     |        |         |
+|  + operator_mul_281_127_true_0_0         | 225 |        |                |     |        |         |
+|    mul_32ns_32ns_64_1_1_U2               | 3   |        | mul_ln1186     | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U3               | 3   |        | mul_ln1186_1   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U4               | 3   |        | mul_ln1186_2   | mul | auto   | 0       |
+|    add_ln1202_fu_436_p2                  | -   |        | add_ln1202     | add | fabric | 0       |
+|    l1_1_fu_446_p2                        | -   |        | l1_1           | add | fabric | 0       |
+|    mul_32ns_32ns_64_1_1_U5               | 3   |        | mul_ln1186_3   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U6               | 3   |        | mul_ln1186_4   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U7               | 3   |        | mul_ln1186_5   | mul | auto   | 0       |
+|    add_ln1202_2_fu_634_p2                | -   |        | add_ln1202_2   | add | fabric | 0       |
+|    add_ln1202_3_fu_644_p2                | -   |        | add_ln1202_3   | add | fabric | 0       |
+|    l1_3_fu_654_p2                        | -   |        | l1_3           | add | fabric | 0       |
+|    add_ln1236_6_fu_696_p2                | -   |        | add_ln1236_6   | add | fabric | 0       |
+|    add_ln1236_7_fu_706_p2                | -   |        | add_ln1236_7   | add | fabric | 0       |
+|    add_ln1236_8_fu_716_p2                | -   |        | add_ln1236_8   | add | fabric | 0       |
+|    l2_1_fu_726_p2                        | -   |        | l2_1           | add | fabric | 0       |
+|    add_ln1236_11_fu_738_p2               | -   |        | add_ln1236_11  | add | fabric | 0       |
+|    mul_32ns_32ns_64_1_1_U8               | 3   |        | mul_ln1186_6   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U9               | 3   |        | mul_ln1186_7   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U10              | 3   |        | mul_ln1186_8   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U11              | 3   |        | mul_ln1186_9   | mul | auto   | 0       |
+|    add_ln1202_5_fu_988_p2                | -   |        | add_ln1202_5   | add | fabric | 0       |
+|    add_ln1202_6_fu_998_p2                | -   |        | add_ln1202_6   | add | fabric | 0       |
+|    add_ln1202_7_fu_1008_p2               | -   |        | add_ln1202_7   | add | fabric | 0       |
+|    l1_5_fu_1018_p2                       | -   |        | l1_5           | add | fabric | 0       |
+|    add_ln1236_17_fu_1055_p2              | -   |        | add_ln1236_17  | add | fabric | 0       |
+|    add_ln1236_19_fu_1071_p2              | -   |        | add_ln1236_19  | add | fabric | 0       |
+|    add_ln1236_20_fu_1081_p2              | -   |        | add_ln1236_20  | add | fabric | 0       |
+|    add_ln1236_26_fu_1120_p2              | -   |        | add_ln1236_26  | add | fabric | 0       |
+|    mul_32ns_32ns_64_1_1_U12              | 3   |        | mul_ln1186_10  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U13              | 3   |        | mul_ln1186_11  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U14              | 3   |        | mul_ln1186_12  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U15              | 3   |        | mul_ln1186_13  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U16              | 3   |        | mul_ln1186_14  | mul | auto   | 0       |
+|    add_ln1202_9_fu_1274_p2               | -   |        | add_ln1202_9   | add | fabric | 0       |
+|    add_ln1202_10_fu_1284_p2              | -   |        | add_ln1202_10  | add | fabric | 0       |
+|    add_ln1202_11_fu_1294_p2              | -   |        | add_ln1202_11  | add | fabric | 0       |
+|    add_ln1202_12_fu_1304_p2              | -   |        | add_ln1202_12  | add | fabric | 0       |
+|    l1_7_fu_1314_p2                       | -   |        | l1_7           | add | fabric | 0       |
+|    add_ln1236_31_fu_1404_p2              | -   |        | add_ln1236_31  | add | fabric | 0       |
+|    add_ln1236_32_fu_1414_p2              | -   |        | add_ln1236_32  | add | fabric | 0       |
+|    add_ln1236_33_fu_1424_p2              | -   |        | add_ln1236_33  | add | fabric | 0       |
+|    add_ln1236_34_fu_1434_p2              | -   |        | add_ln1236_34  | add | fabric | 0       |
+|    add_ln1236_35_fu_1444_p2              | -   |        | add_ln1236_35  | add | fabric | 0       |
+|    l2_3_fu_1454_p2                       | -   |        | l2_3           | add | fabric | 0       |
+|    add_ln1236_37_fu_1344_p2              | -   |        | add_ln1236_37  | add | fabric | 0       |
+|    add_ln1236_42_fu_1460_p2              | -   |        | add_ln1236_42  | add | fabric | 0       |
+|    add_ln1236_45_fu_1374_p2              | -   |        | add_ln1236_45  | add | fabric | 0       |
+|    mul_32ns_32ns_64_1_1_U17              | 3   |        | mul_ln1186_15  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U18              | 3   |        | mul_ln1186_16  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U19              | 3   |        | mul_ln1186_17  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U20              | 3   |        | mul_ln1186_18  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U21              | 3   |        | mul_ln1186_19  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U22              | 3   |        | mul_ln1186_20  | mul | auto   | 0       |
+|    add_ln1202_14_fu_1657_p2              | -   |        | add_ln1202_14  | add | fabric | 0       |
+|    add_ln1202_15_fu_1667_p2              | -   |        | add_ln1202_15  | add | fabric | 0       |
+|    add_ln1202_16_fu_1677_p2              | -   |        | add_ln1202_16  | add | fabric | 0       |
+|    add_ln1202_17_fu_1687_p2              | -   |        | add_ln1202_17  | add | fabric | 0       |
+|    add_ln1202_18_fu_1697_p2              | -   |        | add_ln1202_18  | add | fabric | 0       |
+|    l1_9_fu_1707_p2                       | -   |        | l1_9           | add | fabric | 0       |
+|    add_ln1236_48_fu_1745_p2              | -   |        | add_ln1236_48  | add | fabric | 0       |
+|    add_ln1236_49_fu_1755_p2              | -   |        | add_ln1236_49  | add | fabric | 0       |
+|    add_ln1236_50_fu_1765_p2              | -   |        | add_ln1236_50  | add | fabric | 0       |
+|    add_ln1236_51_fu_1775_p2              | -   |        | add_ln1236_51  | add | fabric | 0       |
+|    add_ln1236_52_fu_1785_p2              | -   |        | add_ln1236_52  | add | fabric | 0       |
+|    add_ln1236_53_fu_1795_p2              | -   |        | add_ln1236_53  | add | fabric | 0       |
+|    l2_4_fu_1805_p2                       | -   |        | l2_4           | add | fabric | 0       |
+|    add_ln1236_55_fu_1811_p2              | -   |        | add_ln1236_55  | add | fabric | 0       |
+|    add_ln1236_58_fu_1829_p2              | -   |        | add_ln1236_58  | add | fabric | 0       |
+|    add_ln1236_61_fu_1847_p2              | -   |        | add_ln1236_61  | add | fabric | 0       |
+|    add_ln1236_62_fu_1853_p2              | -   |        | add_ln1236_62  | add | fabric | 0       |
+|    add_ln1236_65_fu_1871_p2              | -   |        | add_ln1236_65  | add | fabric | 0       |
+|    mul_32ns_32ns_64_1_1_U23              | 3   |        | mul_ln1186_21  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U24              | 3   |        | mul_ln1186_22  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U25              | 3   |        | mul_ln1186_23  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U26              | 3   |        | mul_ln1186_24  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U27              | 3   |        | mul_ln1186_25  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U28              | 3   |        | mul_ln1186_26  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U29              | 3   |        | mul_ln1186_27  | mul | auto   | 0       |
+|    add_ln1202_20_fu_2057_p2              | -   |        | add_ln1202_20  | add | fabric | 0       |
+|    add_ln1202_21_fu_2067_p2              | -   |        | add_ln1202_21  | add | fabric | 0       |
+|    add_ln1202_22_fu_2077_p2              | -   |        | add_ln1202_22  | add | fabric | 0       |
+|    add_ln1202_23_fu_2087_p2              | -   |        | add_ln1202_23  | add | fabric | 0       |
+|    add_ln1202_24_fu_2097_p2              | -   |        | add_ln1202_24  | add | fabric | 0       |
+|    add_ln1202_25_fu_2107_p2              | -   |        | add_ln1202_25  | add | fabric | 0       |
+|    l1_11_fu_2117_p2                      | -   |        | l1_11          | add | fabric | 0       |
+|    add_ln1236_68_fu_2206_p2              | -   |        | add_ln1236_68  | add | fabric | 0       |
+|    add_ln1236_69_fu_2216_p2              | -   |        | add_ln1236_69  | add | fabric | 0       |
+|    add_ln1236_70_fu_2226_p2              | -   |        | add_ln1236_70  | add | fabric | 0       |
+|    add_ln1236_71_fu_2236_p2              | -   |        | add_ln1236_71  | add | fabric | 0       |
+|    add_ln1236_72_fu_2246_p2              | -   |        | add_ln1236_72  | add | fabric | 0       |
+|    add_ln1236_73_fu_2256_p2              | -   |        | add_ln1236_73  | add | fabric | 0       |
+|    add_ln1236_74_fu_2266_p2              | -   |        | add_ln1236_74  | add | fabric | 0       |
+|    l2_5_fu_2276_p2                       | -   |        | l2_5           | add | fabric | 0       |
+|    add_ln1236_76_fu_2143_p2              | -   |        | add_ln1236_76  | add | fabric | 0       |
+|    add_ln1236_77_fu_2149_p2              | -   |        | add_ln1236_77  | add | fabric | 0       |
+|    add_ln1236_80_fu_2161_p2              | -   |        | add_ln1236_80  | add | fabric | 0       |
+|    add_ln1236_83_fu_2291_p2              | -   |        | add_ln1236_83  | add | fabric | 0       |
+|    add_ln1236_84_fu_2296_p2              | -   |        | add_ln1236_84  | add | fabric | 0       |
+|    mul_32ns_32ns_64_1_1_U30              | 3   |        | mul_ln1186_28  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U31              | 3   |        | mul_ln1186_29  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U32              | 3   |        | mul_ln1186_30  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U33              | 3   |        | mul_ln1186_31  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U34              | 3   |        | mul_ln1186_32  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U35              | 3   |        | mul_ln1186_33  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U36              | 3   |        | mul_ln1186_34  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U37              | 3   |        | mul_ln1186_35  | mul | auto   | 0       |
+|    add_ln1202_27_fu_2556_p2              | -   |        | add_ln1202_27  | add | fabric | 0       |
+|    add_ln1202_28_fu_2566_p2              | -   |        | add_ln1202_28  | add | fabric | 0       |
+|    add_ln1202_29_fu_2576_p2              | -   |        | add_ln1202_29  | add | fabric | 0       |
+|    add_ln1202_30_fu_2586_p2              | -   |        | add_ln1202_30  | add | fabric | 0       |
+|    add_ln1202_31_fu_2596_p2              | -   |        | add_ln1202_31  | add | fabric | 0       |
+|    add_ln1202_32_fu_2606_p2              | -   |        | add_ln1202_32  | add | fabric | 0       |
+|    add_ln1202_33_fu_2616_p2              | -   |        | add_ln1202_33  | add | fabric | 0       |
+|    l1_13_fu_2626_p2                      | -   |        | l1_13          | add | fabric | 0       |
+|    add_ln1236_91_fu_2660_p2              | -   |        | add_ln1236_91  | add | fabric | 0       |
+|    add_ln1236_92_fu_2670_p2              | -   |        | add_ln1236_92  | add | fabric | 0       |
+|    add_ln1236_93_fu_2680_p2              | -   |        | add_ln1236_93  | add | fabric | 0       |
+|    add_ln1236_95_fu_2696_p2              | -   |        | add_ln1236_95  | add | fabric | 0       |
+|    add_ln1236_96_fu_2706_p2              | -   |        | add_ln1236_96  | add | fabric | 0       |
+|    add_ln1236_97_fu_2716_p2              | -   |        | add_ln1236_97  | add | fabric | 0       |
+|    add_ln1236_98_fu_2726_p2              | -   |        | add_ln1236_98  | add | fabric | 0       |
+|    add_ln1236_100_fu_2742_p2             | -   |        | add_ln1236_100 | add | fabric | 0       |
+|    add_ln1236_101_fu_2748_p2             | -   |        | add_ln1236_101 | add | fabric | 0       |
+|    add_ln1236_108_fu_2790_p2             | -   |        | add_ln1236_108 | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U38               | 2   |        | mul_ln1190     | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U39              | 3   |        | mul_ln1186_36  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U40              | 3   |        | mul_ln1186_37  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U41              | 3   |        | mul_ln1186_38  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U42              | 3   |        | mul_ln1186_39  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U43              | 3   |        | mul_ln1186_40  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U44              | 3   |        | mul_ln1186_41  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U45              | 3   |        | mul_ln1186_42  | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U46               | 2   |        | mul_ln1194     | mul | auto   | 0       |
+|    add_ln1207_fu_3103_p2                 | -   |        | add_ln1207     | add | fabric | 0       |
+|    add_ln1207_1_fu_3113_p2               | -   |        | add_ln1207_1   | add | fabric | 0       |
+|    add_ln1207_2_fu_3123_p2               | -   |        | add_ln1207_2   | add | fabric | 0       |
+|    add_ln1207_3_fu_3133_p2               | -   |        | add_ln1207_3   | add | fabric | 0       |
+|    add_ln1207_4_fu_3143_p2               | -   |        | add_ln1207_4   | add | fabric | 0       |
+|    add_ln1207_5_fu_3153_p2               | -   |        | add_ln1207_5   | add | fabric | 0       |
+|    add_ln1207_6_fu_3163_p2               | -   |        | add_ln1207_6   | add | fabric | 0       |
+|    add_ln1207_7_fu_3173_p2               | -   |        | add_ln1207_7   | add | fabric | 0       |
+|    l1_15_fu_3183_p2                      | -   |        | l1_15          | add | fabric | 0       |
+|    add_ln1261_fu_3225_p2                 | -   |        | add_ln1261     | add | fabric | 0       |
+|    add_ln1261_1_fu_3235_p2               | -   |        | add_ln1261_1   | add | fabric | 0       |
+|    add_ln1261_2_fu_3245_p2               | -   |        | add_ln1261_2   | add | fabric | 0       |
+|    add_ln1261_3_fu_3255_p2               | -   |        | add_ln1261_3   | add | fabric | 0       |
+|    add_ln1261_4_fu_3265_p2               | -   |        | add_ln1261_4   | add | fabric | 0       |
+|    add_ln1261_6_fu_3281_p2               | -   |        | add_ln1261_6   | add | fabric | 0       |
+|    add_ln1261_7_fu_3291_p2               | -   |        | add_ln1261_7   | add | fabric | 0       |
+|    l2_7_fu_3311_p2                       | -   |        | l2_7           | add | fabric | 0       |
+|    add_ln1261_10_fu_3317_p2              | -   |        | add_ln1261_10  | add | fabric | 0       |
+|    add_ln1261_19_fu_3371_p2              | -   |        | add_ln1261_19  | add | fabric | 0       |
+|    add_ln1261_23_fu_3399_p2              | -   |        | add_ln1261_23  | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U47               | 2   |        | mul_ln1190_1   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U48              | 3   |        | mul_ln1186_43  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U49              | 3   |        | mul_ln1186_44  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U50              | 3   |        | mul_ln1186_45  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U51              | 3   |        | mul_ln1186_46  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U52              | 3   |        | mul_ln1186_47  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U53              | 3   |        | mul_ln1186_48  | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U54               | 2   |        | mul_ln1194_1   | mul | auto   | 0       |
+|    add_ln1207_9_fu_3599_p2               | -   |        | add_ln1207_9   | add | fabric | 0       |
+|    add_ln1207_10_fu_3609_p2              | -   |        | add_ln1207_10  | add | fabric | 0       |
+|    add_ln1207_11_fu_3619_p2              | -   |        | add_ln1207_11  | add | fabric | 0       |
+|    add_ln1207_12_fu_3698_p2              | -   |        | add_ln1207_12  | add | fabric | 0       |
+|    add_ln1207_13_fu_3708_p2              | -   |        | add_ln1207_13  | add | fabric | 0       |
+|    add_ln1207_14_fu_3718_p2              | -   |        | add_ln1207_14  | add | fabric | 0       |
+|    add_ln1207_15_fu_3728_p2              | -   |        | add_ln1207_15  | add | fabric | 0       |
+|    l1_17_fu_3738_p2                      | -   |        | l1_17          | add | fabric | 0       |
+|    add_ln1261_29_fu_3768_p2              | -   |        | add_ln1261_29  | add | fabric | 0       |
+|    add_ln1261_30_fu_3778_p2              | -   |        | add_ln1261_30  | add | fabric | 0       |
+|    add_ln1261_31_fu_3788_p2              | -   |        | add_ln1261_31  | add | fabric | 0       |
+|    add_ln1261_32_fu_3798_p2              | -   |        | add_ln1261_32  | add | fabric | 0       |
+|    add_ln1261_34_fu_3814_p2              | -   |        | add_ln1261_34  | add | fabric | 0       |
+|    add_ln1261_35_fu_3824_p2              | -   |        | add_ln1261_35  | add | fabric | 0       |
+|    l2_8_fu_3844_p2                       | -   |        | l2_8           | add | fabric | 0       |
+|    add_ln1261_38_fu_3635_p2              | -   |        | add_ln1261_38  | add | fabric | 0       |
+|    add_ln1261_39_fu_3641_p2              | -   |        | add_ln1261_39  | add | fabric | 0       |
+|    add_ln1261_46_fu_3880_p2              | -   |        | add_ln1261_46  | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U55               | 2   |        | mul_ln1190_2   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U56              | 3   |        | mul_ln1186_49  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U57              | 3   |        | mul_ln1186_50  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U58              | 3   |        | mul_ln1186_51  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U59              | 3   |        | mul_ln1186_52  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U60              | 3   |        | mul_ln1186_53  | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U61               | 2   |        | mul_ln1194_2   | mul | auto   | 0       |
+|    add_ln1207_17_fu_4100_p2              | -   |        | add_ln1207_17  | add | fabric | 0       |
+|    add_ln1207_18_fu_4110_p2              | -   |        | add_ln1207_18  | add | fabric | 0       |
+|    add_ln1207_19_fu_4120_p2              | -   |        | add_ln1207_19  | add | fabric | 0       |
+|    add_ln1207_20_fu_4130_p2              | -   |        | add_ln1207_20  | add | fabric | 0       |
+|    add_ln1207_21_fu_4140_p2              | -   |        | add_ln1207_21  | add | fabric | 0       |
+|    add_ln1207_22_fu_4150_p2              | -   |        | add_ln1207_22  | add | fabric | 0       |
+|    l1_19_fu_4160_p2                      | -   |        | l1_19          | add | fabric | 0       |
+|    add_ln1261_55_fu_4289_p2              | -   |        | add_ln1261_55  | add | fabric | 0       |
+|    add_ln1261_56_fu_4190_p2              | -   |        | add_ln1261_56  | add | fabric | 0       |
+|    add_ln1261_57_fu_4302_p2              | -   |        | add_ln1261_57  | add | fabric | 0       |
+|    add_ln1261_59_fu_4318_p2              | -   |        | add_ln1261_59  | add | fabric | 0       |
+|    add_ln1261_60_fu_4328_p2              | -   |        | add_ln1261_60  | add | fabric | 0       |
+|    l2_10_fu_4348_p2                      | -   |        | l2_10          | add | fabric | 0       |
+|    add_ln1261_63_fu_4196_p2              | -   |        | add_ln1261_63  | add | fabric | 0       |
+|    add_ln1261_64_fu_4202_p2              | -   |        | add_ln1261_64  | add | fabric | 0       |
+|    add_ln1261_67_fu_4220_p2              | -   |        | add_ln1261_67  | add | fabric | 0       |
+|    add_ln1261_70_fu_4354_p2              | -   |        | add_ln1261_70  | add | fabric | 0       |
+|    add_ln1261_71_fu_4364_p2              | -   |        | add_ln1261_71  | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U62               | 2   |        | mul_ln1190_3   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U63              | 3   |        | mul_ln1186_54  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U64              | 3   |        | mul_ln1186_55  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U65              | 3   |        | mul_ln1186_56  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U66              | 3   |        | mul_ln1186_57  | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U67               | 2   |        | mul_ln1194_3   | mul | auto   | 0       |
+|    add_ln1207_24_fu_4556_p2              | -   |        | add_ln1207_24  | add | fabric | 0       |
+|    add_ln1207_25_fu_4566_p2              | -   |        | add_ln1207_25  | add | fabric | 0       |
+|    add_ln1207_26_fu_4576_p2              | -   |        | add_ln1207_26  | add | fabric | 0       |
+|    add_ln1207_27_fu_4586_p2              | -   |        | add_ln1207_27  | add | fabric | 0       |
+|    add_ln1207_28_fu_4596_p2              | -   |        | add_ln1207_28  | add | fabric | 0       |
+|    l1_21_fu_4606_p2                      | -   |        | l1_21          | add | fabric | 0       |
+|    add_ln1261_78_fu_4648_p2              | -   |        | add_ln1261_78  | add | fabric | 0       |
+|    add_ln1261_79_fu_4658_p2              | -   |        | add_ln1261_79  | add | fabric | 0       |
+|    add_ln1261_80_fu_4668_p2              | -   |        | add_ln1261_80  | add | fabric | 0       |
+|    add_ln1261_81_fu_4678_p2              | -   |        | add_ln1261_81  | add | fabric | 0       |
+|    add_ln1261_82_fu_4688_p2              | -   |        | add_ln1261_82  | add | fabric | 0       |
+|    add_ln1261_83_fu_4698_p2              | -   |        | add_ln1261_83  | add | fabric | 0       |
+|    l2_12_fu_4708_p2                      | -   |        | l2_12          | add | fabric | 0       |
+|    add_ln1261_85_fu_4714_p2              | -   |        | add_ln1261_85  | add | fabric | 0       |
+|    add_ln1261_88_fu_4732_p2              | -   |        | add_ln1261_88  | add | fabric | 0       |
+|    add_ln1261_91_fu_4751_p2              | -   |        | add_ln1261_91  | add | fabric | 0       |
+|    add_ln1261_92_fu_4761_p2              | -   |        | add_ln1261_92  | add | fabric | 0       |
+|    add_ln1261_95_fu_4779_p2              | -   |        | add_ln1261_95  | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U68               | 2   |        | mul_ln1190_4   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U69              | 3   |        | mul_ln1186_58  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U70              | 3   |        | mul_ln1186_59  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U71              | 3   |        | mul_ln1186_60  | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U72               | 2   |        | mul_ln1194_4   | mul | auto   | 0       |
+|    add_ln1207_30_fu_4913_p2              | -   |        | add_ln1207_30  | add | fabric | 0       |
+|    add_ln1207_31_fu_4923_p2              | -   |        | add_ln1207_31  | add | fabric | 0       |
+|    add_ln1207_32_fu_4933_p2              | -   |        | add_ln1207_32  | add | fabric | 0       |
+|    add_ln1207_33_fu_4943_p2              | -   |        | add_ln1207_33  | add | fabric | 0       |
+|    l1_23_fu_4953_p2                      | -   |        | l1_23          | add | fabric | 0       |
+|    add_ln1261_98_fu_5099_p2              | -   |        | add_ln1261_98  | add | fabric | 0       |
+|    add_ln1261_99_fu_5109_p2              | -   |        | add_ln1261_99  | add | fabric | 0       |
+|    add_ln1261_100_fu_5119_p2             | -   |        | add_ln1261_100 | add | fabric | 0       |
+|    add_ln1261_101_fu_5129_p2             | -   |        | add_ln1261_101 | add | fabric | 0       |
+|    add_ln1261_102_fu_5139_p2             | -   |        | add_ln1261_102 | add | fabric | 0       |
+|    l2_14_fu_5149_p2                      | -   |        | l2_14          | add | fabric | 0       |
+|    add_ln1261_104_fu_4979_p2             | -   |        | add_ln1261_104 | add | fabric | 0       |
+|    add_ln1261_109_fu_5165_p2             | -   |        | add_ln1261_109 | add | fabric | 0       |
+|    add_ln1261_110_fu_5175_p2             | -   |        | add_ln1261_110 | add | fabric | 0       |
+|    add_ln1261_111_fu_5185_p2             | -   |        | add_ln1261_111 | add | fabric | 0       |
+|    add_ln1261_112_fu_5189_p2             | -   |        | add_ln1261_112 | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U76               | 2   |        | mul_ln1190_5   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U73              | 3   |        | mul_ln1186_61  | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U74              | 3   |        | mul_ln1186_62  | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U77               | 2   |        | mul_ln1194_5   | mul | auto   | 0       |
+|    add_ln1207_35_fu_5284_p2              | -   |        | add_ln1207_35  | add | fabric | 0       |
+|    add_ln1207_36_fu_5294_p2              | -   |        | add_ln1207_36  | add | fabric | 0       |
+|    add_ln1207_37_fu_5304_p2              | -   |        | add_ln1207_37  | add | fabric | 0       |
+|    l1_25_fu_5314_p2                      | -   |        | l1_25          | add | fabric | 0       |
+|    add_ln1261_115_fu_5356_p2             | -   |        | add_ln1261_115 | add | fabric | 0       |
+|    add_ln1261_117_fu_5372_p2             | -   |        | add_ln1261_117 | add | fabric | 0       |
+|    add_ln1261_118_fu_5382_p2             | -   |        | add_ln1261_118 | add | fabric | 0       |
+|    add_ln1261_124_fu_5421_p2             | -   |        | add_ln1261_124 | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U78               | 2   |        | mul_ln1190_6   | mul | auto   | 0       |
+|    mul_32ns_32ns_64_1_1_U75              | 3   |        | mul_ln1186_63  | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U79               | 2   |        | mul_ln1194_6   | mul | auto   | 0       |
+|    add_ln1207_39_fu_5502_p2              | -   |        | add_ln1207_39  | add | fabric | 0       |
+|    add_ln1207_40_fu_5512_p2              | -   |        | add_ln1207_40  | add | fabric | 0       |
+|    l1_27_fu_5522_p2                      | -   |        | l1_27          | add | fabric | 0       |
+|    add_ln1261_130_fu_5639_p2             | -   |        | add_ln1261_130 | add | fabric | 0       |
+|    add_ln1261_131_fu_5649_p2             | -   |        | add_ln1261_131 | add | fabric | 0       |
+|    add_ln1261_134_fu_5553_p2             | -   |        | add_ln1261_134 | add | fabric | 0       |
+|    add_ln1261_136_fu_5665_p2             | -   |        | add_ln1261_136 | add | fabric | 0       |
+|    add_ln1261_137_fu_5675_p2             | -   |        | add_ln1261_137 | add | fabric | 0       |
+|    mul_32ns_25s_57_1_1_U80               | 2   |        | mul_ln1190_7   | mul | auto   | 0       |
+|    mul_32ns_25s_57_1_1_U81               | 2   |        | mul_ln1194_7   | mul | auto   | 0       |
+|    add_ln1207_42_fu_5723_p2              | -   |        | add_ln1207_42  | add | fabric | 0       |
+|    l1_29_fu_5733_p2                      | -   |        | l1_29          | add | fabric | 0       |
+|    add_ln1261_140_fu_5760_p2             | -   |        | add_ln1261_140 | add | fabric | 0       |
+|    add_ln1261_141_fu_5770_p2             | -   |        | add_ln1261_141 | add | fabric | 0       |
+|    add_ln1261_142_fu_5780_p2             | -   |        | add_ln1261_142 | add | fabric | 0       |
+|    add_ln1261_145_fu_5797_p2             | -   |        | add_ln1261_145 | add | fabric | 0       |
+|    add_ln1261_146_fu_5807_p2             | -   |        | add_ln1261_146 | add | fabric | 0       |
+|    l1_30_fu_5817_p2                      | -   |        | l1_30          | add | fabric | 0       |
+|    mul_25s_25s_50_1_1_U82                | 1   |        | mul_ln1198     | mul | auto   | 0       |
+|    l1_31_fu_5861_p2                      | -   |        | l1_31          | add | fabric | 0       |
+|    add_ln1279_fu_5867_p2                 | -   |        | add_ln1279     | add | fabric | 0       |
+|   + operator_281_127_true_0_0_Pipeline_1 | 0   |        |                |     |        |         |
+|     add_ln471_fu_53_p2                   | -   |        | add_ln471      | add | fabric | 0       |
++------------------------------------------+-----+--------+----------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-----------------+------+------+--------+------------+---------+------+---------+
+| Name            | BRAM | URAM | Pragma | Variable   | Storage | Impl | Latency |
++-----------------+------+------+--------+------------+---------+------+---------+
+| + mul_fixed_top | 0    | 0    |        |            |         |      |         |
+|   ref_tmp1_i_U  | -    | -    |        | ref_tmp1_i | ram_t2p | auto | 1       |
++-----------------+------+------+--------+------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++--------+---------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type   | Options | Location                                                     | Messages                                                                                                                                                                                                                                                                    |
++--------+---------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| unroll |         | ../ac_types/include/ac_int.h:376 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:380 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:422 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:426 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:488 in assign_int64             | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:498 in assign_uint64            | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:521 in iv_base<n, c>            | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:523 in iv_base<n, c>            | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:550 in assign_int64             | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:560 in assign_uint64            | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:593 in iv_base<n, true>         | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:595 in iv_base<n, true>         | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1024 in iv_copy                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1034 in iv_equal_zero           | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1045 in iv_equal_ones           | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1063 in iv_equal                | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1070 in iv_equal                | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1128 in iv_compare              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1145 in iv_compare              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1168 in iv_extend               | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1236 in iv_mult                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<18, false>::set(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                               |
+|        |         |                                                              | Inlining function 'ac_private::accumulate(unsigned long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' |
+|        |         |                                                              | Inlining function 'ac_private::mult_u_u(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                                              |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+| unroll |         | ../ac_types/include/ac_int.h:1250 in iv_mult                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1261 in iv_mult                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<18, false>::set(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                               |
+|        |         |                                                              | Inlining function 'ac_private::accumulate(long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'          |
+|        |         |                                                              | Inlining function 'ac_private::mult_s_u(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                                              |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+|        |         |                                                              | Inlining function 'ac_private::accumulate(unsigned long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' |
+|        |         |                                                              | Inlining function 'ac_private::mult_u_u(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                                              |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+|        |         |                                                              | Inlining function 'ac_private::accumulate(long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'          |
+|        |         |                                                              | Inlining function 'ac_private::mult_u_s(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                                              |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)'                        |
+| unroll |         | ../ac_types/include/ac_int.h:1294 in iv_uadd_carry           | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1318 in iv_add_int_carry        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1334 in iv_uadd_n               | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1382 in iv_sub_int_borrow       | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1409 in iv_sub_int_borrow       | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1425 in iv_usub_n               | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1458 in iv_neg                  | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1492 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1506 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1512 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1513 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1531 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1535 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1700 in iv_bitwise_complement_n | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1715 in iv_bitwise_and_n        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1741 in iv_bitwise_or_n         | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1767 in iv_bitwise_xor_n        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1799 in iv_shift_l              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1807 in iv_shift_l              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1820 in iv_shift_r              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1828 in iv_shift_r              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1865 in iv_const_shift_l        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1871 in iv_const_shift_l        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1887 in iv_const_shift_l        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1911 in iv_const_shift_r        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_const_shift_r<154, 18, false, 9, false>(ac_private::iv_base<18, false> const&, ac_private::iv_base<9, false>&)'                                                                  |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<18, false>::operator[](int) const' into 'void ac_private::iv_const_shift_r<154, 18, false, 9, false>(ac_private::iv_base<18, false> const&, ac_private::iv_base<9, false>&)'                                                         |
+| unroll |         | ../ac_types/include/ac_int.h:1919 in iv_const_shift_r        | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1933 in iv_conv_from_fraction   | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:1958 in iv_conv_from_fraction   | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:2404 in to_double               | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:2416 in to_float                | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:2563 in set_slc                 | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:2603 in set_slc2                | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:4289 in xor_reduce              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:4333 in bit_fill_oct            | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:4384 in bit_fill_hex            | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:4424 in bit_fill                | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ../ac_types/include/ac_int.h:4873 in bit_fill_bin            | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ./../ac_types/include/ac_fixed.h:155 in overflow_adjust      | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ./../ac_types/include/ac_fixed.h:160 in overflow_adjust      | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+| unroll |         | ./../ac_types/include/ac_fixed.h:172 in overflow_adjust      | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                                                                                    |
++--------+---------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

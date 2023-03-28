@@ -1,0 +1,222 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set to 60.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [XFORM 203-1161] The maximum of name length is set to 60.
+INFO: [HLS 200-1510] Running: create_clock -period 50 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.13 seconds. CPU system time: 0.16 seconds. Elapsed time: 1.29 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 748.301 MB.
+INFO: [HLS 200-10] Analyzing design file 'mul_fixed.cpp' ... 
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:376:73)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:380:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:422:73)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:426:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:488:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:498:61)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:521:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:523:70)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:550:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:560:65)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:593:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:595:74)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1024:71)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1034:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1045:75)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1063:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1070:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1128:70)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1145:68)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1168:69)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:51)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:210)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:105)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:193)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:131)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:279)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1294:108)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1318:120)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1334:134)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1382:120)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1409:120)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1425:134)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1458:137)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1492:143)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1506:143)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1512:63)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1513:66)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1531:66)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1535:74)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1700:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1715:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1741:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1767:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1799:160)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1807:103)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1820:173)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1828:108)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1865:74)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1871:147)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1887:83)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1911:175)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1919:103)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1933:63)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1958:63)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2404:69)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2416:69)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2563:144)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2603:144)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4289:71)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4333:250)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4384:346)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4424:116)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4873:257)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:155:80)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:160:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:172:80)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:488:97)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:550:97)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1024:90)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1034:91)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1045:94)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1063:98)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1070:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1128:89)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1145:87)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:70)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:229)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:124)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:213)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:125)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:151)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:299)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1318:139)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1334:153)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1382:139)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1409:139)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1425:153)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1458:156)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1492:162)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1506:162)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1512:82)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1513:85)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1531:85)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1535:94)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1700:91)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1715:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1741:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1767:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1799:179)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1807:122)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1820:192)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1828:127)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1911:194)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1919:122)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2404:88)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4289:90)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4424:135)
+WARNING: [HLS 207-5292] unused parameter 'x' (../ac_types/include/ac_int.h:4898:105)
+WARNING: [HLS 207-5292] unused parameter 'x' (../ac_types/include/ac_int.h:4918:99)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:155:98)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:160:97)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:172:98)
+WARNING: [HLS 207-5292] unused parameter 'x' (./../ac_types/include/ac_fixed.h:1830:116)
+WARNING: [HLS 207-5292] unused parameter 'x' (./../ac_types/include/ac_fixed.h:1839:110)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.61 seconds. CPU system time: 0.3 seconds. Elapsed time: 3.92 seconds; current allocated memory: 754.930 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_base<9, false>::bit_adjust<281, true>()' (../ac_types/include/ac_int.h:478:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<9, false>::bit_adjust<281, true>()' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (./../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<18, false>::iv()' into 'ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:297:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1236:40)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::set(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1283:21)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::set(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1279:18)
+INFO: [HLS 214-131] Inlining function 'ac_private::accumulate(long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1278:16)
+INFO: [HLS 214-131] Inlining function 'ac_private::mult_s_s(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1278:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1278:49)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1278:36)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::set(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:184)
+INFO: [HLS 214-131] Inlining function 'ac_private::accumulate(long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:87)
+INFO: [HLS 214-131] Inlining function 'ac_private::mult_s_u(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:98)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:120)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:107)
+INFO: [HLS 214-131] Inlining function 'ac_private::accumulate(unsigned long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:28)
+INFO: [HLS 214-131] Inlining function 'ac_private::mult_u_u(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:39)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:60)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:48)
+INFO: [HLS 214-131] Inlining function 'ac_private::accumulate(long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:4)
+INFO: [HLS 214-131] Inlining function 'ac_private::mult_u_s(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:15)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:41)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1261:24)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::set(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1236:116)
+INFO: [HLS 214-131] Inlining function 'ac_private::accumulate(unsigned long long, unsigned long long&, long long&)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1236:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::mult_u_u(int, int)' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1236:31)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' (../ac_types/include/ac_int.h:1236:52)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_mult<9, false, 9, false, 18, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<9, false> const&, ac_private::iv_base<18, false>&)' into 'void ac_private::iv<9, false>::mult<9, false, 18, false>(ac_private::iv<9, false> const&, ac_private::iv<18, false>&) const' (../ac_types/include/ac_int.h:2435:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::set(int, int)' into 'void ac_private::iv_base<18, false>::bit_adjust<562, true>()' (../ac_types/include/ac_int.h:478:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<18, false>::bit_adjust<562, true>()' into 'ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (./../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::rt<281, 127, true>::mult ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (./../ac_types/include/ac_fixed.h:739:20)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::rt<281, 127, true>::mult ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (./../ac_types/include/ac_fixed.h:744:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<9, false>::mult<9, false, 18, false>(ac_private::iv<9, false> const&, ac_private::iv<18, false>&) const' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::rt<281, 127, true>::mult ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (./../ac_types/include/ac_fixed.h:743:26)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::rt<281, 127, true>::mult ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (./../ac_types/include/ac_fixed.h:741:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::operator[](int) const' into 'void ac_private::iv_const_shift_r<154, 18, false, 9, false>(ac_private::iv_base<18, false> const&, ac_private::iv_base<9, false>&)' (../ac_types/include/ac_int.h:1907:23)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_const_shift_r<154, 18, false, 9, false>(ac_private::iv_base<18, false> const&, ac_private::iv_base<9, false>&)' (../ac_types/include/ac_int.h:1911:70)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::operator[](int) const' into 'void ac_private::iv_const_shift_r<154, 18, false, 9, false>(ac_private::iv_base<18, false> const&, ac_private::iv_base<9, false>&)' (../ac_types/include/ac_int.h:1911:41)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<18, false>::operator[](int) const' into 'void ac_private::iv_const_shift_r<154, 18, false, 9, false>(ac_private::iv_base<18, false> const&, ac_private::iv_base<9, false>&)' (../ac_types/include/ac_int.h:1910:45)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_r<154, 18, false, 9, false>(ac_private::iv_base<18, false> const&, ac_private::iv_base<9, false>&)' into 'void ac_private::iv<18, false>::const_shift_r<154, 9, false>(ac_private::iv<9, false>&) const' (../ac_types/include/ac_int.h:2498:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<9, false>::iv()' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (./../ac_types/include/ac_fixed.h:307:55)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<18, false>::const_shift_r<154, 9, false>(ac_private::iv<9, false>&) const' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (./../ac_types/include/ac_fixed.h:322:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (./../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'void mul<ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> >(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>&)' (./mul_fixed.h:6:11)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1911_1' (../ac_types/include/ac_int.h:1911:49) in function 'mul<ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> >' completely with a factor of 9 (./mul_fixed.h:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1261_13' (../ac_types/include/ac_int.h:1261:51) in function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>' completely with a factor of 8 (./../ac_types/include/ac_fixed.h:737:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1261_14' (../ac_types/include/ac_int.h:1261:102) in function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>' completely with a factor of 8 (./../ac_types/include/ac_fixed.h:737:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1236_1' (../ac_types/include/ac_int.h:1236:46) in function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>' completely with a factor of 8 (./../ac_types/include/ac_fixed.h:737:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1236_2' (../ac_types/include/ac_int.h:1236:37) in function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>' completely with a factor of 9 (./../ac_types/include/ac_fixed.h:737:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<18, false>::iv_base()' into 'ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:298:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<562, 254, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' into 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::rt<281, 127, true>::mult ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&) const' (./../ac_types/include/ac_fixed.h:737:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<9, false>::iv_base()' into 'void mul<ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> >(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>&)' (./mul_fixed.h:5:0)
+INFO: [HLS 214-178] Inlining function 'void mul<ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> >(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>&)' into 'mul_fixed_top(ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>&)' (mul_fixed.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'res' with compact=bit mode in 320-bits (mul_fixed.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'b' with compact=bit mode in 320-bits (mul_fixed.cpp:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'a' with compact=bit mode in 320-bits (mul_fixed.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.76 seconds. CPU system time: 0.28 seconds. Elapsed time: 3.04 seconds; current allocated memory: 755.191 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 755.191 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 758.965 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 761.031 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' (../ac_types/include/ac_int.h:471) in function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'ac_fixed<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>::operator*<281, 127, true, (ac_q_mode)0, (ac_o_mode)0>' (./../ac_types/include/ac_fixed.h:742)...407 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 789.523 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'agg.result' (../ac_types/include/ac_int.h:471:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'agg.result' (../ac_types/include/ac_int.h:503:18)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 802.555 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'mul_fixed_top' ...
+WARNING: [SYN 201-103] Legalizing function name 'operator*<281, 127, true, 0, 0>_Pipeline_1' to 'operator_281_127_true_0_0_Pipeline_1'.
+WARNING: [SYN 201-103] Legalizing function name 'operator*<281, 127, true, 0, 0>' to 'operator_mul_281_127_true_0_0'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'operator_281_127_true_0_0_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 802.555 MB.
+INFO: [BIND 205-100]

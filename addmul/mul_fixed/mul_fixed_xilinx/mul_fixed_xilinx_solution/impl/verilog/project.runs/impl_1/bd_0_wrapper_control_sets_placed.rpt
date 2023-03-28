@@ -1,0 +1,95 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Mar 28 15:16:35 2023
+| Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    17 |
+|    Minimum number of control sets                        |    17 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    57 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    17 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              22 |           14 |
+| Yes          | No                    | No                     |            3671 |         1367 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+| Clock Signal |                                                                        Enable Signal                                                                        | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  ap_clk      |                                                                                                                                                             |                  |                2 |              2 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/grp_operator_281_127_true_0_0_Pipeline_1_fu_300/flow_control_loop_pipe_sequential_init_U/E[0] |                  |                2 |              5 |         2.50 |
+|  ap_clk      |                                                                                                                                                             | ap_rst           |               14 |             22 |         1.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state4                                                                                                                       |                  |               18 |             38 |         2.11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state11                                                                             |                  |               13 |             50 |         3.85 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state7                                                                                                                       |                  |               17 |             64 |         3.76 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state6                                                                                                                       |                  |               18 |             64 |         3.56 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state5                                                                                                                       |                  |               21 |             64 |         3.05 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state10                                                                             |                  |               40 |            121 |         3.03 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state6                                                                              |                  |               69 |            210 |         3.04 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state8                                                                              |                  |               71 |            250 |         3.52 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state4                                                                              |                  |               84 |            291 |         3.46 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state9                                                                              |                  |              120 |            441 |         3.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state5                                                                              |                  |              151 |            452 |         2.99 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state7                                                                              |                  |              138 |            496 |         3.59 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state1                                                                                                                       |                  |              271 |            536 |         1.98 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_operator_mul_281_127_true_0_0_fu_172/ap_CS_fsm_state3                                                                              |                  |              334 |            589 |         1.76 |
++--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

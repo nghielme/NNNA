@@ -1,0 +1,6 @@
+sv work "glbl.v"
+sv xil_defaultlib "mul_float_top.v"
+sv xil_defaultlib "mul_float_top.autotb.v"
+sv xil_defaultlib "mul_float_top_mul_25s_25s_50_1_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+
