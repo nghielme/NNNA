@@ -5,6 +5,6 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Generating csim.exe
 a = 2.100000
 b = 2.200000
-a + b = 4.619999
+a * b = 4.619999
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

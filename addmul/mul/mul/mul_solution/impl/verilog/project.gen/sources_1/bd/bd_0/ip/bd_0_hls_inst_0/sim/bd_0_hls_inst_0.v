@@ -48,15 +48,13 @@
 
 
 // IP VLNV: xilinx.com:hls:mul_top:1.0
-// IP Revision: 2112959983
+// IP Revision: 2112962447
 
 `timescale 1ns/1ps
 
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (
-  ap_local_block,
-  ap_local_deadlock,
   res_ap_vld,
   ap_start,
   ap_done,
@@ -67,8 +65,6 @@ module bd_0_hls_inst_0 (
   res
 );
 
-output wire ap_local_block;
-output wire ap_local_deadlock;
 output wire res_ap_vld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start" *)
 input wire ap_start;
@@ -92,8 +88,6 @@ output wire [127 : 0] res;
 (* SDX_KERNEL_TYPE = "hls" *)
 (* SDX_KERNEL_SIM_INST = "" *)
   mul_top inst (
-    .ap_local_block(ap_local_block),
-    .ap_local_deadlock(ap_local_deadlock),
     .res_ap_vld(res_ap_vld),
     .ap_start(ap_start),
     .ap_done(ap_done),

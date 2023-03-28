@@ -1,7 +1,7 @@
 open_project -reset mul
 set_top mul_top
-add_files mul.cpp -cflags "-O2 -I../ac_types/include -D__BAMBU__ -D__VIVADO__ -std=c++14"
-add_files -tb mul_test.cpp -cflags "-O2 -I../ac_types/include -D__BAMBU__ -D__VIVADO__ -std=c++14"
+add_files mul.cpp -cflags "-O2 -I../ac_types/include -D__BAMBU__ -D__VIVADO__ -DAC_TYPES_INIT -std=c++14"
+add_files -tb mul_test.cpp -cflags "-O2 -I../ac_types/include -D__BAMBU__ -D__VIVADO__ -DAC_TYPES_INIT -std=c++14"
 open_solution -reset "mul_solution"
 catch {config_array_partition -maximum_size 4096}
 config_compile -name_max_length 60

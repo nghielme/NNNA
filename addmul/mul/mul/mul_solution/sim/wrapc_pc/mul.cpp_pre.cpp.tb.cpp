@@ -1,6 +1,7 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+// Tool Version Limit: 2019.12
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 # 1 "/home/nghielme/PycharmProjects/thesis-project/addmul/mul/mul.cpp"
 # 1 "<built-in>"
@@ -58,13 +59,13 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 }
 # 141 "../../../ac_types/include/ac_int.h" 2
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 1 3
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 1 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
        
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
-# 196 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
+# 236 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
 namespace std
 {
   typedef long unsigned int size_t;
@@ -74,7 +75,7 @@ namespace std
   typedef decltype(nullptr) nullptr_t;
 
 }
-# 218 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 258 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
 namespace std
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
@@ -83,15 +84,15 @@ namespace __gnu_cxx
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
 }
-# 495 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
-# 496 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
+# 508 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
+# 509 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/cpu_defines.h" 1 3
-# 499 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 2 3
-# 158 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/cpu_defines.h" 1 3
+# 512 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 2 3
+# 158 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -125,7 +126,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
     denorm_present = 1
   };
-# 202 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 3
+# 202 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
   struct __numeric_limits_base
   {
 
@@ -204,7 +205,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
     static constexpr bool is_bounded = false;
-# 288 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 3
+# 288 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
     static constexpr bool is_modulo = false;
 
 
@@ -219,7 +220,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     static constexpr float_round_style round_style =
           round_toward_zero;
   };
-# 314 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 3
+# 311 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
   template<typename _Tp>
     struct numeric_limits : public __numeric_limits_base
     {
@@ -270,6 +271,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
     };
 
 
+
+
   template<typename _Tp>
     struct numeric_limits<const _Tp>
     : public numeric_limits<_Tp> { };
@@ -281,12 +284,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<typename _Tp>
     struct numeric_limits<const volatile _Tp>
     : public numeric_limits<_Tp> { };
-
-
-
-
-
-
+# 382 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
   template<>
     struct numeric_limits<bool>
     {
@@ -1318,21 +1316,21 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static constexpr float_round_style round_style
        = round_toward_zero;
     };
-# 1592 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits" 3
+# 1593 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/limits" 3
   template<>
     struct numeric_limits<float>
     {
       static constexpr bool is_specialized = true;
 
       static constexpr float
-      min() noexcept { return 1.17549435082228750797e-38F; }
+      min() noexcept { return 1.17549435082228750796873653722224568e-38F; }
 
       static constexpr float
-      max() noexcept { return 3.40282346638528859812e+38F; }
+      max() noexcept { return 3.40282346638528859811704183484516925e+38F; }
 
 
       static constexpr float
-      lowest() noexcept { return -3.40282346638528859812e+38F; }
+      lowest() noexcept { return -3.40282346638528859811704183484516925e+38F; }
 
 
       static constexpr int digits = 24;
@@ -1347,7 +1345,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static constexpr int radix = 2;
 
       static constexpr float
-      epsilon() noexcept { return 1.19209289550781250000e-7F; }
+      epsilon() noexcept { return 1.19209289550781250000000000000000000e-7F; }
 
       static constexpr float
       round_error() noexcept { return 0.5F; }
@@ -1375,7 +1373,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       signaling_NaN() noexcept { return __builtin_nansf(""); }
 
       static constexpr float
-      denorm_min() noexcept { return 1.40129846432481707092e-45F; }
+      denorm_min() noexcept { return 1.40129846432481707092372958328991613e-45F; }
 
       static constexpr bool is_iec559
  = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
@@ -1400,14 +1398,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static constexpr bool is_specialized = true;
 
       static constexpr double
-      min() noexcept { return double(2.22507385850720138309e-308L); }
+      min() noexcept { return double(2.22507385850720138309023271733240406e-308L); }
 
       static constexpr double
-      max() noexcept { return double(1.79769313486231570815e+308L); }
+      max() noexcept { return double(1.79769313486231570814527423731704357e+308L); }
 
 
       static constexpr double
-      lowest() noexcept { return -double(1.79769313486231570815e+308L); }
+      lowest() noexcept { return -double(1.79769313486231570814527423731704357e+308L); }
 
 
       static constexpr int digits = 53;
@@ -1422,7 +1420,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static constexpr int radix = 2;
 
       static constexpr double
-      epsilon() noexcept { return double(2.22044604925031308085e-16L); }
+      epsilon() noexcept { return double(2.22044604925031308084726333618164062e-16L); }
 
       static constexpr double
       round_error() noexcept { return 0.5; }
@@ -1450,7 +1448,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       signaling_NaN() noexcept { return __builtin_nans(""); }
 
       static constexpr double
-      denorm_min() noexcept { return double(4.94065645841246544177e-324L); }
+      denorm_min() noexcept { return double(4.94065645841246544176568792868221372e-324L); }
 
       static constexpr bool is_iec559
  = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
@@ -1475,14 +1473,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static constexpr bool is_specialized = true;
 
       static constexpr long double
-      min() noexcept { return 3.36210314311209350626e-4932L; }
+      min() noexcept { return 3.36210314311209350626267781732175260e-4932L; }
 
       static constexpr long double
-      max() noexcept { return 1.18973149535723176502e+4932L; }
+      max() noexcept { return 1.18973149535723176502126385303097021e+4932L; }
 
 
       static constexpr long double
-      lowest() noexcept { return -1.18973149535723176502e+4932L; }
+      lowest() noexcept { return -1.18973149535723176502126385303097021e+4932L; }
 
 
       static constexpr int digits = 64;
@@ -1497,7 +1495,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static constexpr int radix = 2;
 
       static constexpr long double
-      epsilon() noexcept { return 1.08420217248550443401e-19L; }
+      epsilon() noexcept { return 1.08420217248550443400745280086994171e-19L; }
 
       static constexpr long double
       round_error() noexcept { return 0.5L; }
@@ -1525,7 +1523,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       signaling_NaN() noexcept { return __builtin_nansl(""); }
 
       static constexpr long double
-      denorm_min() noexcept { return 3.64519953188247460253e-4951L; }
+      denorm_min() noexcept { return 3.64519953188247460252840593361941982e-4951L; }
 
       static constexpr bool is_iec559
  = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
@@ -1553,19 +1551,19 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 36 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/math.h" 1 3
+# 36 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/math.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cpp_type_traits.h" 1 3
-# 35 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cpp_type_traits.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cpp_type_traits.h" 1 3
+# 35 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cpp_type_traits.h" 3
        
-# 36 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cpp_type_traits.h" 3
-# 67 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cpp_type_traits.h" 3
+# 36 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cpp_type_traits.h" 3
+# 67 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cpp_type_traits.h" 3
 extern "C++" {
 
 namespace std __attribute__ ((__visibility__ ("default")))
@@ -1744,7 +1742,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       enum { __value = 1 };
       typedef __true_type __type;
     };
-# 278 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cpp_type_traits.h" 3
+# 278 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cpp_type_traits.h" 3
   template<typename _Tp>
     struct __is_floating
     {
@@ -1860,10 +1858,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       enum { __value = 1 };
       typedef __true_type __type;
     };
-
-
-
-
+# 408 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cpp_type_traits.h" 3
   template<typename _Tp>
     struct __is_move_iterator
     {
@@ -1881,11 +1876,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 }
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/type_traits.h" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/type_traits.h" 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/type_traits.h" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/type_traits.h" 3
        
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/type_traits.h" 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/type_traits.h" 3
 
 
 
@@ -2073,7 +2068,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 }
 }
-# 44 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 2 3
+# 44 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 2 3
 
 # 1 "/usr/include/math.h" 1 3 4
 # 27 "/usr/include/math.h" 3 4
@@ -5157,20 +5152,1476 @@ iseqsig (_T1 __x, _T2 __y) throw ()
 
 
 }
-# 46 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 2 3
-# 77 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
+# 46 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 2 3
+
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/std_abs.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/std_abs.h" 3
+       
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/std_abs.h" 3
+
+
+
+
+# 1 "/usr/include/stdlib.h" 1 3 4
+# 25 "/usr/include/stdlib.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 26 "/usr/include/stdlib.h" 2 3 4
+
+
+
+
+
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
+# 216 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 32 "/usr/include/stdlib.h" 2 3 4
+
+extern "C" {
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 1 3 4
+# 52 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3 4
+typedef enum
+{
+  P_ALL,
+  P_PID,
+  P_PGID
+} idtype_t;
+# 40 "/usr/include/stdlib.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/waitstatus.h" 1 3 4
+# 41 "/usr/include/stdlib.h" 2 3 4
+# 58 "/usr/include/stdlib.h" 3 4
+typedef struct
+  {
+    int quot;
+    int rem;
+  } div_t;
+
+
+
+typedef struct
+  {
+    long int quot;
+    long int rem;
+  } ldiv_t;
+
+
+
+
+
+__extension__ typedef struct
+  {
+    long long int quot;
+    long long int rem;
+  } lldiv_t;
+# 97 "/usr/include/stdlib.h" 3 4
+extern size_t __ctype_get_mb_cur_max (void) throw () ;
+
+
+
+extern double atof (const char *__nptr)
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+extern int atoi (const char *__nptr)
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+extern long int atol (const char *__nptr)
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+__extension__ extern long long int atoll (const char *__nptr)
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+extern double strtod (const char *__restrict __nptr,
+        char **__restrict __endptr)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+extern float strtof (const char *__restrict __nptr,
+       char **__restrict __endptr) throw () __attribute__ ((__nonnull__ (1)));
+
+extern long double strtold (const char *__restrict __nptr,
+       char **__restrict __endptr)
+     throw () __attribute__ ((__nonnull__ (1)));
+# 140 "/usr/include/stdlib.h" 3 4
+extern _Float32 strtof32 (const char *__restrict __nptr,
+     char **__restrict __endptr)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+extern _Float64 strtof64 (const char *__restrict __nptr,
+     char **__restrict __endptr)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+extern _Float128 strtof128 (const char *__restrict __nptr,
+       char **__restrict __endptr)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+extern _Float32x strtof32x (const char *__restrict __nptr,
+       char **__restrict __endptr)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+extern _Float64x strtof64x (const char *__restrict __nptr,
+       char **__restrict __endptr)
+     throw () __attribute__ ((__nonnull__ (1)));
+# 176 "/usr/include/stdlib.h" 3 4
+extern long int strtol (const char *__restrict __nptr,
+   char **__restrict __endptr, int __base)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+extern unsigned long int strtoul (const char *__restrict __nptr,
+      char **__restrict __endptr, int __base)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+__extension__
+extern long long int strtoq (const char *__restrict __nptr,
+        char **__restrict __endptr, int __base)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+__extension__
+extern unsigned long long int strtouq (const char *__restrict __nptr,
+           char **__restrict __endptr, int __base)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+__extension__
+extern long long int strtoll (const char *__restrict __nptr,
+         char **__restrict __endptr, int __base)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+__extension__
+extern unsigned long long int strtoull (const char *__restrict __nptr,
+     char **__restrict __endptr, int __base)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int strfromd (char *__dest, size_t __size, const char *__format,
+       double __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+
+extern int strfromf (char *__dest, size_t __size, const char *__format,
+       float __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+
+extern int strfroml (char *__dest, size_t __size, const char *__format,
+       long double __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+# 232 "/usr/include/stdlib.h" 3 4
+extern int strfromf32 (char *__dest, size_t __size, const char * __format,
+         _Float32 __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+
+
+
+extern int strfromf64 (char *__dest, size_t __size, const char * __format,
+         _Float64 __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+
+
+
+extern int strfromf128 (char *__dest, size_t __size, const char * __format,
+   _Float128 __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+
+
+
+extern int strfromf32x (char *__dest, size_t __size, const char * __format,
+   _Float32x __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+
+
+
+extern int strfromf64x (char *__dest, size_t __size, const char * __format,
+   _Float64x __f)
+     throw () __attribute__ ((__nonnull__ (3)));
+# 272 "/usr/include/stdlib.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
+struct __locale_struct
+{
+
+  struct __locale_data *__locales[13];
+
+
+  const unsigned short int *__ctype_b;
+  const int *__ctype_tolower;
+  const int *__ctype_toupper;
+
+
+  const char *__names[13];
+};
+
+typedef struct __locale_struct *__locale_t;
+# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
+
+typedef __locale_t locale_t;
+# 273 "/usr/include/stdlib.h" 2 3 4
+
+extern long int strtol_l (const char *__restrict __nptr,
+     char **__restrict __endptr, int __base,
+     locale_t __loc) throw () __attribute__ ((__nonnull__ (1, 4)));
+
+extern unsigned long int strtoul_l (const char *__restrict __nptr,
+        char **__restrict __endptr,
+        int __base, locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 4)));
+
+__extension__
+extern long long int strtoll_l (const char *__restrict __nptr,
+    char **__restrict __endptr, int __base,
+    locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 4)));
+
+__extension__
+extern unsigned long long int strtoull_l (const char *__restrict __nptr,
+       char **__restrict __endptr,
+       int __base, locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 4)));
+
+extern double strtod_l (const char *__restrict __nptr,
+   char **__restrict __endptr, locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+
+extern float strtof_l (const char *__restrict __nptr,
+         char **__restrict __endptr, locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+
+extern long double strtold_l (const char *__restrict __nptr,
+         char **__restrict __endptr,
+         locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+# 316 "/usr/include/stdlib.h" 3 4
+extern _Float32 strtof32_l (const char *__restrict __nptr,
+       char **__restrict __endptr,
+       locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
+extern _Float64 strtof64_l (const char *__restrict __nptr,
+       char **__restrict __endptr,
+       locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
+extern _Float128 strtof128_l (const char *__restrict __nptr,
+         char **__restrict __endptr,
+         locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
+extern _Float32x strtof32x_l (const char *__restrict __nptr,
+         char **__restrict __endptr,
+         locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
+extern _Float64x strtof64x_l (const char *__restrict __nptr,
+         char **__restrict __endptr,
+         locale_t __loc)
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+# 360 "/usr/include/stdlib.h" 3 4
+extern __inline __attribute__ ((__gnu_inline__)) int
+__attribute__ ((__leaf__)) atoi (const char *__nptr) throw ()
+{
+  return (int) strtol (__nptr, (char **) __null, 10);
+}
+extern __inline __attribute__ ((__gnu_inline__)) long int
+__attribute__ ((__leaf__)) atol (const char *__nptr) throw ()
+{
+  return strtol (__nptr, (char **) __null, 10);
+}
+
+
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) long long int
+__attribute__ ((__leaf__)) atoll (const char *__nptr) throw ()
+{
+  return strtoll (__nptr, (char **) __null, 10);
+}
+# 385 "/usr/include/stdlib.h" 3 4
+extern char *l64a (long int __n) throw () ;
+
+
+extern long int a64l (const char *__s)
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/sys/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+extern "C" {
+
+
+
+
+
+typedef __u_char u_char;
+typedef __u_short u_short;
+typedef __u_int u_int;
+typedef __u_long u_long;
+typedef __quad_t quad_t;
+typedef __u_quad_t u_quad_t;
+typedef __fsid_t fsid_t;
+
+
+typedef __loff_t loff_t;
+
+
+
+
+typedef __ino_t ino_t;
+
+
+
+
+
+
+typedef __ino64_t ino64_t;
+
+
+
+
+typedef __dev_t dev_t;
+
+
+
+
+typedef __gid_t gid_t;
+
+
+
+
+typedef __mode_t mode_t;
+
+
+
+
+typedef __nlink_t nlink_t;
+
+
+
+
+typedef __uid_t uid_t;
+
+
+
+
+
+typedef __off_t off_t;
+
+
+
+
+
+
+typedef __off64_t off64_t;
+
+
+
+
+typedef __pid_t pid_t;
+
+
+
+
+
+typedef __id_t id_t;
+
+
+
+
+typedef __ssize_t ssize_t;
+
+
+
+
+
+typedef __daddr_t daddr_t;
+typedef __caddr_t caddr_t;
+
+
+
+
+
+typedef __key_t key_t;
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/clock_t.h" 1 3 4
+
+
+
+
+
+
+typedef __clock_t clock_t;
+# 127 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h" 1 3 4
+
+
+
+
+
+
+typedef __clockid_t clockid_t;
+# 129 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 1 3 4
+
+
+
+
+
+
+typedef __time_t time_t;
+# 130 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/timer_t.h" 1 3 4
+
+
+
+
+
+
+typedef __timer_t timer_t;
+# 131 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+
+
+typedef __useconds_t useconds_t;
+
+
+
+typedef __suseconds_t suseconds_t;
+
+
+
+
+
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
+# 145 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+
+
+typedef unsigned long int ulong;
+typedef unsigned short int ushort;
+typedef unsigned int uint;
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+typedef __int8_t int8_t;
+typedef __int16_t int16_t;
+typedef __int32_t int32_t;
+typedef __int64_t int64_t;
+# 156 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+
+typedef __uint8_t u_int8_t;
+typedef __uint16_t u_int16_t;
+typedef __uint32_t u_int32_t;
+typedef __uint64_t u_int64_t;
+
+
+typedef int register_t __attribute__ ((__mode__ (__word__)));
+# 176 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 1 "/usr/include/endian.h" 1 3 4
+# 24 "/usr/include/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/endian.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/endianness.h" 1 3 4
+# 36 "/usr/include/x86_64-linux-gnu/bits/endian.h" 2 3 4
+# 25 "/usr/include/endian.h" 2 3 4
+# 35 "/usr/include/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 1 3 4
+# 33 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+static __inline __uint16_t
+__bswap_16 (__uint16_t __bsx)
+{
+
+  return __builtin_bswap16 (__bsx);
+
+
+
+}
+
+
+
+
+
+
+static __inline __uint32_t
+__bswap_32 (__uint32_t __bsx)
+{
+
+  return __builtin_bswap32 (__bsx);
+
+
+
+}
+# 69 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+__extension__ static __inline __uint64_t
+__bswap_64 (__uint64_t __bsx)
+{
+
+  return __builtin_bswap64 (__bsx);
+
+
+
+}
+# 36 "/usr/include/endian.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 1 3 4
+# 32 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 3 4
+static __inline __uint16_t
+__uint16_identity (__uint16_t __x)
+{
+  return __x;
+}
+
+static __inline __uint32_t
+__uint32_identity (__uint32_t __x)
+{
+  return __x;
+}
+
+static __inline __uint64_t
+__uint64_identity (__uint64_t __x)
+{
+  return __x;
+}
+# 37 "/usr/include/endian.h" 2 3 4
+# 177 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/sys/select.h" 1 3 4
+# 30 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/select.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/select.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/select.h" 2 3 4
+# 31 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h" 1 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h" 1 3 4
+
+
+
+
+typedef struct
+{
+  unsigned long int __val[(1024 / (8 * sizeof (unsigned long int)))];
+} __sigset_t;
+# 5 "/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h" 2 3 4
+
+
+typedef __sigset_t sigset_t;
+# 34 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h" 1 3 4
+
+
+
+
+
+
+
+struct timeval
+{
+  __time_t tv_sec;
+  __suseconds_t tv_usec;
+};
+# 38 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
+struct timespec
+{
+  __time_t tv_sec;
+
+
+
+  __syscall_slong_t tv_nsec;
+# 26 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
+};
+# 40 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
+# 49 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+typedef long int __fd_mask;
+# 59 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+typedef struct
+  {
+
+
+
+    __fd_mask fds_bits[1024 / (8 * (int) sizeof (__fd_mask))];
+
+
+
+
+
+  } fd_set;
+
+
+
+
+
+
+typedef __fd_mask fd_mask;
+# 91 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+extern "C" {
+# 101 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+extern int select (int __nfds, fd_set *__restrict __readfds,
+     fd_set *__restrict __writefds,
+     fd_set *__restrict __exceptfds,
+     struct timeval *__restrict __timeout);
+# 113 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+extern int pselect (int __nfds, fd_set *__restrict __readfds,
+      fd_set *__restrict __writefds,
+      fd_set *__restrict __exceptfds,
+      const struct timespec *__restrict __timeout,
+      const __sigset_t *__restrict __sigmask);
+# 126 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+}
+# 180 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+
+
+
+
+typedef __blksize_t blksize_t;
+
+
+
+
+
+
+typedef __blkcnt_t blkcnt_t;
+
+
+
+typedef __fsblkcnt_t fsblkcnt_t;
+
+
+
+typedef __fsfilcnt_t fsfilcnt_t;
+# 219 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+typedef __blkcnt64_t blkcnt64_t;
+typedef __fsblkcnt64_t fsblkcnt64_t;
+typedef __fsfilcnt64_t fsfilcnt64_t;
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 1 3 4
+# 44 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 1 3 4
+# 21 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 2 3 4
+# 45 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+
+
+
+
+typedef struct __pthread_internal_list
+{
+  struct __pthread_internal_list *__prev;
+  struct __pthread_internal_list *__next;
+} __pthread_list_t;
+
+typedef struct __pthread_internal_slist
+{
+  struct __pthread_internal_slist *__next;
+} __pthread_slist_t;
+# 74 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
+struct __pthread_mutex_s
+{
+  int __lock;
+  unsigned int __count;
+  int __owner;
+
+  unsigned int __nusers;
+
+
+
+  int __kind;
+
+  short __spins;
+  short __elision;
+  __pthread_list_t __list;
+# 53 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
+};
+# 75 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+# 87 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
+struct __pthread_rwlock_arch_t
+{
+  unsigned int __readers;
+  unsigned int __writers;
+  unsigned int __wrphase_futex;
+  unsigned int __writers_futex;
+  unsigned int __pad3;
+  unsigned int __pad4;
+
+  int __cur_writer;
+  int __shared;
+  signed char __rwelision;
+
+
+
+
+  unsigned char __pad1[7];
+
+
+  unsigned long int __pad2;
+
+
+  unsigned int __flags;
+# 55 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
+};
+# 88 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+
+
+
+
+struct __pthread_cond_s
+{
+  __extension__ union
+  {
+    __extension__ unsigned long long int __wseq;
+    struct
+    {
+      unsigned int __low;
+      unsigned int __high;
+    } __wseq32;
+  };
+  __extension__ union
+  {
+    __extension__ unsigned long long int __g1_start;
+    struct
+    {
+      unsigned int __low;
+      unsigned int __high;
+    } __g1_start32;
+  };
+  unsigned int __g_refs[2] ;
+  unsigned int __g_size[2];
+  unsigned int __g1_orig_size;
+  unsigned int __wrefs;
+  unsigned int __g_signals[2];
+};
+# 24 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 2 3 4
+
+
+
+typedef unsigned long int pthread_t;
+
+
+
+
+typedef union
+{
+  char __size[4];
+  int __align;
+} pthread_mutexattr_t;
+
+
+
+
+typedef union
+{
+  char __size[4];
+  int __align;
+} pthread_condattr_t;
+
+
+
+typedef unsigned int pthread_key_t;
+
+
+
+typedef int pthread_once_t;
+
+
+union pthread_attr_t
+{
+  char __size[56];
+  long int __align;
+};
+
+typedef union pthread_attr_t pthread_attr_t;
+
+
+
+
+typedef union
+{
+  struct __pthread_mutex_s __data;
+  char __size[40];
+  long int __align;
+} pthread_mutex_t;
+
+
+typedef union
+{
+  struct __pthread_cond_s __data;
+  char __size[48];
+  __extension__ long long int __align;
+} pthread_cond_t;
+
+
+
+
+
+typedef union
+{
+  struct __pthread_rwlock_arch_t __data;
+  char __size[56];
+  long int __align;
+} pthread_rwlock_t;
+
+typedef union
+{
+  char __size[8];
+  long int __align;
+} pthread_rwlockattr_t;
+
+
+
+
+
+typedef volatile int pthread_spinlock_t;
+
+
+
+
+typedef union
+{
+  char __size[32];
+  long int __align;
+} pthread_barrier_t;
+
+typedef union
+{
+  char __size[4];
+  int __align;
+} pthread_barrierattr_t;
+# 228 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
+
+}
+# 395 "/usr/include/stdlib.h" 2 3 4
+
+
+
+
+
+
+extern long int random (void) throw ();
+
+
+extern void srandom (unsigned int __seed) throw ();
+
+
+
+
+
+extern char *initstate (unsigned int __seed, char *__statebuf,
+   size_t __statelen) throw () __attribute__ ((__nonnull__ (2)));
+
+
+
+extern char *setstate (char *__statebuf) throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+struct random_data
+  {
+    int32_t *fptr;
+    int32_t *rptr;
+    int32_t *state;
+    int rand_type;
+    int rand_deg;
+    int rand_sep;
+    int32_t *end_ptr;
+  };
+
+extern int random_r (struct random_data *__restrict __buf,
+       int32_t *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
+
+extern int srandom_r (unsigned int __seed, struct random_data *__buf)
+     throw () __attribute__ ((__nonnull__ (2)));
+
+extern int initstate_r (unsigned int __seed, char *__restrict __statebuf,
+   size_t __statelen,
+   struct random_data *__restrict __buf)
+     throw () __attribute__ ((__nonnull__ (2, 4)));
+
+extern int setstate_r (char *__restrict __statebuf,
+         struct random_data *__restrict __buf)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+extern int rand (void) throw ();
+
+extern void srand (unsigned int __seed) throw ();
+
+
+
+extern int rand_r (unsigned int *__seed) throw ();
+
+
+
+
+
+
+
+extern double drand48 (void) throw ();
+extern double erand48 (unsigned short int __xsubi[3]) throw () __attribute__ ((__nonnull__ (1)));
+
+
+extern long int lrand48 (void) throw ();
+extern long int nrand48 (unsigned short int __xsubi[3])
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+extern long int mrand48 (void) throw ();
+extern long int jrand48 (unsigned short int __xsubi[3])
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+extern void srand48 (long int __seedval) throw ();
+extern unsigned short int *seed48 (unsigned short int __seed16v[3])
+     throw () __attribute__ ((__nonnull__ (1)));
+extern void lcong48 (unsigned short int __param[7]) throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+struct drand48_data
+  {
+    unsigned short int __x[3];
+    unsigned short int __old_x[3];
+    unsigned short int __c;
+    unsigned short int __init;
+    __extension__ unsigned long long int __a;
+
+  };
+
+
+extern int drand48_r (struct drand48_data *__restrict __buffer,
+        double *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
+extern int erand48_r (unsigned short int __xsubi[3],
+        struct drand48_data *__restrict __buffer,
+        double *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int lrand48_r (struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+extern int nrand48_r (unsigned short int __xsubi[3],
+        struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int mrand48_r (struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+extern int jrand48_r (unsigned short int __xsubi[3],
+        struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int srand48_r (long int __seedval, struct drand48_data *__buffer)
+     throw () __attribute__ ((__nonnull__ (2)));
+
+extern int seed48_r (unsigned short int __seed16v[3],
+       struct drand48_data *__buffer) throw () __attribute__ ((__nonnull__ (1, 2)));
+
+extern int lcong48_r (unsigned short int __param[7],
+        struct drand48_data *__buffer)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern void *malloc (size_t __size) throw () __attribute__ ((__malloc__))
+     __attribute__ ((__alloc_size__ (1))) ;
+
+extern void *calloc (size_t __nmemb, size_t __size)
+     throw () __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (1, 2))) ;
+
+
+
+
+
+
+extern void *realloc (void *__ptr, size_t __size)
+     throw () __attribute__ ((__warn_unused_result__)) __attribute__ ((__alloc_size__ (2)));
+
+
+
+
+
+
+
+extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
+     throw () __attribute__ ((__warn_unused_result__))
+     __attribute__ ((__alloc_size__ (2, 3)));
+
+
+
+extern void free (void *__ptr) throw ();
+
+
+# 1 "/usr/include/alloca.h" 1 3 4
+# 24 "/usr/include/alloca.h" 3 4
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
+# 25 "/usr/include/alloca.h" 2 3 4
+
+extern "C" {
+
+
+
+
+
+extern void *alloca (size_t __size) throw ();
+
+
+
+
+
+}
+# 569 "/usr/include/stdlib.h" 2 3 4
+
+
+
+
+
+extern void *valloc (size_t __size) throw () __attribute__ ((__malloc__))
+     __attribute__ ((__alloc_size__ (1))) ;
+
+
+
+
+extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+     throw () __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+extern void *aligned_alloc (size_t __alignment, size_t __size)
+     throw () __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (2))) ;
+
+
+
+extern void abort (void) throw () __attribute__ ((__noreturn__));
+
+
+
+extern int atexit (void (*__func) (void)) throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern "C++" int at_quick_exit (void (*__func) (void))
+     throw () __asm ("at_quick_exit") __attribute__ ((__nonnull__ (1)));
+# 610 "/usr/include/stdlib.h" 3 4
+extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
+     throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern void exit (int __status) throw () __attribute__ ((__noreturn__));
+
+
+
+
+
+extern void quick_exit (int __status) throw () __attribute__ ((__noreturn__));
+
+
+
+
+
+extern void _Exit (int __status) throw () __attribute__ ((__noreturn__));
+
+
+
+
+extern char *getenv (const char *__name) throw () __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+extern char *secure_getenv (const char *__name)
+     throw () __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+
+extern int putenv (char *__string) throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern int setenv (const char *__name, const char *__value, int __replace)
+     throw () __attribute__ ((__nonnull__ (2)));
+
+
+extern int unsetenv (const char *__name) throw () __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern int clearenv (void) throw ();
+# 675 "/usr/include/stdlib.h" 3 4
+extern char *mktemp (char *__template) throw () __attribute__ ((__nonnull__ (1)));
+# 688 "/usr/include/stdlib.h" 3 4
+extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
+# 698 "/usr/include/stdlib.h" 3 4
+extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) ;
+# 710 "/usr/include/stdlib.h" 3 4
+extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
+# 720 "/usr/include/stdlib.h" 3 4
+extern int mkstemps64 (char *__template, int __suffixlen)
+     __attribute__ ((__nonnull__ (1))) ;
+# 731 "/usr/include/stdlib.h" 3 4
+extern char *mkdtemp (char *__template) throw () __attribute__ ((__nonnull__ (1))) ;
+# 742 "/usr/include/stdlib.h" 3 4
+extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
+# 752 "/usr/include/stdlib.h" 3 4
+extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
+# 762 "/usr/include/stdlib.h" 3 4
+extern int mkostemps (char *__template, int __suffixlen, int __flags)
+     __attribute__ ((__nonnull__ (1))) ;
+# 774 "/usr/include/stdlib.h" 3 4
+extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
+     __attribute__ ((__nonnull__ (1))) ;
+# 784 "/usr/include/stdlib.h" 3 4
+extern int system (const char *__command) ;
+
+
+
+
+
+extern char *canonicalize_file_name (const char *__name)
+     throw () __attribute__ ((__nonnull__ (1))) ;
+# 800 "/usr/include/stdlib.h" 3 4
+extern char *realpath (const char *__restrict __name,
+         char *__restrict __resolved) throw () ;
+
+
+
+
+
+
+typedef int (*__compar_fn_t) (const void *, const void *);
+
+
+typedef __compar_fn_t comparison_fn_t;
+
+
+
+typedef int (*__compar_d_fn_t) (const void *, const void *, void *);
+
+
+
+
+extern void *bsearch (const void *__key, const void *__base,
+        size_t __nmemb, size_t __size, __compar_fn_t __compar)
+     __attribute__ ((__nonnull__ (1, 2, 5))) ;
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 3 4
+extern __inline __attribute__ ((__gnu_inline__)) void *
+bsearch (const void *__key, const void *__base, size_t __nmemb, size_t __size,
+  __compar_fn_t __compar)
+{
+  size_t __l, __u, __idx;
+  const void *__p;
+  int __comparison;
+
+  __l = 0;
+  __u = __nmemb;
+  while (__l < __u)
+    {
+      __idx = (__l + __u) / 2;
+      __p = (void *) (((const char *) __base) + (__idx * __size));
+      __comparison = (*__compar) (__key, __p);
+      if (__comparison < 0)
+ __u = __idx;
+      else if (__comparison > 0)
+ __l = __idx + 1;
+      else
+ return (void *) __p;
+    }
+
+  return __null;
+}
+# 826 "/usr/include/stdlib.h" 2 3 4
+
+
+
+
+extern void qsort (void *__base, size_t __nmemb, size_t __size,
+     __compar_fn_t __compar) __attribute__ ((__nonnull__ (1, 4)));
+
+extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
+       __compar_d_fn_t __compar, void *__arg)
+  __attribute__ ((__nonnull__ (1, 4)));
+
+
+
+
+extern int abs (int __x) throw () __attribute__ ((__const__)) ;
+extern long int labs (long int __x) throw () __attribute__ ((__const__)) ;
+
+
+__extension__ extern long long int llabs (long long int __x)
+     throw () __attribute__ ((__const__)) ;
+
+
+
+
+
+
+extern div_t div (int __numer, int __denom)
+     throw () __attribute__ ((__const__)) ;
+extern ldiv_t ldiv (long int __numer, long int __denom)
+     throw () __attribute__ ((__const__)) ;
+
+
+__extension__ extern lldiv_t lldiv (long long int __numer,
+        long long int __denom)
+     throw () __attribute__ ((__const__)) ;
+# 872 "/usr/include/stdlib.h" 3 4
+extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
+     int *__restrict __sign) throw () __attribute__ ((__nonnull__ (3, 4))) ;
+
+
+
+
+extern char *fcvt (double __value, int __ndigit, int *__restrict __decpt,
+     int *__restrict __sign) throw () __attribute__ ((__nonnull__ (3, 4))) ;
+
+
+
+
+extern char *gcvt (double __value, int __ndigit, char *__buf)
+     throw () __attribute__ ((__nonnull__ (3))) ;
+
+
+
+
+extern char *qecvt (long double __value, int __ndigit,
+      int *__restrict __decpt, int *__restrict __sign)
+     throw () __attribute__ ((__nonnull__ (3, 4))) ;
+extern char *qfcvt (long double __value, int __ndigit,
+      int *__restrict __decpt, int *__restrict __sign)
+     throw () __attribute__ ((__nonnull__ (3, 4))) ;
+extern char *qgcvt (long double __value, int __ndigit, char *__buf)
+     throw () __attribute__ ((__nonnull__ (3))) ;
+
+
+
+
+extern int ecvt_r (double __value, int __ndigit, int *__restrict __decpt,
+     int *__restrict __sign, char *__restrict __buf,
+     size_t __len) throw () __attribute__ ((__nonnull__ (3, 4, 5)));
+extern int fcvt_r (double __value, int __ndigit, int *__restrict __decpt,
+     int *__restrict __sign, char *__restrict __buf,
+     size_t __len) throw () __attribute__ ((__nonnull__ (3, 4, 5)));
+
+extern int qecvt_r (long double __value, int __ndigit,
+      int *__restrict __decpt, int *__restrict __sign,
+      char *__restrict __buf, size_t __len)
+     throw () __attribute__ ((__nonnull__ (3, 4, 5)));
+extern int qfcvt_r (long double __value, int __ndigit,
+      int *__restrict __decpt, int *__restrict __sign,
+      char *__restrict __buf, size_t __len)
+     throw () __attribute__ ((__nonnull__ (3, 4, 5)));
+
+
+
+
+
+extern int mblen (const char *__s, size_t __n) throw ();
+
+
+extern int mbtowc (wchar_t *__restrict __pwc,
+     const char *__restrict __s, size_t __n) throw ();
+
+
+extern int wctomb (char *__s, wchar_t __wchar) throw ();
+
+
+
+extern size_t mbstowcs (wchar_t *__restrict __pwcs,
+   const char *__restrict __s, size_t __n) throw ();
+
+extern size_t wcstombs (char *__restrict __s,
+   const wchar_t *__restrict __pwcs, size_t __n)
+     throw ();
+
+
+
+
+
+
+
+extern int rpmatch (const char *__response) throw () __attribute__ ((__nonnull__ (1))) ;
+# 957 "/usr/include/stdlib.h" 3 4
+extern int getsubopt (char **__restrict __optionp,
+        char *const *__restrict __tokens,
+        char **__restrict __valuep)
+     throw () __attribute__ ((__nonnull__ (1, 2, 3))) ;
+
+
+
+
+
+
+
+extern int posix_openpt (int __oflag) ;
+
+
+
+
+
+
+
+extern int grantpt (int __fd) throw ();
+
+
+
+extern int unlockpt (int __fd) throw ();
+
+
+
+
+extern char *ptsname (int __fd) throw () ;
+
+
+
+
+
+
+extern int ptsname_r (int __fd, char *__buf, size_t __buflen)
+     throw () __attribute__ ((__nonnull__ (2)));
+
+
+extern int getpt (void);
+
+
+
+
+
+
+extern int getloadavg (double __loadavg[], int __nelem)
+     throw () __attribute__ ((__nonnull__ (1)));
+# 1013 "/usr/include/stdlib.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 3 4
+extern __inline __attribute__ ((__gnu_inline__)) double
+__attribute__ ((__leaf__)) atof (const char *__nptr) throw ()
+{
+  return strtod (__nptr, (char **) __null);
+}
+# 1014 "/usr/include/stdlib.h" 2 3 4
+# 1023 "/usr/include/stdlib.h" 3 4
+}
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/std_abs.h" 2 3
+
+
+
+
+
+
+
 extern "C++"
 {
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
 
+  using ::abs;
+
+
+  inline long
+  abs(long __i) { return __builtin_labs(__i); }
+
+
+
+  inline long long
+  abs(long long __x) { return __builtin_llabs (__x); }
+
+
+
+
+
+
 
   inline constexpr double
   abs(double __x)
   { return __builtin_fabs(__x); }
-
-
 
   inline constexpr float
   abs(float __x)
@@ -5179,14 +6630,17 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline constexpr long double
   abs(long double __x)
   { return __builtin_fabsl(__x); }
+# 106 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/std_abs.h" 3
 
+}
+}
+# 48 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 2 3
+# 77 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 3
+extern "C++"
+{
+namespace std __attribute__ ((__visibility__ ("default")))
+{
 
-  template<typename _Tp>
-    inline constexpr
-    typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
-                                    double>::__type
-    abs(_Tp __x)
-    { return __builtin_fabs(__x); }
 
   using ::acos;
 
@@ -5499,7 +6953,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline constexpr long double
   pow(long double __x, long double __y)
   { return __builtin_powl(__x, __y); }
-# 435 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
+# 412 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 3
   template<typename _Tp, typename _Up>
     inline constexpr
     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
@@ -5603,17 +7057,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                                     double>::__type
     tanh(_Tp __x)
     { return __builtin_tanh(__x); }
-
-
-}
-# 559 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-
-
-
-
+# 536 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 3
   constexpr int
   fpclassify(float __x)
   { return __builtin_fpclassify(0, 1, 4,
@@ -5630,11 +7074,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
     3, 2, __x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               int>::__type
     fpclassify(_Tp __x)
     { return __x != 0 ? 4 : 2; }
+
 
 
   constexpr bool
@@ -5650,11 +7096,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isfinite(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               bool>::__type
     isfinite(_Tp __x)
     { return true; }
+
 
 
   constexpr bool
@@ -5675,11 +7123,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isinf(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               bool>::__type
     isinf(_Tp __x)
     { return false; }
+
 
 
   constexpr bool
@@ -5700,11 +7150,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isnan(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               bool>::__type
     isnan(_Tp __x)
     { return false; }
+
 
 
   constexpr bool
@@ -5720,11 +7172,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isnormal(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               bool>::__type
     isnormal(_Tp __x)
     { return __x != 0 ? true : false; }
+
 
 
 
@@ -5741,11 +7195,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_signbit(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               bool>::__type
     signbit(_Tp __x)
     { return __x < 0 ? true : false; }
+
 
 
   constexpr bool
@@ -5761,6 +7217,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isgreater(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename
     __gnu_cxx::__enable_if<(__is_arithmetic<_Tp>::__value
@@ -5770,6 +7227,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return __builtin_isgreater(__type(__x), __type(__y));
     }
+
 
 
   constexpr bool
@@ -5785,6 +7243,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isgreaterequal(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename
     __gnu_cxx::__enable_if<(__is_arithmetic<_Tp>::__value
@@ -5794,6 +7253,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return __builtin_isgreaterequal(__type(__x), __type(__y));
     }
+
 
 
   constexpr bool
@@ -5809,6 +7269,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isless(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename
     __gnu_cxx::__enable_if<(__is_arithmetic<_Tp>::__value
@@ -5818,6 +7279,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return __builtin_isless(__type(__x), __type(__y));
     }
+
 
 
   constexpr bool
@@ -5833,6 +7295,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_islessequal(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename
     __gnu_cxx::__enable_if<(__is_arithmetic<_Tp>::__value
@@ -5842,6 +7305,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return __builtin_islessequal(__type(__x), __type(__y));
     }
+
 
 
   constexpr bool
@@ -5857,6 +7321,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_islessgreater(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename
     __gnu_cxx::__enable_if<(__is_arithmetic<_Tp>::__value
@@ -5866,6 +7331,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return __builtin_islessgreater(__type(__x), __type(__y));
     }
+
 
 
   constexpr bool
@@ -5881,6 +7347,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_isunordered(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename
     __gnu_cxx::__enable_if<(__is_arithmetic<_Tp>::__value
@@ -5890,15 +7357,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return __builtin_isunordered(__type(__x), __type(__y));
     }
-# 956 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
-
-}
-# 1072 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-
-
+# 1065 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 3
   using ::double_t;
   using ::float_t;
 
@@ -5967,6 +7426,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   using ::lgammaf;
   using ::lgammal;
 
+
   using ::llrint;
   using ::llrintf;
   using ::llrintl;
@@ -5974,6 +7434,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   using ::llround;
   using ::llroundf;
   using ::llroundl;
+
 
   using ::log1p;
   using ::log1pf;
@@ -6054,11 +7515,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_acoshl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     acosh(_Tp __x)
     { return __builtin_acosh(__x); }
+
 
 
   constexpr float
@@ -6070,11 +7533,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_asinhl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     asinh(_Tp __x)
     { return __builtin_asinh(__x); }
+
 
 
   constexpr float
@@ -6086,11 +7551,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_atanhl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     atanh(_Tp __x)
     { return __builtin_atanh(__x); }
+
 
 
   constexpr float
@@ -6102,11 +7569,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_cbrtl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     cbrt(_Tp __x)
     { return __builtin_cbrt(__x); }
+
 
 
   constexpr float
@@ -6118,6 +7587,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_copysignl(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     copysign(_Tp __x, _Up __y)
@@ -6125,6 +7595,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return copysign(__type(__x), __type(__y));
     }
+
 
 
   constexpr float
@@ -6136,11 +7607,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_erfl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     erf(_Tp __x)
     { return __builtin_erf(__x); }
+
 
 
   constexpr float
@@ -6152,11 +7625,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_erfcl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     erfc(_Tp __x)
     { return __builtin_erfc(__x); }
+
 
 
   constexpr float
@@ -6168,11 +7643,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_exp2l(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     exp2(_Tp __x)
     { return __builtin_exp2(__x); }
+
 
 
   constexpr float
@@ -6184,11 +7661,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_expm1l(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     expm1(_Tp __x)
     { return __builtin_expm1(__x); }
+
 
 
   constexpr float
@@ -6200,6 +7679,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_fdiml(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     fdim(_Tp __x, _Up __y)
@@ -6207,6 +7687,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return fdim(__type(__x), __type(__y));
     }
+
 
 
   constexpr float
@@ -6218,6 +7699,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_fmal(__x, __y, __z); }
 
 
+
   template<typename _Tp, typename _Up, typename _Vp>
     constexpr typename __gnu_cxx::__promote_3<_Tp, _Up, _Vp>::__type
     fma(_Tp __x, _Up __y, _Vp __z)
@@ -6225,6 +7707,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_3<_Tp, _Up, _Vp>::__type __type;
       return fma(__type(__x), __type(__y), __type(__z));
     }
+
 
 
   constexpr float
@@ -6236,6 +7719,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_fmaxl(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     fmax(_Tp __x, _Up __y)
@@ -6243,6 +7727,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return fmax(__type(__x), __type(__y));
     }
+
 
 
   constexpr float
@@ -6254,6 +7739,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_fminl(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     fmin(_Tp __x, _Up __y)
@@ -6261,6 +7747,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return fmin(__type(__x), __type(__y));
     }
+
 
 
   constexpr float
@@ -6272,6 +7759,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_hypotl(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     hypot(_Tp __x, _Up __y)
@@ -6279,6 +7767,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return hypot(__type(__x), __type(__y));
     }
+
 
 
   constexpr int
@@ -6290,12 +7779,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_ilogbl(__x); }
 
 
+
   template<typename _Tp>
     constexpr
     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                     int>::__type
     ilogb(_Tp __x)
     { return __builtin_ilogb(__x); }
+
 
 
   constexpr float
@@ -6307,11 +7798,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_lgammal(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     lgamma(_Tp __x)
     { return __builtin_lgamma(__x); }
+
 
 
   constexpr long long
@@ -6323,11 +7816,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_llrintl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               long long>::__type
     llrint(_Tp __x)
     { return __builtin_llrint(__x); }
+
 
 
   constexpr long long
@@ -6339,11 +7834,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_llroundl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               long long>::__type
     llround(_Tp __x)
     { return __builtin_llround(__x); }
+
 
 
   constexpr float
@@ -6355,11 +7852,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_log1pl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     log1p(_Tp __x)
     { return __builtin_log1p(__x); }
+
 
 
 
@@ -6372,11 +7871,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_log2l(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     log2(_Tp __x)
     { return __builtin_log2(__x); }
+
 
 
   constexpr float
@@ -6388,11 +7889,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_logbl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     logb(_Tp __x)
     { return __builtin_logb(__x); }
+
 
 
   constexpr long
@@ -6404,11 +7907,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_lrintl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               long>::__type
     lrint(_Tp __x)
     { return __builtin_lrint(__x); }
+
 
 
   constexpr long
@@ -6420,11 +7925,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_lroundl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               long>::__type
     lround(_Tp __x)
     { return __builtin_lround(__x); }
+
 
 
   constexpr float
@@ -6436,11 +7943,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_nearbyintl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     nearbyint(_Tp __x)
     { return __builtin_nearbyint(__x); }
+
 
 
   constexpr float
@@ -6452,6 +7961,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_nextafterl(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     nextafter(_Tp __x, _Up __y)
@@ -6459,6 +7969,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return nextafter(__type(__x), __type(__y));
     }
+
 
 
   constexpr float
@@ -6470,11 +7981,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_nexttowardl(__x, __y); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     nexttoward(_Tp __x, long double __y)
     { return __builtin_nexttoward(__x, __y); }
+
 
 
   constexpr float
@@ -6486,6 +7999,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_remainderl(__x, __y); }
 
 
+
   template<typename _Tp, typename _Up>
     constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     remainder(_Tp __x, _Up __y)
@@ -6493,6 +8007,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return remainder(__type(__x), __type(__y));
     }
+
 
 
   inline float
@@ -6504,6 +8019,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_remquol(__x, __y, __pquo); }
 
 
+
   template<typename _Tp, typename _Up>
     inline typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
     remquo(_Tp __x, _Up __y, int* __pquo)
@@ -6511,6 +8027,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return remquo(__type(__x), __type(__y), __pquo);
     }
+
 
 
   constexpr float
@@ -6522,11 +8039,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_rintl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     rint(_Tp __x)
     { return __builtin_rint(__x); }
+
 
 
   constexpr float
@@ -6538,11 +8057,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_roundl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     round(_Tp __x)
     { return __builtin_round(__x); }
+
 
 
   constexpr float
@@ -6554,11 +8075,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_scalblnl(__x, __ex); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     scalbln(_Tp __x, long __ex)
     { return __builtin_scalbln(__x, __ex); }
+
 
 
   constexpr float
@@ -6570,11 +8093,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_scalbnl(__x, __ex); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     scalbn(_Tp __x, int __ex)
     { return __builtin_scalbn(__x, __ex); }
+
 
 
   constexpr float
@@ -6586,11 +8111,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_tgammal(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     tgamma(_Tp __x)
     { return __builtin_tgamma(__x); }
+
 
 
   constexpr float
@@ -6602,17 +8129,22 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return __builtin_truncl(__x); }
 
 
+
   template<typename _Tp>
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               double>::__type
     trunc(_Tp __x)
     { return __builtin_trunc(__x); }
+# 1888 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cmath" 3
+
+}
+
+
+
 
 
 }
-# 1797 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 3
-}
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 2 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/math.h" 2 3
 
 using std::abs;
 using std::acos;
@@ -6689,29 +8221,29 @@ using std::scalbn;
 using std::tgamma;
 using std::trunc;
 # 151 "../../../ac_types/include/ac_int.h" 2
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 1 3
-# 36 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 1 3
+# 36 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 3
        
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stringfwd.h" 1 3
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stringfwd.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stringfwd.h" 1 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stringfwd.h" 3
        
-# 38 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stringfwd.h" 3
+# 38 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stringfwd.h" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/memoryfwd.h" 1 3
-# 46 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/memoryfwd.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/memoryfwd.h" 1 3
+# 46 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/memoryfwd.h" 3
        
-# 47 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/memoryfwd.h" 3
+# 47 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/memoryfwd.h" 3
 
 
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 63 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/memoryfwd.h" 3
+# 63 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/memoryfwd.h" 3
   template<typename>
     class allocator;
 
@@ -6726,7 +8258,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stringfwd.h" 2 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stringfwd.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -6782,18 +8314,18 @@ namespace __cxx11 {
 
 
 }
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 1 3
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 1 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 3
        
-# 38 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 3
+# 38 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 1 3
-# 60 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functexcept.h" 1 3
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functexcept.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/exception_defines.h" 1 3
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functexcept.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 1 3
+# 60 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functexcept.h" 1 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functexcept.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_defines.h" 1 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functexcept.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -6862,13 +8394,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 61 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
+# 61 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/numeric_traits.h" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/numeric_traits.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/numeric_traits.h" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/numeric_traits.h" 3
        
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/numeric_traits.h" 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/numeric_traits.h" 3
 
 
 
@@ -6876,7 +8408,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 {
 
-# 54 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/numeric_traits.h" 3
+# 54 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/numeric_traits.h" 3
   template<typename _Value>
     struct __numeric_traits_integer
     {
@@ -6901,7 +8433,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
   template<typename _Value>
     const int __numeric_traits_integer<_Value>::__digits;
-# 99 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/numeric_traits.h" 3
+# 99 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/numeric_traits.h" 3
   template<typename _Value>
     struct __numeric_traits_floating
     {
@@ -6935,16 +8467,16 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 64 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 1 3
-# 59 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 1 3
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/concept_check.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/concept_check.h" 3
+# 64 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 1 3
+# 59 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 1 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/concept_check.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/concept_check.h" 3
        
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/concept_check.h" 3
-# 35 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 2 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/concept_check.h" 3
+# 35 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -6956,27 +8488,21 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
   template<typename _Tp>
-    inline _Tp*
+    inline constexpr _Tp*
     __addressof(_Tp& __r) noexcept
-    {
-      return reinterpret_cast<_Tp*>
- (&const_cast<char&>(reinterpret_cast<const volatile char&>(__r)));
-    }
+    { return __builtin_addressof(__r); }
+
+
 
 
 }
 
-
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
        
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
-namespace std
-{
-  typedef short unsigned int uint_least16_t;
-  typedef unsigned int uint_least32_t;
-}
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
+
+
 
 
 
@@ -6985,19 +8511,19 @@ namespace std
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 68 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 56 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<typename _Tp, _Tp __v>
     struct integral_constant
     {
       static constexpr _Tp value = __v;
       typedef _Tp value_type;
       typedef integral_constant<_Tp, __v> type;
-      constexpr operator value_type() const { return value; }
+      constexpr operator value_type() const noexcept { return value; }
 
 
 
 
-      constexpr value_type operator()() const { return value; }
+      constexpr value_type operator()() const noexcept { return value; }
 
     };
 
@@ -7012,7 +8538,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<bool __v>
     using __bool_constant = integral_constant<bool, __v>;
-# 103 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 91 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<bool, typename, typename>
     struct conditional;
 
@@ -7064,9 +8590,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _Pp>
     struct __not_
-    : public integral_constant<bool, !_Pp::value>
+    : public __bool_constant<!bool(_Pp::value)>
     { };
-# 182 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 180 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<typename _Tp>
     struct __success_type
     { typedef _Tp type; };
@@ -7158,7 +8684,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __is_integral_helper<unsigned long long>
     : public true_type { };
-# 314 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 312 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<typename _Tp>
     struct is_integral
     : public __is_integral_helper<typename remove_cv<_Tp>::type>::type
@@ -7179,7 +8705,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __is_floating_point_helper<long double>
     : public true_type { };
-# 342 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 340 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<typename _Tp>
     struct is_floating_point
     : public __is_floating_point_helper<typename remove_cv<_Tp>::type>::type
@@ -7286,100 +8812,100 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct is_function
     : public false_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...)>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) && >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......)>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) && >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) const>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) const >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) const &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) const & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) const &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) const && >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) const>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) const >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) const &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) const & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) const &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) const && >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) volatile>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) volatile >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) volatile &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) volatile & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) volatile &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) volatile && >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) volatile>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) volatile >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) volatile &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) volatile & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) volatile &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) volatile && >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) const volatile>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) const volatile >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) const volatile &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) const volatile & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes...) const volatile &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes...) const volatile && >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) const volatile>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) const volatile >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) const volatile &>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) const volatile & >
     : public true_type { };
 
-  template<typename _Res, typename... _ArgTypes>
-    struct is_function<_Res(_ArgTypes......) const volatile &&>
+  template<typename _Res, typename... _ArgTypes >
+    struct is_function<_Res(_ArgTypes......) const volatile && >
     : public true_type { };
 
 
@@ -7469,13 +8995,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
     : public __or_<is_object<_Tp>, is_reference<_Tp>>::type
     { };
 
-  template<typename _Res, typename... _Args>
-    struct __is_referenceable<_Res(_Args...)>
+  template<typename _Res, typename... _Args >
+    struct __is_referenceable<_Res(_Args...) >
     : public true_type
     { };
 
-  template<typename _Res, typename... _Args>
-    struct __is_referenceable<_Res(_Args......)>
+  template<typename _Res, typename... _Args >
+    struct __is_referenceable<_Res(_Args......) >
     : public true_type
     { };
 
@@ -7578,19 +9104,17 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct is_unsigned
     : public __and_<is_arithmetic<_Tp>, __not_<is_signed<_Tp>>>
     { };
-
-
-
-
-  template<typename>
-    struct add_rvalue_reference;
-
-
-
-
+# 747 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
+  template<typename _Tp, typename _Up = _Tp&&>
+    _Up
+    __declval(int);
 
   template<typename _Tp>
-    typename add_rvalue_reference<_Tp>::type declval() noexcept;
+    _Tp
+    __declval(long);
+
+  template<typename _Tp>
+    auto declval() noexcept -> decltype(__declval<_Tp>(0));
 
   template<typename, unsigned = 0>
     struct extent;
@@ -7751,198 +9275,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct is_default_constructible
     : public __is_default_constructible_safe<_Tp>::type
     { };
-# 926 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
-  struct __do_is_static_castable_impl
-  {
-    template<typename _From, typename _To, typename
-             = decltype(static_cast<_To>(declval<_From>()))>
-      static true_type __test(int);
-
-    template<typename, typename>
-      static false_type __test(...);
-  };
-
-  template<typename _From, typename _To>
-    struct __is_static_castable_impl
-    : public __do_is_static_castable_impl
-    {
-      typedef decltype(__test<_From, _To>(0)) type;
-    };
-
-  template<typename _From, typename _To>
-    struct __is_static_castable_safe
-    : public __is_static_castable_impl<_From, _To>::type
-    { };
-
-
-  template<typename _From, typename _To>
-    struct __is_static_castable
-    : public integral_constant<bool, (__is_static_castable_safe<
-          _From, _To>::value)>
-    { };
-
-
-
-
-
-
-  struct __do_is_direct_constructible_impl
-  {
-    template<typename _Tp, typename _Arg, typename
-      = decltype(::new _Tp(declval<_Arg>()))>
-      static true_type __test(int);
-
-    template<typename, typename>
-      static false_type __test(...);
-  };
-
-  template<typename _Tp, typename _Arg>
-    struct __is_direct_constructible_impl
-    : public __do_is_direct_constructible_impl
-    {
-      typedef decltype(__test<_Tp, _Arg>(0)) type;
-    };
-
-  template<typename _Tp, typename _Arg>
-    struct __is_direct_constructible_new_safe
-    : public __and_<is_destructible<_Tp>,
-                    __is_direct_constructible_impl<_Tp, _Arg>>
-    { };
-
-  template<typename, typename>
-    struct is_same;
-
-  template<typename, typename>
-    struct is_base_of;
-
-  template<typename>
-    struct remove_reference;
-
-  template<typename _From, typename _To, bool
-           = __not_<__or_<is_void<_From>,
-                          is_function<_From>>>::value>
-    struct __is_base_to_derived_ref;
-
-
-
-  template<typename _From, typename _To>
-    struct __is_base_to_derived_ref<_From, _To, true>
-    {
-      typedef typename remove_cv<typename remove_reference<_From
-        >::type>::type __src_t;
-      typedef typename remove_cv<typename remove_reference<_To
-        >::type>::type __dst_t;
-      typedef __and_<__not_<is_same<__src_t, __dst_t>>,
-       is_base_of<__src_t, __dst_t>> type;
-      static constexpr bool value = type::value;
-    };
-
-  template<typename _From, typename _To>
-    struct __is_base_to_derived_ref<_From, _To, false>
-    : public false_type
-    { };
-
-  template<typename _From, typename _To, bool
-           = __and_<is_lvalue_reference<_From>,
-                    is_rvalue_reference<_To>>::value>
-    struct __is_lvalue_to_rvalue_ref;
-
-
-
-  template<typename _From, typename _To>
-    struct __is_lvalue_to_rvalue_ref<_From, _To, true>
-    {
-      typedef typename remove_cv<typename remove_reference<
-        _From>::type>::type __src_t;
-      typedef typename remove_cv<typename remove_reference<
-        _To>::type>::type __dst_t;
-      typedef __and_<__not_<is_function<__src_t>>,
-        __or_<is_same<__src_t, __dst_t>,
-      is_base_of<__dst_t, __src_t>>> type;
-      static constexpr bool value = type::value;
-    };
-
-  template<typename _From, typename _To>
-    struct __is_lvalue_to_rvalue_ref<_From, _To, false>
-    : public false_type
-    { };
-
-
-
-
-
-
-
-  template<typename _Tp, typename _Arg>
-    struct __is_direct_constructible_ref_cast
-    : public __and_<__is_static_castable<_Arg, _Tp>,
-                    __not_<__or_<__is_base_to_derived_ref<_Arg, _Tp>,
-                                 __is_lvalue_to_rvalue_ref<_Arg, _Tp>
-                   >>>
-    { };
-
-  template<typename _Tp, typename _Arg>
-    struct __is_direct_constructible_new
-    : public conditional<is_reference<_Tp>::value,
-    __is_direct_constructible_ref_cast<_Tp, _Arg>,
-    __is_direct_constructible_new_safe<_Tp, _Arg>
-    >::type
-    { };
-
-  template<typename _Tp, typename _Arg>
-    struct __is_direct_constructible
-    : public __is_direct_constructible_new<_Tp, _Arg>::type
-    { };
-
-
-
-
-
-
-  struct __do_is_nary_constructible_impl
-  {
-    template<typename _Tp, typename... _Args, typename
-             = decltype(_Tp(declval<_Args>()...))>
-      static true_type __test(int);
-
-    template<typename, typename...>
-      static false_type __test(...);
-  };
-
-  template<typename _Tp, typename... _Args>
-    struct __is_nary_constructible_impl
-    : public __do_is_nary_constructible_impl
-    {
-      typedef decltype(__test<_Tp, _Args...>(0)) type;
-    };
-
-  template<typename _Tp, typename... _Args>
-    struct __is_nary_constructible
-    : public __is_nary_constructible_impl<_Tp, _Args...>::type
-    {
-      static_assert(sizeof...(_Args) > 1,
-                    "Only useful for > 1 arguments");
-    };
-
-  template<typename _Tp, typename... _Args>
-    struct __is_constructible_impl
-    : public __is_nary_constructible<_Tp, _Args...>
-    { };
-
-  template<typename _Tp, typename _Arg>
-    struct __is_constructible_impl<_Tp, _Arg>
-    : public __is_direct_constructible<_Tp, _Arg>
-    { };
-
-  template<typename _Tp>
-    struct __is_constructible_impl<_Tp>
-    : public is_default_constructible<_Tp>
-    { };
 
 
   template<typename _Tp, typename... _Args>
     struct is_constructible
-    : public __is_constructible_impl<_Tp, _Args...>::type
+      : public __bool_constant<__is_constructible(_Tp, _Args...)>
     { };
 
   template<typename _Tp, bool = __is_referenceable<_Tp>::value>
@@ -8067,26 +9404,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
     : public __is_nothrow_move_constructible_impl<_Tp>
     { };
 
-  template<typename _Tp, typename _Up>
-    class __is_assignable_helper
-    {
-      template<typename _Tp1, typename _Up1,
-        typename = decltype(declval<_Tp1>() = declval<_Up1>())>
- static true_type
- __test(int);
-
-      template<typename, typename>
- static false_type
- __test(...);
-
-    public:
-      typedef decltype(__test<_Tp, _Up>(0)) type;
-    };
-
 
   template<typename _Tp, typename _Up>
     struct is_assignable
-      : public __is_assignable_helper<_Tp, _Up>::type
+      : public __bool_constant<__is_assignable(_Tp, _Up)>
     { };
 
   template<typename _Tp, bool = __is_referenceable<_Tp>::value>
@@ -8176,8 +9497,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _Tp, typename... _Args>
     struct is_trivially_constructible
-    : public __and_<is_constructible<_Tp, _Args...>, integral_constant<bool,
-   __is_trivially_constructible(_Tp, _Args...)>>
+    : public __and_<is_constructible<_Tp, _Args...>, __bool_constant<
+        __is_trivially_constructible(_Tp, _Args...)>>::type
     { };
 
 
@@ -8200,60 +9521,110 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _Tp>
     struct __is_implicitly_default_constructible_impl
-      : public __do_is_implicitly_default_constructible_impl
-  {
-    typedef decltype(__test(declval<_Tp>())) type;
-  };
+    : public __do_is_implicitly_default_constructible_impl
+    {
+      typedef decltype(__test(declval<_Tp>())) type;
+    };
 
   template<typename _Tp>
     struct __is_implicitly_default_constructible_safe
-      : public __is_implicitly_default_constructible_impl<_Tp>::type
-  { };
+    : public __is_implicitly_default_constructible_impl<_Tp>::type
+    { };
 
   template <typename _Tp>
     struct __is_implicitly_default_constructible
-      : public __and_<is_default_constructible<_Tp>,
-                      __is_implicitly_default_constructible_safe<_Tp>>
-  { };
+    : public __and_<is_default_constructible<_Tp>,
+      __is_implicitly_default_constructible_safe<_Tp>>
+    { };
 
+
+
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+    struct __is_trivially_copy_constructible_impl;
 
   template<typename _Tp>
-    struct is_trivially_copy_constructible
+    struct __is_trivially_copy_constructible_impl<_Tp, false>
+    : public false_type { };
+
+  template<typename _Tp>
+    struct __is_trivially_copy_constructible_impl<_Tp, true>
     : public __and_<is_copy_constructible<_Tp>,
       integral_constant<bool,
    __is_trivially_constructible(_Tp, const _Tp&)>>
     { };
 
+  template<typename _Tp>
+    struct is_trivially_copy_constructible
+    : public __is_trivially_copy_constructible_impl<_Tp>
+    { };
+
+
+
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+    struct __is_trivially_move_constructible_impl;
 
   template<typename _Tp>
-    struct is_trivially_move_constructible
+    struct __is_trivially_move_constructible_impl<_Tp, false>
+    : public false_type { };
+
+  template<typename _Tp>
+    struct __is_trivially_move_constructible_impl<_Tp, true>
     : public __and_<is_move_constructible<_Tp>,
       integral_constant<bool,
    __is_trivially_constructible(_Tp, _Tp&&)>>
     { };
 
-
-  template<typename _Tp, typename _Up>
-    struct is_trivially_assignable
-    : public __and_<is_assignable<_Tp, _Up>,
-      integral_constant<bool,
-   __is_trivially_assignable(_Tp, _Up)>>
+  template<typename _Tp>
+    struct is_trivially_move_constructible
+    : public __is_trivially_move_constructible_impl<_Tp>
     { };
 
 
+  template<typename _Tp, typename _Up>
+    struct is_trivially_assignable
+    : public __bool_constant<__is_trivially_assignable(_Tp, _Up)>
+    { };
+
+
+
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+    struct __is_trivially_copy_assignable_impl;
+
   template<typename _Tp>
-    struct is_trivially_copy_assignable
+    struct __is_trivially_copy_assignable_impl<_Tp, false>
+    : public false_type { };
+
+  template<typename _Tp>
+    struct __is_trivially_copy_assignable_impl<_Tp, true>
     : public __and_<is_copy_assignable<_Tp>,
       integral_constant<bool,
    __is_trivially_assignable(_Tp&, const _Tp&)>>
     { };
 
+  template<typename _Tp>
+    struct is_trivially_copy_assignable
+    : public __is_trivially_copy_assignable_impl<_Tp>
+    { };
+
+
+
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+    struct __is_trivially_move_assignable_impl;
 
   template<typename _Tp>
-    struct is_trivially_move_assignable
+    struct __is_trivially_move_assignable_impl<_Tp, false>
+    : public false_type { };
+
+  template<typename _Tp>
+    struct __is_trivially_move_assignable_impl<_Tp, true>
     : public __and_<is_move_assignable<_Tp>,
       integral_constant<bool,
    __is_trivially_assignable(_Tp&, _Tp&&)>>
+    { };
+
+  template<typename _Tp>
+    struct is_trivially_move_assignable
+    : public __is_trivially_move_assignable_impl<_Tp>
     { };
 
 
@@ -8263,23 +9634,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
          __has_trivial_destructor(_Tp)>>
     { };
 
-
-  template<typename _Tp>
-    struct has_trivial_default_constructor
-    : public integral_constant<bool, __has_trivial_constructor(_Tp)>
-    { } __attribute__ ((__deprecated__));
-
-
-  template<typename _Tp>
-    struct has_trivial_copy_constructor
-    : public integral_constant<bool, __has_trivial_copy(_Tp)>
-    { } __attribute__ ((__deprecated__));
-
-
-  template<typename _Tp>
-    struct has_trivial_copy_assign
-    : public integral_constant<bool, __has_trivial_assign(_Tp)>
-    { } __attribute__ ((__deprecated__));
 
 
   template<typename _Tp>
@@ -8293,7 +9647,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _Tp>
     struct alignment_of
-    : public integral_constant<std::size_t, __alignof__(_Tp)> { };
+    : public integral_constant<std::size_t, alignof(_Tp)> { };
 
 
   template<typename>
@@ -8571,12 +9925,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __make_unsigned<long long>
     { typedef unsigned long long __type; };
-
-
-  template<>
-    struct __make_unsigned<wchar_t> : __make_unsigned<int>
-    { };
-# 1774 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 1590 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<typename _Tp,
     bool _IsInt = is_integral<_Tp>::value,
     bool _IsEnum = is_enum<_Tp>::value>
@@ -8658,14 +10007,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __make_signed<unsigned long long>
     { typedef signed long long __type; };
-# 1863 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
-  template<>
-    struct __make_signed<char16_t> : __make_signed<uint_least16_t>
-    { };
-  template<>
-    struct __make_signed<char32_t> : __make_signed<uint_least32_t>
-    { };
-# 1893 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 1694 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<typename _Tp,
     bool _IsInt = is_integral<_Tp>::value,
     bool _IsEnum = is_enum<_Tp>::value>
@@ -8801,7 +10143,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  struct __attribute__((__aligned__)) { } __align;
       };
     };
-# 2039 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 1840 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<std::size_t _Len, std::size_t _Align =
     __alignof__(typename __aligned_storage_msa<_Len>::__type)>
     struct aligned_storage
@@ -8830,7 +10172,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
         sizeof(_Tp) > __strictest_alignment<_Types...>::_S_size
  ? sizeof(_Tp) : __strictest_alignment<_Types...>::_S_size;
     };
-# 2078 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 1879 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template <size_t _Len, typename... _Types>
     struct aligned_union
     {
@@ -9005,17 +10347,59 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __declval_protector
     {
       static const bool __stop = false;
-      static typename add_rvalue_reference<_Tp>::type __delegate();
     };
 
   template<typename _Tp>
-    inline typename add_rvalue_reference<_Tp>::type
-    declval() noexcept
+    auto declval() noexcept -> decltype(__declval<_Tp>(0))
     {
       static_assert(__declval_protector<_Tp>::__stop,
       "declval() must not be used!");
-      return __declval_protector<_Tp>::__delegate();
+      return __declval<_Tp>(0);
     }
+# 2072 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
+  template<>
+    struct __make_unsigned<wchar_t>
+    {
+      using __type
+ = typename __make_unsigned_selector<wchar_t, false, true>::__type;
+    };
+
+  template<>
+    struct __make_signed<wchar_t>
+    {
+      using __type
+ = typename __make_signed_selector<wchar_t, false, true>::__type;
+    };
+
+
+  template<>
+    struct __make_unsigned<char16_t>
+    {
+      using __type
+ = typename __make_unsigned_selector<char16_t, false, true>::__type;
+    };
+
+  template<>
+    struct __make_signed<char16_t>
+    {
+      using __type
+ = typename __make_signed_selector<char16_t, false, true>::__type;
+    };
+
+  template<>
+    struct __make_unsigned<char32_t>
+    {
+      using __type
+ = typename __make_unsigned_selector<char32_t, false, true>::__type;
+    };
+
+  template<>
+    struct __make_signed<char32_t>
+    {
+      using __type
+ = typename __make_signed_selector<char32_t, false, true>::__type;
+    };
+
 
 
   template<typename _Signature>
@@ -9148,59 +10532,18 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-  template<typename _Res, typename _Class, typename _Arg>
-    struct __result_of_memobj<_Res _Class::*, reference_wrapper<_Arg>>
-    : __result_of_memobj_ref<_Res _Class::*, _Arg&>
-    { };
 
-  template<typename _Res, typename _Class, typename _Arg>
-    struct __result_of_memobj<_Res _Class::*, reference_wrapper<_Arg>&>
-    : __result_of_memobj_ref<_Res _Class::*, _Arg&>
-    { };
+  template<typename _Tp, typename _Up = typename decay<_Tp>::type>
+    struct __inv_unwrap
+    {
+      using type = _Tp;
+    };
 
-  template<typename _Res, typename _Class, typename _Arg>
-    struct __result_of_memobj<_Res _Class::*, const reference_wrapper<_Arg>&>
-    : __result_of_memobj_ref<_Res _Class::*, _Arg&>
-    { };
-
-  template<typename _Res, typename _Class, typename _Arg>
-    struct __result_of_memobj<_Res _Class::*, reference_wrapper<_Arg>&&>
-    : __result_of_memobj_ref<_Res _Class::*, _Arg&>
-    { };
-
-  template<typename _Res, typename _Class, typename _Arg>
-    struct __result_of_memobj<_Res _Class::*, const reference_wrapper<_Arg>&&>
-    : __result_of_memobj_ref<_Res _Class::*, _Arg&>
-    { };
-
-  template<typename _Res, typename _Class, typename _Arg, typename... _Args>
-    struct __result_of_memfun<_Res _Class::*, reference_wrapper<_Arg>, _Args...>
-    : __result_of_memfun_ref<_Res _Class::*, _Arg&, _Args...>
-    { };
-
-  template<typename _Res, typename _Class, typename _Arg, typename... _Args>
-    struct __result_of_memfun<_Res _Class::*, reference_wrapper<_Arg>&,
-         _Args...>
-    : __result_of_memfun_ref<_Res _Class::*, _Arg&, _Args...>
-    { };
-
-  template<typename _Res, typename _Class, typename _Arg, typename... _Args>
-    struct __result_of_memfun<_Res _Class::*, const reference_wrapper<_Arg>&,
-         _Args...>
-    : __result_of_memfun_ref<_Res _Class::*, _Arg&, _Args...>
-    { };
-
-  template<typename _Res, typename _Class, typename _Arg, typename... _Args>
-    struct __result_of_memfun<_Res _Class::*, reference_wrapper<_Arg>&&,
-         _Args...>
-    : __result_of_memfun_ref<_Res _Class::*, _Arg&, _Args...>
-    { };
-
-  template<typename _Res, typename _Class, typename _Arg, typename... _Args>
-    struct __result_of_memfun<_Res _Class::*, const reference_wrapper<_Arg>&&,
-         _Args...>
-    : __result_of_memfun_ref<_Res _Class::*, _Arg&, _Args...>
-    { };
+  template<typename _Tp, typename _Up>
+    struct __inv_unwrap<_Tp, reference_wrapper<_Up>>
+    {
+      using type = _Up&;
+    };
 
   template<bool, bool, typename _Functor, typename... _ArgTypes>
     struct __result_of_impl
@@ -9210,12 +10553,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _MemPtr, typename _Arg>
     struct __result_of_impl<true, false, _MemPtr, _Arg>
-    : public __result_of_memobj<typename decay<_MemPtr>::type, _Arg>
+    : public __result_of_memobj<typename decay<_MemPtr>::type,
+    typename __inv_unwrap<_Arg>::type>
     { };
 
   template<typename _MemPtr, typename _Arg, typename... _Args>
     struct __result_of_impl<false, true, _MemPtr, _Arg, _Args...>
-    : public __result_of_memfun<typename decay<_MemPtr>::type, _Arg, _Args...>
+    : public __result_of_memfun<typename decay<_MemPtr>::type,
+    typename __inv_unwrap<_Arg>::type, _Args...>
     { };
 
 
@@ -9237,8 +10582,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef decltype(_S_test<_Functor, _ArgTypes...>(0)) type;
     };
 
+
   template<typename _Functor, typename... _ArgTypes>
-    struct result_of<_Functor(_ArgTypes...)>
+    struct __invoke_result
     : public __result_of_impl<
         is_member_object_pointer<
           typename remove_reference<_Functor>::type
@@ -9246,8 +10592,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
         is_member_function_pointer<
           typename remove_reference<_Functor>::type
         >::value,
-     _Functor, _ArgTypes...
+ _Functor, _ArgTypes...
       >::type
+    { };
+
+  template<typename _Functor, typename... _ArgTypes>
+    struct result_of<_Functor(_ArgTypes...)>
+    : public __invoke_result<_Functor, _ArgTypes...>
     { };
 
 
@@ -9284,8 +10635,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
     using result_of_t = typename result_of<_Tp>::type;
 
 
+
+  template<bool _Cond, typename _Tp = void>
+    using __enable_if_t = typename enable_if<_Cond, _Tp>::type;
+
+
   template<typename...> using __void_t = void;
-# 2540 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 2364 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template<typename _Default, typename _AlwaysVoid,
     template<typename...> class _Op, typename... _Args>
     struct __detector
@@ -9313,22 +10669,35 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename... _Args>
     using __detected_or_t
       = typename __detected_or<_Default, _Op, _Args...>::type;
-
-
-  template<template<typename...> class _Default,
-    template<typename...> class _Op, typename... _Args>
-    using __detected_or_t_ =
-      __detected_or_t<_Default<_Args...>, _Op, _Args...>;
-# 2590 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/type_traits" 3
+# 2408 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
   template <typename _Tp>
     struct __is_swappable;
 
   template <typename _Tp>
     struct __is_nothrow_swappable;
 
+  template<typename... _Elements>
+    class tuple;
+
+  template<typename>
+    struct __is_tuple_like_impl : false_type
+    { };
+
+  template<typename... _Tps>
+    struct __is_tuple_like_impl<tuple<_Tps...>> : true_type
+    { };
+
+
+  template<typename _Tp>
+    struct __is_tuple_like
+    : public __is_tuple_like_impl<typename remove_cv<
+      typename remove_reference<_Tp>::type>::type>::type
+    { };
+
   template<typename _Tp>
     inline
-    typename enable_if<__and_<is_move_constructible<_Tp>,
+    typename enable_if<__and_<__not_<__is_tuple_like<_Tp>>,
+         is_move_constructible<_Tp>,
          is_move_assignable<_Tp>>::value>::type
     swap(_Tp&, _Tp&)
     noexcept(__and_<is_nothrow_move_constructible<_Tp>,
@@ -9389,15 +10758,87 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __is_nothrow_swappable
     : public __is_nothrow_swappable_impl<_Tp>::type
     { };
+# 2613 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
+  template<typename _Result, typename _Ret, typename = void>
+    struct __is_invocable_impl : false_type { };
 
+  template<typename _Result, typename _Ret>
+    struct __is_invocable_impl<_Result, _Ret, __void_t<typename _Result::type>>
+    : __or_<is_void<_Ret>, is_convertible<typename _Result::type, _Ret>>::type
+    { };
+
+  template<typename _Fn, typename... _ArgTypes>
+    struct __is_invocable
+    : __is_invocable_impl<__invoke_result<_Fn, _ArgTypes...>, void>::type
+    { };
+
+  template<typename _Fn, typename _Tp, typename... _Args>
+    constexpr bool __call_is_nt(__invoke_memfun_ref)
+    {
+      using _Up = typename __inv_unwrap<_Tp>::type;
+      return noexcept((std::declval<_Up>().*std::declval<_Fn>())(
+     std::declval<_Args>()...));
+    }
+
+  template<typename _Fn, typename _Tp, typename... _Args>
+    constexpr bool __call_is_nt(__invoke_memfun_deref)
+    {
+      return noexcept(((*std::declval<_Tp>()).*std::declval<_Fn>())(
+     std::declval<_Args>()...));
+    }
+
+  template<typename _Fn, typename _Tp>
+    constexpr bool __call_is_nt(__invoke_memobj_ref)
+    {
+      using _Up = typename __inv_unwrap<_Tp>::type;
+      return noexcept(std::declval<_Up>().*std::declval<_Fn>());
+    }
+
+  template<typename _Fn, typename _Tp>
+    constexpr bool __call_is_nt(__invoke_memobj_deref)
+    {
+      return noexcept((*std::declval<_Tp>()).*std::declval<_Fn>());
+    }
+
+  template<typename _Fn, typename... _Args>
+    constexpr bool __call_is_nt(__invoke_other)
+    {
+      return noexcept(std::declval<_Fn>()(std::declval<_Args>()...));
+    }
+
+  template<typename _Result, typename _Fn, typename... _Args>
+    struct __call_is_nothrow
+    : __bool_constant<
+ std::__call_is_nt<_Fn, _Args...>(typename _Result::__invoke_type{})
+      >
+    { };
+
+  template<typename _Fn, typename... _Args>
+    using __call_is_nothrow_
+      = __call_is_nothrow<__invoke_result<_Fn, _Args...>, _Fn, _Args...>;
+
+
+  template<typename _Fn, typename... _Args>
+    struct __is_nothrow_invocable
+    : __and_<__is_invocable<_Fn, _Args...>,
+             __call_is_nothrow_<_Fn, _Args...>>::type
+    { };
+
+  struct __nonesuch {
+    __nonesuch() = delete;
+    ~__nonesuch() = delete;
+    __nonesuch(__nonesuch const&) = delete;
+    void operator=(__nonesuch const&) = delete;
+  };
+# 2973 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/type_traits" 3
 
 }
-# 58 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 2 3
+# 56 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 74 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 3
+# 72 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 3
   template<typename _Tp>
     constexpr _Tp&&
     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
@@ -9433,17 +10874,22 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __move_if_noexcept_cond
     : public __and_<__not_<is_nothrow_move_constructible<_Tp>>,
                     is_copy_constructible<_Tp>>::type { };
-# 118 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 3
+# 116 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 3
   template<typename _Tp>
     constexpr typename
     conditional<__move_if_noexcept_cond<_Tp>::value, const _Tp&, _Tp&&>::type
     move_if_noexcept(_Tp& __x) noexcept
     { return std::move(__x); }
-# 133 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 3
+# 136 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 3
   template<typename _Tp>
     inline _Tp*
     addressof(_Tp& __r) noexcept
     { return std::__addressof(__r); }
+
+
+
+  template<typename _Tp>
+    const _Tp* addressof(const _Tp&&) = delete;
 
 
   template <typename _Tp, typename _Up = _Tp>
@@ -9454,19 +10900,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       __obj = std::forward<_Up>(__new_val);
       return __old_val;
     }
-
-
-
-}
-# 159 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-# 174 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/move.h" 3
+# 176 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/move.h" 3
   template<typename _Tp>
     inline
 
-    typename enable_if<__and_<is_move_constructible<_Tp>,
+    typename enable_if<__and_<__not_<__is_tuple_like<_Tp>>,
+         is_move_constructible<_Tp>,
          is_move_assignable<_Tp>>::value>::type
     swap(_Tp& __a, _Tp& __b)
     noexcept(__and_<is_nothrow_move_constructible<_Tp>,
@@ -9505,7 +10944,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 60 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 2 3
+# 60 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 2 3
 
 
 
@@ -9514,11 +10953,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 76 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 3
+# 76 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 3
   struct piecewise_construct_t { explicit piecewise_construct_t() = default; };
 
 
-  constexpr piecewise_construct_t piecewise_construct = piecewise_construct_t();
+  constexpr piecewise_construct_t piecewise_construct =
+    piecewise_construct_t();
 
 
   template<typename...>
@@ -9532,52 +10972,122 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-  template <typename _T1, typename _T2, typename _U1, typename _U2>
-  constexpr bool _ConstructiblePair()
-  {
-    return __and_<__or_<is_same<typename decay<_T1>::type,
-    typename decay<_U1>::type>,
-   is_constructible<_T1, const _U1&>>,
-    __or_<is_same<typename decay<_T2>::type,
-    typename decay<_U2>::type>,
-   is_constructible<_T2, const _U2&>>>::value;
-  }
+  template <bool, typename _T1, typename _T2>
+    struct _PCC
+    {
+      template <typename _U1, typename _U2>
+      static constexpr bool _ConstructiblePair()
+      {
+ return __and_<is_constructible<_T1, const _U1&>,
+        is_constructible<_T2, const _U2&>>::value;
+      }
 
-  template <typename _T1, typename _T2, typename _U1, typename _U2>
-  constexpr bool _ImplicitlyConvertiblePair()
-  {
-    return __and_<__or_<is_same<typename decay<_T1>::type,
-    typename decay<_U1>::type>,
-   is_convertible<const _U1&, _T1>>,
-    __or_<is_same<typename decay<_T2>::type,
-    typename decay<_U2>::type>,
-         is_convertible<const _U2&, _T2>>>::value;
-  }
+      template <typename _U1, typename _U2>
+      static constexpr bool _ImplicitlyConvertiblePair()
+      {
+ return __and_<is_convertible<const _U1&, _T1>,
+        is_convertible<const _U2&, _T2>>::value;
+      }
 
-  template <typename _T1, typename _T2, typename _U1, typename _U2>
-  constexpr bool _MoveConstructiblePair()
-  {
-    return __and_<__or_<is_same<typename decay<_T1>::type,
-    typename decay<_U1>::type>,
-   is_constructible<_T1, _U1&&>>,
-    __or_<is_same<typename decay<_T2>::type,
-    typename decay<_U2>::type>,
-   is_constructible<_T2, _U2&&>>>::value;
-  }
+      template <typename _U1, typename _U2>
+      static constexpr bool _MoveConstructiblePair()
+      {
+ return __and_<is_constructible<_T1, _U1&&>,
+        is_constructible<_T2, _U2&&>>::value;
+      }
 
-  template <typename _T1, typename _T2, typename _U1, typename _U2>
-  constexpr bool _ImplicitlyMoveConvertiblePair()
+      template <typename _U1, typename _U2>
+      static constexpr bool _ImplicitlyMoveConvertiblePair()
+      {
+ return __and_<is_convertible<_U1&&, _T1>,
+        is_convertible<_U2&&, _T2>>::value;
+      }
+
+      template <bool __implicit, typename _U1, typename _U2>
+      static constexpr bool _CopyMovePair()
+      {
+ using __do_converts = __and_<is_convertible<const _U1&, _T1>,
+      is_convertible<_U2&&, _T2>>;
+ using __converts = typename conditional<__implicit,
+           __do_converts,
+           __not_<__do_converts>>::type;
+ return __and_<is_constructible<_T1, const _U1&>,
+        is_constructible<_T2, _U2&&>,
+        __converts
+        >::value;
+      }
+
+      template <bool __implicit, typename _U1, typename _U2>
+      static constexpr bool _MoveCopyPair()
+      {
+ using __do_converts = __and_<is_convertible<_U1&&, _T1>,
+      is_convertible<const _U2&, _T2>>;
+ using __converts = typename conditional<__implicit,
+           __do_converts,
+           __not_<__do_converts>>::type;
+ return __and_<is_constructible<_T1, _U1&&>,
+        is_constructible<_T2, const _U2&&>,
+        __converts
+        >::value;
+      }
+  };
+
+  template <typename _T1, typename _T2>
+    struct _PCC<false, _T1, _T2>
+    {
+      template <typename _U1, typename _U2>
+      static constexpr bool _ConstructiblePair()
+      {
+ return false;
+      }
+
+      template <typename _U1, typename _U2>
+      static constexpr bool _ImplicitlyConvertiblePair()
+      {
+ return false;
+      }
+
+      template <typename _U1, typename _U2>
+      static constexpr bool _MoveConstructiblePair()
+      {
+ return false;
+      }
+
+      template <typename _U1, typename _U2>
+      static constexpr bool _ImplicitlyMoveConvertiblePair()
+      {
+ return false;
+      }
+  };
+
+
+
+
+  struct __nonesuch_no_braces : std::__nonesuch {
+    explicit __nonesuch_no_braces(const __nonesuch&) = delete;
+  };
+
+
+  template<typename _U1, typename _U2> class __pair_base
   {
-    return __and_<__or_<is_same<typename decay<_T1>::type,
-    typename decay<_U1>::type>,
-   is_convertible<_U1&&, _T1>>,
-    __or_<is_same<typename decay<_T2>::type,
-    typename decay<_U2>::type>,
-         is_convertible<_U2&&, _T2>>>::value;
-  }
-# 146 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 3
+
+    template<typename _T1, typename _T2> friend struct pair;
+    __pair_base() = default;
+    ~__pair_base() = default;
+    __pair_base(const __pair_base&) = default;
+    __pair_base& operator=(const __pair_base&) = delete;
+
+  };
+
+
+
+
+
+
+
   template<typename _T1, typename _T2>
     struct pair
+    : private __pair_base<_T1, _T2>
     {
       typedef _T1 first_type;
       typedef _T2 second_type;
@@ -9612,37 +11122,46 @@ namespace std __attribute__ ((__visibility__ ("default")))
                                    ::value, bool>::type = false>
       explicit constexpr pair()
       : first(), second() { }
-
-
-
-
-
-
+# 252 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 3
+      using _PCCP = _PCC<true, _T1, _T2>;
 
       template<typename _U1 = _T1, typename _U2=_T2, typename
-                enable_if<_ConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && _ImplicitlyConvertiblePair<_T1, _T2, _U1, _U2>(),
+        enable_if<_PCCP::template
+      _ConstructiblePair<_U1, _U2>()
+                  && _PCCP::template
+      _ImplicitlyConvertiblePair<_U1, _U2>(),
                          bool>::type=true>
       constexpr pair(const _T1& __a, const _T2& __b)
       : first(__a), second(__b) { }
 
        template<typename _U1 = _T1, typename _U2=_T2, typename
-        enable_if<_ConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && !_ImplicitlyConvertiblePair<_T1, _T2, _U1, _U2>(),
+  enable_if<_PCCP::template
+       _ConstructiblePair<_U1, _U2>()
+                   && !_PCCP::template
+       _ImplicitlyConvertiblePair<_U1, _U2>(),
                          bool>::type=false>
       explicit constexpr pair(const _T1& __a, const _T2& __b)
       : first(__a), second(__b) { }
-# 210 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 3
+# 280 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 3
+      template <typename _U1, typename _U2>
+        using _PCCFP = _PCC<!is_same<_T1, _U1>::value
+       || !is_same<_T2, _U2>::value,
+       _T1, _T2>;
+
       template<typename _U1, typename _U2, typename
-        enable_if<_ConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && _ImplicitlyConvertiblePair<_T1, _T2, _U1, _U2>(),
-                         bool>::type=true>
+        enable_if<_PCCFP<_U1, _U2>::template
+      _ConstructiblePair<_U1, _U2>()
+                  && _PCCFP<_U1, _U2>::template
+      _ImplicitlyConvertiblePair<_U1, _U2>(),
+     bool>::type=true>
         constexpr pair(const pair<_U1, _U2>& __p)
         : first(__p.first), second(__p.second) { }
 
       template<typename _U1, typename _U2, typename
-               enable_if<_ConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && !_ImplicitlyConvertiblePair<_T1, _T2, _U1, _U2>(),
+        enable_if<_PCCFP<_U1, _U2>::template
+      _ConstructiblePair<_U1, _U2>()
+    && !_PCCFP<_U1, _U2>::template
+      _ImplicitlyConvertiblePair<_U1, _U2>(),
                          bool>::type=false>
  explicit constexpr pair(const pair<_U1, _U2>& __p)
  : first(__p.first), second(__p.second) { }
@@ -9652,75 +11171,67 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
       template<typename _U1, typename
-               enable_if<_ConstructiblePair<_T2, _T2, _T2, _T2>()
-                         && _MoveConstructiblePair<_T1, _T2, _U1, _T2>()
-                         && _ImplicitlyConvertiblePair<_T2, _T2, _T2, _T2>()
-                         && _ImplicitlyMoveConvertiblePair<_T1, _T2,
-         _U1, _T2>(),
+        enable_if<_PCCP::template
+      _MoveCopyPair<true, _U1, _T2>(),
                          bool>::type=true>
        constexpr pair(_U1&& __x, const _T2& __y)
        : first(std::forward<_U1>(__x)), second(__y) { }
 
       template<typename _U1, typename
-               enable_if<_ConstructiblePair<_T2, _T2, _T2, _T2>()
-                         && _MoveConstructiblePair<_T1, _T2, _U1, _T2>()
-                         && (!_ImplicitlyConvertiblePair<_T2, _T2, _T2, _T2>()
-                             || !_ImplicitlyMoveConvertiblePair<_T1, _T2,
-                                                                _U1, _T2>()),
+        enable_if<_PCCP::template
+      _MoveCopyPair<false, _U1, _T2>(),
                          bool>::type=false>
        explicit constexpr pair(_U1&& __x, const _T2& __y)
        : first(std::forward<_U1>(__x)), second(__y) { }
 
       template<typename _U2, typename
-               enable_if<_ConstructiblePair<_T1, _T1, _T1, _T1>()
-                         && _MoveConstructiblePair<_T1, _T2, _T1, _U2>()
-                         && _ImplicitlyConvertiblePair<_T1, _T1, _T1, _T1>()
-                         && _ImplicitlyMoveConvertiblePair<_T1, _T2,
-                                                           _T1, _U2>(),
+        enable_if<_PCCP::template
+      _CopyMovePair<true, _T1, _U2>(),
                          bool>::type=true>
        constexpr pair(const _T1& __x, _U2&& __y)
        : first(__x), second(std::forward<_U2>(__y)) { }
 
       template<typename _U2, typename
-               enable_if<_ConstructiblePair<_T1, _T1, _T1, _T1>()
-                         && _MoveConstructiblePair<_T1, _T2, _T1, _U2>()
-                         && (!_ImplicitlyConvertiblePair<_T1, _T1, _T1, _T1>()
-                             || !_ImplicitlyMoveConvertiblePair<_T1, _T2,
-                                                                _T1, _U2>()),
+        enable_if<_PCCP::template
+      _CopyMovePair<false, _T1, _U2>(),
                          bool>::type=false>
        explicit pair(const _T1& __x, _U2&& __y)
        : first(__x), second(std::forward<_U2>(__y)) { }
 
       template<typename _U1, typename _U2, typename
-        enable_if<_MoveConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && _ImplicitlyMoveConvertiblePair<_T1, _T2,
-          _U1, _U2>(),
+        enable_if<_PCCP::template
+      _MoveConstructiblePair<_U1, _U2>()
+     && _PCCP::template
+      _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
                          bool>::type=true>
  constexpr pair(_U1&& __x, _U2&& __y)
  : first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
 
       template<typename _U1, typename _U2, typename
-        enable_if<_MoveConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && !_ImplicitlyMoveConvertiblePair<_T1, _T2,
-           _U1, _U2>(),
+        enable_if<_PCCP::template
+      _MoveConstructiblePair<_U1, _U2>()
+     && !_PCCP::template
+      _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
                          bool>::type=false>
  explicit constexpr pair(_U1&& __x, _U2&& __y)
  : first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
 
 
       template<typename _U1, typename _U2, typename
-        enable_if<_MoveConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && _ImplicitlyMoveConvertiblePair<_T1, _T2,
-          _U1, _U2>(),
+        enable_if<_PCCFP<_U1, _U2>::template
+      _MoveConstructiblePair<_U1, _U2>()
+     && _PCCFP<_U1, _U2>::template
+      _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
                          bool>::type=true>
  constexpr pair(pair<_U1, _U2>&& __p)
  : first(std::forward<_U1>(__p.first)),
    second(std::forward<_U2>(__p.second)) { }
 
       template<typename _U1, typename _U2, typename
-        enable_if<_MoveConstructiblePair<_T1, _T2, _U1, _U2>()
-                         && !_ImplicitlyMoveConvertiblePair<_T1, _T2,
-          _U1, _U2>(),
+        enable_if<_PCCFP<_U1, _U2>::template
+      _MoveConstructiblePair<_U1, _U2>()
+     && !_PCCFP<_U1, _U2>::template
+      _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
                          bool>::type=false>
  explicit constexpr pair(pair<_U1, _U2>&& __p)
  : first(std::forward<_U1>(__p.first)),
@@ -9730,7 +11241,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
         pair(piecewise_construct_t, tuple<_Args1...>, tuple<_Args2...>);
 
       pair&
-      operator=(const pair& __p)
+      operator=(typename conditional<
+  __and_<is_copy_assignable<_T1>,
+         is_copy_assignable<_T2>>::value,
+  const pair&, const __nonesuch_no_braces&>::type __p)
       {
  first = __p.first;
  second = __p.second;
@@ -9738,9 +11252,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       }
 
       pair&
-      operator=(pair&& __p)
+      operator=(typename conditional<
+  __and_<is_move_assignable<_T1>,
+         is_move_assignable<_T2>>::value,
+  pair&&, __nonesuch_no_braces&&>::type __p)
       noexcept(__and_<is_nothrow_move_assignable<_T1>,
-               is_nothrow_move_assignable<_T2>>::value)
+        is_nothrow_move_assignable<_T2>>::value)
       {
  first = std::forward<first_type>(__p.first);
  second = std::forward<second_type>(__p.second);
@@ -9748,7 +11265,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
       }
 
       template<typename _U1, typename _U2>
- pair&
+      typename enable_if<__and_<is_assignable<_T1&, const _U1&>,
+    is_assignable<_T2&, const _U2&>>::value,
+    pair&>::type
  operator=(const pair<_U1, _U2>& __p)
  {
    first = __p.first;
@@ -9757,7 +11276,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
  }
 
       template<typename _U1, typename _U2>
- pair&
+      typename enable_if<__and_<is_assignable<_T1&, _U1&&>,
+    is_assignable<_T2&, _U2&&>>::value,
+    pair&>::type
  operator=(pair<_U1, _U2>&& __p)
  {
    first = std::forward<_U1>(__p.first);
@@ -9767,8 +11288,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       void
       swap(pair& __p)
-      noexcept(__is_nothrow_swappable<_T1>::value
-               && __is_nothrow_swappable<_T2>::value)
+      noexcept(__and_<__is_nothrow_swappable<_T1>,
+                      __is_nothrow_swappable<_T2>>::value)
       {
  using std::swap;
  swap(first, __p.first);
@@ -9782,6 +11303,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
              _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2...>);
 
     };
+
+
+
+
 
 
   template<typename _T1, typename _T2>
@@ -9825,11 +11350,18 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
   template<typename _T1, typename _T2>
-    inline void
+    inline
+
+
+
+
+
+    void
+
     swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)
     noexcept(noexcept(__x.swap(__y)))
     { __x.swap(__y); }
-# 422 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 3
+# 521 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     constexpr pair<typename __decay_and_strip<_T1>::__type,
                    typename __decay_and_strip<_T2>::__type>
@@ -9840,14 +11372,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef pair<__ds_type1, __ds_type2> __pair_type;
       return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
     }
-# 441 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_pair.h" 3
+# 540 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_pair.h" 3
 
 }
-# 65 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 1 3
-# 62 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 3
+# 65 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 1 3
+# 62 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
        
-# 63 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 3
+# 63 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
 
 
 
@@ -9858,7 +11390,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 89 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 3
+# 89 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
   struct input_iterator_tag { };
 
 
@@ -9874,7 +11406,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
   struct random_access_iterator_tag : public bidirectional_iterator_tag { };
-# 116 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 3
+# 116 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
   template<typename _Category, typename _Tp, typename _Distance = ptrdiff_t,
            typename _Pointer = _Tp*, typename _Reference = _Tp&>
     struct iterator
@@ -9890,7 +11422,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       typedef _Reference reference;
     };
-# 143 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 3
+# 143 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
   template<typename _Iterator, typename = __void_t<>>
     struct __iterator_traits { };
 
@@ -9912,7 +11444,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<typename _Iterator>
     struct iterator_traits
     : public __iterator_traits<_Iterator> { };
-# 177 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 3
+# 177 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
   template<typename _Tp>
     struct iterator_traits<_Tp*>
     {
@@ -9939,10 +11471,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
   template<typename _Iter>
-    inline typename iterator_traits<_Iter>::iterator_category
+    inline constexpr
+    typename iterator_traits<_Iter>::iterator_category
     __iterator_category(const _Iter&)
     { return typename iterator_traits<_Iter>::iterator_category(); }
-# 230 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_types.h" 3
+# 231 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
   template<typename _InIter>
     using _RequireInputIter = typename
       enable_if<is_convertible<typename
@@ -9952,28 +11485,29 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 66 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_funcs.h" 1 3
-# 62 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_funcs.h" 3
+# 66 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 1 3
+# 62 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 3
        
-# 63 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_funcs.h" 3
+# 63 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/debug/assertions.h" 1 3
-# 66 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_funcs.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/debug/assertions.h" 1 3
+# 66 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
+
+
 
 
   template <typename> struct _List_iterator;
   template <typename> struct _List_const_iterator;
 
 
-
-
   template<typename _InputIterator>
-    inline typename iterator_traits<_InputIterator>::difference_type
+    inline constexpr
+    typename iterator_traits<_InputIterator>::difference_type
     __distance(_InputIterator __first, _InputIterator __last,
                input_iterator_tag)
     {
@@ -9990,7 +11524,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
   template<typename _RandomAccessIterator>
-    inline typename iterator_traits<_RandomAccessIterator>::difference_type
+    inline constexpr
+    typename iterator_traits<_RandomAccessIterator>::difference_type
     __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,
                random_access_iterator_tag)
     {
@@ -10013,9 +11548,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
     __distance(std::_List_const_iterator<_Tp>,
         std::_List_const_iterator<_Tp>,
         input_iterator_tag);
-# 133 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_funcs.h" 3
+# 135 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 3
   template<typename _InputIterator>
-    inline typename iterator_traits<_InputIterator>::difference_type
+    inline
+    typename iterator_traits<_InputIterator>::difference_type
     distance(_InputIterator __first, _InputIterator __last)
     {
 
@@ -10024,7 +11560,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
   template<typename _InputIterator, typename _Distance>
-    inline void
+    inline constexpr void
     __advance(_InputIterator& __i, _Distance __n, input_iterator_tag)
     {
 
@@ -10035,7 +11571,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
   template<typename _BidirectionalIterator, typename _Distance>
-    inline void
+    inline constexpr void
     __advance(_BidirectionalIterator& __i, _Distance __n,
        bidirectional_iterator_tag)
     {
@@ -10051,16 +11587,21 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
   template<typename _RandomAccessIterator, typename _Distance>
-    inline void
+    inline constexpr void
     __advance(_RandomAccessIterator& __i, _Distance __n,
               random_access_iterator_tag)
     {
 
      
 
-      __i += __n;
+      if (__builtin_constant_p(__n) && __n == 1)
+ ++__i;
+      else if (__builtin_constant_p(__n) && __n == -1)
+ --__i;
+      else
+ __i += __n;
     }
-# 192 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator_base_funcs.h" 3
+# 200 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 3
   template<typename _InputIterator, typename _Distance>
     inline void
     advance(_InputIterator& __i, _Distance __n)
@@ -10072,14 +11613,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-  template<typename _ForwardIterator>
-    inline _ForwardIterator
-    next(_ForwardIterator __x, typename
-  iterator_traits<_ForwardIterator>::difference_type __n = 1)
+  template<typename _InputIterator>
+    inline _InputIterator
+    next(_InputIterator __x, typename
+  iterator_traits<_InputIterator>::difference_type __n = 1)
     {
 
      
-
       std::advance(__x, __n);
       return __x;
     }
@@ -10100,11 +11640,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 67 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 1 3
-# 66 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/ptr_traits.h" 1 3
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/ptr_traits.h" 3
+# 67 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 1 3
+# 66 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/ptr_traits.h" 1 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/ptr_traits.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -10127,7 +11667,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _Tp, typename _Up>
     struct __replace_first_arg
-    { using type = __undefined; };
+    { };
 
   template<template<typename, typename...> class _Template, typename _Up,
            typename _Tp, typename... _Types>
@@ -10155,8 +11695,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       template<typename _Tp>
  using __difference_type = typename _Tp::difference_type;
 
+      template<typename _Tp, typename _Up, typename = void>
+ struct __rebind : __replace_first_arg<_Tp, _Up> { };
+
       template<typename _Tp, typename _Up>
- using __rebind = typename _Tp::template rebind<_Up>;
+ struct __rebind<_Tp, _Up, __void_t<typename _Tp::template rebind<_Up>>>
+ { using type = typename _Tp::template rebind<_Up>; };
 
     public:
 
@@ -10164,7 +11708,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
       using element_type
- = __detected_or_t_<__get_first_arg_t, __element_type, _Ptr>;
+ = __detected_or_t<__get_first_arg_t<_Ptr>, __element_type, _Ptr>;
 
 
       using difference_type
@@ -10172,8 +11716,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
       template<typename _Up>
-        using rebind
-   = __detected_or_t_<__replace_first_arg_t, __rebind, _Ptr, _Up>;
+        using rebind = typename __rebind<_Ptr, _Up>::type;
 
       static _Ptr
       pointer_to(__make_not_void<element_type>& __e)
@@ -10181,8 +11724,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       static_assert(!is_same<element_type, __undefined>::value,
    "pointer type defines element_type or is like SomePointer<T, Args>");
-      static_assert(!is_same<rebind<element_type>, __undefined>::value,
-   "pointer type defines rebind<U> or is like SomePointer<T, Args>");
     };
 
 
@@ -10216,14 +11757,32 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<typename _Ptr, typename _Tp>
     using __ptr_rebind = typename pointer_traits<_Ptr>::template rebind<_Tp>;
 
+  template<typename _Tp>
+    constexpr _Tp*
+    __to_address(_Tp* __ptr) noexcept
+    {
+      static_assert(!std::is_function<_Tp>::value, "not a function pointer");
+      return __ptr;
+    }
+
+
+  template<typename _Ptr>
+    constexpr typename std::pointer_traits<_Ptr>::element_type*
+    __to_address(const _Ptr& __ptr)
+    { return std::__to_address(__ptr.operator->()); }
+# 198 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/ptr_traits.h" 3
 
 }
-# 67 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 2 3
+# 67 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 2 3
+
+
+
+
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 96 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 100 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Iterator>
     class reverse_iterator
     : public iterator<typename iterator_traits<_Iterator>::iterator_category,
@@ -10242,13 +11801,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __traits_type::difference_type difference_type;
       typedef typename __traits_type::pointer pointer;
       typedef typename __traits_type::reference reference;
-
-
-
-
-
-
-
+# 126 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
+     
       reverse_iterator() : current() { }
 
 
@@ -10260,6 +11814,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
+     
       reverse_iterator(const reverse_iterator& __x)
       : current(__x.current) { }
 
@@ -10268,6 +11823,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
       template<typename _Iter>
+
         reverse_iterator(const reverse_iterator<_Iter>& __x)
  : current(__x.base()) { }
 
@@ -10277,22 +11833,17 @@ namespace std __attribute__ ((__visibility__ ("default")))
       iterator_type
       base() const
       { return current; }
-# 160 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 168 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
       reference
       operator*() const
       {
  _Iterator __tmp = current;
  return *--__tmp;
       }
-
-
-
-
-
-
+# 182 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
       pointer
       operator->() const
-      { return &(operator*()); }
+      { return std::__addressof(operator*()); }
 
 
 
@@ -10397,7 +11948,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator[](difference_type __n) const
       { return *(*this + __n); }
     };
-# 290 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 300 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Iterator>
     inline bool
     operator==(const reverse_iterator<_Iterator>& __x,
@@ -10433,18 +11984,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
     operator>=(const reverse_iterator<_Iterator>& __x,
         const reverse_iterator<_Iterator>& __y)
     { return !(__x < __y); }
-
-  template<typename _Iterator>
-    inline typename reverse_iterator<_Iterator>::difference_type
-    operator-(const reverse_iterator<_Iterator>& __x,
-       const reverse_iterator<_Iterator>& __y)
-    { return __y.base() - __x.base(); }
-
-  template<typename _Iterator>
-    inline reverse_iterator<_Iterator>
-    operator+(typename reverse_iterator<_Iterator>::difference_type __n,
-       const reverse_iterator<_Iterator>& __x)
-    { return reverse_iterator<_Iterator>(__x.base() - __n); }
 
 
 
@@ -10483,21 +12022,20 @@ namespace std __attribute__ ((__visibility__ ("default")))
     operator>=(const reverse_iterator<_IteratorL>& __x,
         const reverse_iterator<_IteratorR>& __y)
     { return !(__x < __y); }
-
+# 390 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _IteratorL, typename _IteratorR>
-
-
     inline auto
     operator-(const reverse_iterator<_IteratorL>& __x,
        const reverse_iterator<_IteratorR>& __y)
     -> decltype(__y.base() - __x.base())
-
-
-
-
-
     { return __y.base() - __x.base(); }
 
+
+  template<typename _Iterator>
+    inline reverse_iterator<_Iterator>
+    operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+       const reverse_iterator<_Iterator>& __x)
+    { return reverse_iterator<_Iterator>(__x.base() - __n); }
 
 
 
@@ -10536,7 +12074,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     __miter_base(reverse_iterator<_Iterator> __it)
     -> decltype(__make_reverse_iterator(__miter_base(__it.base())))
     { return __make_reverse_iterator(__miter_base(__it.base())); }
-# 441 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 454 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Container>
     class back_insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -10552,7 +12090,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       explicit
       back_insert_iterator(_Container& __x)
       : container(std::__addressof(__x)) { }
-# 476 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 489 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
       back_insert_iterator&
       operator=(const typename _Container::value_type& __value)
       {
@@ -10583,12 +12121,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator++(int)
       { return *this; }
     };
-# 518 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 531 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Container>
     inline back_insert_iterator<_Container>
     back_inserter(_Container& __x)
     { return back_insert_iterator<_Container>(__x); }
-# 533 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 546 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Container>
     class front_insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -10603,7 +12141,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       explicit front_insert_iterator(_Container& __x)
       : container(std::__addressof(__x)) { }
-# 567 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 580 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
       front_insert_iterator&
       operator=(const typename _Container::value_type& __value)
       {
@@ -10634,12 +12172,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator++(int)
       { return *this; }
     };
-# 609 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 622 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Container>
     inline front_insert_iterator<_Container>
     front_inserter(_Container& __x)
     { return front_insert_iterator<_Container>(__x); }
-# 628 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 641 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Container>
     class insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -10658,7 +12196,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       insert_iterator(_Container& __x, typename _Container::iterator __i)
       : container(std::__addressof(__x)), iter(__i) {}
-# 679 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 692 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
       insert_iterator&
       operator=(const typename _Container::value_type& __value)
       {
@@ -10691,7 +12229,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator++(int)
       { return *this; }
     };
-# 723 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 737 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Container, typename _Iterator>
     inline insert_iterator<_Container>
     inserter(_Container& __x, _Iterator __i)
@@ -10708,7 +12246,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 {
 
-# 747 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 761 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   using std::iterator_traits;
   using std::iterator;
   template<typename _Iterator, typename _Container>
@@ -10799,7 +12337,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       base() const noexcept
       { return _M_current; }
     };
-# 847 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 861 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _IteratorL, typename _IteratorR, typename _Container>
     inline bool
     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
@@ -10928,16 +12466,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     _Iterator
     __niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container> __it)
     { return __it.base(); }
-
-
-}
-
-
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-# 999 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_iterator.h" 3
+# 1006 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
   template<typename _Iterator>
     class move_iterator
     {
@@ -10960,6 +12489,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename remove_reference<__base_ref>::type&&,
     __base_ref>::type reference;
 
+     
       move_iterator()
       : _M_current() { }
 
@@ -10968,6 +12498,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       : _M_current(__i) { }
 
       template<typename _Iter>
+
  move_iterator(const move_iterator<_Iter>& __i)
  : _M_current(__i.base()) { }
 
@@ -11124,13 +12655,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
     { return __x.base() - __y.base(); }
 
   template<typename _Iterator>
-    inline auto
-    operator-(const move_iterator<_Iterator>& __x,
-       const move_iterator<_Iterator>& __y)
-    -> decltype(__x.base() - __y.base())
-    { return __x.base() - __y.base(); }
-
-  template<typename _Iterator>
     inline move_iterator<_Iterator>
     operator+(typename move_iterator<_Iterator>::difference_type __n,
        const move_iterator<_Iterator>& __x)
@@ -11178,13 +12702,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
     __miter_base(move_iterator<_Iterator> __it)
     -> decltype(__miter_base(__it.base()))
     { return __miter_base(__it.base()); }
-
+# 1271 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_iterator.h" 3
 
 }
-# 68 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
+# 68 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/debug/debug.h" 1 3
-# 48 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/debug/debug.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/debug/debug.h" 1 3
+# 48 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/debug/debug.h" 3
 namespace std
 {
   namespace __debug { }
@@ -11197,10 +12721,10 @@ namespace __gnu_debug
 {
   using namespace std::__debug;
 }
-# 70 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
+# 70 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/predefined_ops.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/predefined_ops.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/predefined_ops.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/predefined_ops.h" 3
 namespace __gnu_cxx
 {
 namespace __ops
@@ -11213,6 +12737,7 @@ namespace __ops
       operator()(_Iterator1 __it1, _Iterator2 __it2) const
       { return *__it1 < *__it2; }
   };
+
   constexpr
   inline _Iter_less_iter
   __iter_less_iter()
@@ -11220,11 +12745,20 @@ namespace __ops
 
   struct _Iter_less_val
   {
+
+    constexpr _Iter_less_val() = default;
+
+
+
+
+    explicit
+    _Iter_less_val(_Iter_less_iter) { }
+
     template<typename _Iterator, typename _Value>
       bool
       operator()(_Iterator __it, _Value& __val) const
       { return *__it < __val; }
-    };
+  };
 
   inline _Iter_less_val
   __iter_less_val()
@@ -11236,11 +12770,20 @@ namespace __ops
 
   struct _Val_less_iter
   {
+
+    constexpr _Val_less_iter() = default;
+
+
+
+
+    explicit
+    _Val_less_iter(_Iter_less_iter) { }
+
     template<typename _Value, typename _Iterator>
       bool
       operator()(_Value& __val, _Iterator __it) const
       { return __val < *__it; }
-    };
+  };
 
   inline _Val_less_iter
   __val_less_iter()
@@ -11256,7 +12799,7 @@ namespace __ops
       bool
       operator()(_Iterator1 __it1, _Iterator2 __it2) const
       { return *__it1 == *__it2; }
-    };
+  };
 
   inline _Iter_equal_to_iter
   __iter_equal_to_iter()
@@ -11268,7 +12811,7 @@ namespace __ops
       bool
       operator()(_Iterator __it, _Value& __val) const
       { return *__it == __val; }
-    };
+  };
 
   inline _Iter_equal_to_val
   __iter_equal_to_val()
@@ -11282,9 +12825,10 @@ namespace __ops
     struct _Iter_comp_iter
     {
       _Compare _M_comp;
-      constexpr
+
+      explicit constexpr
       _Iter_comp_iter(_Compare __comp)
- : _M_comp(__comp)
+ : _M_comp(std::move(__comp))
       { }
 
       template<typename _Iterator1, typename _Iterator2>
@@ -11298,16 +12842,29 @@ namespace __ops
     constexpr
     inline _Iter_comp_iter<_Compare>
     __iter_comp_iter(_Compare __comp)
-    { return _Iter_comp_iter<_Compare>(__comp); }
+    { return _Iter_comp_iter<_Compare>(std::move(__comp)); }
 
   template<typename _Compare>
     struct _Iter_comp_val
     {
       _Compare _M_comp;
 
+      explicit
       _Iter_comp_val(_Compare __comp)
- : _M_comp(__comp)
+ : _M_comp(std::move(__comp))
       { }
+
+      explicit
+      _Iter_comp_val(const _Iter_comp_iter<_Compare>& __comp)
+ : _M_comp(__comp._M_comp)
+      { }
+
+
+      explicit
+      _Iter_comp_val(_Iter_comp_iter<_Compare>&& __comp)
+ : _M_comp(std::move(__comp._M_comp))
+      { }
+
 
       template<typename _Iterator, typename _Value>
  bool
@@ -11318,21 +12875,34 @@ namespace __ops
   template<typename _Compare>
    inline _Iter_comp_val<_Compare>
     __iter_comp_val(_Compare __comp)
-    { return _Iter_comp_val<_Compare>(__comp); }
+    { return _Iter_comp_val<_Compare>(std::move(__comp)); }
 
   template<typename _Compare>
     inline _Iter_comp_val<_Compare>
     __iter_comp_val(_Iter_comp_iter<_Compare> __comp)
-    { return _Iter_comp_val<_Compare>(__comp._M_comp); }
+    { return _Iter_comp_val<_Compare>(std::move(__comp)); }
 
   template<typename _Compare>
     struct _Val_comp_iter
     {
       _Compare _M_comp;
 
+      explicit
       _Val_comp_iter(_Compare __comp)
- : _M_comp(__comp)
+ : _M_comp(std::move(__comp))
       { }
+
+      explicit
+      _Val_comp_iter(const _Iter_comp_iter<_Compare>& __comp)
+ : _M_comp(__comp._M_comp)
+      { }
+
+
+      explicit
+      _Val_comp_iter(_Iter_comp_iter<_Compare>&& __comp)
+ : _M_comp(std::move(__comp._M_comp))
+      { }
+
 
       template<typename _Value, typename _Iterator>
  bool
@@ -11343,18 +12913,19 @@ namespace __ops
   template<typename _Compare>
     inline _Val_comp_iter<_Compare>
     __val_comp_iter(_Compare __comp)
-    { return _Val_comp_iter<_Compare>(__comp); }
+    { return _Val_comp_iter<_Compare>(std::move(__comp)); }
 
   template<typename _Compare>
     inline _Val_comp_iter<_Compare>
     __val_comp_iter(_Iter_comp_iter<_Compare> __comp)
-    { return _Val_comp_iter<_Compare>(__comp._M_comp); }
+    { return _Val_comp_iter<_Compare>(std::move(__comp)); }
 
   template<typename _Value>
     struct _Iter_equals_val
     {
       _Value& _M_value;
 
+      explicit
       _Iter_equals_val(_Value& __value)
  : _M_value(__value)
       { }
@@ -11373,16 +12944,17 @@ namespace __ops
   template<typename _Iterator1>
     struct _Iter_equals_iter
     {
-      typename std::iterator_traits<_Iterator1>::reference _M_ref;
+      _Iterator1 _M_it1;
 
+      explicit
       _Iter_equals_iter(_Iterator1 __it1)
- : _M_ref(*__it1)
+ : _M_it1(__it1)
       { }
 
       template<typename _Iterator2>
  bool
  operator()(_Iterator2 __it2)
- { return *__it2 == _M_ref; }
+ { return *__it2 == *_M_it1; }
     };
 
   template<typename _Iterator>
@@ -11395,8 +12967,9 @@ namespace __ops
     {
       _Predicate _M_pred;
 
+      explicit
       _Iter_pred(_Predicate __pred)
- : _M_pred(__pred)
+ : _M_pred(std::move(__pred))
       { }
 
       template<typename _Iterator>
@@ -11408,7 +12981,7 @@ namespace __ops
   template<typename _Predicate>
     inline _Iter_pred<_Predicate>
     __pred_iter(_Predicate __pred)
-    { return _Iter_pred<_Predicate>(__pred); }
+    { return _Iter_pred<_Predicate>(std::move(__pred)); }
 
   template<typename _Compare, typename _Value>
     struct _Iter_comp_to_val
@@ -11417,7 +12990,7 @@ namespace __ops
       _Value& _M_value;
 
       _Iter_comp_to_val(_Compare __comp, _Value& __value)
- : _M_comp(__comp), _M_value(__value)
+ : _M_comp(std::move(__comp)), _M_value(__value)
       { }
 
       template<typename _Iterator>
@@ -11429,36 +13002,42 @@ namespace __ops
   template<typename _Compare, typename _Value>
     _Iter_comp_to_val<_Compare, _Value>
     __iter_comp_val(_Compare __comp, _Value &__val)
-    { return _Iter_comp_to_val<_Compare, _Value>(__comp, __val); }
+    {
+      return _Iter_comp_to_val<_Compare, _Value>(std::move(__comp), __val);
+    }
 
   template<typename _Compare, typename _Iterator1>
     struct _Iter_comp_to_iter
     {
       _Compare _M_comp;
-      typename std::iterator_traits<_Iterator1>::reference _M_ref;
+      _Iterator1 _M_it1;
 
       _Iter_comp_to_iter(_Compare __comp, _Iterator1 __it1)
- : _M_comp(__comp), _M_ref(*__it1)
+ : _M_comp(std::move(__comp)), _M_it1(__it1)
       { }
 
       template<typename _Iterator2>
  bool
  operator()(_Iterator2 __it2)
- { return bool(_M_comp(*__it2, _M_ref)); }
+ { return bool(_M_comp(*__it2, *_M_it1)); }
     };
 
   template<typename _Compare, typename _Iterator>
     inline _Iter_comp_to_iter<_Compare, _Iterator>
     __iter_comp_iter(_Iter_comp_iter<_Compare> __comp, _Iterator __it)
-    { return _Iter_comp_to_iter<_Compare, _Iterator>(__comp._M_comp, __it); }
+    {
+      return _Iter_comp_to_iter<_Compare, _Iterator>(
+   std::move(__comp._M_comp), __it);
+    }
 
   template<typename _Predicate>
     struct _Iter_negate
     {
       _Predicate _M_pred;
 
+      explicit
       _Iter_negate(_Predicate __pred)
- : _M_pred(__pred)
+ : _M_pred(std::move(__pred))
       { }
 
       template<typename _Iterator>
@@ -11470,16 +13049,16 @@ namespace __ops
   template<typename _Predicate>
     inline _Iter_negate<_Predicate>
     __negate(_Iter_pred<_Predicate> __pred)
-    { return _Iter_negate<_Predicate>(__pred._M_pred); }
+    { return _Iter_negate<_Predicate>(std::move(__pred._M_pred)); }
 
 }
 }
-# 72 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 2 3
+# 72 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 118 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 118 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2>
     inline void
     iter_swap(_ForwardIterator1 __a, _ForwardIterator2 __b)
@@ -11488,11 +13067,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
      
 
      
-# 148 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 148 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
       swap(*__a, *__b);
 
     }
-# 164 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 164 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2>
     _ForwardIterator2
     swap_ranges(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
@@ -11509,7 +13088,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  std::iter_swap(__first1, __first2);
       return __first2;
     }
-# 192 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 192 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _Tp>
     constexpr
     inline const _Tp&
@@ -11522,7 +13101,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  return __b;
       return __a;
     }
-# 216 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 216 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _Tp>
     constexpr
     inline const _Tp&
@@ -11535,7 +13114,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  return __b;
       return __a;
     }
-# 240 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 240 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _Tp, typename _Compare>
     constexpr
     inline const _Tp&
@@ -11546,7 +13125,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  return __b;
       return __a;
     }
-# 262 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 262 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _Tp, typename _Compare>
     constexpr
     inline const _Tp&
@@ -11575,9 +13154,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move
     {
       template<typename _II, typename _OI>
-        static _OI
-        __copy_m(_II __first, _II __last, _OI __result)
-        {
+ static _OI
+ __copy_m(_II __first, _II __last, _OI __result)
+ {
    for (; __first != __last; ++__result, (void)++__first)
      *__result = *__first;
    return __result;
@@ -11589,9 +13168,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move<true, false, _Category>
     {
       template<typename _II, typename _OI>
-        static _OI
-        __copy_m(_II __first, _II __last, _OI __result)
-        {
+ static _OI
+ __copy_m(_II __first, _II __last, _OI __result)
+ {
    for (; __first != __last; ++__result, (void)++__first)
      *__result = std::move(*__first);
    return __result;
@@ -11603,9 +13182,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move<false, false, random_access_iterator_tag>
     {
       template<typename _II, typename _OI>
-        static _OI
-        __copy_m(_II __first, _II __last, _OI __result)
-        {
+ static _OI
+ __copy_m(_II __first, _II __last, _OI __result)
+ {
    typedef typename iterator_traits<_II>::difference_type _Distance;
    for(_Distance __n = __last - __first; __n > 0; --__n)
      {
@@ -11622,9 +13201,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move<true, false, random_access_iterator_tag>
     {
       template<typename _II, typename _OI>
-        static _OI
-        __copy_m(_II __first, _II __last, _OI __result)
-        {
+ static _OI
+ __copy_m(_II __first, _II __last, _OI __result)
+ {
    typedef typename iterator_traits<_II>::difference_type _Distance;
    for(_Distance __n = __last - __first; __n > 0; --__n)
      {
@@ -11641,9 +13220,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move<_IsMove, true, random_access_iterator_tag>
     {
       template<typename _Tp>
-        static _Tp*
-        __copy_m(const _Tp* __first, const _Tp* __last, _Tp* __result)
-        {
+ static _Tp*
+ __copy_m(const _Tp* __first, const _Tp* __last, _Tp* __result)
+ {
 
    using __assignable = conditional<_IsMove,
         is_move_assignable<_Tp>,
@@ -11666,12 +13245,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename iterator_traits<_OI>::value_type _ValueTypeO;
       typedef typename iterator_traits<_II>::iterator_category _Category;
       const bool __simple = (__is_trivial(_ValueTypeI)
-                      && __is_pointer<_II>::__value
-                      && __is_pointer<_OI>::__value
+        && __is_pointer<_II>::__value
+        && __is_pointer<_OI>::__value
         && __are_same<_ValueTypeI, _ValueTypeO>::__value);
 
       return std::__copy_move<_IsMove, __simple,
-                       _Category>::__copy_m(__first, __last, __result);
+         _Category>::__copy_m(__first, __last, __result);
     }
 
 
@@ -11711,7 +13290,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           std::__niter_base(__last),
           std::__niter_base(__result)));
     }
-# 444 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 444 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _II, typename _OI>
     inline _OI
     copy(_II __first, _II __last, _OI __result)
@@ -11726,7 +13305,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
        (std::__miter_base(__first), std::__miter_base(__last),
         __result));
     }
-# 477 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 477 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _II, typename _OI>
     inline _OI
     move(_II __first, _II __last, _OI __result)
@@ -11750,9 +13329,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move_backward
     {
       template<typename _BI1, typename _BI2>
-        static _BI2
-        __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
-        {
+ static _BI2
+ __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
+ {
    while (__first != __last)
      *--__result = *--__last;
    return __result;
@@ -11764,9 +13343,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move_backward<true, false, _Category>
     {
       template<typename _BI1, typename _BI2>
-        static _BI2
-        __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
-        {
+ static _BI2
+ __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
+ {
    while (__first != __last)
      *--__result = std::move(*--__last);
    return __result;
@@ -11778,9 +13357,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move_backward<false, false, random_access_iterator_tag>
     {
       template<typename _BI1, typename _BI2>
-        static _BI2
-        __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
-        {
+ static _BI2
+ __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
+ {
    typename iterator_traits<_BI1>::difference_type __n;
    for (__n = __last - __first; __n > 0; --__n)
      *--__result = *--__last;
@@ -11793,9 +13372,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move_backward<true, false, random_access_iterator_tag>
     {
       template<typename _BI1, typename _BI2>
-        static _BI2
-        __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
-        {
+ static _BI2
+ __copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
+ {
    typename iterator_traits<_BI1>::difference_type __n;
    for (__n = __last - __first; __n > 0; --__n)
      *--__result = std::move(*--__last);
@@ -11808,9 +13387,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __copy_move_backward<_IsMove, true, random_access_iterator_tag>
     {
       template<typename _Tp>
-        static _Tp*
-        __copy_move_b(const _Tp* __first, const _Tp* __last, _Tp* __result)
-        {
+ static _Tp*
+ __copy_move_b(const _Tp* __first, const _Tp* __last, _Tp* __result)
+ {
 
    using __assignable = conditional<_IsMove,
         is_move_assignable<_Tp>,
@@ -11833,12 +13412,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename iterator_traits<_BI2>::value_type _ValueType2;
       typedef typename iterator_traits<_BI1>::iterator_category _Category;
       const bool __simple = (__is_trivial(_ValueType1)
-                      && __is_pointer<_BI1>::__value
-                      && __is_pointer<_BI2>::__value
+        && __is_pointer<_BI1>::__value
+        && __is_pointer<_BI2>::__value
         && __are_same<_ValueType1, _ValueType2>::__value);
 
       return std::__copy_move_backward<_IsMove, __simple,
-                                _Category>::__copy_move_b(__first,
+           _Category>::__copy_move_b(__first,
          __last,
          __result);
     }
@@ -11851,7 +13430,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     (std::__niter_base(__first), std::__niter_base(__last),
      std::__niter_base(__result)));
     }
-# 620 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 620 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _BI1, typename _BI2>
     inline _BI2
     copy_backward(_BI1 __first, _BI1 __last, _BI2 __result)
@@ -11868,7 +13447,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
        (std::__miter_base(__first), std::__miter_base(__last),
         __result));
     }
-# 656 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 656 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _BI1, typename _BI2>
     inline _BI2
     move_backward(_BI1 __first, _BI1 __last, _BI2 __result)
@@ -11922,7 +13501,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       if (const size_t __len = __last - __first)
  __builtin_memset(__first, static_cast<unsigned char>(__tmp), __len);
     }
-# 722 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 722 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _ForwardIterator, typename _Tp>
     inline void
     fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value)
@@ -11942,7 +13521,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     __fill_n_a(_OutputIterator __first, _Size __n, const _Tp& __value)
     {
       for (__decltype(__n + 0) __niter = __n;
-    __niter > 0; --__niter, ++__first)
+    __niter > 0; --__niter, (void) ++__first)
  *__first = __value;
       return __first;
     }
@@ -11954,7 +13533,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     {
       const _Tp __tmp = __value;
       for (__decltype(__n + 0) __niter = __n;
-    __niter > 0; --__niter, ++__first)
+    __niter > 0; --__niter, (void) ++__first)
  *__first = __tmp;
       return __first;
     }
@@ -11967,7 +13546,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       std::__fill_a(__first, __first + __n, __c);
       return __first + __n;
     }
-# 782 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 782 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _OI, typename _Size, typename _Tp>
     inline _OI
     fill_n(_OI __first, _Size __n, const _Tp& __value)
@@ -11982,10 +13561,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __equal
     {
       template<typename _II1, typename _II2>
-        static bool
-        equal(_II1 __first1, _II1 __last1, _II2 __first2)
-        {
-   for (; __first1 != __last1; ++__first1, (void)++__first2)
+ static bool
+ equal(_II1 __first1, _II1 __last1, _II2 __first2)
+ {
+   for (; __first1 != __last1; ++__first1, (void) ++__first2)
      if (!(*__first1 == *__first2))
        return false;
    return true;
@@ -11996,9 +13575,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __equal<true>
     {
       template<typename _Tp>
-        static bool
-        equal(const _Tp* __first1, const _Tp* __last1, const _Tp* __first2)
-        {
+ static bool
+ equal(const _Tp* __first1, const _Tp* __last1, const _Tp* __first2)
+ {
    if (const size_t __len = (__last1 - __first1))
      return !__builtin_memcmp(__first1, __first2, sizeof(_Tp) * __len);
    return true;
@@ -12013,8 +13592,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename iterator_traits<_II2>::value_type _ValueType2;
       const bool __simple = ((__is_integer<_ValueType1>::__value
          || __is_pointer<_ValueType1>::__value)
-                      && __is_pointer<_II1>::__value
-                      && __is_pointer<_II2>::__value
+        && __is_pointer<_II1>::__value
+        && __is_pointer<_II2>::__value
         && __are_same<_ValueType1, _ValueType2>::__value);
 
       return std::__equal<__simple>::equal(__first1, __last1, __first2);
@@ -12024,24 +13603,24 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __lc_rai
     {
       template<typename _II1, typename _II2>
-        static _II1
-        __newlast1(_II1, _II1 __last1, _II2, _II2)
-        { return __last1; }
+ static _II1
+ __newlast1(_II1, _II1 __last1, _II2, _II2)
+ { return __last1; }
 
       template<typename _II>
-        static bool
-        __cnd2(_II __first, _II __last)
-        { return __first != __last; }
+ static bool
+ __cnd2(_II __first, _II __last)
+ { return __first != __last; }
     };
 
   template<>
     struct __lc_rai<random_access_iterator_tag, random_access_iterator_tag>
     {
       template<typename _RAI1, typename _RAI2>
-        static _RAI1
-        __newlast1(_RAI1 __first1, _RAI1 __last1,
+ static _RAI1
+ __newlast1(_RAI1 __first1, _RAI1 __last1,
      _RAI2 __first2, _RAI2 __last2)
-        {
+ {
    const typename iterator_traits<_RAI1>::difference_type
      __diff1 = __last1 - __first1;
    const typename iterator_traits<_RAI2>::difference_type
@@ -12050,9 +13629,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
  }
 
       template<typename _RAI>
-        static bool
-        __cnd2(_RAI, _RAI)
-        { return true; }
+ static bool
+ __cnd2(_RAI, _RAI)
+ { return true; }
     };
 
   template<typename _II1, typename _II2, typename _Compare>
@@ -12081,7 +13660,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __lexicographical_compare
     {
       template<typename _II1, typename _II2>
-        static bool __lc(_II1, _II1, _II2, _II2);
+ static bool __lc(_II1, _II1, _II2, _II2);
     };
 
   template<bool _BoolType>
@@ -12099,8 +13678,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __lexicographical_compare<true>
     {
       template<typename _Tp, typename _Up>
-        static bool
-        __lc(const _Tp* __first1, const _Tp* __last1,
+ static bool
+ __lc(const _Tp* __first1, const _Tp* __last1,
       const _Up* __first2, const _Up* __last2)
  {
    const size_t __len1 = __last1 - __first1;
@@ -12156,7 +13735,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  }
       return __first;
     }
-# 982 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 982 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _ForwardIterator, typename _Tp>
     inline _ForwardIterator
     lower_bound(_ForwardIterator __first, _ForwardIterator __last,
@@ -12199,9 +13778,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   { return sizeof(long long) * 8 - 1 - __builtin_clzll(__n); }
 
 
-
-
-# 1039 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1037 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     inline bool
     equal(_II1 __first1, _II1 __last1, _II2 __first2)
@@ -12218,7 +13795,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
          std::__niter_base(__last1),
          std::__niter_base(__first2));
     }
-# 1071 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1069 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
     inline bool
     equal(_IIter1 __first1, _IIter1 __last1,
@@ -12234,20 +13811,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
    return false;
       return true;
     }
-# 1104 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+
+
+
   template<typename _II1, typename _II2>
     inline bool
-    equal(_II1 __first1, _II1 __last1, _II2 __first2, _II2 __last2)
+    __equal4(_II1 __first1, _II1 __last1, _II2 __first2, _II2 __last2)
     {
-
-     
-     
-     
-
-
-      ;
-      ;
-
       using _RATag = random_access_iterator_tag;
       using _Cat1 = typename iterator_traits<_II1>::iterator_category;
       using _Cat2 = typename iterator_traits<_II2>::iterator_category;
@@ -12267,21 +13837,16 @@ namespace std __attribute__ ((__visibility__ ("default")))
    return false;
       return __first1 == __last1 && __first2 == __last2;
     }
-# 1153 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
-  template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
+
+
+  template<typename _II1, typename _II2, typename _BinaryPredicate>
     inline bool
-    equal(_IIter1 __first1, _IIter1 __last1,
-   _IIter2 __first2, _IIter2 __last2, _BinaryPredicate __binary_pred)
+    __equal4(_II1 __first1, _II1 __last1, _II2 __first2, _II2 __last2,
+      _BinaryPredicate __binary_pred)
     {
-
-     
-     
-      ;
-      ;
-
       using _RATag = random_access_iterator_tag;
-      using _Cat1 = typename iterator_traits<_IIter1>::iterator_category;
-      using _Cat2 = typename iterator_traits<_IIter2>::iterator_category;
+      using _Cat1 = typename iterator_traits<_II1>::iterator_category;
+      using _Cat2 = typename iterator_traits<_II2>::iterator_category;
       using _RAIters = __and_<is_same<_Cat1, _RATag>, is_same<_Cat2, _RATag>>;
       if (_RAIters())
  {
@@ -12299,7 +13864,38 @@ namespace std __attribute__ ((__visibility__ ("default")))
    return false;
       return __first1 == __last1 && __first2 == __last2;
     }
-# 1201 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1156 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
+  template<typename _II1, typename _II2>
+    inline bool
+    equal(_II1 __first1, _II1 __last1, _II2 __first2, _II2 __last2)
+    {
+
+     
+     
+     
+
+
+      ;
+      ;
+
+      return std::__equal4(__first1, __last1, __first2, __last2);
+    }
+# 1188 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
+  template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
+    inline bool
+    equal(_IIter1 __first1, _IIter1 __last1,
+   _IIter2 __first2, _IIter2 __last2, _BinaryPredicate __binary_pred)
+    {
+
+     
+     
+      ;
+      ;
+
+      return std::__equal4(__first1, __last1, __first2, __last2,
+          __binary_pred);
+    }
+# 1219 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     inline bool
     lexicographical_compare(_II1 __first1, _II1 __last1,
@@ -12322,7 +13918,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       std::__niter_base(__first2),
       std::__niter_base(__last2));
     }
-# 1237 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1255 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _II1, typename _II2, typename _Compare>
     inline bool
     lexicographical_compare(_II1 __first1, _II1 __last1,
@@ -12346,13 +13942,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
         _InputIterator2 __first2, _BinaryPredicate __binary_pred)
     {
       while (__first1 != __last1 && __binary_pred(__first1, __first2))
-        {
+ {
    ++__first1;
    ++__first2;
-        }
+ }
       return pair<_InputIterator1, _InputIterator2>(__first1, __first2);
     }
-# 1280 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1298 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2>
     inline pair<_InputIterator1, _InputIterator2>
     mismatch(_InputIterator1 __first1, _InputIterator1 __last1,
@@ -12369,7 +13965,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       return std::__mismatch(__first1, __last1, __first2,
         __gnu_cxx::__ops::__iter_equal_to_iter());
     }
-# 1313 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1331 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2,
     typename _BinaryPredicate>
     inline pair<_InputIterator1, _InputIterator2>
@@ -12396,13 +13992,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
     {
       while (__first1 != __last1 && __first2 != __last2
       && __binary_pred(__first1, __first2))
-        {
+ {
    ++__first1;
    ++__first2;
-        }
+ }
       return pair<_InputIterator1, _InputIterator2>(__first1, __first2);
     }
-# 1360 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1378 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2>
     inline pair<_InputIterator1, _InputIterator2>
     mismatch(_InputIterator1 __first1, _InputIterator1 __last1,
@@ -12420,7 +14016,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       return std::__mismatch(__first1, __last1, __first2, __last2,
         __gnu_cxx::__ops::__iter_equal_to_iter());
     }
-# 1395 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h" 3
+# 1413 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2,
     typename _BinaryPredicate>
     inline pair<_InputIterator1, _InputIterator2>
@@ -12440,17 +14036,18 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-}
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 1 3
-# 38 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 3
-       
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+}
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 1 3
+# 38 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 3
+
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
+       
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
 
 
 
@@ -12466,14 +14063,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
-# 216 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 3 4
-typedef long unsigned int size_t;
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
 # 36 "/usr/include/wchar.h" 2 3 4
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdarg.h" 1 3 4
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdarg.h" 3 4
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdarg.h" 1 3 4
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 39 "/usr/include/wchar.h" 2 3 4
 
@@ -12520,31 +14115,6 @@ struct _IO_FILE;
 
 typedef struct _IO_FILE FILE;
 # 47 "/usr/include/wchar.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
-struct __locale_struct
-{
-
-  struct __locale_data *__locales[13];
-
-
-  const unsigned short int *__ctype_b;
-  const int *__ctype_tolower;
-  const int *__ctype_toupper;
-
-
-  const char *__names[13];
-};
-
-typedef struct __locale_struct *__locale_t;
-# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
-
-typedef __locale_t locale_t;
-# 50 "/usr/include/wchar.h" 2 3 4
 # 79 "/usr/include/wchar.h" 3 4
 extern "C" {
 
@@ -13193,13 +14763,13 @@ extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
      locale_t __loc) throw ();
 # 856 "/usr/include/wchar.h" 3 4
 }
-# 45 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 2 3
-# 62 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 45 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 2 3
+# 62 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
 namespace std
 {
   using ::mbstate_t;
 }
-# 135 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 135 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -13274,7 +14844,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   using ::wcsrchr;
   using ::wcsstr;
   using ::wmemchr;
-# 232 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 232 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
 
 }
 
@@ -13292,7 +14862,7 @@ namespace __gnu_cxx
 
 
   using ::wcstold;
-# 257 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 257 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
   using ::wcstoll;
   using ::wcstoull;
 
@@ -13304,7 +14874,7 @@ namespace std
   using ::__gnu_cxx::wcstoll;
   using ::__gnu_cxx::wcstoull;
 }
-# 277 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 277 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
 namespace std
 {
 
@@ -13326,16 +14896,16 @@ namespace std
   using std::wcstoull;
 
 }
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 2 3
-# 68 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 2 3
+# 68 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 88 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 3
+# 88 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 3
   typedef long streamoff;
-# 98 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 3
+# 98 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 3
   typedef ptrdiff_t streamsize;
-# 111 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 3
+# 111 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 3
   template<typename _StateT>
     class fpos
     {
@@ -13350,7 +14920,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       fpos()
       : _M_off(0), _M_state() { }
-# 133 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/postypes.h" 3
+# 133 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/postypes.h" 3
       fpos(streamoff __off)
       : _M_off(__off), _M_state() { }
 
@@ -13459,17 +15029,21 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 2 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 2 3
+
+
+
+
 
 namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 {
 
-# 57 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 3
+# 61 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 3
   template<typename _CharT>
     struct _Char_types
     {
@@ -13478,7 +15052,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       typedef std::streamoff off_type;
       typedef std::mbstate_t state_type;
     };
-# 82 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 3
+# 86 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 3
   template<typename _CharT>
     struct char_traits
     {
@@ -13488,7 +15062,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       typedef typename _Char_types<_CharT>::off_type off_type;
       typedef typename _Char_types<_CharT>::state_type state_type;
 
-      static void
+      static constexpr void
       assign(char_type& __c1, const char_type& __c2)
       { __c1 = __c2; }
 
@@ -13500,13 +15074,13 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       lt(const char_type& __c1, const char_type& __c2)
       { return __c1 < __c2; }
 
-      static int
+      static constexpr int
       compare(const char_type* __s1, const char_type* __s2, std::size_t __n);
 
-      static std::size_t
+      static constexpr std::size_t
       length(const char_type* __s);
 
-      static const char_type*
+      static constexpr const char_type*
       find(const char_type* __s, std::size_t __n, const char_type& __a);
 
       static char_type*
@@ -13540,7 +15114,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
     };
 
   template<typename _CharT>
-    int
+    constexpr int
     char_traits<_CharT>::
     compare(const char_type* __s1, const char_type* __s2, std::size_t __n)
     {
@@ -13553,7 +15127,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
     }
 
   template<typename _CharT>
-    std::size_t
+    constexpr std::size_t
     char_traits<_CharT>::
     length(const char_type* __p)
     {
@@ -13564,7 +15138,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
     }
 
   template<typename _CharT>
-    const typename char_traits<_CharT>::char_type*
+    constexpr const typename char_traits<_CharT>::char_type*
     char_traits<_CharT>::
     find(const char_type* __s, std::size_t __n, const char_type& __a)
     {
@@ -13579,6 +15153,8 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
     char_traits<_CharT>::
     move(char_type* __s1, const char_type* __s2, std::size_t __n)
     {
+      if (__n == 0)
+ return __s1;
       return static_cast<_CharT*>(__builtin_memmove(__s1, __s2,
           __n * sizeof(char_type)));
     }
@@ -13609,7 +15185,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 226 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 3
+# 270 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 3
   template<class _CharT>
     struct char_traits : public __gnu_cxx::char_traits<_CharT>
     { };
@@ -13644,6 +15220,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static int
       compare(const char_type* __s1, const char_type* __s2, size_t __n)
       {
+
+
+
+
+
+
  if (__n == 0)
    return 0;
  return __builtin_memcmp(__s1, __s2, __n);
@@ -13651,11 +15233,23 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       static size_t
       length(const char_type* __s)
-      { return __builtin_strlen(__s); }
+      {
+
+
+
+
+ return __builtin_strlen(__s);
+      }
 
       static const char_type*
       find(const char_type* __s, size_t __n, const char_type& __a)
       {
+
+
+
+
+
+
  if (__n == 0)
    return 0;
  return static_cast<const char_type*>(__builtin_memchr(__s, __a, __n));
@@ -13735,21 +15329,42 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static int
       compare(const char_type* __s1, const char_type* __s2, size_t __n)
       {
+
+
+
+
+
+
  if (__n == 0)
    return 0;
- return wmemcmp(__s1, __s2, __n);
+ else
+   return wmemcmp(__s1, __s2, __n);
       }
 
       static size_t
       length(const char_type* __s)
-      { return wcslen(__s); }
+      {
+
+
+
+
+
+   return wcslen(__s);
+      }
 
       static const char_type*
       find(const char_type* __s, size_t __n, const char_type& __a)
       {
+
+
+
+
+
+
  if (__n == 0)
    return 0;
- return wmemchr(__s, __a, __n);
+ else
+   return wmemchr(__s, __a, __n);
       }
 
       static char_type*
@@ -13804,13 +15419,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdint" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdint" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdint" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdint" 3
        
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdint" 3
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdint" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 1 3 4
-# 9 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 3 4
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdint" 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdint" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdint.h" 1 3 4
+# 9 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -13823,13 +15438,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-# 35 "/usr/include/stdint.h" 2 3 4
+
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
@@ -13878,8 +15487,8 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 10 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 2 3 4
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdint" 2 3
+# 10 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdint.h" 2 3 4
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdint" 2 3
 
 
 
@@ -13922,7 +15531,7 @@ namespace std
   using ::uintmax_t;
   using ::uintptr_t;
 }
-# 421 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/char_traits.h" 2 3
+# 504 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/char_traits.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -14010,7 +15619,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       static constexpr int_type
       to_int_type(const char_type& __c) noexcept
-      { return int_type(__c); }
+      { return __c == eof() ? int_type(0xfffd) : int_type(__c); }
 
       static constexpr bool
       eq_int_type(const int_type& __c1, const int_type& __c2) noexcept
@@ -14124,38 +15733,41 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/allocator.h" 1 3
-# 46 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/allocator.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/new_allocator.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/new_allocator.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/new" 1 3
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/new" 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/allocator.h" 1 3
+# 46 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/allocator.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/new_allocator.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/new_allocator.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 1 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 3
        
-# 38 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/new" 3
+# 38 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 3
        
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 3
 
 #pragma GCC visibility push(default)
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/atomic_lockfree_defines.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/atomic_lockfree_defines.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception.h" 1 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception.h" 3
        
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/atomic_lockfree_defines.h" 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 2 3
+# 35 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception.h" 3
+
+#pragma GCC visibility push(default)
+
+
 
 extern "C++" {
 
 namespace std
 {
-# 60 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 3
+# 60 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception.h" 3
   class exception
   {
   public:
@@ -14168,6 +15780,17 @@ namespace std
     what() const noexcept;
   };
 
+}
+
+}
+
+#pragma GCC visibility pop
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 2 3
+
+extern "C++" {
+
+namespace std
+{
 
 
   class bad_exception : public exception
@@ -14213,15 +15836,16 @@ namespace std
 
 
   void unexpected() __attribute__ ((__noreturn__));
-# 129 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 3
+# 101 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 3
+ 
   bool uncaught_exception() noexcept __attribute__ ((__pure__));
-# 138 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 3
+# 111 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 3
 }
 
 namespace __gnu_cxx
 {
 
-# 160 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 3
+# 133 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 3
   void __verbose_terminate_handler();
 
 
@@ -14232,10 +15856,237 @@ namespace __gnu_cxx
 #pragma GCC visibility pop
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/exception_ptr.h" 1 3
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/exception_ptr.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 1 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 3
 #pragma GCC visibility push(default)
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/exception_ptr.h" 3
+
+
+
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_init_exception.h" 1 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_init_exception.h" 3
+       
+# 35 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_init_exception.h" 3
+
+#pragma GCC visibility push(default)
+
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
+# 149 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 3 4
+typedef long int ptrdiff_t;
+# 426 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 3 4
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+# 437 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 3 4
+} max_align_t;
+
+
+
+
+
+
+  typedef decltype(nullptr) nullptr_t;
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_init_exception.h" 2 3
+# 50 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_init_exception.h" 3
+namespace std
+{
+  class type_info;
+}
+
+namespace __cxxabiv1
+{
+  struct __cxa_refcounted_exception;
+
+  extern "C"
+    {
+
+      void*
+      __cxa_allocate_exception(size_t) noexcept;
+
+      void
+      __cxa_free_exception(void*) noexcept;
+
+
+      __cxa_refcounted_exception*
+      __cxa_init_primary_exception(void *object, std::type_info *tinfo,
+                void ( *dest) (void *)) noexcept;
+
+    }
+}
+
+
+
+#pragma GCC visibility pop
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/typeinfo" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/typeinfo" 3
+       
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/typeinfo" 3
+
+
+
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/hash_bytes.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/hash_bytes.h" 3
+       
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/hash_bytes.h" 3
+
+
+
+namespace std
+{
+
+
+
+
+
+
+
+  size_t
+  _Hash_bytes(const void* __ptr, size_t __len, size_t __seed);
+
+
+
+
+
+  size_t
+  _Fnv_hash_bytes(const void* __ptr, size_t __len, size_t __seed);
+
+
+}
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/typeinfo" 2 3
+
+
+#pragma GCC visibility push(default)
+
+extern "C++" {
+
+namespace __cxxabiv1
+{
+  class __class_type_info;
+}
+# 80 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/typeinfo" 3
+namespace std
+{
+
+
+
+
+
+
+  class type_info
+  {
+  public:
+
+
+
+
+    virtual ~type_info();
+
+
+
+    const char* name() const noexcept
+    { return __name[0] == '*' ? __name + 1 : __name; }
+# 115 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/typeinfo" 3
+    bool before(const type_info& __arg) const noexcept
+    { return (__name[0] == '*' && __arg.__name[0] == '*')
+ ? __name < __arg.__name
+ : __builtin_strcmp (__name, __arg.__name) < 0; }
+
+    bool operator==(const type_info& __arg) const noexcept
+    {
+      return ((__name == __arg.__name)
+       || (__name[0] != '*' &&
+    __builtin_strcmp (__name, __arg.__name) == 0));
+    }
+# 136 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/typeinfo" 3
+    bool operator!=(const type_info& __arg) const noexcept
+    { return !operator==(__arg); }
+
+
+    size_t hash_code() const noexcept
+    {
+
+      return _Hash_bytes(name(), __builtin_strlen(name()),
+    static_cast<size_t>(0xc70f6907UL));
+
+
+
+    }
+
+
+
+    virtual bool __is_pointer_p() const;
+
+
+    virtual bool __is_function_p() const;
+
+
+
+
+
+
+
+    virtual bool __do_catch(const type_info *__thr_type, void **__thr_obj,
+       unsigned __outer) const;
+
+
+    virtual bool __do_upcast(const __cxxabiv1::__class_type_info *__target,
+        void **__obj_ptr) const;
+
+  protected:
+    const char *__name;
+
+    explicit type_info(const char *__n): __name(__n) { }
+
+  private:
+
+    type_info& operator=(const type_info&);
+    type_info(const type_info&);
+  };
+
+
+
+
+
+
+
+  class bad_cast : public exception
+  {
+  public:
+    bad_cast() noexcept { }
+
+
+
+    virtual ~bad_cast() noexcept;
+
+
+    virtual const char* what() const noexcept;
+  };
+
+
+
+
+
+  class bad_typeid : public exception
+  {
+  public:
+    bad_typeid () noexcept { }
+
+
+
+    virtual ~bad_typeid() noexcept;
+
+
+    virtual const char* what() const noexcept;
+  };
+}
+
+}
+
+#pragma GCC visibility pop
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 1 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 2 3
+
 extern "C++" {
 
 namespace std
@@ -14258,6 +16109,9 @@ namespace std
 
 
   exception_ptr current_exception() noexcept;
+
+  template<typename _Ex>
+  exception_ptr make_exception_ptr(_Ex) noexcept;
 
 
   void rethrow_exception(exception_ptr) __attribute__ ((__noreturn__));
@@ -14283,6 +16137,8 @@ namespace std
 
       friend exception_ptr std::current_exception() noexcept;
       friend void std::rethrow_exception(exception_ptr);
+      template<typename _Ex>
+      friend exception_ptr std::make_exception_ptr(_Ex) noexcept;
 
     public:
       exception_ptr() noexcept;
@@ -14297,7 +16153,7 @@ namespace std
       exception_ptr(exception_ptr&& __o) noexcept
       : _M_exception_object(__o._M_exception_object)
       { __o._M_exception_object = 0; }
-# 113 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/exception_ptr.h" 3
+# 117 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 3
       exception_ptr&
       operator=(const exception_ptr&) noexcept;
 
@@ -14314,7 +16170,7 @@ namespace std
 
       void
       swap(exception_ptr&) noexcept;
-# 140 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/exception_ptr.h" 3
+# 144 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 3
       explicit operator bool() const
       { return _M_exception_object; }
 
@@ -14340,8 +16196,12 @@ namespace std
     swap(exception_ptr& __lhs, exception_ptr& __rhs)
     { __lhs.swap(__rhs); }
 
-  }
+    template<typename _Ex>
+      inline void
+      __dest_thunk(void* __x)
+      { static_cast<_Ex*>(__x)->~_Ex(); }
 
+  }
 
 
   template<typename _Ex>
@@ -14349,31 +16209,22 @@ namespace std
     make_exception_ptr(_Ex __ex) noexcept
     {
 
+      void* __e = __cxxabiv1::__cxa_allocate_exception(sizeof(_Ex));
+      (void) __cxxabiv1::__cxa_init_primary_exception(
+   __e, const_cast<std::type_info*>(&typeid(__ex)),
+   __exception_ptr::__dest_thunk<_Ex>);
       try
  {
-   throw __ex;
+          ::new (__e) _Ex(__ex);
+          return exception_ptr(__e);
  }
       catch(...)
  {
+   __cxxabiv1::__cxa_free_exception(__e);
    return current_exception();
  }
-
-
-
+# 208 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/exception_ptr.h" 3
     }
-
-
-
-
-
-  template<typename _Ex>
-    exception_ptr
-    copy_exception(_Ex __ex) noexcept __attribute__ ((__deprecated__));
-
-  template<typename _Ex>
-    exception_ptr
-    copy_exception(_Ex __ex) noexcept
-    { return std::make_exception_ptr<_Ex>(__ex); }
 
 
 }
@@ -14381,11 +16232,11 @@ namespace std
 }
 
 #pragma GCC visibility pop
-# 171 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/nested_exception.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/nested_exception.h" 3
+# 144 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/nested_exception.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/nested_exception.h" 3
 #pragma GCC visibility push(default)
-# 46 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/nested_exception.h" 3
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/nested_exception.h" 3
 extern "C++" {
 
 namespace std
@@ -14435,41 +16286,23 @@ namespace std
       { }
     };
 
-  template<typename _Tp,
-    bool __with_nested = !__is_base_of(nested_exception, _Tp)>
-    struct _Throw_with_nested_impl
+
+
+
+  template<typename _Tp>
+    [[noreturn]]
+    inline void
+    __throw_with_nested_impl(_Tp&& __t, true_type)
     {
-      template<typename _Up>
- static void _S_throw(_Up&& __t)
- { throw _Nested_exception<_Tp>{static_cast<_Up&&>(__t)}; }
-    };
+      using _Up = typename remove_reference<_Tp>::type;
+      throw _Nested_exception<_Up>{std::forward<_Tp>(__t)};
+    }
 
   template<typename _Tp>
-    struct _Throw_with_nested_impl<_Tp, false>
-    {
-      template<typename _Up>
- static void _S_throw(_Up&& __t)
- { throw static_cast<_Up&&>(__t); }
-    };
-
-  template<typename _Tp, bool = __is_class(_Tp) && !__is_final(_Tp)>
-    struct _Throw_with_nested_helper : _Throw_with_nested_impl<_Tp>
-    { };
-
-  template<typename _Tp>
-    struct _Throw_with_nested_helper<_Tp, false>
-    : _Throw_with_nested_impl<_Tp, false>
-    { };
-
-  template<typename _Tp>
-    struct _Throw_with_nested_helper<_Tp&, false>
-    : _Throw_with_nested_helper<_Tp>
-    { };
-
-  template<typename _Tp>
-    struct _Throw_with_nested_helper<_Tp&&, false>
-    : _Throw_with_nested_helper<_Tp>
-    { };
+    [[noreturn]]
+    inline void
+    __throw_with_nested_impl(_Tp&& __t, false_type)
+    { throw std::forward<_Tp>(__t); }
 
 
 
@@ -14478,33 +16311,43 @@ namespace std
     inline void
     throw_with_nested(_Tp&& __t)
     {
-      _Throw_with_nested_helper<_Tp>::_S_throw(static_cast<_Tp&&>(__t));
+      using _Up = typename decay<_Tp>::type;
+      using _CopyConstructible
+ = __and_<is_copy_constructible<_Up>, is_move_constructible<_Up>>;
+      static_assert(_CopyConstructible::value,
+   "throw_with_nested argument must be CopyConstructible");
+      using __nest = __and_<is_class<_Up>, __bool_constant<!__is_final(_Up)>,
+       __not_<is_base_of<nested_exception, _Up>>>;
+      std::__throw_with_nested_impl(std::forward<_Tp>(__t), __nest{});
     }
 
-  template<typename _Tp, bool = __is_polymorphic(_Tp)>
-    struct _Rethrow_if_nested_impl
-    {
-      static void _S_rethrow(const _Tp& __t)
-      {
- if (auto __tp =
-            dynamic_cast<const nested_exception*>(std::__addressof(__t)))
-   __tp->rethrow_nested();
-      }
-    };
 
   template<typename _Tp>
-    struct _Rethrow_if_nested_impl<_Tp, false>
+    using __rethrow_if_nested_cond = typename enable_if<
+      __and_<is_polymorphic<_Tp>,
+      __or_<__not_<is_base_of<nested_exception, _Tp>>,
+     is_convertible<_Tp*, nested_exception*>>>::value
+    >::type;
+
+
+  template<typename _Ex>
+    inline __rethrow_if_nested_cond<_Ex>
+    __rethrow_if_nested_impl(const _Ex* __ptr)
     {
-      static void _S_rethrow(const _Tp&) { }
-    };
+      if (auto __ne_ptr = dynamic_cast<const nested_exception*>(__ptr))
+ __ne_ptr->rethrow_nested();
+    }
+
+
+  inline void
+  __rethrow_if_nested_impl(const void*)
+  { }
 
 
   template<typename _Ex>
     inline void
     rethrow_if_nested(const _Ex& __ex)
-    {
-      _Rethrow_if_nested_impl<_Ex>::_S_rethrow(__ex);
-    }
+    { std::__rethrow_if_nested_impl(std::__addressof(__ex)); }
 
 
 }
@@ -14514,8 +16357,8 @@ namespace std
 
 
 #pragma GCC visibility pop
-# 172 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception" 2 3
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/new" 2 3
+# 145 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/exception" 2 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 2 3
 
 #pragma GCC visibility push(default)
 
@@ -14546,7 +16389,7 @@ namespace std
   class bad_array_new_length : public bad_alloc
   {
   public:
-    bad_array_new_length() throw() { };
+    bad_array_new_length() throw() { }
 
 
 
@@ -14555,6 +16398,10 @@ namespace std
 
     virtual const char* what() const throw();
   };
+
+
+
+
 
 
   struct nothrow_t
@@ -14579,7 +16426,7 @@ namespace std
   new_handler get_new_handler() noexcept;
 
 }
-# 116 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/new" 3
+# 120 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 3
 void* operator new(std::size_t)
   __attribute__((__externally_visible__));
 void* operator new[](std::size_t)
@@ -14602,14 +16449,7 @@ void operator delete(void*, const std::nothrow_t&) noexcept
   __attribute__((__externally_visible__));
 void operator delete[](void*, const std::nothrow_t&) noexcept
   __attribute__((__externally_visible__));
-
-void operator delete(void*, std::size_t, const std::nothrow_t&) noexcept
-  __attribute__((__externally_visible__));
-void operator delete[](void*, std::size_t, const std::nothrow_t&) noexcept
-  __attribute__((__externally_visible__));
-
-
-
+# 168 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 3
 inline void* operator new(std::size_t, void* __p) noexcept
 { return __p; }
 inline void* operator new[](std::size_t, void* __p) noexcept
@@ -14620,9 +16460,9 @@ inline void operator delete (void*, void*) noexcept { }
 inline void operator delete[](void*, void*) noexcept { }
 
 }
-
+# 216 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/new" 3
 #pragma GCC visibility pop
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/new_allocator.h" 2 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/new_allocator.h" 2 3
 
 
 
@@ -14635,7 +16475,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
   using std::size_t;
   using std::ptrdiff_t;
-# 57 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/new_allocator.h" 3
+# 57 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/new_allocator.h" 3
   template<typename _Tp>
     class new_allocator
     {
@@ -14649,8 +16489,8 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       typedef _Tp value_type;
 
       template<typename _Tp1>
-        struct rebind
-        { typedef new_allocator<_Tp1> other; };
+ struct rebind
+ { typedef new_allocator<_Tp1> other; };
 
 
 
@@ -14663,7 +16503,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       new_allocator(const new_allocator&) noexcept { }
 
       template<typename _Tp1>
-        new_allocator(const new_allocator<_Tp1>&) noexcept { }
+ new_allocator(const new_allocator<_Tp1>&) noexcept { }
 
       ~new_allocator() noexcept { }
 
@@ -14678,18 +16518,27 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
       pointer
-      allocate(size_type __n, const void* = 0)
+      allocate(size_type __n, const void* = static_cast<const void*>(0))
       {
  if (__n > this->max_size())
    std::__throw_bad_alloc();
-
+# 111 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/new_allocator.h" 3
  return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
       }
 
 
       void
       deallocate(pointer __p, size_type)
-      { ::operator delete(__p); }
+      {
+
+
+
+
+
+
+
+ ::operator delete(__p);
+      }
 
       size_type
       max_size() const noexcept
@@ -14697,14 +16546,14 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
       template<typename _Up, typename... _Args>
-        void
-        construct(_Up* __p, _Args&&... __args)
+ void
+ construct(_Up* __p, _Args&&... __args)
  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
 
       template<typename _Up>
-        void
-        destroy(_Up* __p) { __p->~_Up(); }
-# 135 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/new_allocator.h" 3
+ void
+ destroy(_Up* __p) { __p->~_Up(); }
+# 151 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/new_allocator.h" 3
     };
 
   template<typename _Tp>
@@ -14719,23 +16568,17 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 2 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 2 3
 
 
 namespace std
 {
-# 47 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 3
+# 47 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++allocator.h" 3
   template<typename _Tp>
     using __allocator_base = __gnu_cxx::new_allocator<_Tp>;
 }
-# 47 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/allocator.h" 2 3
-
-
-
-
-
-
-
+# 47 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/allocator.h" 2 3
+# 57 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/allocator.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -14757,21 +16600,29 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef void value_type;
 
       template<typename _Tp1>
-        struct rebind
-        { typedef allocator<_Tp1> other; };
+ struct rebind
+ { typedef allocator<_Tp1> other; };
 
 
 
 
       typedef true_type propagate_on_container_move_assignment;
 
-
       typedef true_type is_always_equal;
 
+      template<typename _Up, typename... _Args>
+ void
+ construct(_Up* __p, _Args&&... __args)
+ { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+
+      template<typename _Up>
+ void
+ destroy(_Up* __p) { __p->~_Up(); }
+
     };
-# 96 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/allocator.h" 3
+# 107 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/allocator.h" 3
   template<typename _Tp>
-    class allocator: public __allocator_base<_Tp>
+    class allocator : public __allocator_base<_Tp>
     {
    public:
       typedef size_t size_type;
@@ -14783,13 +16634,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef _Tp value_type;
 
       template<typename _Tp1>
-        struct rebind
-        { typedef allocator<_Tp1> other; };
+ struct rebind
+ { typedef allocator<_Tp1> other; };
 
 
 
 
       typedef true_type propagate_on_container_move_assignment;
+
+      typedef true_type is_always_equal;
 
 
       allocator() throw() { }
@@ -14798,7 +16651,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       : __allocator_base<_Tp>(__a) { }
 
       template<typename _Tp1>
-        allocator(const allocator<_Tp1>&) throw() { }
+ allocator(const allocator<_Tp1>&) throw() { }
 
       ~allocator() throw() { }
 
@@ -14828,6 +16681,32 @@ namespace std __attribute__ ((__visibility__ ("default")))
     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
     noexcept
     { return false; }
+
+
+
+  template<typename _Tp>
+    class allocator<const _Tp>
+    {
+    public:
+      typedef _Tp value_type;
+      template<typename _Up> allocator(const allocator<_Up>&) { }
+    };
+
+  template<typename _Tp>
+    class allocator<volatile _Tp>
+    {
+    public:
+      typedef _Tp value_type;
+      template<typename _Up> allocator(const allocator<_Up>&) { }
+    };
+
+  template<typename _Tp>
+    class allocator<const volatile _Tp>
+    {
+    public:
+      typedef _Tp value_type;
+      template<typename _Up> allocator(const allocator<_Up>&) { }
+    };
 
 
 
@@ -14907,28 +16786,28 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/localefwd.h" 1 3
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/localefwd.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h" 1 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h" 3
        
-# 38 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/localefwd.h" 3
+# 38 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++locale.h" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++locale.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++locale.h" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++locale.h" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++locale.h" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++locale.h" 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/clocale" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/clocale" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/clocale" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/clocale" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/clocale" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/clocale" 3
 
 
 # 1 "/usr/include/locale.h" 1 3 4
 # 28 "/usr/include/locale.h" 3 4
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
 # 29 "/usr/include/locale.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/locale.h" 1 3 4
 # 30 "/usr/include/locale.h" 2 3 4
@@ -15027,15 +16906,15 @@ extern locale_t uselocale (locale_t __dataset) throw ();
 
 
 }
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/clocale" 2 3
-# 51 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/clocale" 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/clocale" 2 3
+# 51 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/clocale" 3
 namespace std
 {
   using ::lconv;
   using ::setlocale;
   using ::localeconv;
 }
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++locale.h" 2 3
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++locale.h" 2 3
 
 
 
@@ -15070,7 +16949,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   {
 
     __c_locale __old = __gnu_cxx::__uselocale(__cloc);
-# 88 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++locale.h" 3
+# 88 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++locale.h" 3
     __builtin_va_list __args;
     __builtin_va_start(__args, __fmt);
 
@@ -15096,11 +16975,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/localefwd.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iosfwd" 1 3
-# 36 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iosfwd" 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iosfwd" 1 3
+# 36 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iosfwd" 3
        
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iosfwd" 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iosfwd" 3
 
 
 
@@ -15109,7 +16988,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 74 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iosfwd" 3
+# 74 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iosfwd" 3
   class ios_base;
 
   template<typename _CharT, typename _Traits = char_traits<_CharT> >
@@ -15250,28 +17129,17 @@ namespace __cxx11 {
 
 
 }
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/localefwd.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cctype" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cctype" 3
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cctype" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cctype" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cctype" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cctype" 3
 
 
 # 1 "/usr/include/ctype.h" 1 3 4
 # 28 "/usr/include/ctype.h" 3 4
 extern "C" {
-# 39 "/usr/include/ctype.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/endian.h" 1 3 4
-# 35 "/usr/include/x86_64-linux-gnu/bits/endian.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/endianness.h" 1 3 4
-# 36 "/usr/include/x86_64-linux-gnu/bits/endian.h" 2 3 4
-# 40 "/usr/include/ctype.h" 2 3 4
-
-
-
-
-
-
+# 46 "/usr/include/ctype.h" 3 4
 enum
 {
   _ISupper = ((0) < 8 ? ((1 << (0)) << 8) : ((1 << (0)) >> 8)),
@@ -15364,8 +17232,8 @@ extern int __toupper_l (int __c, locale_t __l) throw ();
 extern int toupper_l (int __c, locale_t __l) throw ();
 # 327 "/usr/include/ctype.h" 3 4
 }
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cctype" 2 3
-# 62 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cctype" 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cctype" 2 3
+# 62 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cctype" 3
 namespace std
 {
   using ::isalnum;
@@ -15393,12 +17261,12 @@ namespace std
 {
   using ::isblank;
 }
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/localefwd.h" 2 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 55 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/localefwd.h" 3
+# 55 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/localefwd.h" 3
   class locale;
 
   template<typename _Facet>
@@ -15549,17 +17417,17 @@ namespace __cxx11 {
 
 
 }
-# 44 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/ostream_insert.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/ostream_insert.h" 3
+# 44 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/ostream_insert.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/ostream_insert.h" 3
        
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/ostream_insert.h" 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/ostream_insert.h" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cxxabi_forced.h" 1 3
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cxxabi_forced.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_forced.h" 1 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_forced.h" 3
        
-# 35 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/cxxabi_forced.h" 3
+# 35 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/cxxabi_forced.h" 3
 
 #pragma GCC visibility push(default)
 
@@ -15584,7 +17452,7 @@ namespace __cxxabiv1
 
 
 #pragma GCC visibility pop
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/ostream_insert.h" 2 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/ostream_insert.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -15676,16 +17544,16 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 45 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
+# 45 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 1 3
-# 63 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 1 3
+# 63 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 104 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 104 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
   template<typename _Arg, typename _Result>
     struct unary_function
     {
@@ -15711,7 +17579,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       typedef _Result result_type;
     };
-# 144 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 144 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
   struct __is_transparent;
 
   template<typename _Tp = void>
@@ -15885,7 +17753,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       typedef __is_transparent is_transparent;
     };
-# 330 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 330 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
   template<typename _Tp = void>
     struct equal_to;
 
@@ -15966,13 +17834,64 @@ namespace std __attribute__ ((__visibility__ ("default")))
     };
 
 
+  template<typename _Tp>
+    struct greater<_Tp*> : public binary_function<_Tp*, _Tp*, bool>
+    {
+      constexpr bool
+      operator()(_Tp* __x, _Tp* __y) const noexcept
+      {
+ if (__builtin_constant_p (__x > __y))
+   return __x > __y;
+ return (long unsigned int)__x > (long unsigned int)__y;
+      }
+    };
+
+
+  template<typename _Tp>
+    struct less<_Tp*> : public binary_function<_Tp*, _Tp*, bool>
+    {
+      constexpr bool
+      operator()(_Tp* __x, _Tp* __y) const noexcept
+      {
+ if (__builtin_constant_p (__x < __y))
+   return __x < __y;
+ return (long unsigned int)__x < (long unsigned int)__y;
+      }
+    };
+
+
+  template<typename _Tp>
+    struct greater_equal<_Tp*> : public binary_function<_Tp*, _Tp*, bool>
+    {
+      constexpr bool
+      operator()(_Tp* __x, _Tp* __y) const noexcept
+      {
+ if (__builtin_constant_p (__x >= __y))
+   return __x >= __y;
+ return (long unsigned int)__x >= (long unsigned int)__y;
+      }
+    };
+
+
+  template<typename _Tp>
+    struct less_equal<_Tp*> : public binary_function<_Tp*, _Tp*, bool>
+    {
+      constexpr bool
+      operator()(_Tp* __x, _Tp* __y) const noexcept
+      {
+ if (__builtin_constant_p (__x <= __y))
+   return __x <= __y;
+ return (long unsigned int)__x <= (long unsigned int)__y;
+      }
+    };
+
+
 
   template<>
     struct equal_to<void>
     {
       template <typename _Tp, typename _Up>
- constexpr
- auto
+ constexpr auto
  operator()(_Tp&& __t, _Up&& __u) const
  noexcept(noexcept(std::forward<_Tp>(__t) == std::forward<_Up>(__u)))
  -> decltype(std::forward<_Tp>(__t) == std::forward<_Up>(__u))
@@ -15986,8 +17905,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct not_equal_to<void>
     {
       template <typename _Tp, typename _Up>
- constexpr
- auto
+ constexpr auto
  operator()(_Tp&& __t, _Up&& __u) const
  noexcept(noexcept(std::forward<_Tp>(__t) != std::forward<_Up>(__u)))
  -> decltype(std::forward<_Tp>(__t) != std::forward<_Up>(__u))
@@ -16001,14 +17919,61 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct greater<void>
     {
       template <typename _Tp, typename _Up>
- constexpr
- auto
+ constexpr auto
  operator()(_Tp&& __t, _Up&& __u) const
  noexcept(noexcept(std::forward<_Tp>(__t) > std::forward<_Up>(__u)))
  -> decltype(std::forward<_Tp>(__t) > std::forward<_Up>(__u))
- { return std::forward<_Tp>(__t) > std::forward<_Up>(__u); }
+ {
+   return _S_cmp(std::forward<_Tp>(__t), std::forward<_Up>(__u),
+   __ptr_cmp<_Tp, _Up>{});
+ }
+
+      template<typename _Tp, typename _Up>
+ constexpr bool
+ operator()(_Tp* __t, _Up* __u) const noexcept
+ { return greater<common_type_t<_Tp*, _Up*>>{}(__t, __u); }
 
       typedef __is_transparent is_transparent;
+
+    private:
+      template <typename _Tp, typename _Up>
+ static constexpr decltype(auto)
+ _S_cmp(_Tp&& __t, _Up&& __u, false_type)
+ { return std::forward<_Tp>(__t) > std::forward<_Up>(__u); }
+
+      template <typename _Tp, typename _Up>
+ static constexpr bool
+ _S_cmp(_Tp&& __t, _Up&& __u, true_type) noexcept
+ {
+   return greater<const volatile void*>{}(
+       static_cast<const volatile void*>(std::forward<_Tp>(__t)),
+       static_cast<const volatile void*>(std::forward<_Up>(__u)));
+ }
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded2 : true_type { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded2<_Tp, _Up, __void_t<
+   decltype(std::declval<_Tp>().operator>(std::declval<_Up>()))>>
+ : false_type { };
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded : __not_overloaded2<_Tp, _Up> { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded<_Tp, _Up, __void_t<
+   decltype(operator>(std::declval<_Tp>(), std::declval<_Up>()))>>
+ : false_type { };
+
+      template<typename _Tp, typename _Up>
+ using __ptr_cmp = __and_<__not_overloaded<_Tp, _Up>,
+       is_convertible<_Tp, const volatile void*>,
+       is_convertible<_Up, const volatile void*>>;
     };
 
 
@@ -16016,14 +17981,61 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct less<void>
     {
       template <typename _Tp, typename _Up>
- constexpr
- auto
+ constexpr auto
  operator()(_Tp&& __t, _Up&& __u) const
  noexcept(noexcept(std::forward<_Tp>(__t) < std::forward<_Up>(__u)))
  -> decltype(std::forward<_Tp>(__t) < std::forward<_Up>(__u))
- { return std::forward<_Tp>(__t) < std::forward<_Up>(__u); }
+ {
+   return _S_cmp(std::forward<_Tp>(__t), std::forward<_Up>(__u),
+   __ptr_cmp<_Tp, _Up>{});
+ }
+
+      template<typename _Tp, typename _Up>
+ constexpr bool
+ operator()(_Tp* __t, _Up* __u) const noexcept
+ { return less<common_type_t<_Tp*, _Up*>>{}(__t, __u); }
 
       typedef __is_transparent is_transparent;
+
+    private:
+      template <typename _Tp, typename _Up>
+ static constexpr decltype(auto)
+ _S_cmp(_Tp&& __t, _Up&& __u, false_type)
+ { return std::forward<_Tp>(__t) < std::forward<_Up>(__u); }
+
+      template <typename _Tp, typename _Up>
+ static constexpr bool
+ _S_cmp(_Tp&& __t, _Up&& __u, true_type) noexcept
+ {
+   return less<const volatile void*>{}(
+       static_cast<const volatile void*>(std::forward<_Tp>(__t)),
+       static_cast<const volatile void*>(std::forward<_Up>(__u)));
+ }
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded2 : true_type { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded2<_Tp, _Up, __void_t<
+   decltype(std::declval<_Tp>().operator<(std::declval<_Up>()))>>
+ : false_type { };
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded : __not_overloaded2<_Tp, _Up> { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded<_Tp, _Up, __void_t<
+   decltype(operator<(std::declval<_Tp>(), std::declval<_Up>()))>>
+ : false_type { };
+
+      template<typename _Tp, typename _Up>
+ using __ptr_cmp = __and_<__not_overloaded<_Tp, _Up>,
+       is_convertible<_Tp, const volatile void*>,
+       is_convertible<_Up, const volatile void*>>;
     };
 
 
@@ -16031,14 +18043,61 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct greater_equal<void>
     {
       template <typename _Tp, typename _Up>
- constexpr
- auto
+ constexpr auto
  operator()(_Tp&& __t, _Up&& __u) const
  noexcept(noexcept(std::forward<_Tp>(__t) >= std::forward<_Up>(__u)))
  -> decltype(std::forward<_Tp>(__t) >= std::forward<_Up>(__u))
- { return std::forward<_Tp>(__t) >= std::forward<_Up>(__u); }
+ {
+   return _S_cmp(std::forward<_Tp>(__t), std::forward<_Up>(__u),
+   __ptr_cmp<_Tp, _Up>{});
+ }
+
+      template<typename _Tp, typename _Up>
+ constexpr bool
+ operator()(_Tp* __t, _Up* __u) const noexcept
+ { return greater_equal<common_type_t<_Tp*, _Up*>>{}(__t, __u); }
 
       typedef __is_transparent is_transparent;
+
+    private:
+      template <typename _Tp, typename _Up>
+ static constexpr decltype(auto)
+ _S_cmp(_Tp&& __t, _Up&& __u, false_type)
+ { return std::forward<_Tp>(__t) >= std::forward<_Up>(__u); }
+
+      template <typename _Tp, typename _Up>
+ static constexpr bool
+ _S_cmp(_Tp&& __t, _Up&& __u, true_type) noexcept
+ {
+   return greater_equal<const volatile void*>{}(
+       static_cast<const volatile void*>(std::forward<_Tp>(__t)),
+       static_cast<const volatile void*>(std::forward<_Up>(__u)));
+ }
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded2 : true_type { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded2<_Tp, _Up, __void_t<
+   decltype(std::declval<_Tp>().operator>=(std::declval<_Up>()))>>
+ : false_type { };
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded : __not_overloaded2<_Tp, _Up> { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded<_Tp, _Up, __void_t<
+   decltype(operator>=(std::declval<_Tp>(), std::declval<_Up>()))>>
+ : false_type { };
+
+      template<typename _Tp, typename _Up>
+ using __ptr_cmp = __and_<__not_overloaded<_Tp, _Up>,
+       is_convertible<_Tp, const volatile void*>,
+       is_convertible<_Up, const volatile void*>>;
     };
 
 
@@ -16046,16 +18105,63 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct less_equal<void>
     {
       template <typename _Tp, typename _Up>
- constexpr
- auto
+ constexpr auto
  operator()(_Tp&& __t, _Up&& __u) const
  noexcept(noexcept(std::forward<_Tp>(__t) <= std::forward<_Up>(__u)))
  -> decltype(std::forward<_Tp>(__t) <= std::forward<_Up>(__u))
- { return std::forward<_Tp>(__t) <= std::forward<_Up>(__u); }
+ {
+   return _S_cmp(std::forward<_Tp>(__t), std::forward<_Up>(__u),
+   __ptr_cmp<_Tp, _Up>{});
+ }
+
+      template<typename _Tp, typename _Up>
+ constexpr bool
+ operator()(_Tp* __t, _Up* __u) const noexcept
+ { return less_equal<common_type_t<_Tp*, _Up*>>{}(__t, __u); }
 
       typedef __is_transparent is_transparent;
+
+    private:
+      template <typename _Tp, typename _Up>
+ static constexpr decltype(auto)
+ _S_cmp(_Tp&& __t, _Up&& __u, false_type)
+ { return std::forward<_Tp>(__t) <= std::forward<_Up>(__u); }
+
+      template <typename _Tp, typename _Up>
+ static constexpr bool
+ _S_cmp(_Tp&& __t, _Up&& __u, true_type) noexcept
+ {
+   return less_equal<const volatile void*>{}(
+       static_cast<const volatile void*>(std::forward<_Tp>(__t)),
+       static_cast<const volatile void*>(std::forward<_Up>(__u)));
+ }
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded2 : true_type { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded2<_Tp, _Up, __void_t<
+   decltype(std::declval<_Tp>().operator<=(std::declval<_Up>()))>>
+ : false_type { };
+
+
+      template<typename _Tp, typename _Up, typename = void>
+ struct __not_overloaded : __not_overloaded2<_Tp, _Up> { };
+
+
+      template<typename _Tp, typename _Up>
+ struct __not_overloaded<_Tp, _Up, __void_t<
+   decltype(operator<=(std::declval<_Tp>(), std::declval<_Up>()))>>
+ : false_type { };
+
+      template<typename _Tp, typename _Up>
+ using __ptr_cmp = __and_<__not_overloaded<_Tp, _Up>,
+       is_convertible<_Tp, const volatile void*>,
+       is_convertible<_Up, const volatile void*>>;
     };
-# 512 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 750 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
   template<typename _Tp = void>
     struct logical_and;
 
@@ -16252,7 +18358,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       typedef __is_transparent is_transparent;
     };
-# 740 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 978 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
   template<typename _Predicate>
     class unary_negate
     : public unary_function<typename _Predicate::argument_type, bool>
@@ -16305,7 +18411,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     inline binary_negate<_Predicate>
     not2(const _Predicate& __pred)
     { return binary_negate<_Predicate>(__pred); }
-# 817 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 1055 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
   template<typename _Arg, typename _Result>
     class pointer_to_unary_function : public unary_function<_Arg, _Result>
     {
@@ -16359,7 +18465,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _Tp>
     struct _Identity
-    : public unary_function<_Tp,_Tp>
+    : public unary_function<_Tp, _Tp>
     {
       _Tp&
       operator()(_Tp& __x) const
@@ -16369,6 +18475,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator()(const _Tp& __x) const
       { return __x; }
     };
+
+
+  template<typename _Tp> struct _Identity<const _Tp> : _Identity<_Tp> { };
 
   template<typename _Pair>
     struct _Select1st
@@ -16407,7 +18516,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator()(const _Pair& __x) const
       { return __x.second; }
     };
-# 937 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 3
+# 1178 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 3
   template<typename _Ret, typename _Tp>
     class mem_fun_t : public unary_function<_Tp*, _Ret>
     {
@@ -16598,15 +18707,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 }
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/backward/binders.h" 1 3
-# 60 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/backward/binders.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/backward/binders.h" 1 3
+# 60 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/backward/binders.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 107 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/backward/binders.h" 3
+# 107 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/backward/binders.h" 3
   template<typename _Operation>
     class binder1st
     : public unary_function<typename _Operation::second_argument_type,
@@ -16681,20 +18790,20 @@ namespace std __attribute__ ((__visibility__ ("default")))
 }
 
 #pragma GCC diagnostic pop
-# 1128 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_function.h" 2 3
-# 49 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
+# 1369 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/stl_function.h" 2 3
+# 49 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/range_access.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/range_access.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/range_access.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/range_access.h" 3
        
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/range_access.h" 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/range_access.h" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/initializer_list" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/initializer_list" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/initializer_list" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/initializer_list" 3
        
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/initializer_list" 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/initializer_list" 3
 
 
 
@@ -16765,7 +18874,7 @@ namespace std
 }
 
 #pragma GCC visibility pop
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/range_access.h" 2 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/range_access.h" 2 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -16959,65 +19068,34 @@ namespace std __attribute__ ((__visibility__ ("default")))
     inline auto
     crend(const _Container& __cont) -> decltype(std::rend(__cont))
     { return std::rend(__cont); }
-# 319 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/range_access.h" 3
+# 323 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/range_access.h" 3
 
 }
-# 52 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 1 3
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 52 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 1 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
        
-# 38 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 38 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/atomicity.h" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/atomicity.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/atomicity.h" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/atomicity.h" 3
        
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/atomicity.h" 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/atomicity.h" 3
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr.h" 1 3
-# 30 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr.h" 1 3
+# 30 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr.h" 3
 #pragma GCC visibility push(default)
-# 148 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 1 3
-# 35 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 148 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 1 3
+# 35 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 # 1 "/usr/include/pthread.h" 1 3 4
 # 22 "/usr/include/pthread.h" 3 4
 # 1 "/usr/include/sched.h" 1 3 4
 # 29 "/usr/include/sched.h" 3 4
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
 # 30 "/usr/include/sched.h" 2 3 4
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 1 3 4
-
-
-
-
-
-
-typedef __time_t time_t;
-# 32 "/usr/include/sched.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
-struct timespec
-{
-  __time_t tv_sec;
-
-
-
-  __syscall_slong_t tv_nsec;
-# 26 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
-};
-# 33 "/usr/include/sched.h" 2 3 4
-
-
-
-
-
-typedef __pid_t pid_t;
-
-
-
-
+# 43 "/usr/include/sched.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/sched.h" 1 3 4
 # 76 "/usr/include/x86_64-linux-gnu/bits/sched.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 1 3 4
@@ -17119,7 +19197,7 @@ extern int sched_getaffinity (__pid_t __pid, size_t __cpusetsize,
 # 23 "/usr/include/pthread.h" 2 3 4
 # 1 "/usr/include/time.h" 1 3 4
 # 29 "/usr/include/time.h" 3 4
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
 # 30 "/usr/include/time.h" 2 3 4
 
 
@@ -17127,24 +19205,7 @@ extern int sched_getaffinity (__pid_t __pid, size_t __cpusetsize,
 # 1 "/usr/include/x86_64-linux-gnu/bits/time.h" 1 3 4
 # 73 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/timex.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h" 1 3 4
-
-
-
-
-
-
-
-struct timeval
-{
-  __time_t tv_sec;
-  __suseconds_t tv_usec;
-};
-# 23 "/usr/include/x86_64-linux-gnu/bits/timex.h" 2 3 4
-
-
-
+# 26 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
 struct timex
 {
   unsigned int modes;
@@ -17186,15 +19247,7 @@ extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) throw ();
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/clock_t.h" 1 3 4
 
-
-
-
-
-
-typedef __clock_t clock_t;
-# 38 "/usr/include/time.h" 2 3 4
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h" 1 3 4
 
@@ -17224,30 +19277,7 @@ struct tm
 
 };
 # 40 "/usr/include/time.h" 2 3 4
-
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h" 1 3 4
-
-
-
-
-
-
-typedef __clockid_t clockid_t;
-# 47 "/usr/include/time.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/timer_t.h" 1 3 4
-
-
-
-
-
-
-typedef __timer_t timer_t;
-# 48 "/usr/include/time.h" 2 3 4
+# 48 "/usr/include/time.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h" 1 3 4
 
 
@@ -17448,206 +19478,7 @@ extern int getdate_r (const char *__restrict __string,
 # 24 "/usr/include/pthread.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 1 3 4
-# 44 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 2 3 4
-# 45 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
 
-
-
-
-typedef struct __pthread_internal_list
-{
-  struct __pthread_internal_list *__prev;
-  struct __pthread_internal_list *__next;
-} __pthread_list_t;
-
-typedef struct __pthread_internal_slist
-{
-  struct __pthread_internal_slist *__next;
-} __pthread_slist_t;
-# 74 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
-struct __pthread_mutex_s
-{
-  int __lock;
-  unsigned int __count;
-  int __owner;
-
-  unsigned int __nusers;
-
-
-
-  int __kind;
-
-  short __spins;
-  short __elision;
-  __pthread_list_t __list;
-# 53 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
-};
-# 75 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
-# 87 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
-struct __pthread_rwlock_arch_t
-{
-  unsigned int __readers;
-  unsigned int __writers;
-  unsigned int __wrphase_futex;
-  unsigned int __writers_futex;
-  unsigned int __pad3;
-  unsigned int __pad4;
-
-  int __cur_writer;
-  int __shared;
-  signed char __rwelision;
-
-
-
-
-  unsigned char __pad1[7];
-
-
-  unsigned long int __pad2;
-
-
-  unsigned int __flags;
-# 55 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
-};
-# 88 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
-
-
-
-
-struct __pthread_cond_s
-{
-  __extension__ union
-  {
-    __extension__ unsigned long long int __wseq;
-    struct
-    {
-      unsigned int __low;
-      unsigned int __high;
-    } __wseq32;
-  };
-  __extension__ union
-  {
-    __extension__ unsigned long long int __g1_start;
-    struct
-    {
-      unsigned int __low;
-      unsigned int __high;
-    } __g1_start32;
-  };
-  unsigned int __g_refs[2] ;
-  unsigned int __g_size[2];
-  unsigned int __g1_orig_size;
-  unsigned int __wrefs;
-  unsigned int __g_signals[2];
-};
-# 24 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 2 3 4
-
-
-
-typedef unsigned long int pthread_t;
-
-
-
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_mutexattr_t;
-
-
-
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_condattr_t;
-
-
-
-typedef unsigned int pthread_key_t;
-
-
-
-typedef int pthread_once_t;
-
-
-union pthread_attr_t
-{
-  char __size[56];
-  long int __align;
-};
-
-typedef union pthread_attr_t pthread_attr_t;
-
-
-
-
-typedef union
-{
-  struct __pthread_mutex_s __data;
-  char __size[40];
-  long int __align;
-} pthread_mutex_t;
-
-
-typedef union
-{
-  struct __pthread_cond_s __data;
-  char __size[48];
-  __extension__ long long int __align;
-} pthread_cond_t;
-
-
-
-
-
-typedef union
-{
-  struct __pthread_rwlock_arch_t __data;
-  char __size[56];
-  long int __align;
-} pthread_rwlock_t;
-
-typedef union
-{
-  char __size[8];
-  long int __align;
-} pthread_rwlockattr_t;
-
-
-
-
-
-typedef volatile int pthread_spinlock_t;
-
-
-
-
-typedef union
-{
-  char __size[32];
-  long int __align;
-} pthread_barrier_t;
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_barrierattr_t;
-# 27 "/usr/include/pthread.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/setjmp.h" 1 3 4
 # 26 "/usr/include/x86_64-linux-gnu/bits/setjmp.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
@@ -18486,8 +20317,8 @@ __attribute__ ((__leaf__)) pthread_equal (pthread_t __thread1, pthread_t __threa
 
 
 }
-# 36 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 2 3
-# 47 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 36 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 2 3
+# 47 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 typedef pthread_t __gthread_t;
 typedef pthread_key_t __gthread_key_t;
 typedef pthread_once_t __gthread_once_t;
@@ -18495,7 +20326,7 @@ typedef pthread_mutex_t __gthread_mutex_t;
 typedef pthread_mutex_t __gthread_recursive_mutex_t;
 typedef pthread_cond_t __gthread_cond_t;
 typedef struct timespec __gthread_time_t;
-# 101 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 101 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 static __typeof(pthread_once) __gthrw_pthread_once __attribute__ ((__weakref__("pthread_once")));
 static __typeof(pthread_getspecific) __gthrw_pthread_getspecific __attribute__ ((__weakref__("pthread_getspecific")));
 static __typeof(pthread_setspecific) __gthrw_pthread_setspecific __attribute__ ((__weakref__("pthread_setspecific")));
@@ -18531,9 +20362,9 @@ static __typeof(pthread_key_delete) __gthrw_pthread_key_delete __attribute__ ((_
 static __typeof(pthread_mutexattr_init) __gthrw_pthread_mutexattr_init __attribute__ ((__weakref__("pthread_mutexattr_init")));
 static __typeof(pthread_mutexattr_settype) __gthrw_pthread_mutexattr_settype __attribute__ ((__weakref__("pthread_mutexattr_settype")));
 static __typeof(pthread_mutexattr_destroy) __gthrw_pthread_mutexattr_destroy __attribute__ ((__weakref__("pthread_mutexattr_destroy")));
-# 236 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 236 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 static __typeof(pthread_key_create) __gthrw___pthread_key_create __attribute__ ((__weakref__("__pthread_key_create")));
-# 246 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 246 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 static inline int
 __gthread_active_p (void)
 {
@@ -18541,7 +20372,7 @@ __gthread_active_p (void)
     = __extension__ (void *) &__gthrw___pthread_key_create;
   return __gthread_active_ptr != 0;
 }
-# 658 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 658 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 static inline int
 __gthread_create (__gthread_t *__threadid, void *(*__func) (void*),
     void *__args)
@@ -18666,7 +20497,7 @@ __gthread_mutex_unlock (__gthread_mutex_t *__mutex)
   else
     return 0;
 }
-# 807 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 807 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 static inline int
 __gthread_recursive_mutex_lock (__gthread_recursive_mutex_t *__mutex)
 {
@@ -18699,7 +20530,7 @@ __gthread_recursive_mutex_destroy (__gthread_recursive_mutex_t *__mutex)
 {
   return __gthread_mutex_destroy (__mutex);
 }
-# 849 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
+# 849 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
 static inline int
 __gthread_cond_broadcast (__gthread_cond_t *__cond)
 {
@@ -18737,15 +20568,15 @@ __gthread_cond_destroy (__gthread_cond_t* __cond)
 {
   return __gthrw_pthread_cond_destroy (__cond);
 }
-# 149 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr.h" 2 3
+# 149 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr.h" 2 3
 
 
 #pragma GCC visibility pop
-# 36 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/atomicity.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/atomic_word.h" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/atomic_word.h" 3
+# 36 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/atomicity.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/atomic_word.h" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/atomic_word.h" 3
 typedef int _Atomic_word;
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/atomicity.h" 2 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/atomicity.h" 2 3
 
 namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 {
@@ -18763,7 +20594,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
   static inline void
   __atomic_add(volatile _Atomic_word* __mem, int __val)
   { __atomic_fetch_add(__mem, __val, 4); }
-# 64 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/atomicity.h" 3
+# 64 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/atomicity.h" 3
   static inline _Atomic_word
   __exchange_and_add_single(_Atomic_word* __mem, int __val)
   {
@@ -18806,24 +20637,29 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/alloc_traits.h" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/alloc_traits.h" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/alloc_traits.h" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/alloc_traits.h" 3
        
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/alloc_traits.h" 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/alloc_traits.h" 3
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 1 3
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 1 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
 
   struct __allocator_traits_base
   {
-    template<typename _Alloc, typename _Up>
-      using __rebind = typename _Alloc::template rebind<_Up>::other;
+    template<typename _Tp, typename _Up, typename = void>
+      struct __rebind : __replace_first_arg<_Tp, _Up> { };
+
+    template<typename _Tp, typename _Up>
+      struct __rebind<_Tp, _Up,
+        __void_t<typename _Tp::template rebind<_Up>::other>>
+      { using type = typename _Tp::template rebind<_Up>::other; };
 
   protected:
     template<typename _Tp>
@@ -18835,10 +20671,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
     template<typename _Tp>
       using __cv_pointer = typename _Tp::const_void_pointer;
     template<typename _Tp>
-      using __diff_type = typename _Tp::difference_type;
-    template<typename _Tp>
-      using __size_type = typename _Tp::size_type;
-    template<typename _Tp>
       using __pocca = typename _Tp::propagate_on_container_copy_assignment;
     template<typename _Tp>
       using __pocma = typename _Tp::propagate_on_container_move_assignment;
@@ -18849,9 +20681,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
   };
 
   template<typename _Alloc, typename _Up>
-    using __alloc_rebind = __detected_or_t_<__replace_first_arg_t,
-         __allocator_traits_base::__rebind,
-         _Alloc, _Up>;
+    using __alloc_rebind
+      = typename __allocator_traits_base::template __rebind<_Alloc, _Up>::type;
 
 
 
@@ -18872,15 +20703,45 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       using pointer = __detected_or_t<value_type*, __pointer, _Alloc>;
 
+    private:
+
+      template<template<typename> class _Func, typename _Tp, typename = void>
+ struct _Ptr
+ {
+   using type = typename pointer_traits<pointer>::template rebind<_Tp>;
+ };
+
+      template<template<typename> class _Func, typename _Tp>
+ struct _Ptr<_Func, _Tp, __void_t<_Func<_Alloc>>>
+ {
+   using type = _Func<_Alloc>;
+ };
+
+
+      template<typename _A2, typename _PtrT, typename = void>
+ struct _Diff
+ { using type = typename pointer_traits<_PtrT>::difference_type; };
+
+      template<typename _A2, typename _PtrT>
+ struct _Diff<_A2, _PtrT, __void_t<typename _A2::difference_type>>
+ { using type = typename _A2::difference_type; };
+
+
+      template<typename _A2, typename _DiffT, typename = void>
+ struct _Size : make_unsigned<_DiffT> { };
+
+      template<typename _A2, typename _DiffT>
+ struct _Size<_A2, _DiffT, __void_t<typename _A2::size_type>>
+ { using type = typename _A2::size_type; };
+
+    public:
 
 
 
 
 
 
-      using const_pointer
- = __detected_or_t<__ptr_rebind<pointer, const value_type>,
-     __c_pointer, _Alloc>;
+      using const_pointer = typename _Ptr<__c_pointer, const value_type>::type;
 
 
 
@@ -18888,8 +20749,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-      using void_pointer
- = __detected_or_t<__ptr_rebind<pointer, void>, __v_pointer, _Alloc>;
+      using void_pointer = typename _Ptr<__v_pointer, void>::type;
 
 
 
@@ -18897,9 +20757,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-      using const_void_pointer
- = __detected_or_t<__ptr_rebind<pointer, const void>, __cv_pointer,
-     _Alloc>;
+      using const_void_pointer = typename _Ptr<__cv_pointer, const void>::type;
 
 
 
@@ -18907,9 +20765,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-      using difference_type
- = __detected_or_t<typename pointer_traits<pointer>::difference_type,
-     __diff_type, _Alloc>;
+      using difference_type = typename _Diff<_Alloc, pointer>::type;
 
 
 
@@ -18917,9 +20773,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-      using size_type
- = __detected_or_t<typename make_unsigned<difference_type>::type,
-     __size_type, _Alloc>;
+      using size_type = typename _Size<_Alloc, difference_type>::type;
 
 
 
@@ -18961,9 +20815,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
  using rebind_alloc = __alloc_rebind<_Alloc, _Tp>;
       template<typename _Tp>
  using rebind_traits = allocator_traits<rebind_alloc<_Tp>>;
-
-      static_assert(!is_same<rebind_alloc<value_type>, __undefined>::value,
-   "allocator defines rebind or is like Alloc<T, Args>");
 
     private:
       template<typename _Alloc2>
@@ -19046,31 +20897,31 @@ namespace std __attribute__ ((__visibility__ ("default")))
  { return __a; }
 
     public:
-# 279 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 299 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static pointer
       allocate(_Alloc& __a, size_type __n)
       { return __a.allocate(__n); }
-# 294 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 314 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static pointer
       allocate(_Alloc& __a, size_type __n, const_void_pointer __hint)
       { return _S_allocate(__a, __n, __hint, 0); }
-# 306 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 326 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static void
       deallocate(_Alloc& __a, pointer __p, size_type __n)
       { __a.deallocate(__p, __n); }
-# 321 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 341 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       template<typename _Tp, typename... _Args>
  static auto construct(_Alloc& __a, _Tp* __p, _Args&&... __args)
  -> decltype(_S_construct(__a, __p, std::forward<_Args>(__args)...))
  { _S_construct(__a, __p, std::forward<_Args>(__args)...); }
-# 334 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 354 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       template<typename _Tp>
  static void destroy(_Alloc& __a, _Tp* __p)
  { _S_destroy(__a, __p, 0); }
-# 346 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 366 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static size_type max_size(const _Alloc& __a) noexcept
       { return _S_max_size(__a, 0); }
-# 357 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 377 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static _Alloc
       select_on_container_copy_construction(const _Alloc& __rhs)
       { return _S_select(__rhs, 0); }
@@ -19120,24 +20971,24 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       template<typename _Up>
  using rebind_traits = allocator_traits<allocator<_Up>>;
-# 414 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 434 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static pointer
       allocate(allocator_type& __a, size_type __n)
       { return __a.allocate(__n); }
-# 428 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 448 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static pointer
       allocate(allocator_type& __a, size_type __n, const_void_pointer __hint)
       { return __a.allocate(__n, __hint); }
-# 440 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 460 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       static void
       deallocate(allocator_type& __a, pointer __p, size_type __n)
       { __a.deallocate(__p, __n); }
-# 452 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 472 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       template<typename _Up, typename... _Args>
  static void
  construct(allocator_type& __a, _Up* __p, _Args&&... __args)
  { __a.construct(__p, std::forward<_Args>(__args)...); }
-# 464 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/alloc_traits.h" 3
+# 484 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/alloc_traits.h" 3
       template<typename _Up>
  static void
  destroy(allocator_type& __a, _Up* __p)
@@ -19256,8 +21107,22 @@ namespace std __attribute__ ((__visibility__ ("default")))
     { };
 
 
+  template<typename _Alloc, typename = void>
+    struct __is_allocator : false_type { };
+
+  template<typename _Alloc>
+    struct __is_allocator<_Alloc,
+      __void_t<typename _Alloc::value_type,
+        decltype(std::declval<_Alloc&>().allocate(size_t{}))>>
+    : true_type { };
+
+  template<typename _Alloc>
+    using _RequireAllocator
+      = typename enable_if<__is_allocator<_Alloc>::value, _Alloc>::type;
+
+
 }
-# 37 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/alloc_traits.h" 2 3
+# 37 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/alloc_traits.h" 2 3
 
 
 
@@ -19270,7 +21135,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 
-template<typename _Alloc>
+template<typename _Alloc, typename = typename _Alloc::value_type>
   struct __alloc_traits
 
   : std::allocator_traits<_Alloc>
@@ -19305,7 +21170,7 @@ template<typename _Alloc>
       static typename std::enable_if<__is_custom_pointer<_Ptr>::value>::type
       construct(_Alloc& __a, _Ptr __p, _Args&&... __args)
       {
- _Base_type::construct(__a, std::addressof(*__p),
+ _Base_type::construct(__a, std::__to_address(__p),
          std::forward<_Args>(__args)...);
       }
 
@@ -19313,7 +21178,7 @@ template<typename _Alloc>
     template<typename _Ptr>
       static typename std::enable_if<__is_custom_pointer<_Ptr>::value>::type
       destroy(_Alloc& __a, _Ptr __p)
-      { _Base_type::destroy(__a, std::addressof(*__p)); }
+      { _Base_type::destroy(__a, std::__to_address(__p)); }
 
     static _Alloc _S_select_on_copy(const _Alloc& __a)
     { return _Base_type::select_on_container_copy_construction(__a); }
@@ -19339,25 +21204,20 @@ template<typename _Alloc>
     template<typename _Tp>
       struct rebind
       { typedef typename _Base_type::template rebind_alloc<_Tp> other; };
-# 158 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/alloc_traits.h" 3
+# 158 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/alloc_traits.h" 3
   };
 
 
 }
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 2 3
-
-
-
-
-
-
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 2 3
+# 52 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
 
 
 namespace __cxx11 {
-# 71 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 76 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     class basic_string
     {
@@ -19391,13 +21251,19 @@ namespace __cxx11 {
 
 
       typedef const_iterator __const_iterator;
-
-
-
+# 139 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       struct _Alloc_hider : allocator_type
       {
- _Alloc_hider(pointer __dat, const _Alloc& __a = _Alloc())
+
+
+
+
+ _Alloc_hider(pointer __dat, const _Alloc& __a)
  : allocator_type(__a), _M_p(__dat) { }
+
+ _Alloc_hider(pointer __dat, _Alloc&& __a = _Alloc())
+ : allocator_type(std::move(__a)), _M_p(__dat) { }
+
 
  pointer _M_p;
       };
@@ -19530,7 +21396,7 @@ namespace __cxx11 {
       { return _M_dataplus; }
 
     private:
-# 258 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 298 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       _M_check(size_type __pos, const char* __s) const
       {
@@ -19636,7 +21502,7 @@ namespace __cxx11 {
       }
 
       void
-      _M_assign(const basic_string& __rcs);
+      _M_assign(const basic_string&);
 
       void
       _M_mutate(size_type __pos, size_type __len1, const _CharT* __s,
@@ -19674,16 +21540,31 @@ namespace __cxx11 {
       : _M_dataplus(_M_local_data(),
       _Alloc_traits::_S_select_on_copy(__str._M_get_allocator()))
       { _M_construct(__str._M_data(), __str._M_data() + __str.length()); }
-# 410 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 450 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string(const basic_string& __str, size_type __pos,
-     size_type __n = npos)
+     const _Alloc& __a = _Alloc())
+      : _M_dataplus(_M_local_data(), __a)
+      {
+ const _CharT* __start = __str._M_data()
+   + __str._M_check(__pos, "basic_string::basic_string");
+ _M_construct(__start, __start + __str._M_limit(__pos, npos));
+      }
+
+
+
+
+
+
+
+      basic_string(const basic_string& __str, size_type __pos,
+     size_type __n)
       : _M_dataplus(_M_local_data())
       {
  const _CharT* __start = __str._M_data()
    + __str._M_check(__pos, "basic_string::basic_string");
  _M_construct(__start, __start + __str._M_limit(__pos, __n));
       }
-# 426 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 481 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string(const basic_string& __str, size_type __pos,
      size_type __n, const _Alloc& __a)
       : _M_dataplus(_M_local_data(), __a)
@@ -19692,31 +21573,20 @@ namespace __cxx11 {
    = __str._M_data() + __str._M_check(__pos, "string::string");
  _M_construct(__start, __start + __str._M_limit(__pos, __n));
       }
-# 444 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 499 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string(const _CharT* __s, size_type __n,
      const _Alloc& __a = _Alloc())
       : _M_dataplus(_M_local_data(), __a)
       { _M_construct(__s, __s + __n); }
-
-
-
-
-
-
+# 514 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
       : _M_dataplus(_M_local_data(), __a)
       { _M_construct(__s, __s ? __s + traits_type::length(__s) : __s+npos); }
-
-
-
-
-
-
-
+# 529 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
       : _M_dataplus(_M_local_data(), __a)
       { _M_construct(__n, __c); }
-# 476 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 541 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string(basic_string&& __str) noexcept
       : _M_dataplus(_M_local_data(), std::move(__str._M_get_allocator()))
       {
@@ -19775,7 +21645,7 @@ namespace __cxx11 {
  else
    _M_construct(__str.begin(), __str.end());
       }
-# 544 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 609 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       template<typename _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
 
@@ -19785,10 +21655,7 @@ namespace __cxx11 {
        const _Alloc& __a = _Alloc())
  : _M_dataplus(_M_local_data(), __a)
  { _M_construct(__beg, __end); }
-
-
-
-
+# 656 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       ~basic_string()
       { _M_dispose(); }
 
@@ -19806,9 +21673,24 @@ namespace __cxx11 {
   && _M_get_allocator() != __str._M_get_allocator())
        {
 
-  _M_destroy(_M_allocated_capacity);
-  _M_data(_M_local_data());
-  _M_set_length(0);
+
+  if (__str.size() <= _S_local_capacity)
+    {
+      _M_destroy(_M_allocated_capacity);
+      _M_data(_M_local_data());
+      _M_set_length(0);
+    }
+  else
+    {
+      const auto __len = __str.size();
+      auto __alloc = __str._M_get_allocator();
+
+      auto __ptr = _Alloc_traits::allocate(__alloc, __len + 1);
+      _M_destroy(_M_allocated_capacity);
+      _M_data(__ptr);
+      _M_capacity(__len);
+      _M_set_length(__len);
+    }
        }
      std::__alloc_on_copy(_M_get_allocator(), __str._M_get_allocator());
    }
@@ -19823,14 +21705,14 @@ namespace __cxx11 {
       basic_string&
       operator=(const _CharT* __s)
       { return this->assign(__s); }
-# 599 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 713 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       operator=(_CharT __c)
       {
  this->assign(1, __c);
  return *this;
       }
-# 617 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 731 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       operator=(basic_string&& __str)
       noexcept(_Alloc_traits::_S_nothrow_move())
@@ -19847,16 +21729,25 @@ namespace __cxx11 {
 
  std::__alloc_on_move(_M_get_allocator(), __str._M_get_allocator());
 
- if (!__str._M_is_local()
-     && (_Alloc_traits::_S_propagate_on_move_assign()
-       || _Alloc_traits::_S_always_equal()))
+ if (__str._M_is_local())
    {
+
+     if (__str.size())
+       this->_S_copy(_M_data(), __str._M_data(), __str.size());
+     _M_set_length(__str.size());
+   }
+ else if (_Alloc_traits::_S_propagate_on_move_assign()
+     || _Alloc_traits::_S_always_equal()
+     || _M_get_allocator() == __str._M_get_allocator())
+   {
+
      pointer __data = nullptr;
      size_type __capacity;
      if (!_M_is_local())
        {
   if (_Alloc_traits::_S_always_equal())
     {
+
       __data = _M_data();
       __capacity = _M_allocated_capacity;
     }
@@ -19876,7 +21767,7 @@ namespace __cxx11 {
        __str._M_data(__str._M_local_buf);
    }
  else
-     assign(__str);
+   assign(__str);
  __str.clear();
  return *this;
       }
@@ -19891,13 +21782,7 @@ namespace __cxx11 {
  this->assign(__l.begin(), __l.size());
  return *this;
       }
-
-
-
-
-
-
-
+# 825 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       iterator
       begin() noexcept
       { return iterator(_M_data()); }
@@ -20016,10 +21901,10 @@ namespace __cxx11 {
       size_type
       max_size() const noexcept
       { return (_Alloc_traits::max_size(_M_get_allocator()) - 1) / 2; }
-# 813 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 954 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       void
       resize(size_type __n, _CharT __c);
-# 826 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 967 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       void
       resize(size_type __n)
       { this->resize(__n, _CharT()); }
@@ -20051,7 +21936,7 @@ namespace __cxx11 {
  return _M_is_local() ? size_type(_S_local_capacity)
                       : _M_allocated_capacity;
       }
-# 875 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1016 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       void
       reserve(size_type __res_arg = 0);
 
@@ -20069,14 +21954,14 @@ namespace __cxx11 {
       bool
       empty() const noexcept
       { return this->size() == 0; }
-# 904 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1045 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       const_reference
       operator[] (size_type __pos) const noexcept
       {
  ;
  return _M_data()[__pos];
       }
-# 921 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1062 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       reference
       operator[](size_type __pos)
       {
@@ -20087,7 +21972,7 @@ namespace __cxx11 {
  ;
  return _M_data()[__pos];
       }
-# 942 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1083 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       const_reference
       at(size_type __n) const
       {
@@ -20098,7 +21983,7 @@ namespace __cxx11 {
        __n, this->size());
  return _M_data()[__n];
       }
-# 963 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1104 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       reference
       at(size_type __n)
       {
@@ -20154,7 +22039,7 @@ namespace __cxx11 {
  ;
  return operator[](this->size() - 1);
       }
-# 1026 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1167 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       operator+=(const basic_string& __str)
       { return this->append(__str); }
@@ -20189,19 +22074,13 @@ namespace __cxx11 {
       basic_string&
       operator+=(initializer_list<_CharT> __l)
       { return this->append(__l.begin(), __l.size()); }
-
-
-
-
-
-
-
+# 1220 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       append(const basic_string& __str)
       { return _M_append(__str._M_data(), __str.size()); }
-# 1084 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1237 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
-      append(const basic_string& __str, size_type __pos, size_type __n)
+      append(const basic_string& __str, size_type __pos, size_type __n = npos)
       { return _M_append(__str._M_data()
     + __str._M_check(__pos, "basic_string::append"),
     __str._M_limit(__pos, __n)); }
@@ -20233,7 +22112,7 @@ namespace __cxx11 {
  _M_check_length(size_type(0), __n, "basic_string::append");
  return _M_append(__s, __n);
       }
-# 1126 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1279 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       append(size_type __n, _CharT __c)
       { return _M_replace_aux(this->size(), size_type(0), __n, __c); }
@@ -20247,7 +22126,7 @@ namespace __cxx11 {
       basic_string&
       append(initializer_list<_CharT> __l)
       { return this->append(__l.begin(), __l.size()); }
-# 1150 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1303 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       template<class _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
 
@@ -20256,11 +22135,7 @@ namespace __cxx11 {
         basic_string&
         append(_InputIterator __first, _InputIterator __last)
         { return this->replace(end(), end(), __first, __last); }
-
-
-
-
-
+# 1348 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       void
       push_back(_CharT __c)
       {
@@ -20282,7 +22157,7 @@ namespace __cxx11 {
  this->_M_assign(__str);
  return *this;
       }
-# 1194 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1379 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       assign(basic_string&& __str)
       noexcept(_Alloc_traits::_S_nothrow_move())
@@ -20291,20 +22166,20 @@ namespace __cxx11 {
 
  return *this = std::move(__str);
       }
-# 1217 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1402 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
-      assign(const basic_string& __str, size_type __pos, size_type __n)
+      assign(const basic_string& __str, size_type __pos, size_type __n = npos)
       { return _M_replace(size_type(0), this->size(), __str._M_data()
      + __str._M_check(__pos, "basic_string::assign"),
      __str._M_limit(__pos, __n)); }
-# 1233 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1418 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       assign(const _CharT* __s, size_type __n)
       {
  ;
  return _M_replace(size_type(0), this->size(), __s, __n);
       }
-# 1249 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1434 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       assign(const _CharT* __s)
       {
@@ -20312,11 +22187,11 @@ namespace __cxx11 {
  return _M_replace(size_type(0), this->size(), __s,
      traits_type::length(__s));
       }
-# 1266 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1451 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       assign(size_type __n, _CharT __c)
       { return _M_replace_aux(size_type(0), this->size(), __n, __c); }
-# 1279 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1464 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       template<class _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
 
@@ -20335,7 +22210,7 @@ namespace __cxx11 {
       basic_string&
       assign(initializer_list<_CharT> __l)
       { return this->assign(__l.begin(), __l.size()); }
-# 1315 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1532 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       iterator
       insert(const_iterator __p, size_type __n, _CharT __c)
       {
@@ -20344,7 +22219,7 @@ namespace __cxx11 {
  this->replace(__p, __p, __n, __c);
  return iterator(this->_M_data() + __pos);
       }
-# 1357 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1574 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       template<class _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
  iterator
@@ -20355,30 +22230,30 @@ namespace __cxx11 {
    this->replace(__p, __p, __beg, __end);
    return iterator(this->_M_data() + __pos);
  }
-# 1393 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1610 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       void
       insert(iterator __p, initializer_list<_CharT> __l)
       {
  ;
  this->insert(__p - begin(), __l.begin(), __l.size());
       }
-# 1413 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1630 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       insert(size_type __pos1, const basic_string& __str)
       { return this->replace(__pos1, size_type(0),
         __str._M_data(), __str.size()); }
-# 1436 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1653 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       insert(size_type __pos1, const basic_string& __str,
-      size_type __pos2, size_type __n)
+      size_type __pos2, size_type __n = npos)
       { return this->replace(__pos1, size_type(0), __str._M_data()
         + __str._M_check(__pos2, "basic_string::insert"),
         __str._M_limit(__pos2, __n)); }
-# 1459 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1676 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       insert(size_type __pos, const _CharT* __s, size_type __n)
       { return this->replace(__pos, size_type(0), __s, __n); }
-# 1478 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1695 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       insert(size_type __pos, const _CharT* __s)
       {
@@ -20386,12 +22261,12 @@ namespace __cxx11 {
  return this->replace(__pos, size_type(0), __s,
         traits_type::length(__s));
       }
-# 1502 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1719 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       insert(size_type __pos, size_type __n, _CharT __c)
       { return _M_replace_aux(_M_check(__pos, "basic_string::insert"),
          size_type(0), __n, __c); }
-# 1520 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1737 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       iterator
       insert(__const_iterator __p, _CharT __c)
       {
@@ -20400,15 +22275,18 @@ namespace __cxx11 {
  _M_replace_aux(__pos, size_type(0), size_type(1), __c);
  return iterator(_M_data() + __pos);
       }
-# 1544 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1797 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       erase(size_type __pos = 0, size_type __n = npos)
       {
- this->_M_erase(_M_check(__pos, "basic_string::erase"),
-         _M_limit(__pos, __n));
+ _M_check(__pos, "basic_string::erase");
+ if (__n == npos)
+   this->_M_set_length(__pos);
+ else if (__n != 0)
+   this->_M_erase(__pos, _M_limit(__pos, __n));
  return *this;
       }
-# 1560 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1816 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       iterator
       erase(__const_iterator __position)
       {
@@ -20418,14 +22296,17 @@ namespace __cxx11 {
  this->_M_erase(__pos, size_type(1));
  return iterator(_M_data() + __pos);
       }
-# 1579 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1835 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       iterator
       erase(__const_iterator __first, __const_iterator __last)
       {
 
                         ;
         const size_type __pos = __first - begin();
- this->_M_erase(__pos, __last - __first);
+ if (__last == end())
+   this->_M_set_length(__pos);
+ else
+   this->_M_erase(__pos, __last - __first);
  return iterator(this->_M_data() + __pos);
       }
 
@@ -20441,18 +22322,18 @@ namespace __cxx11 {
  ;
  _M_erase(size() - 1, 1);
       }
-# 1620 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1879 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(size_type __pos, size_type __n, const basic_string& __str)
       { return this->replace(__pos, __n, __str._M_data(), __str.size()); }
-# 1642 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1901 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(size_type __pos1, size_type __n1, const basic_string& __str,
-       size_type __pos2, size_type __n2)
+       size_type __pos2, size_type __n2 = npos)
       { return this->replace(__pos1, __n1, __str._M_data()
         + __str._M_check(__pos2, "basic_string::replace"),
         __str._M_limit(__pos2, __n2)); }
-# 1667 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1926 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(size_type __pos, size_type __n1, const _CharT* __s,
        size_type __n2)
@@ -20461,24 +22342,24 @@ namespace __cxx11 {
  return _M_replace(_M_check(__pos, "basic_string::replace"),
      _M_limit(__pos, __n1), __s, __n2);
       }
-# 1692 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1951 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(size_type __pos, size_type __n1, const _CharT* __s)
       {
  ;
  return this->replace(__pos, __n1, __s, traits_type::length(__s));
       }
-# 1716 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1975 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(size_type __pos, size_type __n1, size_type __n2, _CharT __c)
       { return _M_replace_aux(_M_check(__pos, "basic_string::replace"),
          _M_limit(__pos, __n1), __n2, __c); }
-# 1734 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 1993 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2,
        const basic_string& __str)
       { return this->replace(__i1, __i2, __str._M_data(), __str.size()); }
-# 1754 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2013 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2,
        const _CharT* __s, size_type __n)
@@ -20487,14 +22368,14 @@ namespace __cxx11 {
                       ;
  return this->replace(__i1 - begin(), __i2 - __i1, __s, __n);
       }
-# 1776 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2035 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2, const _CharT* __s)
       {
  ;
  return this->replace(__i1, __i2, __s, traits_type::length(__s));
       }
-# 1797 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2056 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2, size_type __n,
        _CharT __c)
@@ -20503,7 +22384,7 @@ namespace __cxx11 {
                       ;
  return _M_replace_aux(__i1 - begin(), __i2 - __i1, __n, __c);
       }
-# 1822 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2081 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       template<class _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
         basic_string&
@@ -20516,7 +22397,7 @@ namespace __cxx11 {
    return this->_M_replace_dispatch(__i1, __i2, __k1, __k2,
         std::__false_type());
  }
-# 1854 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2113 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2,
        _CharT* __k1, _CharT* __k2)
@@ -20560,12 +22441,11 @@ namespace __cxx11 {
  return this->replace(__i1 - begin(), __i2 - __i1,
         __k1.base(), __k2 - __k1);
       }
-# 1913 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2172 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string& replace(const_iterator __i1, const_iterator __i2,
        initializer_list<_CharT> __l)
-      { return this->replace(__i1, __i2, __l.begin(), __l.end()); }
-
-
+      { return this->replace(__i1, __i2, __l.begin(), __l.size()); }
+# 2231 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
     private:
       template<class _Integer>
  basic_string&
@@ -20591,153 +22471,152 @@ namespace __cxx11 {
       _M_append(const _CharT* __s, size_type __n);
 
     public:
-# 1956 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2269 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       copy(_CharT* __s, size_type __n, size_type __pos = 0) const;
-# 1966 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2279 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       void
       swap(basic_string& __s) noexcept;
-# 1976 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2289 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       const _CharT*
       c_str() const noexcept
       { return _M_data(); }
-
-
-
-
-
-
-
+# 2301 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       const _CharT*
       data() const noexcept
       { return _M_data(); }
-
-
-
-
+# 2320 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       allocator_type
       get_allocator() const noexcept
       { return _M_get_allocator(); }
-# 2009 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2336 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
-      find(const _CharT* __s, size_type __pos, size_type __n) const;
-# 2022 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+      find(const _CharT* __s, size_type __pos, size_type __n) const
+      noexcept;
+# 2350 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find(const basic_string& __str, size_type __pos = 0) const
- noexcept
+      noexcept
       { return this->find(__str.data(), __pos, __str.size()); }
-# 2037 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2382 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
-      find(const _CharT* __s, size_type __pos = 0) const
+      find(const _CharT* __s, size_type __pos = 0) const noexcept
       {
  ;
  return this->find(__s, __pos, traits_type::length(__s));
       }
-# 2054 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2399 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find(_CharT __c, size_type __pos = 0) const noexcept;
-# 2067 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2412 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       rfind(const basic_string& __str, size_type __pos = npos) const
- noexcept
+      noexcept
       { return this->rfind(__str.data(), __pos, __str.size()); }
-# 2084 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2446 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
-      rfind(const _CharT* __s, size_type __pos, size_type __n) const;
-# 2097 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+      rfind(const _CharT* __s, size_type __pos, size_type __n) const
+      noexcept;
+# 2460 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       rfind(const _CharT* __s, size_type __pos = npos) const
       {
  ;
  return this->rfind(__s, __pos, traits_type::length(__s));
       }
-# 2114 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2477 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       rfind(_CharT __c, size_type __pos = npos) const noexcept;
-# 2128 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2491 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_first_of(const basic_string& __str, size_type __pos = 0) const
- noexcept
+      noexcept
       { return this->find_first_of(__str.data(), __pos, __str.size()); }
-# 2145 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2526 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
-      find_first_of(const _CharT* __s, size_type __pos, size_type __n) const;
-# 2158 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+      find_first_of(const _CharT* __s, size_type __pos, size_type __n) const
+      noexcept;
+# 2540 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_first_of(const _CharT* __s, size_type __pos = 0) const
+      noexcept
       {
  ;
  return this->find_first_of(__s, __pos, traits_type::length(__s));
       }
-# 2177 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2560 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_first_of(_CharT __c, size_type __pos = 0) const noexcept
       { return this->find(__c, __pos); }
-# 2192 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2575 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_last_of(const basic_string& __str, size_type __pos = npos) const
- noexcept
+      noexcept
       { return this->find_last_of(__str.data(), __pos, __str.size()); }
-# 2209 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2610 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
-      find_last_of(const _CharT* __s, size_type __pos, size_type __n) const;
-# 2222 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+      find_last_of(const _CharT* __s, size_type __pos, size_type __n) const
+      noexcept;
+# 2624 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_last_of(const _CharT* __s, size_type __pos = npos) const
+      noexcept
       {
  ;
  return this->find_last_of(__s, __pos, traits_type::length(__s));
       }
-# 2241 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2644 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_last_of(_CharT __c, size_type __pos = npos) const noexcept
       { return this->rfind(__c, __pos); }
-# 2255 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2658 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_first_not_of(const basic_string& __str, size_type __pos = 0) const
- noexcept
+      noexcept
       { return this->find_first_not_of(__str.data(), __pos, __str.size()); }
-# 2272 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2693 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_first_not_of(const _CharT* __s, size_type __pos,
-   size_type __n) const;
-# 2286 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+   size_type __n) const noexcept;
+# 2707 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_first_not_of(const _CharT* __s, size_type __pos = 0) const
+      noexcept
       {
  ;
  return this->find_first_not_of(__s, __pos, traits_type::length(__s));
       }
-# 2303 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2725 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_first_not_of(_CharT __c, size_type __pos = 0) const
- noexcept;
-# 2318 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+      noexcept;
+# 2740 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_last_not_of(const basic_string& __str, size_type __pos = npos) const
- noexcept
+      noexcept
       { return this->find_last_not_of(__str.data(), __pos, __str.size()); }
-# 2335 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2775 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_last_not_of(const _CharT* __s, size_type __pos,
-         size_type __n) const;
-# 2349 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+         size_type __n) const noexcept;
+# 2789 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_last_not_of(const _CharT* __s, size_type __pos = npos) const
+      noexcept
       {
  ;
  return this->find_last_not_of(__s, __pos, traits_type::length(__s));
       }
-# 2366 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2807 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       size_type
       find_last_not_of(_CharT __c, size_type __pos = npos) const
- noexcept;
-# 2382 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+      noexcept;
+# 2823 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       basic_string
       substr(size_type __pos = 0, size_type __n = npos) const
       { return basic_string(*this,
        _M_check(__pos, "basic_string::substr"), __n); }
-# 2401 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2842 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       int
       compare(const basic_string& __str) const
       {
@@ -20750,26 +22629,29 @@ namespace __cxx11 {
    __r = _S_compare(__size, __osize);
  return __r;
       }
-# 2433 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2935 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       int
       compare(size_type __pos, size_type __n, const basic_string& __str) const;
-# 2459 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 2961 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       int
       compare(size_type __pos1, size_type __n1, const basic_string& __str,
-       size_type __pos2, size_type __n2) const;
-# 2477 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+       size_type __pos2, size_type __n2 = npos) const;
+# 2979 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       int
-      compare(const _CharT* __s) const;
-# 2501 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+      compare(const _CharT* __s) const noexcept;
+# 3003 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       int
       compare(size_type __pos, size_type __n1, const _CharT* __s) const;
-# 2528 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 3030 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
       int
       compare(size_type __pos, size_type __n1, const _CharT* __s,
        size_type __n2) const;
-  };
+
+
+      template<typename, typename, typename> friend class basic_stringbuf;
+    };
 }
-# 4927 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 5925 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     basic_string<_CharT, _Traits, _Alloc>
     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
@@ -20882,7 +22764,7 @@ namespace __cxx11 {
     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
        _CharT __rhs)
     { return std::move(__lhs.append(1, __rhs)); }
-# 5048 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6046 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline bool
     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
@@ -20922,7 +22804,7 @@ namespace __cxx11 {
     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
         const _CharT* __rhs)
     { return __lhs.compare(__rhs) == 0; }
-# 5095 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6093 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline bool
     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
@@ -20953,7 +22835,7 @@ namespace __cxx11 {
     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
         const _CharT* __rhs)
     { return !(__lhs == __rhs); }
-# 5133 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6131 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline bool
     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
@@ -20984,7 +22866,7 @@ namespace __cxx11 {
     operator<(const _CharT* __lhs,
        const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) > 0; }
-# 5171 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6169 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline bool
     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
@@ -21015,7 +22897,7 @@ namespace __cxx11 {
     operator>(const _CharT* __lhs,
        const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) < 0; }
-# 5209 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6207 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline bool
     operator<=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
@@ -21046,7 +22928,7 @@ namespace __cxx11 {
     operator<=(const _CharT* __lhs,
         const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) >= 0; }
-# 5247 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6245 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline bool
     operator>=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
@@ -21077,14 +22959,14 @@ namespace __cxx11 {
     operator>=(const _CharT* __lhs,
       const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) <= 0; }
-# 5285 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6283 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline void
     swap(basic_string<_CharT, _Traits, _Alloc>& __lhs,
   basic_string<_CharT, _Traits, _Alloc>& __rhs)
     noexcept(noexcept(__lhs.swap(__rhs)))
     { __lhs.swap(__rhs); }
-# 5305 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6303 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     basic_istream<_CharT, _Traits>&
     operator>>(basic_istream<_CharT, _Traits>& __is,
@@ -21093,7 +22975,7 @@ namespace __cxx11 {
   template<>
     basic_istream<char>&
     operator>>(basic_istream<char>& __is, basic_string<char>& __str);
-# 5323 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6321 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline basic_ostream<_CharT, _Traits>&
     operator<<(basic_ostream<_CharT, _Traits>& __os,
@@ -21103,12 +22985,12 @@ namespace __cxx11 {
 
       return __ostream_insert(__os, __str.data(), __str.size());
     }
-# 5346 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6344 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     basic_istream<_CharT, _Traits>&
     getline(basic_istream<_CharT, _Traits>& __is,
      basic_string<_CharT, _Traits, _Alloc>& __str, _CharT __delim);
-# 5363 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 3
+# 6361 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline basic_istream<_CharT, _Traits>&
     getline(basic_istream<_CharT, _Traits>& __is,
@@ -21148,1118 +23030,16 @@ namespace __cxx11 {
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 1 3
-# 32 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 1 3
+# 32 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 3
        
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 3
-# 41 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 3
+# 41 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
-# 75 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
-# 1 "/usr/include/stdlib.h" 1 3 4
-# 25 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 26 "/usr/include/stdlib.h" 2 3 4
-
-
-
-
-
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
-# 32 "/usr/include/stdlib.h" 2 3 4
-
-extern "C" {
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 1 3 4
-# 52 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3 4
-typedef enum
-{
-  P_ALL,
-  P_PID,
-  P_PGID
-} idtype_t;
-# 40 "/usr/include/stdlib.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/waitstatus.h" 1 3 4
-# 41 "/usr/include/stdlib.h" 2 3 4
-# 58 "/usr/include/stdlib.h" 3 4
-typedef struct
-  {
-    int quot;
-    int rem;
-  } div_t;
-
-
-
-typedef struct
-  {
-    long int quot;
-    long int rem;
-  } ldiv_t;
-
-
-
-
-
-__extension__ typedef struct
-  {
-    long long int quot;
-    long long int rem;
-  } lldiv_t;
-# 97 "/usr/include/stdlib.h" 3 4
-extern size_t __ctype_get_mb_cur_max (void) throw () ;
-
-
-
-extern double atof (const char *__nptr)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
-
-extern int atoi (const char *__nptr)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
-
-extern long int atol (const char *__nptr)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-__extension__ extern long long int atoll (const char *__nptr)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-extern double strtod (const char *__restrict __nptr,
-        char **__restrict __endptr)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-extern float strtof (const char *__restrict __nptr,
-       char **__restrict __endptr) throw () __attribute__ ((__nonnull__ (1)));
-
-extern long double strtold (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     throw () __attribute__ ((__nonnull__ (1)));
-# 140 "/usr/include/stdlib.h" 3 4
-extern _Float32 strtof32 (const char *__restrict __nptr,
-     char **__restrict __endptr)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-extern _Float64 strtof64 (const char *__restrict __nptr,
-     char **__restrict __endptr)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-extern _Float128 strtof128 (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-extern _Float32x strtof32x (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-extern _Float64x strtof64x (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     throw () __attribute__ ((__nonnull__ (1)));
-# 176 "/usr/include/stdlib.h" 3 4
-extern long int strtol (const char *__restrict __nptr,
-   char **__restrict __endptr, int __base)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-extern unsigned long int strtoul (const char *__restrict __nptr,
-      char **__restrict __endptr, int __base)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-__extension__
-extern long long int strtoq (const char *__restrict __nptr,
-        char **__restrict __endptr, int __base)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-__extension__
-extern unsigned long long int strtouq (const char *__restrict __nptr,
-           char **__restrict __endptr, int __base)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-__extension__
-extern long long int strtoll (const char *__restrict __nptr,
-         char **__restrict __endptr, int __base)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-__extension__
-extern unsigned long long int strtoull (const char *__restrict __nptr,
-     char **__restrict __endptr, int __base)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-extern int strfromd (char *__dest, size_t __size, const char *__format,
-       double __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-
-extern int strfromf (char *__dest, size_t __size, const char *__format,
-       float __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-
-extern int strfroml (char *__dest, size_t __size, const char *__format,
-       long double __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-# 232 "/usr/include/stdlib.h" 3 4
-extern int strfromf32 (char *__dest, size_t __size, const char * __format,
-         _Float32 __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-
-
-
-extern int strfromf64 (char *__dest, size_t __size, const char * __format,
-         _Float64 __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-
-
-
-extern int strfromf128 (char *__dest, size_t __size, const char * __format,
-   _Float128 __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-
-
-
-extern int strfromf32x (char *__dest, size_t __size, const char * __format,
-   _Float32x __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-
-
-
-extern int strfromf64x (char *__dest, size_t __size, const char * __format,
-   _Float64x __f)
-     throw () __attribute__ ((__nonnull__ (3)));
-# 274 "/usr/include/stdlib.h" 3 4
-extern long int strtol_l (const char *__restrict __nptr,
-     char **__restrict __endptr, int __base,
-     locale_t __loc) throw () __attribute__ ((__nonnull__ (1, 4)));
-
-extern unsigned long int strtoul_l (const char *__restrict __nptr,
-        char **__restrict __endptr,
-        int __base, locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 4)));
-
-__extension__
-extern long long int strtoll_l (const char *__restrict __nptr,
-    char **__restrict __endptr, int __base,
-    locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 4)));
-
-__extension__
-extern unsigned long long int strtoull_l (const char *__restrict __nptr,
-       char **__restrict __endptr,
-       int __base, locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 4)));
-
-extern double strtod_l (const char *__restrict __nptr,
-   char **__restrict __endptr, locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-
-extern float strtof_l (const char *__restrict __nptr,
-         char **__restrict __endptr, locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-
-extern long double strtold_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-# 316 "/usr/include/stdlib.h" 3 4
-extern _Float32 strtof32_l (const char *__restrict __nptr,
-       char **__restrict __endptr,
-       locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float64 strtof64_l (const char *__restrict __nptr,
-       char **__restrict __endptr,
-       locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float128 strtof128_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float32x strtof32x_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float64x strtof64x_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     throw () __attribute__ ((__nonnull__ (1, 3)));
-# 360 "/usr/include/stdlib.h" 3 4
-extern __inline __attribute__ ((__gnu_inline__)) int
-__attribute__ ((__leaf__)) atoi (const char *__nptr) throw ()
-{
-  return (int) strtol (__nptr, (char **) __null, 10);
-}
-extern __inline __attribute__ ((__gnu_inline__)) long int
-__attribute__ ((__leaf__)) atol (const char *__nptr) throw ()
-{
-  return strtol (__nptr, (char **) __null, 10);
-}
-
-
-__extension__ extern __inline __attribute__ ((__gnu_inline__)) long long int
-__attribute__ ((__leaf__)) atoll (const char *__nptr) throw ()
-{
-  return strtoll (__nptr, (char **) __null, 10);
-}
-# 385 "/usr/include/stdlib.h" 3 4
-extern char *l64a (long int __n) throw () ;
-
-
-extern long int a64l (const char *__s)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/sys/types.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-extern "C" {
-
-
-
-
-
-typedef __u_char u_char;
-typedef __u_short u_short;
-typedef __u_int u_int;
-typedef __u_long u_long;
-typedef __quad_t quad_t;
-typedef __u_quad_t u_quad_t;
-typedef __fsid_t fsid_t;
-
-
-typedef __loff_t loff_t;
-
-
-
-
-typedef __ino_t ino_t;
-
-
-
-
-
-
-typedef __ino64_t ino64_t;
-
-
-
-
-typedef __dev_t dev_t;
-
-
-
-
-typedef __gid_t gid_t;
-
-
-
-
-typedef __mode_t mode_t;
-
-
-
-
-typedef __nlink_t nlink_t;
-
-
-
-
-typedef __uid_t uid_t;
-
-
-
-
-
-typedef __off_t off_t;
-
-
-
-
-
-
-typedef __off64_t off64_t;
-# 103 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-typedef __id_t id_t;
-
-
-
-
-typedef __ssize_t ssize_t;
-
-
-
-
-
-typedef __daddr_t daddr_t;
-typedef __caddr_t caddr_t;
-
-
-
-
-
-typedef __key_t key_t;
-# 134 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-typedef __useconds_t useconds_t;
-
-
-
-typedef __suseconds_t suseconds_t;
-
-
-
-
-
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
-# 145 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
-
-
-
-typedef unsigned long int ulong;
-typedef unsigned short int ushort;
-typedef unsigned int uint;
-
-
-
-
-
-
-
-typedef __uint8_t u_int8_t;
-typedef __uint16_t u_int16_t;
-typedef __uint32_t u_int32_t;
-typedef __uint64_t u_int64_t;
-
-
-typedef int register_t __attribute__ ((__mode__ (__word__)));
-# 176 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-# 1 "/usr/include/endian.h" 1 3 4
-# 35 "/usr/include/endian.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 1 3 4
-# 33 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
-static __inline __uint16_t
-__bswap_16 (__uint16_t __bsx)
-{
-
-  return __builtin_bswap16 (__bsx);
-
-
-
-}
-
-
-
-
-
-
-static __inline __uint32_t
-__bswap_32 (__uint32_t __bsx)
-{
-
-  return __builtin_bswap32 (__bsx);
-
-
-
-}
-# 69 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
-__extension__ static __inline __uint64_t
-__bswap_64 (__uint64_t __bsx)
-{
-
-  return __builtin_bswap64 (__bsx);
-
-
-
-}
-# 36 "/usr/include/endian.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 1 3 4
-# 32 "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h" 3 4
-static __inline __uint16_t
-__uint16_identity (__uint16_t __x)
-{
-  return __x;
-}
-
-static __inline __uint32_t
-__uint32_identity (__uint32_t __x)
-{
-  return __x;
-}
-
-static __inline __uint64_t
-__uint64_identity (__uint64_t __x)
-{
-  return __x;
-}
-# 37 "/usr/include/endian.h" 2 3 4
-# 177 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/sys/select.h" 1 3 4
-# 30 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/select.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/select.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/select.h" 2 3 4
-# 31 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h" 1 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h" 1 3 4
-
-
-
-
-typedef struct
-{
-  unsigned long int __val[(1024 / (8 * sizeof (unsigned long int)))];
-} __sigset_t;
-# 5 "/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h" 2 3 4
-
-
-typedef __sigset_t sigset_t;
-# 34 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
-# 49 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-typedef long int __fd_mask;
-# 59 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-typedef struct
-  {
-
-
-
-    __fd_mask fds_bits[1024 / (8 * (int) sizeof (__fd_mask))];
-
-
-
-
-
-  } fd_set;
-
-
-
-
-
-
-typedef __fd_mask fd_mask;
-# 91 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-extern "C" {
-# 101 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-extern int select (int __nfds, fd_set *__restrict __readfds,
-     fd_set *__restrict __writefds,
-     fd_set *__restrict __exceptfds,
-     struct timeval *__restrict __timeout);
-# 113 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-extern int pselect (int __nfds, fd_set *__restrict __readfds,
-      fd_set *__restrict __writefds,
-      fd_set *__restrict __exceptfds,
-      const struct timespec *__restrict __timeout,
-      const __sigset_t *__restrict __sigmask);
-# 126 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-}
-# 180 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
-
-
-
-
-
-typedef __blksize_t blksize_t;
-
-
-
-
-
-
-typedef __blkcnt_t blkcnt_t;
-
-
-
-typedef __fsblkcnt_t fsblkcnt_t;
-
-
-
-typedef __fsfilcnt_t fsfilcnt_t;
-# 219 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-typedef __blkcnt64_t blkcnt64_t;
-typedef __fsblkcnt64_t fsblkcnt64_t;
-typedef __fsfilcnt64_t fsfilcnt64_t;
-# 230 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-}
-# 395 "/usr/include/stdlib.h" 2 3 4
-
-
-
-
-
-
-extern long int random (void) throw ();
-
-
-extern void srandom (unsigned int __seed) throw ();
-
-
-
-
-
-extern char *initstate (unsigned int __seed, char *__statebuf,
-   size_t __statelen) throw () __attribute__ ((__nonnull__ (2)));
-
-
-
-extern char *setstate (char *__statebuf) throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-
-struct random_data
-  {
-    int32_t *fptr;
-    int32_t *rptr;
-    int32_t *state;
-    int rand_type;
-    int rand_deg;
-    int rand_sep;
-    int32_t *end_ptr;
-  };
-
-extern int random_r (struct random_data *__restrict __buf,
-       int32_t *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
-
-extern int srandom_r (unsigned int __seed, struct random_data *__buf)
-     throw () __attribute__ ((__nonnull__ (2)));
-
-extern int initstate_r (unsigned int __seed, char *__restrict __statebuf,
-   size_t __statelen,
-   struct random_data *__restrict __buf)
-     throw () __attribute__ ((__nonnull__ (2, 4)));
-
-extern int setstate_r (char *__restrict __statebuf,
-         struct random_data *__restrict __buf)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-
-extern int rand (void) throw ();
-
-extern void srand (unsigned int __seed) throw ();
-
-
-
-extern int rand_r (unsigned int *__seed) throw ();
-
-
-
-
-
-
-
-extern double drand48 (void) throw ();
-extern double erand48 (unsigned short int __xsubi[3]) throw () __attribute__ ((__nonnull__ (1)));
-
-
-extern long int lrand48 (void) throw ();
-extern long int nrand48 (unsigned short int __xsubi[3])
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-extern long int mrand48 (void) throw ();
-extern long int jrand48 (unsigned short int __xsubi[3])
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-extern void srand48 (long int __seedval) throw ();
-extern unsigned short int *seed48 (unsigned short int __seed16v[3])
-     throw () __attribute__ ((__nonnull__ (1)));
-extern void lcong48 (unsigned short int __param[7]) throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-struct drand48_data
-  {
-    unsigned short int __x[3];
-    unsigned short int __old_x[3];
-    unsigned short int __c;
-    unsigned short int __init;
-    __extension__ unsigned long long int __a;
-
-  };
-
-
-extern int drand48_r (struct drand48_data *__restrict __buffer,
-        double *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
-extern int erand48_r (unsigned short int __xsubi[3],
-        struct drand48_data *__restrict __buffer,
-        double *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int lrand48_r (struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-extern int nrand48_r (unsigned short int __xsubi[3],
-        struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int mrand48_r (struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-extern int jrand48_r (unsigned short int __xsubi[3],
-        struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int srand48_r (long int __seedval, struct drand48_data *__buffer)
-     throw () __attribute__ ((__nonnull__ (2)));
-
-extern int seed48_r (unsigned short int __seed16v[3],
-       struct drand48_data *__buffer) throw () __attribute__ ((__nonnull__ (1, 2)));
-
-extern int lcong48_r (unsigned short int __param[7],
-        struct drand48_data *__buffer)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-extern void *malloc (size_t __size) throw () __attribute__ ((__malloc__))
-     __attribute__ ((__alloc_size__ (1))) ;
-
-extern void *calloc (size_t __nmemb, size_t __size)
-     throw () __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (1, 2))) ;
-
-
-
-
-
-
-extern void *realloc (void *__ptr, size_t __size)
-     throw () __attribute__ ((__warn_unused_result__)) __attribute__ ((__alloc_size__ (2)));
-
-
-
-
-
-
-
-extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-     throw () __attribute__ ((__warn_unused_result__))
-     __attribute__ ((__alloc_size__ (2, 3)));
-
-
-
-extern void free (void *__ptr) throw ();
-
-
-# 1 "/usr/include/alloca.h" 1 3 4
-# 24 "/usr/include/alloca.h" 3 4
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
-# 25 "/usr/include/alloca.h" 2 3 4
-
-extern "C" {
-
-
-
-
-
-extern void *alloca (size_t __size) throw ();
-
-
-
-
-
-}
-# 569 "/usr/include/stdlib.h" 2 3 4
-
-
-
-
-
-extern void *valloc (size_t __size) throw () __attribute__ ((__malloc__))
-     __attribute__ ((__alloc_size__ (1))) ;
-
-
-
-
-extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
-     throw () __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-extern void *aligned_alloc (size_t __alignment, size_t __size)
-     throw () __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (2))) ;
-
-
-
-extern void abort (void) throw () __attribute__ ((__noreturn__));
-
-
-
-extern int atexit (void (*__func) (void)) throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-extern "C++" int at_quick_exit (void (*__func) (void))
-     throw () __asm ("at_quick_exit") __attribute__ ((__nonnull__ (1)));
-# 610 "/usr/include/stdlib.h" 3 4
-extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
-     throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-extern void exit (int __status) throw () __attribute__ ((__noreturn__));
-
-
-
-
-
-extern void quick_exit (int __status) throw () __attribute__ ((__noreturn__));
-
-
-
-
-
-extern void _Exit (int __status) throw () __attribute__ ((__noreturn__));
-
-
-
-
-extern char *getenv (const char *__name) throw () __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-extern char *secure_getenv (const char *__name)
-     throw () __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-
-
-extern int putenv (char *__string) throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-extern int setenv (const char *__name, const char *__value, int __replace)
-     throw () __attribute__ ((__nonnull__ (2)));
-
-
-extern int unsetenv (const char *__name) throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-extern int clearenv (void) throw ();
-# 675 "/usr/include/stdlib.h" 3 4
-extern char *mktemp (char *__template) throw () __attribute__ ((__nonnull__ (1)));
-# 688 "/usr/include/stdlib.h" 3 4
-extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 698 "/usr/include/stdlib.h" 3 4
-extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 710 "/usr/include/stdlib.h" 3 4
-extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
-# 720 "/usr/include/stdlib.h" 3 4
-extern int mkstemps64 (char *__template, int __suffixlen)
-     __attribute__ ((__nonnull__ (1))) ;
-# 731 "/usr/include/stdlib.h" 3 4
-extern char *mkdtemp (char *__template) throw () __attribute__ ((__nonnull__ (1))) ;
-# 742 "/usr/include/stdlib.h" 3 4
-extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 752 "/usr/include/stdlib.h" 3 4
-extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 762 "/usr/include/stdlib.h" 3 4
-extern int mkostemps (char *__template, int __suffixlen, int __flags)
-     __attribute__ ((__nonnull__ (1))) ;
-# 774 "/usr/include/stdlib.h" 3 4
-extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
-     __attribute__ ((__nonnull__ (1))) ;
-# 784 "/usr/include/stdlib.h" 3 4
-extern int system (const char *__command) ;
-
-
-
-
-
-extern char *canonicalize_file_name (const char *__name)
-     throw () __attribute__ ((__nonnull__ (1))) ;
-# 800 "/usr/include/stdlib.h" 3 4
-extern char *realpath (const char *__restrict __name,
-         char *__restrict __resolved) throw () ;
-
-
-
-
-
-
-typedef int (*__compar_fn_t) (const void *, const void *);
-
-
-typedef __compar_fn_t comparison_fn_t;
-
-
-
-typedef int (*__compar_d_fn_t) (const void *, const void *, void *);
-
-
-
-
-extern void *bsearch (const void *__key, const void *__base,
-        size_t __nmemb, size_t __size, __compar_fn_t __compar)
-     __attribute__ ((__nonnull__ (1, 2, 5))) ;
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 3 4
-extern __inline __attribute__ ((__gnu_inline__)) void *
-bsearch (const void *__key, const void *__base, size_t __nmemb, size_t __size,
-  __compar_fn_t __compar)
-{
-  size_t __l, __u, __idx;
-  const void *__p;
-  int __comparison;
-
-  __l = 0;
-  __u = __nmemb;
-  while (__l < __u)
-    {
-      __idx = (__l + __u) / 2;
-      __p = (void *) (((const char *) __base) + (__idx * __size));
-      __comparison = (*__compar) (__key, __p);
-      if (__comparison < 0)
- __u = __idx;
-      else if (__comparison > 0)
- __l = __idx + 1;
-      else
- return (void *) __p;
-    }
-
-  return __null;
-}
-# 826 "/usr/include/stdlib.h" 2 3 4
-
-
-
-
-extern void qsort (void *__base, size_t __nmemb, size_t __size,
-     __compar_fn_t __compar) __attribute__ ((__nonnull__ (1, 4)));
-
-extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
-       __compar_d_fn_t __compar, void *__arg)
-  __attribute__ ((__nonnull__ (1, 4)));
-
-
-
-
-extern int abs (int __x) throw () __attribute__ ((__const__)) ;
-extern long int labs (long int __x) throw () __attribute__ ((__const__)) ;
-
-
-__extension__ extern long long int llabs (long long int __x)
-     throw () __attribute__ ((__const__)) ;
-
-
-
-
-
-
-extern div_t div (int __numer, int __denom)
-     throw () __attribute__ ((__const__)) ;
-extern ldiv_t ldiv (long int __numer, long int __denom)
-     throw () __attribute__ ((__const__)) ;
-
-
-__extension__ extern lldiv_t lldiv (long long int __numer,
-        long long int __denom)
-     throw () __attribute__ ((__const__)) ;
-# 872 "/usr/include/stdlib.h" 3 4
-extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) throw () __attribute__ ((__nonnull__ (3, 4))) ;
-
-
-
-
-extern char *fcvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) throw () __attribute__ ((__nonnull__ (3, 4))) ;
-
-
-
-
-extern char *gcvt (double __value, int __ndigit, char *__buf)
-     throw () __attribute__ ((__nonnull__ (3))) ;
-
-
-
-
-extern char *qecvt (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign)
-     throw () __attribute__ ((__nonnull__ (3, 4))) ;
-extern char *qfcvt (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign)
-     throw () __attribute__ ((__nonnull__ (3, 4))) ;
-extern char *qgcvt (long double __value, int __ndigit, char *__buf)
-     throw () __attribute__ ((__nonnull__ (3))) ;
-
-
-
-
-extern int ecvt_r (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign, char *__restrict __buf,
-     size_t __len) throw () __attribute__ ((__nonnull__ (3, 4, 5)));
-extern int fcvt_r (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign, char *__restrict __buf,
-     size_t __len) throw () __attribute__ ((__nonnull__ (3, 4, 5)));
-
-extern int qecvt_r (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign,
-      char *__restrict __buf, size_t __len)
-     throw () __attribute__ ((__nonnull__ (3, 4, 5)));
-extern int qfcvt_r (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign,
-      char *__restrict __buf, size_t __len)
-     throw () __attribute__ ((__nonnull__ (3, 4, 5)));
-
-
-
-
-
-extern int mblen (const char *__s, size_t __n) throw ();
-
-
-extern int mbtowc (wchar_t *__restrict __pwc,
-     const char *__restrict __s, size_t __n) throw ();
-
-
-extern int wctomb (char *__s, wchar_t __wchar) throw ();
-
-
-
-extern size_t mbstowcs (wchar_t *__restrict __pwcs,
-   const char *__restrict __s, size_t __n) throw ();
-
-extern size_t wcstombs (char *__restrict __s,
-   const wchar_t *__restrict __pwcs, size_t __n)
-     throw ();
-
-
-
-
-
-
-
-extern int rpmatch (const char *__response) throw () __attribute__ ((__nonnull__ (1))) ;
-# 957 "/usr/include/stdlib.h" 3 4
-extern int getsubopt (char **__restrict __optionp,
-        char *const *__restrict __tokens,
-        char **__restrict __valuep)
-     throw () __attribute__ ((__nonnull__ (1, 2, 3))) ;
-
-
-
-
-
-
-
-extern int posix_openpt (int __oflag) ;
-
-
-
-
-
-
-
-extern int grantpt (int __fd) throw ();
-
-
-
-extern int unlockpt (int __fd) throw ();
-
-
-
-
-extern char *ptsname (int __fd) throw () ;
-
-
-
-
-
-
-extern int ptsname_r (int __fd, char *__buf, size_t __buflen)
-     throw () __attribute__ ((__nonnull__ (2)));
-
-
-extern int getpt (void);
-
-
-
-
-
-
-extern int getloadavg (double __loadavg[], int __nelem)
-     throw () __attribute__ ((__nonnull__ (1)));
-# 1013 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 3 4
-extern __inline __attribute__ ((__gnu_inline__)) double
-__attribute__ ((__leaf__)) atof (const char *__nptr) throw ()
-{
-  return strtod (__nptr, (char **) __null);
-}
-# 1014 "/usr/include/stdlib.h" 2 3 4
-# 1023 "/usr/include/stdlib.h" 3 4
-}
-# 76 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 2 3
-# 118 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 3
+# 121 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 3
 extern "C++"
 {
 namespace std __attribute__ ((__visibility__ ("default")))
@@ -22270,7 +23050,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
   using ::ldiv_t;
 
   using ::abort;
-  using ::abs;
+
+
+
   using ::atexit;
 
 
@@ -22313,20 +23095,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-  inline long
-  abs(long __i) { return __builtin_labs(__i); }
-
   inline ldiv_t
   div(long __i, long __j) { return ldiv(__i, __j); }
 
 
 
-  inline long long
-  abs(long long __x) { return __builtin_llabs (__x); }
-# 201 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
 
 }
-# 215 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
+# 195 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 3
 namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 {
 
@@ -22349,7 +23125,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
   { lldiv_t __q; __q.quot = __n / __d; __q.rem = __n % __d; return __q; }
 
   using ::lldiv;
-# 247 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
+# 227 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 3
   using ::atoll;
   using ::strtoll;
   using ::strtoull;
@@ -22381,16 +23157,16 @@ namespace std
 
 
 }
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cwchar" 3
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cwchar" 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdio" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdio" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdio" 3
 
 
 # 1 "/usr/include/stdio.h" 1 3 4
@@ -22402,11 +23178,11 @@ extern "C" {
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stddef.h" 1 3 4
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stddef.h" 1 3 4
 # 34 "/usr/include/stdio.h" 2 3 4
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdarg.h" 1 3 4
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdarg.h" 1 3 4
 # 37 "/usr/include/stdio.h" 2 3 4
 
 
@@ -23169,8 +23945,8 @@ __attribute__ ((__leaf__)) ferror_unlocked (FILE *__stream) throw ()
 # 865 "/usr/include/stdio.h" 2 3 4
 # 873 "/usr/include/stdio.h" 3 4
 }
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 2 3
-# 96 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdio" 2 3
+# 96 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdio" 3
 namespace std
 {
   using ::FILE;
@@ -23223,10 +23999,10 @@ namespace std
   using ::vprintf;
   using ::vsprintf;
 }
-# 157 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
+# 157 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdio" 3
 namespace __gnu_cxx
 {
-# 175 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
+# 175 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdio" 3
   using ::snprintf;
   using ::vfscanf;
   using ::vscanf;
@@ -23243,11 +24019,11 @@ namespace std
   using ::__gnu_cxx::vsnprintf;
   using ::__gnu_cxx::vsscanf;
 }
-# 44 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cerrno" 1 3
-# 39 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cerrno" 3
+# 44 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cerrno" 1 3
+# 39 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cerrno" 3
        
-# 40 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cerrno" 3
+# 40 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cerrno" 3
 
 
 # 1 "/usr/include/errno.h" 1 3 4
@@ -23294,8 +24070,8 @@ typedef int error_t;
 
 
 }
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cerrno" 2 3
-# 45 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/ext/string_conversions.h" 2 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cerrno" 2 3
+# 45 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/ext/string_conversions.h" 2 3
 
 namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 {
@@ -23319,14 +24095,24 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
  int _M_errno;
       } const __save_errno;
 
+      struct _Range_chk {
+   static bool
+   _S_chk(_TRet, std::false_type) { return false; }
+
+   static bool
+   _S_chk(_TRet __val, std::true_type)
+   {
+     return __val < _TRet(__numeric_traits<int>::__min)
+       || __val > _TRet(__numeric_traits<int>::__max);
+   }
+      };
+
       const _TRet __tmp = __convf(__str, &__endptr, __base...);
 
       if (__endptr == __str)
  std::__throw_invalid_argument(__name);
       else if ((*__errno_location ()) == 34
-        || (std::__are_same<_Ret, int>::__value
-     && (__tmp < __numeric_traits<int>::__min
-         || __tmp > __numeric_traits<int>::__max)))
+   || _Range_chk::_S_chk(__tmp, std::is_same<_Ret, int>{}))
  std::__throw_out_of_range(__name);
       else
  __ret = __tmp;
@@ -23361,7 +24147,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 5403 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 2 3
+# 6401 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -23587,55 +24373,43 @@ namespace __cxx11 {
 
 
 
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functional_hash.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functional_hash.h" 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functional_hash.h" 1 3
+# 33 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functional_hash.h" 3
        
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functional_hash.h" 3
-
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/hash_bytes.h" 1 3
-# 33 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/hash_bytes.h" 3
-       
-# 34 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/hash_bytes.h" 3
+# 34 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functional_hash.h" 3
 
 
-
-namespace std
-{
-
-
-
-
-
-
-
-  size_t
-  _Hash_bytes(const void* __ptr, size_t __len, size_t __seed);
-
-
-
-
-
-  size_t
-  _Fnv_hash_bytes(const void* __ptr, size_t __len, size_t __seed);
-
-
-}
-# 36 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functional_hash.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 49 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functional_hash.h" 3
+# 49 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functional_hash.h" 3
   template<typename _Result, typename _Arg>
     struct __hash_base
     {
-      typedef _Result result_type;
-      typedef _Arg argument_type;
+      typedef _Result result_type ;
+      typedef _Arg argument_type ;
     };
 
 
   template<typename _Tp>
     struct hash;
+
+  template<typename _Tp, typename = void>
+    struct __poison_hash
+    {
+      static constexpr bool __enable_hash_call = false;
+    private:
+
+      __poison_hash(__poison_hash&&);
+      ~__poison_hash();
+    };
+
+  template<typename _Tp>
+    struct __poison_hash<_Tp, __void_t<decltype(hash<_Tp>()(declval<_Tp>()))>>
+    {
+      static constexpr bool __enable_hash_call = true;
+    };
 
 
   template<typename _Tp, bool = is_enum<_Tp>::value>
@@ -23673,7 +24447,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator()(_Tp* __p) const noexcept
       { return reinterpret_cast<size_t>(__p); }
     };
-# 108 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functional_hash.h" 3
+# 124 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functional_hash.h" 3
   template<> struct hash<bool> : public __hash_base<size_t, bool> { size_t operator()(bool __val) const noexcept { return static_cast<size_t>(__val); } };
 
 
@@ -23717,7 +24491,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
   template<> struct hash<unsigned long long> : public __hash_base<size_t, unsigned long long> { size_t operator()(unsigned long long __val) const noexcept { return static_cast<size_t>(__val); } };
-# 171 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/functional_hash.h" 3
+# 187 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/functional_hash.h" 3
   struct _Hash_impl
   {
     static size_t
@@ -23735,6 +24509,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       __hash_combine(const _Tp& __val, size_t __hash)
       { return hash(&__val, sizeof(__val), __hash); }
   };
+
 
   struct _Fnv_hash_impl
   {
@@ -23803,7 +24578,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 5629 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h" 2 3
+# 6627 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -23884,7 +24659,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
   {
   inline namespace string_literals
   {
-
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wliteral-suffix"
     __attribute ((__abi_tag__ ("cxx11")))
     inline basic_string<char>
     operator""s(const char* __str, size_t __len)
@@ -23909,6 +24685,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     { return basic_string<char32_t>{__str, __len}; }
 
 
+#pragma GCC diagnostic pop
   }
   }
 
@@ -23916,11 +24693,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 53 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
-# 1 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.tcc" 1 3
-# 42 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.tcc" 3
+# 53 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
+# 1 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.tcc" 1 3
+# 42 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.tcc" 3
        
-# 43 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.tcc" 3
+# 43 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.tcc" 3
 
 
 
@@ -24232,7 +25009,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       if (__size < __n)
  this->append(__n - __size, __c);
       else if (__n < __size)
- this->_M_erase(__n, __size - __n);
+ this->_M_set_length(__n);
     }
 
   template<typename _CharT, typename _Traits, typename _Alloc>
@@ -24363,7 +25140,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __n;
     }
-# 1145 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.tcc" 3
+# 1155 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.tcc" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     basic_string<_CharT, _Traits, _Alloc>
     operator+(const _CharT* __lhs,
@@ -24398,21 +25175,34 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename basic_string<_CharT, _Traits, _Alloc>::size_type
     basic_string<_CharT, _Traits, _Alloc>::
     find(const _CharT* __s, size_type __pos, size_type __n) const
+    noexcept
     {
       ;
       const size_type __size = this->size();
-      const _CharT* __data = _M_data();
 
       if (__n == 0)
  return __pos <= __size ? __pos : npos;
+      if (__pos >= __size)
+ return npos;
 
-      if (__n <= __size)
+      const _CharT __elem0 = __s[0];
+      const _CharT* const __data = data();
+      const _CharT* __first = __data + __pos;
+      const _CharT* const __last = __data + __size;
+      size_type __len = __size - __pos;
+
+      while (__len >= __n)
  {
-   for (; __pos <= __size - __n; ++__pos)
-     if (traits_type::eq(__data[__pos], __s[0])
-  && traits_type::compare(__data + __pos + 1,
-     __s + 1, __n - 1) == 0)
-       return __pos;
+
+   __first = traits_type::find(__first, __len - __n + 1, __elem0);
+   if (!__first)
+     return npos;
+
+
+
+   if (traits_type::compare(__first, __s, __n) == 0)
+     return __first - __data;
+   __len = __last - ++__first;
  }
       return npos;
     }
@@ -24439,6 +25229,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename basic_string<_CharT, _Traits, _Alloc>::size_type
     basic_string<_CharT, _Traits, _Alloc>::
     rfind(const _CharT* __s, size_type __pos, size_type __n) const
+    noexcept
     {
       ;
       const size_type __size = this->size();
@@ -24477,6 +25268,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename basic_string<_CharT, _Traits, _Alloc>::size_type
     basic_string<_CharT, _Traits, _Alloc>::
     find_first_of(const _CharT* __s, size_type __pos, size_type __n) const
+    noexcept
     {
       ;
       for (; __n && __pos < this->size(); ++__pos)
@@ -24492,6 +25284,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename basic_string<_CharT, _Traits, _Alloc>::size_type
     basic_string<_CharT, _Traits, _Alloc>::
     find_last_of(const _CharT* __s, size_type __pos, size_type __n) const
+    noexcept
     {
       ;
       size_type __size = this->size();
@@ -24513,6 +25306,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename basic_string<_CharT, _Traits, _Alloc>::size_type
     basic_string<_CharT, _Traits, _Alloc>::
     find_first_not_of(const _CharT* __s, size_type __pos, size_type __n) const
+    noexcept
     {
       ;
       for (; __pos < this->size(); ++__pos)
@@ -24536,6 +25330,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename basic_string<_CharT, _Traits, _Alloc>::size_type
     basic_string<_CharT, _Traits, _Alloc>::
     find_last_not_of(const _CharT* __s, size_type __pos, size_type __n) const
+    noexcept
     {
       ;
       size_type __size = this->size();
@@ -24609,7 +25404,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<typename _CharT, typename _Traits, typename _Alloc>
     int
     basic_string<_CharT, _Traits, _Alloc>::
-    compare(const _CharT* __s) const
+    compare(const _CharT* __s) const noexcept
     {
       ;
       const size_type __size = this->size();
@@ -24788,11 +25583,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
  __in.setstate(__err);
       return __in;
     }
-
-
-
-
+# 1607 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/basic_string.tcc" 3
   extern template class basic_string<char>;
+
+
+
+
+
+
+
   extern template
     basic_istream<char>&
     operator>>(basic_istream<char>&, string&);
@@ -24807,7 +25606,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
     getline(basic_istream<char>&, string&);
 
 
+
   extern template class basic_string<wchar_t>;
+
+
+
+
+
   extern template
     basic_istream<wchar_t>&
     operator>>(basic_istream<wchar_t>&, wstring&);
@@ -24825,7 +25630,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 54 "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/string" 2 3
+# 54 "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/string" 2 3
 # 152 "../../../ac_types/include/ac_int.h" 2
 # 161 "../../../ac_types/include/ac_int.h"
 
@@ -25056,7 +25861,7 @@ typedef signed long long Slong;
 
 
 
-         int v[N] ;
+         int v[N] = {0};
 
        public:
          template <int W, bool S>
@@ -25153,7 +25958,7 @@ typedef signed long long Slong;
 
 
 
-         int v[N - 1] ;
+         int v[N - 1] = {0};
 
        public:
          template <int W, bool S>
@@ -25251,7 +26056,7 @@ typedef signed long long Slong;
       template <>
       class iv_base<1, false>
       {
-         int v ;
+         int v = {0};
 
        public:
          template <int W, bool S>
@@ -25296,7 +26101,7 @@ typedef signed long long Slong;
       template <>
       class iv_base<2, false>
       {
-         long long int v ;
+         long long int v = {0};
 
        public:
          template <int W, bool S>
@@ -25349,7 +26154,7 @@ typedef signed long long Slong;
       template <>
       class iv_base<2, true>
       {
-         int v ;
+         int v = {0};
 
        public:
          template <int W, bool S>
@@ -25397,8 +26202,8 @@ typedef signed long long Slong;
       template <>
       class iv_base<3, false>
       {
-         long long int va ;
-         long long int v2 ;
+         long long int va = {0};
+         long long int v2 = {0};
 
        public:
          template <int W, bool S>
@@ -25464,7 +26269,7 @@ typedef signed long long Slong;
       template <>
       class iv_base<3, true>
       {
-         long long int va ;
+         long long int va = {0};
 
        public:
          template <int W, bool S>
@@ -25520,8 +26325,8 @@ typedef signed long long Slong;
       template <>
       class iv_base<4, false>
       {
-         long long int va ;
-         long long int vb ;
+         long long int va = {0};
+         long long int vb = {0};
 
        public:
          template <int W, bool S>
@@ -25600,8 +26405,8 @@ typedef signed long long Slong;
       template <>
       class iv_base<5, true>
       {
-         long long int va ;
-         long long int vb ;
+         long long int va = {0};
+         long long int vb = {0};
 
        public:
          template <int W, bool S>

@@ -2,53 +2,7 @@
 #
 # Makefile rules for autopilot SystemC simulation flow
 #
-#-  (c) Copyright 2011-2021 Xilinx, Inc. All rights reserved.
-#-
-#-  This file contains confidential and proprietary information
-#-  of Xilinx, Inc. and is protected under U.S. and
-#-  international copyright and other intellectual property
-#-  laws.
-#-
-#-  DISCLAIMER
-#-  This disclaimer is not a license and does not grant any
-#-  rights to the materials distributed herewith. Except as
-#-  otherwise provided in a valid license issued to you by
-#-  Xilinx, and to the maximum extent permitted by applicable
-#-  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-#-  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
-#-  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
-#-  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
-#-  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
-#-  (2) Xilinx shall not be liable (whether in contract or tort,
-#-  including negligence, or under any other theory of
-#-  liability) for any loss or damage of any kind or nature
-#-  related to, arising under or in connection with these
-#-  materials, including for any direct, or any indirect,
-#-  special, incidental, or consequential loss or damage
-#-  (including loss of data, profits, goodwill, or any type of
-#-  loss or damage suffered as a result of any action brought
-#-  by a third party) even if such damage or loss was
-#-  reasonably foreseeable or Xilinx had been advised of the
-#-  possibility of the same.
-#-
-#-  CRITICAL APPLICATIONS
-#-  Xilinx products are not designed or intended to be fail-
-#-  safe, or for use in any application requiring fail-safe
-#-  performance, such as life-support or safety devices or
-#-  systems, Class III medical devices, nuclear facilities,
-#-  applications related to the deployment of airbags, or any
-#-  other applications that could lead to death, personal
-#-  injury, or severe property or environmental damage
-#-  (individually and collectively, "Critical
-#-  Applications"). Customer assumes the sole risk and
-#-  liability of any use of Xilinx products in Critical
-#-  Applications, subject only to applicable laws and
-#-  regulations governing limitations on product liability.
-#-
-#-  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
-#-  PART OF THIS FILE AT ALL TIMES. 
-#- ************************************************************************
-
+# __VIVADO_HLS_COPYRIGHT-INFO__
 #
 #===------------------------------------------------------------------------===#
 
@@ -60,11 +14,6 @@
 #ExtraCFlags
 #ExtraCXXFlags
 #ExtraLDFlags
-
-# Users may have their own SystemC enviornments, by defineing the
-# following variables
-#HLS_SYSTEMC_HOME
-#HLS_SYSTEMC_LIB_PATH
 
 ### Common shell commands.
 Echo = @echo
@@ -98,24 +47,8 @@ ifndef AUTOPILOT_TECH
   AUTOPILOT_TECH = "$(AUTOPILOT_ROOT)/common/technology"
 endif
 
-ifndef HLS_SYSTEMC_HOME
-  HLS_SYSTEMC_HOME = $(AUTOPILOT_TOOL)/systemc
-endif
-
-ifndef HLS_SYSTEMC_LIB_PATH
-  ifeq ($(AUTOPILOT_MACH),win64)
-    ifdef __USE_CLANG__
-      HLS_SYSTEMC_LIB_PATH = $(AUTOPILOT_TOOL)/systemc/clang
-    else
-      HLS_SYSTEMC_LIB_PATH = $(AUTOPILOT_TOOL)/systemc/gcc
-    endif
-  else
-    HLS_SYSTEMC_LIB_PATH = $(AUTOPILOT_TOOL)/systemc/lib
-  endif
-endif
-
 ifndef HLS_FPO_LIB_PATH
-   HLS_FPO_LIB_PATH = $(AUTOPILOT_TOOL)/fpo_v7_0
+   HLS_FPO_LIB_PATH = $(AUTOPILOT_TOOL)/fpo_v7_1
 endif
 
 ifndef HLS_FFT_LIB_PATH
@@ -166,9 +99,6 @@ LINUX	=
 INCPATH	= .
 SRCPATH = .
 BINPATH = .
-SYSC = $(HLS_SYSTEMC_HOME)
-SYSCINC = $(SYSC)/include
-SYSCLIB = $(HLS_SYSTEMC_LIB_PATH)
 FPOLIB = $(HLS_FPO_LIB_PATH)
 FFTLIB = $(HLS_FFT_LIB_PATH)
 FIRLIB = $(HLS_FIR_LIB_PATH)
@@ -176,13 +106,13 @@ DDSLIB = $(HLS_DDS_LIB_PATH)
 MATHHLSLIB = $(HLS_MATHHLS_LIB_PATH)
 DEFINE =
 ATBG_CFLAG = -DSST_SIM_ENABLE -DSST_ATBG_ENABLE
-IFLAG += -I $(INCPATH) -I "$(SYSCINC)"
+IFLAG += -I $(INCPATH)
 IFLAG += -I "$(AUTOPILOT_ROOT)/include"
 #IFLAG += -I "$(AUTOPILOT_TECH)/autopilot/sim"
 #IFLAG += -I "$(AUTOPILOT_TECH)/autopilot/etc"
 IFLAG += -I "$(AUTOPILOT_TECH)/generic/SystemC/AESL_comp"
 LFLAG += -Wl,--as-needed
-LFLAG += -Wl,-rpath,"$(SYSCLIB)" -L "$(SYSCLIB)" -lsystemc -lpthread
+LFLAG += -Wl,-rpath, -lpthread
 
 ifeq ($(AUTOPILOT_MACH),win64)
   LLCTARGET += -mtriple=x86_64-pc-mingw32
@@ -226,7 +156,7 @@ ifdef __SIM_MATHHLS__
 endif
 
 ifdef __SIM_FPO__
-   LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel
+   LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel
 endif
 
 

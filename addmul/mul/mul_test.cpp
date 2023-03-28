@@ -12,5 +12,5 @@ int main()
     mul_top(a, b, res);
     std::cout << "a = " << std::to_string(a.to_float()) << std::endl;
     std::cout << "b = " << std::to_string(b.to_float()) << std::endl;
-    std::cout << "a + b = " << std::to_string(res.to_float()) << std::endl;
+    std::cout << "a * b = " << std::to_string(res.to_float()) << std::endl;
 }

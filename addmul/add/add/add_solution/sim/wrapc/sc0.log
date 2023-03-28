@@ -1,4 +1,4 @@
-   Build using "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Build using "/opt/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
    Compiling add_test.cpp_pre.cpp.tb.cpp
    Compiling apatb_add_top.cpp
    Compiling add.cpp_pre.cpp.tb.cpp

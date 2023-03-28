@@ -1,7 +1,7 @@
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-| Date         : Sun Mar 26 18:45:53 2023
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Mar 28 11:50:46 2023
 | Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
 | Command      : report_timing_summary -file ./report/mul_top_timing_routed.rpt
 | Design       : bd_0_wrapper
@@ -136,7 +136,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-     49.027        0.000                      0                    3           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
+     35.625        0.000                      0                   67           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
 
 
 All user specified timing constraints are met.
@@ -173,7 +173,7 @@ From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS
 
 Path Group        From Clock        To Clock              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
 ----------        ----------        --------              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
-**default**       input port clock                         49.027        0.000                      0                    3                                                                        
+**default**       input port clock                         35.625        0.000                      0                   67                                                                        
 
 
 ------------------------------------------------------------------------------------------------
@@ -187,30 +187,52 @@ Path Group:  **default**
 From Clock:  input port clock
   To Clock:  
 
-Setup :            0  Failing Endpoints,  Worst Slack       49.027ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack       35.625ns,  Total Violation        0.000ns
 Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             49.027ns  (required time - arrival time)
-  Source:                 ap_ctrl_start
+Slack (MET) :             35.625ns  (required time - arrival time)
+  Source:                 b[24]
                             (input port)
-  Destination:            ap_ctrl_done
+  Destination:            res[20]
   Path Group:             **default**
   Path Type:              Max at Slow Process Corner
   Requirement:            50.000ns  (MaxDelay Path 50.000ns)
-  Data Path Delay:        0.973ns  (logic 0.000ns (0.000%)  route 0.973ns (100.000%))
-  Logic Levels:           0  
+  Data Path Delay:        14.375ns  (logic 6.636ns (46.162%)  route 7.739ns (53.838%))
+  Logic Levels:           10  (DSP48E1=2 LUT5=1 LUT6=6 MUXF7=1)
   Output Delay:           0.000ns
   Timing Exception:       MaxDelay Path 50.000ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-                                                      0.000     0.000 r  ap_ctrl_start (IN)
-                         net (fo=-1, unset)           0.973     0.973    ap_ctrl_done
-                                                                      r  ap_ctrl_done (OUT)
+                                                      0.000     0.000 r  b[24] (IN)
+                         net (fo=11, unset)           0.973     0.973    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/b[24]
+    DSP48_X2Y18          DSP48E1 (Prop_dsp48e1_A[29]_PCOUT[47])
+                                                      4.036     5.009 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/PCOUT[47]
+                         net (fo=1, routed)           0.002     5.011    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout_n_106
+    DSP48_X2Y19          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[18])
+                                                      1.518     6.529 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[18]
+                         net (fo=12, routed)          1.144     7.673    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/data0[10]
+    SLICE_X35Y47         LUT6 (Prop_lut6_I4_O)        0.124     7.797 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13/O
+                         net (fo=1, routed)           0.151     7.949    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_13_n_0
+    SLICE_X35Y47         LUT6 (Prop_lut6_I2_O)        0.124     8.073 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12/O
+                         net (fo=1, routed)           0.433     8.506    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_12_n_0
+    SLICE_X35Y47         LUT6 (Prop_lut6_I2_O)        0.124     8.630 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11/O
+                         net (fo=1, routed)           0.402     9.032    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_11_n_0
+    SLICE_X35Y47         LUT6 (Prop_lut6_I2_O)        0.124     9.156 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5/O
+                         net (fo=2, routed)           0.806     9.962    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[71]_INST_0_i_5_n_0
+    SLICE_X35Y48         LUT5 (Prop_lut5_I2_O)        0.124    10.086 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4/O
+                         net (fo=48, routed)          2.174    12.260    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[23]_INST_0_i_4_n_0
+    SLICE_X26Y46         LUT6 (Prop_lut6_I0_O)        0.124    12.384 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[20]_INST_0_i_4/O
+                         net (fo=1, routed)           0.680    13.064    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[20]_INST_0_i_4_n_0
+    SLICE_X26Y46         LUT6 (Prop_lut6_I2_O)        0.124    13.188 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[20]_INST_0_i_2/O
+                         net (fo=1, routed)           0.000    13.188    bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[20]_INST_0_i_2_n_0
+    SLICE_X26Y46         MUXF7 (Prop_muxf7_I1_O)      0.214    13.402 r  bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/res[20]_INST_0/O
+                         net (fo=0)                   0.973    14.375    res[20]
+                                                                      r  res[20] (OUT)
   -------------------------------------------------------------------    -------------------
 
                          max delay                   50.000    50.000    
@@ -218,9 +240,9 @@ Slack (MET) :             49.027ns  (required time - arrival time)
                          output delay                -0.000    50.000    
   -------------------------------------------------------------------
                          required time                         50.000    
-                         arrival time                          -0.973    
+                         arrival time                         -14.375    
   -------------------------------------------------------------------
-                         slack                                 49.027    
+                         slack                                 35.625    
 
 
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Mar 26 18:43:35 2023" VIVADOVERSION="2021.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 28 11:48:18 2023" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_0" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -7,16 +7,6 @@
     <PORT DIR="I" LEFT="127" NAME="a" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_a">
       <CONNECTIONS>
         <CONNECTION INSTANCE="hls_inst" PORT="a"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="ap_local_block" SIGIS="undef" SIGNAME="hls_inst_ap_local_block">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hls_inst" PORT="ap_local_block"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="ap_local_deadlock" SIGIS="undef" SIGNAME="hls_inst_ap_local_deadlock">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hls_inst" PORT="ap_local_deadlock"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="127" NAME="b" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_b">
@@ -68,7 +58,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="2112959983" FULLNAME="/hls_inst" HWVERSION="1.0" INSTANCE="hls_inst" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mul_top" VLNV="xilinx.com:hls:mul_top:1.0">
+    <MODULE COREREVISION="2112962447" FULLNAME="/hls_inst" HWVERSION="1.0" INSTANCE="hls_inst" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mul_top" VLNV="xilinx.com:hls:mul_top:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="bd_0_hls_inst_0"/>
@@ -80,16 +70,6 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" NAME="ap_local_block" SIGIS="undef" SIGNAME="hls_inst_ap_local_block">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ap_local_block"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="ap_local_deadlock" SIGIS="undef" SIGNAME="hls_inst_ap_local_deadlock">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ap_local_deadlock"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="res_ap_vld" SIGIS="undef" SIGNAME="hls_inst_res_ap_vld">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="res_ap_vld"/>

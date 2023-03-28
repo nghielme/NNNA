@@ -1,7 +1,7 @@
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-| Date         : Sun Mar 26 18:45:41 2023
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Mar 28 11:50:34 2023
 | Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
 | Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
 | Design       : bd_0_wrapper
@@ -24,15 +24,48 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+--------+----------+--------------------+------------+
-| Rule   | Severity | Description        | Violations |
-+--------+----------+--------------------+------------+
-| ZPS7-1 | Warning  | PS7 block required | 1          |
-+--------+----------+--------------------+------------+
+             Violations found: 7
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining       | 4          |
+| DPOP-1 | Warning  | PREG Output pipelining | 1          |
+| DPOP-2 | Warning  | MREG Output pipelining | 1          |
+| ZPS7-1 | Warning  | PS7 block required     | 1          |
++--------+----------+------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout input bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout input bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0 input bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0 input bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0 output bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0 multiplier stage bd_0_i/hls_inst/inst/mul_25s_25s_50_1_1_U1/dout__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
 ZPS7-1#1 Warning
 PS7 block required  
 The PS7 cell must be used in this Zynq design in order to enable correct default configuration.

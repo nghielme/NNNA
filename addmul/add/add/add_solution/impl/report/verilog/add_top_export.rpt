@@ -1,15 +1,15 @@
 
 
-Implementation tool: Xilinx Vivado v.2021.2
+Implementation tool: Xilinx Vivado v.2022.2
 Project:             add
 Solution:            add_solution
 Device target:       xc7z020-clg400-1
-Report date:         Sun Mar 26 18:41:41 CEST 2023
+Report date:         Tue Mar 28 11:44:10 CEST 2023
 
 #=== Post-Implementation Resource usage ===
-SLICE:            0
-LUT:              0
-FF:               0
+SLICE:          322
+LUT:           1080
+FF:             298
 DSP:              0
 BRAM:             0
 URAM:             0
@@ -19,6 +19,6 @@ CLB:              0
 
 #=== Final timing ===
 CP required:                     50.000
-CP achieved post-synthesis:      NA
-CP achieved post-implementation: NA
-No Sequential Path
+CP achieved post-synthesis:      14.793
+CP achieved post-implementation: 17.024
+Timing met

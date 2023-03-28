@@ -1,13 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xFACA6B2CD9D32FB",
+      "boundary_crc": "0xF082DB0008BCD88D",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../project.gen/sources_1/bd/bd_0",
       "name": "bd_0",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.2",
+      "tool_version": "2022.2",
       "validated": "true"
     },
     "design_tree": {
@@ -17,7 +17,25 @@
       "ap_ctrl": {
         "mode": "Slave",
         "vlnv_bus_definition": "xilinx.com:interface:acc_handshake:1.0",
-        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0",
+        "port_maps": {
+          "start": {
+            "physical_name": "ap_ctrl_start",
+            "direction": "I"
+          },
+          "done": {
+            "physical_name": "ap_ctrl_done",
+            "direction": "O"
+          },
+          "idle": {
+            "physical_name": "ap_ctrl_idle",
+            "direction": "O"
+          },
+          "ready": {
+            "physical_name": "ap_ctrl_ready",
+            "direction": "O"
+          }
+        }
       }
     },
     "ports": {
@@ -32,12 +50,6 @@
             "value_src": "default"
           }
         }
-      },
-      "ap_local_block": {
-        "direction": "O"
-      },
-      "ap_local_deadlock": {
-        "direction": "O"
       },
       "b": {
         "type": "data",
@@ -94,18 +106,6 @@
         "ports": [
           "b",
           "hls_inst/b"
-        ]
-      },
-      "hls_inst_ap_local_block": {
-        "ports": [
-          "hls_inst/ap_local_block",
-          "ap_local_block"
-        ]
-      },
-      "hls_inst_ap_local_deadlock": {
-        "ports": [
-          "hls_inst/ap_local_deadlock",
-          "ap_local_deadlock"
         ]
       },
       "hls_inst_res": {

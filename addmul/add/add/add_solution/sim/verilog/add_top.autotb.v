@@ -1,6 +1,7 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+// Tool Version Limit: 2019.12
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
 
@@ -17,13 +18,17 @@
 `define AESL_DEPTH_a 1
 `define AESL_DEPTH_b 1
 `define AESL_DEPTH_res 1
+`define AUTOTB_TVIN_a  "../tv/cdatafile/c.add_top.autotvin_a.dat"
+`define AUTOTB_TVIN_b  "../tv/cdatafile/c.add_top.autotvin_b.dat"
+`define AUTOTB_TVIN_a_out_wrapc  "../tv/rtldatafile/rtl.add_top.autotvin_a.dat"
+`define AUTOTB_TVIN_b_out_wrapc  "../tv/rtldatafile/rtl.add_top.autotvin_b.dat"
 `define AUTOTB_TVOUT_res  "../tv/cdatafile/c.add_top.autotvout_res.dat"
 `define AUTOTB_TVOUT_res_out_wrapc  "../tv/rtldatafile/rtl.add_top.autotvout_res.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 0;
+parameter LATENCY_ESTIMATION = -1;
 parameter LENGTH_a = 1;
 parameter LENGTH_b = 1;
 parameter LENGTH_res = 1;
@@ -57,8 +62,6 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire  ap_local_block;
-wire  ap_local_deadlock;
 wire ap_start;
 wire ap_done;
 wire ap_idle;
@@ -78,10 +81,13 @@ reg done_delay_last_n;
 reg interface_done = 0;
 
 
+wire ap_clk;
+wire ap_rst;
+wire ap_rst_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
-    .ap_local_block(ap_local_block),
-    .ap_local_deadlock(ap_local_deadlock),
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
     .ap_start(ap_start),
     .ap_done(ap_done),
     .ap_idle(ap_idle),
@@ -92,12 +98,15 @@ reg interface_done = 0;
     .res_ap_vld(res_ap_vld));
 
 // Assignment for control signal
+assign ap_clk = AESL_clock;
+assign ap_rst = dut_rst;
+assign ap_rst_n = ~dut_rst;
+assign AESL_reset = rst;
 assign ap_start = AESL_start;
 assign AESL_start = start;
 assign AESL_done = ap_done;
 assign AESL_idle = ap_idle;
 assign AESL_ready = ap_ready;
-assign AESL_reset = rst;
 assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
     always @(posedge AESL_clock) begin
@@ -121,10 +130,110 @@ assign AESL_continue = tb_continue;
 // The signal of port a
 reg [127: 0] AESL_REG_a = 0;
 assign a = AESL_REG_a;
+initial begin : read_file_process_a
+    integer fp;
+    integer err;
+    integer ret;
+    integer proc_rand;
+    reg [279  : 0] token;
+    integer i;
+    reg transaction_finish;
+    integer transaction_idx;
+    transaction_idx = 0;
+    wait(AESL_reset === 0);
+    fp = $fopen(`AUTOTB_TVIN_a,"r");
+    if(fp == 0) begin       // Failed to open file
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_a);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    read_token(fp, token);
+    if (token != "[[[runtime]]]") begin
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    read_token(fp, token);
+    while (token != "[[[/runtime]]]") begin
+        if (token != "[[transaction]]") begin
+            $display("ERROR: Simulation using HLS TB failed.");
+              $finish;
+        end
+        read_token(fp, token);  // skip transaction number
+          read_token(fp, token);
+            # 0.2;
+            while(ready_wire !== 1) begin
+                @(posedge AESL_clock);
+                # 0.2;
+            end
+        if(token != "[[/transaction]]") begin
+            ret = $sscanf(token, "0x%x", AESL_REG_a);
+              if (ret != 1) begin
+                  $display("Failed to parse token!");
+                $display("ERROR: Simulation using HLS TB failed.");
+                  $finish;
+              end
+            @(posedge AESL_clock);
+              read_token(fp, token);
+        end
+          read_token(fp, token);
+    end
+    $fclose(fp);
+end
+
 
 // The signal of port b
 reg [127: 0] AESL_REG_b = 0;
 assign b = AESL_REG_b;
+initial begin : read_file_process_b
+    integer fp;
+    integer err;
+    integer ret;
+    integer proc_rand;
+    reg [279  : 0] token;
+    integer i;
+    reg transaction_finish;
+    integer transaction_idx;
+    transaction_idx = 0;
+    wait(AESL_reset === 0);
+    fp = $fopen(`AUTOTB_TVIN_b,"r");
+    if(fp == 0) begin       // Failed to open file
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_b);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    read_token(fp, token);
+    if (token != "[[[runtime]]]") begin
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    read_token(fp, token);
+    while (token != "[[[/runtime]]]") begin
+        if (token != "[[transaction]]") begin
+            $display("ERROR: Simulation using HLS TB failed.");
+              $finish;
+        end
+        read_token(fp, token);  // skip transaction number
+          read_token(fp, token);
+            # 0.2;
+            while(ready_wire !== 1) begin
+                @(posedge AESL_clock);
+                # 0.2;
+            end
+        if(token != "[[/transaction]]") begin
+            ret = $sscanf(token, "0x%x", AESL_REG_b);
+              if (ret != 1) begin
+                  $display("Failed to parse token!");
+                $display("ERROR: Simulation using HLS TB failed.");
+                  $finish;
+              end
+            @(posedge AESL_clock);
+              read_token(fp, token);
+        end
+          read_token(fp, token);
+    end
+    $fclose(fp);
+end
+
 
 reg AESL_REG_res_ap_vld = 0;
 // The signal of port res
@@ -238,6 +347,12 @@ initial begin
 end
 
 
+reg end_a;
+reg [31:0] size_a;
+reg [31:0] size_a_backup;
+reg end_b;
+reg [31:0] size_b;
+reg [31:0] size_b_backup;
 reg end_res;
 reg [31:0] size_res;
 reg [31:0] size_res_backup;
@@ -258,23 +373,28 @@ initial begin : initial_process_for_dut_rst
 end
 initial begin : start_process
     integer proc_rand;
-    start = 0;
+    reg [31:0] start_cnt;
     ce = 1;
-    wait(AESL_reset === 0);
+    start = 0;
+    start_cnt = 0;
+    wait (AESL_reset === 0);
     @ (posedge AESL_clock);
     #0 start = 1;
-    while (done_cnt < AUTOTB_TRANSACTION_NUM) begin
+    start_cnt = start_cnt + 1;
+    forever begin
+        if (start_cnt >= AUTOTB_TRANSACTION_NUM + 1) begin
+            #0 start = 0;
+        end
         @ (posedge AESL_clock);
+        if (AESL_ready) begin
+            start_cnt = start_cnt + 1;
+        end
     end
-    #0 start = 0;
 end
 
 always @(AESL_done)
 begin
-    if(done_cnt < AUTOTB_TRANSACTION_NUM - 1)
-        tb_continue = AESL_done;
-    else
-        tb_continue = 0;
+    tb_continue = AESL_done;
 end
 
 initial begin : ready_initial_process
@@ -285,6 +405,13 @@ initial begin : ready_initial_process
     ready_initial = 0;
 end
 
+always @(posedge AESL_clock)
+begin
+    if(AESL_reset)
+      AESL_ready_delay = 0;
+  else
+      AESL_ready_delay = AESL_ready;
+end
 initial begin : ready_last_n_process
   ready_last_n = 1;
   wait(ready_cnt == AUTOTB_TRANSACTION_NUM)
@@ -292,7 +419,6 @@ initial begin : ready_last_n_process
   ready_last_n <= 0;
 end
 
-assign ready = (ready_initial | AESL_done_delay);
 always @(posedge AESL_clock)
 begin
     if(AESL_reset)
@@ -300,7 +426,8 @@ begin
   else
       ready_delay_last_n <= ready_last_n;
 end
-assign ready_wire = (ready_initial | AESL_done_delay);
+assign ready = (ready_initial | AESL_ready_delay);
+assign ready_wire = ready_initial | AESL_ready_delay;
 initial begin : done_delay_last_n_process
   done_delay_last_n = 1;
   while(done_cnt < AUTOTB_TRANSACTION_NUM)
@@ -527,21 +654,39 @@ task calculate_performance();
     reg [31:0] interval_average;
     reg [31:0] total_execute_time;
     begin
-        latency_min = 0;
+        latency_min = -1;
         latency_max = 0;
         latency_total = 0;
-        latency_average = 0;
-        interval_min = 0;
+        interval_min = -1;
         interval_max = 0;
         interval_total = 0;
-        interval_average = 0;
-        total_execute_time = 0;
+        total_execute_time = lat_total;
 
         for (i = 0; i < AUTOTB_TRANSACTION_NUM; i = i + 1) begin
-            latency[i] = 0;
-            if (i < AUTOTB_TRANSACTION_NUM - 1) begin
+            // calculate latency
+            latency[i] = finish_timestamp[i] - start_timestamp[i];
+            if (latency[i] > latency_max) latency_max = latency[i];
+            if (latency[i] < latency_min) latency_min = latency[i];
+            latency_total = latency_total + latency[i];
+            // calculate interval
+            if (AUTOTB_TRANSACTION_NUM == 1) begin
                 interval[i] = 0;
+                interval_max = 0;
+                interval_min = 0;
+                interval_total = 0;
+            end else if (i < AUTOTB_TRANSACTION_NUM - 1) begin
+                interval[i] = start_timestamp[i + 1] - start_timestamp[i];
+                if (interval[i] > interval_max) interval_max = interval[i];
+                if (interval[i] < interval_min) interval_min = interval[i];
+                interval_total = interval_total + interval[i];
             end
+        end
+
+        latency_average = latency_total / AUTOTB_TRANSACTION_NUM;
+        if (AUTOTB_TRANSACTION_NUM == 1) begin
+            interval_average = 0;
+        end else begin
+            interval_average = interval_total / (AUTOTB_TRANSACTION_NUM - 1);
         end
 
         fp = $fopen(`AUTOTB_LAT_RESULT_FILE, "w");

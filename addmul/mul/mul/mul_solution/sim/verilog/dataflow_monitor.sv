@@ -16,6 +16,7 @@ input logic finish
 
 
 
+
     nodf_module_intf module_intf_1(clock,reset);
     assign module_intf_1.ap_start = AESL_inst_mul_top.ap_start;
     assign module_intf_1.ap_ready = AESL_inst_mul_top.ap_ready;
@@ -54,8 +55,10 @@ end
     task last_transaction_done();
         wait(reset == 0);
         while(1) begin
-            if (finish == 1'b1)
+            if (finish == 1'b1) begin
+                @(negedge clock);
                 break;
+            end
             else
                 @(posedge clock);
         end

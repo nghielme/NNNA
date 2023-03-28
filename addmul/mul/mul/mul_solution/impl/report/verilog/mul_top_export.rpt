@@ -1,16 +1,16 @@
 
 
-Implementation tool: Xilinx Vivado v.2021.2
+Implementation tool: Xilinx Vivado v.2022.2
 Project:             mul
 Solution:            mul_solution
 Device target:       xc7z020-clg400-1
-Report date:         Sun Mar 26 18:45:53 CEST 2023
+Report date:         Tue Mar 28 11:50:48 CEST 2023
 
 #=== Post-Implementation Resource usage ===
-SLICE:            0
-LUT:              0
+SLICE:           59
+LUT:            206
 FF:               0
-DSP:              0
+DSP:              2
 BRAM:             0
 URAM:             0
 LATCH:            0

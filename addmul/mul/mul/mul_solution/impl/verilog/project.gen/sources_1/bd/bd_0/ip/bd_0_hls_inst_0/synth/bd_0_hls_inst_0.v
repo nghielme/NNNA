@@ -48,16 +48,14 @@
 
 
 // IP VLNV: xilinx.com:hls:mul_top:1.0
-// IP Revision: 2112959983
+// IP Revision: 2112962447
 
-(* X_CORE_INFO = "mul_top,Vivado 2021.2" *)
+(* X_CORE_INFO = "mul_top,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "bd_0_hls_inst_0,mul_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,mul_top,{x_ipProduct=Vivado 2021.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=mul_top,x_ipVersion=1.0,x_ipCoreRevision=2112959983,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,mul_top,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=mul_top,x_ipVersion=1.0,x_ipCoreRevision=2112962447,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (
-  ap_local_block,
-  ap_local_deadlock,
   res_ap_vld,
   ap_start,
   ap_done,
@@ -68,8 +66,6 @@ module bd_0_hls_inst_0 (
   res
 );
 
-output wire ap_local_block;
-output wire ap_local_deadlock;
 output wire res_ap_vld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start" *)
 input wire ap_start;
@@ -93,8 +89,6 @@ output wire [127 : 0] res;
 (* SDX_KERNEL_TYPE = "hls" *)
 (* SDX_KERNEL_SYNTH_INST = "inst" *)
   mul_top inst (
-    .ap_local_block(ap_local_block),
-    .ap_local_deadlock(ap_local_deadlock),
     .res_ap_vld(res_ap_vld),
     .ap_start(ap_start),
     .ap_done(ap_done),

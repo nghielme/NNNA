@@ -1,6 +1,7 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+# Tool Version Limit: 2019.12
+# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 source ./settings.tcl
 source -notrace ./extraction.tcl
@@ -42,8 +43,8 @@ dict set report_options target_device $target_device
 dict set report_options language $language
 dict set report_options clock_name $clock
 dict set report_options error_if_impl_timing_fails false
-dict set report_options bindmodules {}
-dict set report_options max_module_depth 4
+dict set report_options bindmodules mul_top_mul_25s_25s_50_1_1
+dict set report_options max_module_depth 5
 
 
 create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force

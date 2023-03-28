@@ -1,14 +1,26 @@
-Vivado Simulator v2021.2
-Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_add_top_top glbl -Oenable_linking_all_libraries -prj add_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s add_top 
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_add_top_top glbl -Oenable_linking_all_libraries -prj add_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s add_top 
 Multi-threading is on. Using 6 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top_set.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_top_set
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_add_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top_plus_minus_25_2_8_0_25_2_8_0_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_top_plus_minus_25_2_8_0_25_2_8_0_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top_adjust_9_s_tab_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_top_adjust_9_s_tab_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_top_flow_control_loop_pipe_sequential_init
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module add_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top_adjust_9_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_top_adjust_9_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/add_top_adjust_9_Pipeline_VITIS_LOOP_2139_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_top_adjust_9_Pipeline_VITIS_LOOP_2139_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/thesis-project/addmul/add/add/add_solution/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 Starting static elaboration
@@ -18,6 +30,12 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.add_top_set
+Compiling module xil_defaultlib.add_top_adjust_9_s_tab_ROM_AUTO_...
+Compiling module xil_defaultlib.add_top_flow_control_loop_pipe_s...
+Compiling module xil_defaultlib.add_top_adjust_9_Pipeline_VITIS_...
+Compiling module xil_defaultlib.add_top_adjust_9_s
+Compiling module xil_defaultlib.add_top_plus_minus_25_2_8_0_25_2...
 Compiling module xil_defaultlib.add_top
 Compiling module xil_defaultlib.nodf_module_intf
 Compiling module xil_defaultlib.dataflow_monitor_1

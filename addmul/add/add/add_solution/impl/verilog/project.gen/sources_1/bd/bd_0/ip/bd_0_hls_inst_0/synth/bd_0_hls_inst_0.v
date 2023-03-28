@@ -48,17 +48,17 @@
 
 
 // IP VLNV: xilinx.com:hls:add_top:1.0
-// IP Revision: 2112959978
+// IP Revision: 2112962440
 
-(* X_CORE_INFO = "add_top,Vivado 2021.2" *)
+(* X_CORE_INFO = "add_top,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "bd_0_hls_inst_0,add_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,add_top,{x_ipProduct=Vivado 2021.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=add_top,x_ipVersion=1.0,x_ipCoreRevision=2112959978,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,add_top,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=add_top,x_ipVersion=1.0,x_ipCoreRevision=2112962440,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (
-  ap_local_block,
-  ap_local_deadlock,
   res_ap_vld,
+  ap_clk,
+  ap_rst,
   ap_start,
   ap_done,
   ap_idle,
@@ -68,9 +68,13 @@ module bd_0_hls_inst_0 (
   res
 );
 
-output wire ap_local_block;
-output wire ap_local_deadlock;
 output wire res_ap_vld;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_RESET ap_rst, FREQ_HZ 20000000.0, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
+input wire ap_clk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst RST" *)
+input wire ap_rst;
 (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start" *)
 input wire ap_start;
 (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl done" *)
@@ -93,9 +97,9 @@ output wire [127 : 0] res;
 (* SDX_KERNEL_TYPE = "hls" *)
 (* SDX_KERNEL_SYNTH_INST = "inst" *)
   add_top inst (
-    .ap_local_block(ap_local_block),
-    .ap_local_deadlock(ap_local_deadlock),
     .res_ap_vld(res_ap_vld),
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
     .ap_start(ap_start),
     .ap_done(ap_done),
     .ap_idle(ap_idle),

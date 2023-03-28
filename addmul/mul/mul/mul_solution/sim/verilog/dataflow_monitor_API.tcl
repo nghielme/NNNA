@@ -15,7 +15,7 @@ proc df_record_move {} {
     if {[file isdirectory $loop_record_directory] == 0} {
         file mkdir $loop_record_directory
     }
-    exec zip process.zip -m {*}[glob status*.csv module_status*.csv]
+    exec zip process.zip -m {*}[glob -nocomplain status*.csv module_status*.csv]
     df_move_file_type "process.zip" $process_record_directory
 }
 

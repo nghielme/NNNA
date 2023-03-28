@@ -7,6 +7,7 @@
     </project>
     <flowTarget value="vivado"/>
     <config>
+        <config_interface m_axi_latency="0"/>
         <config_compile name_max_length="60"/>
         <config_export format="ip_catalog"/>
     </config>
