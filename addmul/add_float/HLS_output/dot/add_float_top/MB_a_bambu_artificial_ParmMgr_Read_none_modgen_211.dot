@@ -1,0 +1,5 @@
+graph G {
+0[label="add_float_top_424776_425780(a_bambu_artificial_ParmMgr_Read)"];
+1[label="add_float_top_424776_425786(a_bambu_artificial_ParmMgr_Read)"];
+1--0 [label="2"];
+}

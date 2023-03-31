@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<function>
+  <testbench
+    a="2.1"
+    b="2.2"
+    res="4.3"
+/>
+</function>
