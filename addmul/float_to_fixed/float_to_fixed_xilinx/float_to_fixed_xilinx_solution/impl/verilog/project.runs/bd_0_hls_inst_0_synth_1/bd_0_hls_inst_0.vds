@@ -1,0 +1,392 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Mar 31 13:37:42 2023
+# Process ID: 3583162
+# Current directory: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
+# Running On: yavin, OS: Linux, CPU Frequency: 4654.966 MHz, CPU Physical cores: 8, Host memory: 67273 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3583698
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2689.535 ; gain = 0.000 ; free physical = 747 ; free virtual = 41936
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'float_to_fixed_top' [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'float_to_fixed_top_r_v_v_RAM_AUTO_1R1W' [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top_r_v_v_RAM_AUTO_1R1W.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'float_to_fixed_top_r_v_v_RAM_AUTO_1R1W' (1#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top_r_v_v_RAM_AUTO_1R1W.v:6]
+INFO: [Synth 8-6157] synthesizing module 'float_to_fixed_top_float_to_fixed_top_Pipeline_1' [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top_float_to_fixed_top_Pipeline_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'float_to_fixed_top_flow_control_loop_pipe_sequential_init' [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'float_to_fixed_top_flow_control_loop_pipe_sequential_init' (2#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'float_to_fixed_top_float_to_fixed_top_Pipeline_1' (3#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top_float_to_fixed_top_Pipeline_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'float_to_fixed_top' (4#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/1876/hdl/verilog/float_to_fixed_top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (5#1) [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+WARNING: [Synth 8-7129] Port reset in module float_to_fixed_top_r_v_v_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[127] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[126] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[125] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[124] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[123] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[122] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[121] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[120] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[119] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[118] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[117] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[116] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[115] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[114] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[113] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[112] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[111] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[110] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[109] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[108] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[107] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[106] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[105] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[104] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[103] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[102] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[101] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[100] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[99] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[98] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[97] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[96] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[95] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[94] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[93] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[92] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[91] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[90] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[89] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[88] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[87] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[86] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[85] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[84] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[83] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[82] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[81] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[80] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[79] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[78] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[77] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[76] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[75] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[74] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[73] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[72] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[63] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[62] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[61] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[60] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[59] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[58] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[57] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[56] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[55] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[54] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[53] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[52] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[51] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[50] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[49] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[48] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[47] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[46] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[45] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[44] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[43] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[42] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[41] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[40] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[39] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[38] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[37] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[36] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[35] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[34] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[33] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[32] in module float_to_fixed_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2689.535 ; gain = 0.000 ; free physical = 581 ; free virtual = 41470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2689.535 ; gain = 0.000 ; free physical = 1556 ; free virtual = 42444
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2689.535 ; gain = 0.000 ; free physical = 1556 ; free virtual = 42444
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2689.535 ; gain = 0.000 ; free physical = 1497 ; free virtual = 42385
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/float_to_fixed_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/float_to_fixed_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2753.566 ; gain = 0.000 ; free physical = 1262 ; free virtual = 42150
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2753.566 ; gain = 0.000 ; free physical = 1262 ; free virtual = 42150
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 1508 ; free virtual = 42436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 1497 ; free virtual = 42436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 1467 ; free virtual = 42436
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "float_to_fixed_top_r_v_v_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 1471 ; free virtual = 42387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   28 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---RAMs : 
+	              288 Bit	(9 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 4     
+	   2 Input   22 Bit        Muxes := 2     
+	  15 Input   14 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port flopo[127] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[126] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[125] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[124] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[123] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[122] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[121] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[120] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[119] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[118] in module float_to_fixed_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flopo[117] in module float_to_fixed_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3971] The signal "inst/r_v_v_U/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 1309 ; free virtual = 42302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | r_v_v_U/ram_reg | 9 x 32(READ_FIRST)     | W | R | 9 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 1112 ; free virtual = 42112
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 517 ; free virtual = 41406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | r_v_v_U/ram_reg | 9 x 32(READ_FIRST)     | W | R | 9 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/r_v_v_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/r_v_v_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 498 ; free virtual = 41387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 561 ; free virtual = 41327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 561 ; free virtual = 41327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 561 ; free virtual = 41327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 561 ; free virtual = 41327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 560 ; free virtual = 41327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 560 ; free virtual = 41327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT2     |    14|
+|2     |LUT3     |   139|
+|3     |LUT4     |    95|
+|4     |LUT5     |   274|
+|5     |LUT6     |   538|
+|6     |MUXF7    |    21|
+|7     |RAMB36E1 |     1|
+|8     |FDRE     |   306|
+|9     |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 560 ; free virtual = 41327
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 89 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2753.566 ; gain = 0.000 ; free physical = 616 ; free virtual = 41383
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2753.566 ; gain = 64.031 ; free physical = 616 ; free virtual = 41383
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2753.566 ; gain = 0.000 ; free physical = 705 ; free virtual = 41472
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2753.566 ; gain = 0.000 ; free physical = 660 ; free virtual = 41425
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a24d4ac
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 2753.566 ; gain = 64.238 ; free physical = 887 ; free virtual = 41652
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 3dd9049dee7a16ba
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 13:38:29 2023...

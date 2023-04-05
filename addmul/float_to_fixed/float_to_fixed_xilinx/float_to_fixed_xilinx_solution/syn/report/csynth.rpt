@@ -1,0 +1,236 @@
+
+
+================================================================
+== Synthesis Summary Report of 'float_to_fixed_top'
+================================================================
++ General Information: 
+    * Date:           Fri Mar 31 13:36:48 2023
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+    * Project:        float_to_fixed_xilinx
+    * Solution:       float_to_fixed_xilinx_solution (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |              Modules             | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |    |           |           |     |
+    |              & Loops             | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ float_to_fixed_top              |     -|  22.67|       23|  1.150e+03|         -|       24|     -|        no|     -|   -|  437 (~0%)|  2359 (4%)|    -|
+    | + float_to_fixed_top_Pipeline_1  |     -|  31.96|       10|    500.000|         -|       10|     -|        no|     -|   -|    5 (~0%)|   60 (~0%)|    -|
+    |  o Loop 1                        |     -|  36.50|        8|    400.000|         1|        1|     8|       yes|     -|   -|          -|          -|    -|
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| fixpo     | ap_none | 64       |
+| flopo     | ap_none | 128      |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+------------------------------------------+
+| Argument | Direction | Datatype                                 |
++----------+-----------+------------------------------------------+
+| flopo    | in        | ac_float<25, 2, 8, AC_TRN> const &       |
+| fixpo    | out       | ac_fixed<64, 32, true, AC_TRN, AC_WRAP>& |
++----------+-----------+------------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| flopo    | flopo        | port    |
+| fixpo    | fixpo        | port    |
+| fixpo    | fixpo_ap_vld | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------+-----+--------+----------------+-----+--------+---------+
+| Name                             | DSP | Pragma | Variable       | Op  | Impl   | Latency |
++----------------------------------+-----+--------+----------------+-----+--------+---------+
+| + float_to_fixed_top             | 0   |        |                |     |        |         |
+|   sub_ln1836_fu_339_p2           | -   |        | sub_ln1836     | sub | fabric | 0       |
+|   add_ln1820_fu_370_p2           | -   |        | add_ln1820     | add | fabric | 0       |
+|   sub_i_i_i_i_i_fu_461_p2        | -   |        | sub_i_i_i_i_i  | sub | fabric | 0       |
+|   add_ln1820_1_fu_359_p2         | -   |        | add_ln1820_1   | add | fabric | 0       |
+|   add_ln1820_2_fu_401_p2         | -   |        | add_ln1820_2   | add | fabric | 0       |
+|   sub_ln1807_fu_413_p2           | -   |        | sub_ln1807     | sub | fabric | 0       |
+|   sub_ln1807_1_fu_383_p2         | -   |        | sub_ln1807_1   | sub | fabric | 0       |
+|   sub_ln1807_2_fu_488_p2         | -   |        | sub_ln1807_2   | sub | fabric | 0       |
+|   sub6_i_i_i_i_i_fu_586_p2       | -   |        | sub6_i_i_i_i_i | sub | fabric | 0       |
+|   add_ln1820_3_fu_507_p2         | -   |        | add_ln1820_3   | add | fabric | 0       |
+|   sub_ln1799_fu_596_p2           | -   |        | sub_ln1799     | sub | fabric | 0       |
+|  + float_to_fixed_top_Pipeline_1 | 0   |        |                |     |        |         |
+|    add_ln471_fu_56_p2            | -   |        | add_ln471      | add | fabric | 0       |
+|    add_ln471_1_fu_67_p2          | -   |        | add_ln471_1    | add | fabric | 0       |
++----------------------------------+-----+--------+----------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------+------+------+--------+----------+---------+------+---------+
+| Name                 | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++----------------------+------+------+--------+----------+---------+------+---------+
+| + float_to_fixed_top | 0    | 0    |        |          |         |      |         |
+|   r_v_v_U            | -    | -    |        | r_v_v    | ram_t2p | auto | 1       |
++----------------------+------+------+--------+----------+---------+------+---------+
+
+
+================================================================
+== User Pragma Report
+================================================================
+* Pragmas with Warnings
++--------+---------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type   | Options | Location                                                     | Messages                                                                                                                                                                                                            |
++--------+---------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| unroll |         | ../ac_types/include/ac_int.h:376 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:380 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:422 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:426 in ldexpr32                 | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:488 in assign_int64             | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:498 in assign_uint64            | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:521 in iv_base<n, c>            | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:523 in iv_base<n, c>            | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:550 in assign_int64             | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:560 in assign_uint64            | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:593 in iv_base<n, true>         | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:595 in iv_base<n, true>         | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1024 in iv_copy                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1034 in iv_equal_zero           | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1045 in iv_equal_ones           | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1063 in iv_equal                | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1070 in iv_equal                | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1128 in iv_compare              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1145 in iv_compare              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1168 in iv_extend               | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_extend<5, 9, false>(ac_private::iv_base<9, false>&, int)'                                                                |
+| unroll |         | ../ac_types/include/ac_int.h:1236 in iv_mult                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1250 in iv_mult                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1261 in iv_mult                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1294 in iv_uadd_carry           | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1318 in iv_add_int_carry        | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1334 in iv_uadd_n               | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1382 in iv_sub_int_borrow       | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1409 in iv_sub_int_borrow       | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1425 in iv_usub_n               | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1458 in iv_neg                  | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1492 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1506 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1512 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1513 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1531 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1535 in iv_udiv                 | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1700 in iv_bitwise_complement_n | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1715 in iv_bitwise_and_n        | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1741 in iv_bitwise_or_n         | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1767 in iv_bitwise_xor_n        | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1799 in iv_shift_l              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_shift_l<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)' |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_shift_l<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)'         |
+| unroll |         | ../ac_types/include/ac_int.h:1807 in iv_shift_l              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_shift_l<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)'         |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_shift_l<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)' |
+| unroll |         | ../ac_types/include/ac_int.h:1820 in iv_shift_r              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_shift_r<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)'         |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_shift_r<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)' |
+| unroll |         | ../ac_types/include/ac_int.h:1828 in iv_shift_r              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_shift_r<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)'         |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_shift_r<9, false, 9, false>(ac_private::iv_base<9, false> const&, unsigned int, ac_private::iv_base<9, false>&)' |
+| unroll |         | ../ac_types/include/ac_int.h:1865 in iv_const_shift_l        | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_const_shift_l<128, 1, false, 9, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<9, false>&)'            |
+| unroll |         | ../ac_types/include/ac_int.h:1871 in iv_const_shift_l        | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1887 in iv_const_shift_l        | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::set(int, int)' into 'void ac_private::iv_const_shift_l<128, 1, false, 9, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<9, false>&)'            |
+| unroll |         | ../ac_types/include/ac_int.h:1911 in iv_const_shift_r        | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | Inlining function 'ac_private::iv_base<9, false>::operator[](int) const' into 'void ac_private::iv_const_shift_r<119, 9, false, 2, false>(ac_private::iv_base<9, false> const&, ac_private::iv_base<2, false>&)'    |
+| unroll |         | ../ac_types/include/ac_int.h:1919 in iv_const_shift_r        | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1933 in iv_conv_from_fraction   | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:1958 in iv_conv_from_fraction   | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:2404 in to_double               | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:2416 in to_float                | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:2563 in set_slc                 | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:2603 in set_slc2                | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:4289 in xor_reduce              | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:4333 in bit_fill_oct            | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:4384 in bit_fill_hex            | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:4424 in bit_fill                | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ../ac_types/include/ac_int.h:4873 in bit_fill_bin            | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ./../ac_types/include/ac_fixed.h:155 in overflow_adjust      | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ./../ac_types/include/ac_fixed.h:160 in overflow_adjust      | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
+| unroll |         | ./../ac_types/include/ac_fixed.h:172 in overflow_adjust      | self-comparison always evaluates to true                                                                                                                                                                            |
+|        |         |                                                              | self-comparison always evaluates to true                                                                                                                                                                            |
++--------+---------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

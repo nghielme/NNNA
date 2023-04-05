@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "fixed_to_float_top_convert_ac_fixed_ac_float_25_2_8_0_s.v"
+sv xil_defaultlib "fixed_to_float_top_convert_ac_fixed_ac_float_25_2_8_0_s_tab_ROM_AUTO_1R.v"
+sv xil_defaultlib "fixed_to_float_top_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213.v"
+sv xil_defaultlib "fixed_to_float_top.autotb.v"
+sv xil_defaultlib "fixed_to_float_top.v"
+sv xil_defaultlib "fixed_to_float_top_flow_control_loop_pipe_sequential_init.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

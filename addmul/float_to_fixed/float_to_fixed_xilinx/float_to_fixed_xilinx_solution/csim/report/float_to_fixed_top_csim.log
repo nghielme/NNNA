@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../float_to_fixed_test.cpp in debug mode
+   Compiling ../../../../float_to_fixed.cpp in debug mode
+   Generating csim.exe
+flopo = 1.23449993133544921875e2+0
+fixpo = 1.23449993133544921875
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,176 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2022.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>50.000</TargetClockPeriod>
+    <AchievedClockPeriod>10.676</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>10.676</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>10.676</CP_SYNTH>
+    <CP_TARGET>50.000</CP_TARGET>
+    <SLACK_FINAL>39.324</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>39.324</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>39.324</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>39.324</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>0</DSP>
+      <FF>189</FF>
+      <LATCH>0</LATCH>
+      <LUT>435</LUT>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="fixed_to_float_top" DISPNAME="inst" RTLNAME="fixed_to_float_top">
+      <SubModules count="1">grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41</SubModules>
+      <Resources FF="189" LUT="435"/>
+      <LocalResources FF="3" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41" DEPTH="1" TYPE="function" MODULENAME="convert_ac_fixed_ac_float_25_2_8_0_s" DISPNAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41" RTLNAME="fixed_to_float_top_convert_ac_fixed_ac_float_25_2_8_0_s">
+      <SubModules count="2">grp_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213_fu_154 tab_U</SubModules>
+      <Resources FF="186" LUT="434"/>
+      <LocalResources FF="178" LUT="30"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/grp_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213_fu_154" DEPTH="2" TYPE="function" MODULENAME="convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213" DISPNAME="grp_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213_fu_154" RTLNAME="fixed_to_float_top_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="5" LUT="64"/>
+      <LocalResources FF="3" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/grp_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213_fu_154/flow_control_loop_pipe_sequential_init_U" BINDMODULE="fixed_to_float_top_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="fixed_to_float_top_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="63"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U" BINDMODULE="fixed_to_float_top_convert_ac_fixed_ac_float_25_2_8_0_s_tab_ROM_AUTO_1R" DEPTH="2" TYPE="resource" MODULENAME="convert_ac_fixed_ac_float_25_2_8_0_s_tab_ROM_AUTO_1R" DISPNAME="tab_U" RTLNAME="fixed_to_float_top_convert_ac_fixed_ac_float_25_2_8_0_s_tab_ROM_AUTO_1R">
+      <Resources FF="3" LUT="340"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="tab_U" SOURCE="" URAM="0" VARIABLE="tab"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="10.669" DATAPATH_LOGIC_DELAY="1.929" DATAPATH_NET_DELAY="8.740" ENDPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[64]/D" LOGIC_LEVELS="10" MAX_FANOUT="37" SLACK="39.324" STARTPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]/C">
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="255"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[65]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[1]_INST_0_i_8" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[5]_INST_0_i_25" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[59]_i_8" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[18]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/ap_return_preg[64]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[64]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="186"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.669" DATAPATH_LOGIC_DELAY="1.929" DATAPATH_NET_DELAY="8.740" ENDPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[65]/D" LOGIC_LEVELS="10" MAX_FANOUT="37" SLACK="39.324" STARTPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]/C">
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="255"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[65]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[1]_INST_0_i_8" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[5]_INST_0_i_25" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[59]_i_8" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[18]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/ap_return_preg[65]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[65]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="186"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.669" DATAPATH_LOGIC_DELAY="1.929" DATAPATH_NET_DELAY="8.740" ENDPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[66]/D" LOGIC_LEVELS="10" MAX_FANOUT="37" SLACK="39.324" STARTPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]/C">
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="255"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[65]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[1]_INST_0_i_8" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[5]_INST_0_i_25" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[59]_i_8" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[18]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/ap_return_preg[66]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[66]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="186"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.669" DATAPATH_LOGIC_DELAY="1.929" DATAPATH_NET_DELAY="8.740" ENDPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[67]/D" LOGIC_LEVELS="10" MAX_FANOUT="37" SLACK="39.324" STARTPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]/C">
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="255"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[65]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[1]_INST_0_i_8" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[5]_INST_0_i_25" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[59]_i_8" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[18]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/ap_return_preg[67]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[67]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="186"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.669" DATAPATH_LOGIC_DELAY="1.929" DATAPATH_NET_DELAY="8.740" ENDPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[68]/D" LOGIC_LEVELS="10" MAX_FANOUT="37" SLACK="39.324" STARTPOINT_PIN="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]/C">
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/phi_ln2142_reg_123_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="255"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[65]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[1]_INST_0_i_8" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[5]_INST_0_i_25" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[59]_i_8" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/f_m_v_v_reg_134[57]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[18]_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/flopo[70]_INST_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/tab_U/ap_return_preg[68]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="110"/>
+      <CELL NAME="grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/ap_return_preg_reg[68]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="186"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/fixed_to_float_top_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/fixed_to_float_top_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/fixed_to_float_top_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/fixed_to_float_top_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/fixed_to_float_top_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/fixed_to_float_top_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Fri Mar 31 13:41:35 CEST 2023"/>
+    <item NAME="Version" VALUE="2022.2 (Build 3670227 on Oct 13 2022)"/>
+    <item NAME="Project" VALUE="fixed_to_float_xilinx"/>
+    <item NAME="Solution" VALUE="fixed_to_float_xilinx_solution (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="50 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="50 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

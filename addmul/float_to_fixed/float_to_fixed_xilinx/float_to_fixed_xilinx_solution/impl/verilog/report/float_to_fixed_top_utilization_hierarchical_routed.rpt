@@ -1,0 +1,38 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Fri Mar 31 13:40:33 2023
+| Host         : yavin running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/float_to_fixed_top_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------------------------------------+---------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                       Instance                       |                                   Module                                  | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------------------------------------------+---------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                         |                                                                     (top) |        923 |        923 |       0 |    0 | 307 |      1 |      0 |          0 |
+|   bd_0_i                                             |                                                                      bd_0 |        923 |        923 |       0 |    0 | 307 |      1 |      0 |          0 |
+|     hls_inst                                         |                                                           bd_0_hls_inst_0 |        923 |        923 |       0 |    0 | 307 |      1 |      0 |          0 |
+|       (hls_inst)                                     |                                                           bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       inst                                           |                                        bd_0_hls_inst_0_float_to_fixed_top |        923 |        923 |       0 |    0 | 307 |      1 |      0 |          0 |
+|         (inst)                                       |                                        bd_0_hls_inst_0_float_to_fixed_top |        492 |        492 |       0 |    0 | 302 |      0 |      0 |          0 |
+|         grp_float_to_fixed_top_Pipeline_1_fu_267     |          bd_0_hls_inst_0_float_to_fixed_top_float_to_fixed_top_Pipeline_1 |         16 |         16 |       0 |    0 |   5 |      0 |      0 |          0 |
+|           (grp_float_to_fixed_top_Pipeline_1_fu_267) |          bd_0_hls_inst_0_float_to_fixed_top_float_to_fixed_top_Pipeline_1 |          0 |          0 |       0 |    0 |   3 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U   | bd_0_hls_inst_0_float_to_fixed_top_flow_control_loop_pipe_sequential_init |         16 |         16 |       0 |    0 |   2 |      0 |      0 |          0 |
+|         r_v_v_U                                      |                    bd_0_hls_inst_0_float_to_fixed_top_r_v_v_RAM_AUTO_1R1W |        416 |        416 |       0 |    0 |   0 |      1 |      0 |          0 |
++------------------------------------------------------+---------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

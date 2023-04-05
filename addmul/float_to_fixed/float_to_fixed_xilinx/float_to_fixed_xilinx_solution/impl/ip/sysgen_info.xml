@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdditionalInfo>
+  <CTypeInfo>
+      <RtlPort>
+        <name>fixpo</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>fixpo_ap_vld</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>flopo</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+  </CTypeInfo>
+  <DesignConstraint>
+    <clk_period>50</clk_period>
+  </DesignConstraint>
+  <Machine>64</Machine>
+  <modelParameters>
+    <combinational>0</combinational>
+    <latency>23</latency>
+    <II>24</II>
+  </modelParameters>
+</AdditionalInfo>

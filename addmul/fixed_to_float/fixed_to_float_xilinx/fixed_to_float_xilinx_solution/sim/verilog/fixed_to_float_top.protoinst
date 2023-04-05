@@ -1,0 +1,39 @@
+{
+	"version": "1.0",
+	"modules": {
+		"fixed_to_float_top": {
+			"proto_instances": {
+				"/AESL_inst_fixed_to_float_top_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/grp_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213_fu_154/grp_convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213_fu_154_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41/grp_convert_ac_fixed_ac_float_25_2_8_0_s_fu_41_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

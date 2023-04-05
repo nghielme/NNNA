@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# xsim v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Mar 31 13:36:58 2023
+# Process ID: 3581174
+# Current directory: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/float_to_fixed_top/xsim_script.tcl}
+# Log file: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/sim/verilog/xsim.log
+# Journal file: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/sim/verilog/xsim.jou
+# Running On: yavin, OS: Linux, CPU Frequency: 4646.512 MHz, CPU Physical cores: 8, Host memory: 67273 MB
+#-----------------------------------------------------------
+source xsim.dir/float_to_fixed_top/xsim_script.tcl
+source float_to_fixed_top.tcl

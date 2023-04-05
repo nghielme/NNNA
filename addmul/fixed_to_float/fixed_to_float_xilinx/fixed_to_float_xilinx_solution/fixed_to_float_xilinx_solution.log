@@ -1,0 +1,431 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set to 60.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [XFORM 203-1161] The maximum of name length is set to 60.
+INFO: [HLS 200-1510] Running: create_clock -period 50 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.42 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.79 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 754.254 MB.
+INFO: [HLS 200-10] Analyzing design file 'fixed_to_float.cpp' ... 
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:376:73)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:380:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:422:73)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:426:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:488:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:498:61)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:521:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:523:70)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:550:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:560:65)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:593:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:595:74)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1024:71)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1034:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1045:75)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1063:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1070:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1128:70)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1145:68)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1168:69)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:51)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:210)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:105)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:193)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:131)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:279)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1294:108)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1318:120)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1334:134)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1382:120)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1409:120)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1425:134)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1458:137)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1492:143)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1506:143)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1512:63)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1513:66)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1531:66)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1535:74)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1700:72)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1715:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1741:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1767:77)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1799:160)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1807:103)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1820:173)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1828:108)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1865:74)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1871:147)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1887:83)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1911:175)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1919:103)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1933:63)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1958:63)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2404:69)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2416:69)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2563:144)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2603:144)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4289:71)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4333:250)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4384:346)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4424:116)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4873:257)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:155:80)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:160:79)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:172:80)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:488:97)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:550:97)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1024:90)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1034:91)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1045:94)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1063:98)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1070:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1128:89)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1145:87)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:70)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1236:229)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:124)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:213)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1250:125)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:151)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1261:299)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1318:139)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1334:153)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1382:139)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1409:139)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1425:153)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1458:156)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1492:162)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1506:162)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1512:82)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1513:85)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1531:85)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1535:94)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1700:91)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1715:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1741:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1767:96)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1799:179)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1807:122)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1820:192)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1828:127)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1911:194)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:1919:122)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:2404:88)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4289:90)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (../ac_types/include/ac_int.h:4424:135)
+WARNING: [HLS 207-5292] unused parameter 'x' (../ac_types/include/ac_int.h:4898:105)
+WARNING: [HLS 207-5292] unused parameter 'x' (../ac_types/include/ac_int.h:4918:99)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:155:98)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:160:97)
+WARNING: [HLS 207-4704] self-comparison always evaluates to true (./../ac_types/include/ac_fixed.h:172:98)
+WARNING: [HLS 207-5292] unused parameter 'x' (./../ac_types/include/ac_fixed.h:1830:116)
+WARNING: [HLS 207-5292] unused parameter 'x' (./../ac_types/include/ac_fixed.h:1839:110)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.49 seconds. CPU system time: 0.41 seconds. Elapsed time: 4.96 seconds; current allocated memory: 761.020 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:297:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'ac_private::iv_conv<1, true, true, false, 8>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 8>::iv_conv()' into 'ac_int<8, true>::ac_int()' (../ac_types/include/ac_int.h:3269:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, true, true, false, 7>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2706:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<7, true>()' into 'ac_int<7, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 7>::iv_conv<int>(int const&)' into 'ac_int<7, true>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::bit_adjust()' into 'ac_int<7, true>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::iv()' into 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:297:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'ac_private::iv_conv<1, true, true, false, 7>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 7>::iv_conv()' into 'ac_int<7, true>::ac_int()' (../ac_types/include/ac_int.h:3269:17)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_equal_zero<0, 2, 2, false>(ac_private::iv_base<2, false> const&)' into 'ac_private::iv<2, false>::equal_zero() const' (../ac_types/include/ac_int.h:2537:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::equal_zero() const' into 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' (./../ac_types/include/ac_fixed.h:889:23)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::iv()' into 'ac_private::iv_conv<2, true, true, false, 64>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<2, true, true, false, 64>::iv_conv()' into 'ac_int<64, true>::ac_int()' (../ac_types/include/ac_int.h:3269:17)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_r<2, false, 2, false>(ac_private::iv_base<2, false> const&, unsigned int, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<2, false>::shift_r<2, false>(unsigned int, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2483:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<64, true>::ac_int()' into 'ac_int<64, true> ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::slc<64>(int) const' (./../ac_types/include/ac_fixed.h:1313:24)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::shift_r<2, false>(unsigned int, ac_private::iv<2, false>&) const' into 'ac_int<64, true> ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::slc<64>(int) const' (./../ac_types/include/ac_fixed.h:1316:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<64, true>::bit_adjust()' into 'ac_int<64, true> ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::slc<64>(int) const' (./../ac_types/include/ac_fixed.h:1317:12)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<1, false>::to_int64() const' into 'ac_private::iv<1, false>::to_int64() const' (../ac_types/include/ac_int.h:2393:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_int64() const' into 'ac_private::iv_conv<1, true, true, false, 7>::operator long long() const' (../ac_types/include/ac_int.h:2694:34)
+INFO: [HLS 214-131] Inlining function 'unsigned int ac_private::iv_leading_bits_base<2, false>(ac_private::iv_base<2, false> const&, bool, int)' into 'unsigned int ac_private::iv_leading_bits<2, false>(ac_private::iv_base<2, false> const&, bool)' (../ac_types/include/ac_int.h:2142:49)
+INFO: [HLS 214-131] Inlining function 'unsigned int ac_private::iv_leading_bits<2, false>(ac_private::iv_base<2, false> const&, bool)' into 'ac_private::iv<2, false>::leading_bits(bool) const' (../ac_types/include/ac_int.h:2619:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(unsigned int)' into 'ac_private::iv_conv<1, false, true, false, 6>::iv_conv<unsigned int>(unsigned int const&)' (../ac_types/include/ac_int.h:2682:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<6, false>()' into 'ac_int<6, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 6>::iv_conv<unsigned int>(unsigned int const&)' into 'ac_int<6, false>::ac_int(unsigned int)' (../ac_types/include/ac_int.h:3311:80)
+INFO: [HLS 214-131] Inlining function 'ac_int<6, false>::bit_adjust()' into 'ac_int<6, false>::ac_int(unsigned int)' (../ac_types/include/ac_int.h:3313:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<6, false>::ac_int(unsigned int)' into 'ac_int<64, true>::leading_sign() const' (../ac_types/include/ac_int.h:4244:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<1, false>::to_int64() const' into 'ac_private::iv<1, false>::to_uint64() const' (../ac_types/include/ac_int.h:2397:29)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_uint64() const' into 'ac_private::iv_conv<1, false, true, false, 6>::operator unsigned long long() const' (../ac_types/include/ac_int.h:2670:34)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_int<7, true>& ac_int<7, true>::set_val<(ac_special_val)2>()' (../ac_types/include/ac_int.h:3370:29)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_sub<1, false, 1, false, 1, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::sub<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2445:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<8, true>()' into 'ac_int<8, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::bit_adjust()' into 'ac_int<7, true>::rt<7, true>::minus const ac_int<7, true>::operator-<7, true>(ac_int<7, true> const&) const' (../ac_types/include/ac_int.h:3565:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<7, true>::rt<7, true>::minus const ac_int<7, true>::operator-<7, true>(ac_int<7, true> const&) const' (../ac_types/include/ac_int.h:3570:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::sub<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_int<7, true>::rt<7, true>::minus const ac_int<7, true>::operator-<7, true>(ac_int<7, true> const&) const' (../ac_types/include/ac_int.h:3569:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::bit_adjust()' into 'ac_int<7, true>::rt<7, true>::minus const ac_int<7, true>::operator-<7, true>(ac_int<7, true> const&) const' (../ac_types/include/ac_int.h:3567:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int()' into 'ac_int<7, true>::rt<7, true>::minus const ac_int<7, true>::operator-<7, true>(ac_int<7, true> const&) const' (../ac_types/include/ac_int.h:3568:37)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_int64() const' into 'ac_private::iv_conv<1, true, true, false, 8>::operator long long() const' (../ac_types/include/ac_int.h:2694:34)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, false, true, false, 7>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2682:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<7, false>()' into 'ac_int<7, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 7>::iv_conv<int>(int const&)' into 'ac_int<7, false>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, false>::bit_adjust()' into 'ac_int<7, false>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_uint64() const' into 'ac_private::iv_conv<1, false, true, false, 7>::operator unsigned long long() const' (../ac_types/include/ac_int.h:2670:34)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_l<2, false, 2, false>(ac_private::iv_base<2, false> const&, unsigned int, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<2, false>::shift_l<2, false>(unsigned int, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2473:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 7>::operator long long() const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3156:21)
+INFO: [HLS 214-131] Inlining function 'ac_int<64, true>::bit_adjust()' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3181:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<64, true>::leading_sign() const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3157:23)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 6>::operator unsigned long long() const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3157:23)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::ac_int()' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3159:25)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>& ac_int<7, true>::set_val<(ac_special_val)2>()' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3160:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::rt<7, true>::minus const ac_int<7, true>::operator-<7, true>(ac_int<7, true> const&) const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3161:30)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 8>::operator long long() const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3161:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, false>::ac_int(int)' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3164:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 7>::operator unsigned long long() const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3164:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 7>::operator long long() const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3165:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::equal_zero() const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3172:19)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::ac_int(int)' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3177:16)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::iv()' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3178:15)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::shift_l<2, false>(unsigned int, ac_private::iv<2, false>&) const' into 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' (../ac_types/include/ac_int.h:3179:16)
+INFO: [HLS 214-131] Inlining function 'bool ac_int<64, true>::normalize_private<7, true>(ac_int<7, true>&, bool)' into 'bool ac_int<64, true>::normalize<7, true>(ac_int<7, true>&)' (../ac_types/include/ac_int.h:4257:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_base<2, false>::to_int64() const' into 'ac_private::iv<2, false>::to_uint64() const' (../ac_types/include/ac_int.h:2397:29)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_assign_uint64<2, false>(ac_private::iv_base<2, false>&, unsigned long long)' into 'ac_private::iv<2, false>::iv(unsigned long long)' (../ac_types/include/ac_int.h:2333:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::to_uint64() const' into 'void ac_private::iv<2, false>::set_slc<2, false>(unsigned int, int, ac_private::iv<2, false> const&)' (../ac_types/include/ac_int.h:2642:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::iv(unsigned long long)' into 'void ac_private::iv<2, false>::set_slc<2, false>(unsigned int, int, ac_private::iv<2, false> const&)' (../ac_types/include/ac_int.h:2645:18)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::to_uint64() const' into 'void ac_private::iv<2, false>::set_slc<2, false>(unsigned int, int, ac_private::iv<2, false> const&)' (../ac_types/include/ac_int.h:2643:25)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::set_slc<2, false>(unsigned int, int, ac_private::iv<2, false> const&)' into 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<64, true>(int, ac_int<64, true> const&)' (./../ac_types/include/ac_fixed.h:1354:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<64, true>(int, ac_int<64, true> const&)' (./../ac_types/include/ac_fixed.h:1355:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<64, true> ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::slc<64>(int) const' into 'bool ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<7, true>(ac_int<7, true>&)' (./../ac_types/include/ac_fixed.h:1472:42)
+INFO: [HLS 214-131] Inlining function 'bool ac_int<64, true>::normalize<7, true>(ac_int<7, true>&)' into 'bool ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<7, true>(ac_int<7, true>&)' (./../ac_types/include/ac_fixed.h:1473:21)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<64, true>(int, ac_int<64, true> const&)' into 'bool ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<7, true>(ac_int<7, true>&)' (./../ac_types/include/ac_fixed.h:1474:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::ac_int()' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:350:7)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:355:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::ac_int(int)' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:356:20)
+INFO: [HLS 214-131] Inlining function 'bool ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<7, true>(ac_int<7, true>&)' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:361:21)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::iv()' into 'ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:297:17)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::set_slc<2, false>(unsigned int, int, ac_private::iv<2, false> const&)' into 'ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<64, true>(int, ac_int<64, true> const&)' (./../ac_types/include/ac_fixed.h:1354:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<64, true>(int, ac_int<64, true> const&)' (./../ac_types/include/ac_fixed.h:1355:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_const_shift_r<39, 2, false, 1, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<2, false>::const_shift_r<39, 1, false>(ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2498:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<25, true>()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' (./../ac_types/include/ac_fixed.h:126:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (./../ac_types/include/ac_fixed.h:307:55)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::const_shift_r<39, 1, false>(ac_private::iv<1, false>&) const' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (./../ac_types/include/ac_fixed.h:322:25)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' (./../ac_types/include/ac_fixed.h:364:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'ac_private::iv_conv<1, true, true, false, 25>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 25>::iv_conv()' into 'ac_int<25, true>::ac_int()' (../ac_types/include/ac_int.h:3269:17)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_r<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2483:13)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<25, true>()' into 'ac_int<25, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true>::ac_int()' into 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' (./../ac_types/include/ac_fixed.h:1313:24)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_r<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' (./../ac_types/include/ac_fixed.h:1316:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true>::bit_adjust()' into 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' (./../ac_types/include/ac_fixed.h:1317:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::set_slc<1, false>(unsigned int, int, ac_private::iv<1, false> const&)' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<25, true>(int, ac_int<25, true> const&)' (./../ac_types/include/ac_fixed.h:1354:16)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::bit_adjust()' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<25, true>(int, ac_int<25, true> const&)' (./../ac_types/include/ac_fixed.h:1355:10)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_equal_zero<0, 1, 1, false>(ac_private::iv_base<1, false> const&)' into 'ac_private::iv<1, false>::equal_zero() const' (../ac_types/include/ac_int.h:2537:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::equal_zero() const' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' (./../ac_types/include/ac_fixed.h:889:23)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, true, true, false, 8>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2706:80)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 8>::iv_conv<int>(int const&)' into 'ac_int<8, true>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<8, true>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'ac_private::iv_conv<1, true, true, false, 32>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 32>::iv_conv()' into 'ac_int<32, true>::ac_int(int)' (../ac_types/include/ac_int.h:4774:70)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<32, true>()' into 'ac_int<32, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::iv()' into 'ac_private::iv_conv<2, true, true, false, 33>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<2, true, true, false, 33>::iv_conv()' into 'ac_int<33, true>::ac_int()' (../ac_types/include/ac_int.h:3269:17)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_uadd_n<0, 1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1360:26)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_extend<1, 2, false>(ac_private::iv_base<2, false>&, int)' into 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1362:13)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_add_int_carry<0, 1, false, 2, false>(ac_private::iv_base<1, false> const&, int, bool, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1361:21)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_add<1, false, 1, false, 2, false>(ac_private::iv_base<1, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<1, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2440:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::bit_adjust()' into 'ac_int<7, true>::rt<32, true>::plus const ac_int<7, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3553:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<7, true>::rt<32, true>::plus const ac_int<7, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3558:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<7, true>::rt<32, true>::plus const ac_int<7, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3555:20)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<7, true>::rt<32, true>::plus const ac_int<7, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3557:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::ac_int()' into 'ac_int<7, true>::rt<32, true>::plus const ac_int<7, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3556:36)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<7, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<7, true>(ac_int<7, true> const&, int)' (../ac_types/include/ac_int.h:5075:819)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::rt<32, true>::plus const ac_int<7, true>::operator+<32, true>(ac_int<32, true> const&) const' into 'ac_int<7, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<7, true>(ac_int<7, true> const&, int)' (../ac_types/include/ac_int.h:5075:808)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<2, false>::iv()' into 'ac_private::iv_conv<2, true, true, false, 34>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<2, true, true, false, 34>::iv_conv()' into 'ac_int<34, true>::ac_int()' (../ac_types/include/ac_int.h:3269:17)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_uadd_n<0, 2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1360:26)
+INFO: [HLS 214-131] Inlining function 'bool ac_private::iv_add_int_carry<0, 2, false, 2, false>(ac_private::iv_base<2, false> const&, int, bool, ac_private::iv_base<2, false>&)' into 'void ac_private::iv_add<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' (../ac_types/include/ac_int.h:1361:21)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_add<2, false, 1, false, 2, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false> const&, ac_private::iv_base<2, false>&)' into 'void ac_private::iv<2, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' (../ac_types/include/ac_int.h:2440:13)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::bit_adjust()' into 'ac_int<33, true>::rt<32, true>::plus const ac_int<33, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3553:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::bit_adjust()' into 'ac_int<33, true>::rt<32, true>::plus const ac_int<33, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3555:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<34, true>::bit_adjust()' into 'ac_int<33, true>::rt<32, true>::plus const ac_int<33, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3558:12)
+INFO: [HLS 214-131] Inlining function 'ac_int<34, true>::ac_int()' into 'ac_int<33, true>::rt<32, true>::plus const ac_int<33, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3556:36)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<2, false>::add<1, false, 2, false>(ac_private::iv<1, false> const&, ac_private::iv<2, false>&) const' into 'ac_int<33, true>::rt<32, true>::plus const ac_int<33, true>::operator+<32, true>(ac_int<32, true> const&) const' (../ac_types/include/ac_int.h:3557:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<32, true>::ac_int(int)' into 'ac_int<33, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<33, true>(ac_int<33, true> const&, int)' (../ac_types/include/ac_int.h:5075:819)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::rt<32, true>::plus const ac_int<33, true>::operator+<32, true>(ac_int<32, true> const&) const' into 'ac_int<33, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<33, true>(ac_int<33, true> const&, int)' (../ac_types/include/ac_int.h:5075:808)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_copy<1, 0, 2, false, 1, false>(ac_private::iv_base<2, false> const&, ac_private::iv_base<1, false>&)' into 'ac_private::iv<1, false>::iv<2, false>(ac_private::iv<2, false> const&)' (../ac_types/include/ac_int.h:2322:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 8>::iv_conv()' into 'ac_int<8, true>::ac_int<34, true>(ac_int<34, true> const&)' (../ac_types/include/ac_int.h:3277:55)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv<2, false>(ac_private::iv<2, false> const&)' into 'ac_int<8, true>::ac_int<34, true>(ac_int<34, true> const&)' (../ac_types/include/ac_int.h:3279:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<8, true>::ac_int<34, true>(ac_int<34, true> const&)' (../ac_types/include/ac_int.h:3280:10)
+INFO: [HLS 214-131] Inlining function 'unsigned int ac_private::iv_leading_bits_base<1, false>(ac_private::iv_base<1, false> const&, bool, int)' into 'unsigned int ac_private::iv_leading_bits<1, false>(ac_private::iv_base<1, false> const&, bool)' (../ac_types/include/ac_int.h:2142:49)
+INFO: [HLS 214-131] Inlining function 'unsigned int ac_private::iv_leading_bits<1, false>(ac_private::iv_base<1, false> const&, bool)' into 'ac_private::iv<1, false>::leading_bits(bool) const' (../ac_types/include/ac_int.h:2619:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(unsigned int)' into 'ac_private::iv_conv<1, false, true, false, 5>::iv_conv<unsigned int>(unsigned int const&)' (../ac_types/include/ac_int.h:2682:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<5, false>()' into 'ac_int<5, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 5>::iv_conv<unsigned int>(unsigned int const&)' into 'ac_int<5, false>::ac_int(unsigned int)' (../ac_types/include/ac_int.h:3311:80)
+INFO: [HLS 214-131] Inlining function 'ac_int<5, false>::bit_adjust()' into 'ac_int<5, false>::ac_int(unsigned int)' (../ac_types/include/ac_int.h:3313:10)
+INFO: [HLS 214-131] Inlining function 'ac_int<5, false>::ac_int(unsigned int)' into 'ac_int<25, true>::leading_sign() const' (../ac_types/include/ac_int.h:4244:17)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_uint64() const' into 'ac_private::iv_conv<1, false, true, false, 5>::operator unsigned long long() const' (../ac_types/include/ac_int.h:2670:34)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_int<8, true>& ac_int<8, true>::set_val<(ac_special_val)2>()' (../ac_types/include/ac_int.h:3370:29)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'ac_private::iv_conv<1, true, true, false, 9>::iv_conv()' (../ac_types/include/ac_int.h:2702:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 9>::iv_conv()' into 'ac_int<9, true>::ac_int()' (../ac_types/include/ac_int.h:3269:17)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<9, true>()' into 'ac_int<9, true>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<8, true>::rt<8, true>::minus const ac_int<8, true>::operator-<8, true>(ac_int<8, true> const&) const' (../ac_types/include/ac_int.h:3565:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::bit_adjust()' into 'ac_int<8, true>::rt<8, true>::minus const ac_int<8, true>::operator-<8, true>(ac_int<8, true> const&) const' (../ac_types/include/ac_int.h:3570:12)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::sub<1, false, 1, false>(ac_private::iv<1, false> const&, ac_private::iv<1, false>&) const' into 'ac_int<8, true>::rt<8, true>::minus const ac_int<8, true>::operator-<8, true>(ac_int<8, true> const&) const' (../ac_types/include/ac_int.h:3569:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::bit_adjust()' into 'ac_int<8, true>::rt<8, true>::minus const ac_int<8, true>::operator-<8, true>(ac_int<8, true> const&) const' (../ac_types/include/ac_int.h:3567:20)
+INFO: [HLS 214-131] Inlining function 'ac_int<9, true>::ac_int()' into 'ac_int<8, true>::rt<8, true>::minus const ac_int<8, true>::operator-<8, true>(ac_int<8, true> const&) const' (../ac_types/include/ac_int.h:3568:37)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_int64() const' into 'ac_private::iv_conv<1, true, true, false, 9>::operator long long() const' (../ac_types/include/ac_int.h:2694:34)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv(int)' into 'ac_private::iv_conv<1, false, true, false, 8>::iv_conv<int>(int const&)' (../ac_types/include/ac_int.h:2682:80)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_base<1, false>::bit_adjust<8, false>()' into 'ac_int<8, false>::bit_adjust()' (../ac_types/include/ac_int.h:3133:27)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 8>::iv_conv<int>(int const&)' into 'ac_int<8, false>::ac_int(int)' (../ac_types/include/ac_int.h:3307:78)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::bit_adjust()' into 'ac_int<8, false>::ac_int(int)' (../ac_types/include/ac_int.h:3309:10)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::to_uint64() const' into 'ac_private::iv_conv<1, false, true, false, 8>::operator unsigned long long() const' (../ac_types/include/ac_int.h:2670:34)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv_shift_l<1, false, 1, false>(ac_private::iv_base<1, false> const&, unsigned int, ac_private::iv_base<1, false>&)' into 'void ac_private::iv<1, false>::shift_l<1, false>(unsigned int, ac_private::iv<1, false>&) const' (../ac_types/include/ac_int.h:2473:13)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 8>::operator long long() const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3156:21)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true>::bit_adjust()' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3181:10)
+INFO: [HLS 214-131] Inlining function 'void ac_private::iv<1, false>::shift_l<1, false>(unsigned int, ac_private::iv<1, false>&) const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3179:16)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true>::leading_sign() const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3157:23)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 5>::operator unsigned long long() const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3157:23)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int()' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3159:25)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>& ac_int<8, true>::set_val<(ac_special_val)2>()' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3160:27)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::rt<8, true>::minus const ac_int<8, true>::operator-<8, true>(ac_int<8, true> const&) const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3161:30)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 9>::operator long long() const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3161:26)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, false>::ac_int(int)' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3164:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, false, true, false, 8>::operator unsigned long long() const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3164:22)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv_conv<1, true, true, false, 8>::operator long long() const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3165:20)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::equal_zero() const' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3172:19)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int(int)' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3177:16)
+INFO: [HLS 214-131] Inlining function 'ac_private::iv<1, false>::iv()' into 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' (../ac_types/include/ac_int.h:3178:15)
+INFO: [HLS 214-131] Inlining function 'bool ac_int<25, true>::normalize_private<8, true>(ac_int<8, true>&, bool)' into 'bool ac_int<25, true>::normalize<8, true>(ac_int<8, true>&)' (../ac_types/include/ac_int.h:4257:17)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' into 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<8, true>(ac_int<8, true>&)' (./../ac_types/include/ac_fixed.h:1472:42)
+INFO: [HLS 214-131] Inlining function 'bool ac_int<25, true>::normalize<8, true>(ac_int<8, true>&)' into 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<8, true>(ac_int<8, true>&)' (./../ac_types/include/ac_fixed.h:1473:21)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<25, true>(int, ac_int<25, true> const&)' into 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<8, true>(ac_int<8, true>&)' (./../ac_types/include/ac_fixed.h:1474:16)
+INFO: [HLS 214-131] Inlining function 'bool ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::normalize<8, true>(ac_int<8, true>&)' into 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<8>(ac_int<8, true>, bool, bool)' (./../ac_types/include/ac_float.h:523:18)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:309:7)
+INFO: [HLS 214-131] Inlining function 'ac_int<64, true> ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::slc<64>(int) const' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:334:35)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<64, true>(int, ac_int<64, true> const&)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:334:12)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0> const&)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:335:49)
+INFO: [HLS 214-131] Inlining function 'ac_int<25, true> ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::slc<25>(int) const' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:343:36)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>& ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::set_slc<25, true>(int, ac_int<25, true> const&)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:343:12)
+INFO: [HLS 214-131] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::operator!() const' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:346:33)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int(int)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:346:38)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<7, true>(ac_int<7, true> const&, int)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:346:82)
+INFO: [HLS 214-131] Inlining function 'ac_int<33, true>::rt<32, true>::plus ac::ops_with_other_types::operator+<33, true>(ac_int<33, true> const&, int)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:346:91)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int<34, true>(ac_int<34, true> const&)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:346:60)
+INFO: [HLS 214-131] Inlining function 'ac_int<8, true>::ac_int()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' (./../ac_types/include/ac_float.h:379:7)
+INFO: [HLS 214-131] Inlining function 'ac_int<7, true>::ac_int(int)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' (./../ac_types/include/ac_float.h:395:39)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1024_1' (../ac_types/include/ac_int.h:1024:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../ac_types/include/ac_int.h:1168:30) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1034_1' (../ac_types/include/ac_int.h:1034:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1828_3' (../ac_types/include/ac_int.h:1828:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1911_1' (../ac_types/include/ac_int.h:1911:49) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>' completely with a factor of 1 (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1828_3' (../ac_types/include/ac_int.h:1828:46) in function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>' completely with a factor of 2 (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1799_1' (../ac_types/include/ac_int.h:1799:46) in function 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float' completely with a factor of 2 (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1807_3' (../ac_types/include/ac_int.h:1807:46) in function 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float' completely with a factor of 2 (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1034_1' (../ac_types/include/ac_int.h:1034:49) in function 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float' completely with a factor of 2 (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1828_3' (../ac_types/include/ac_int.h:1828:46) in function 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float' completely with a factor of 2 (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::iv_base() (.5)' into 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:298:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::iv_base()' into 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:298:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::operator[](int) const' into 'ac_private::iv<2, false>::leading_bits(bool) const' (../ac_types/include/ac_int.h:2618:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::iv_base() (.5)' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::operator[](int) const' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int)' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::iv_base()' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::set(int, int)' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<64, true>()' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv<2, false>::leading_bits(bool) const' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::assign_uint64(unsigned long long)' into 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' (./../ac_types/include/ac_float.h:351:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::iv_base()' into 'ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' (./../ac_types/include/ac_fixed.h:298:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::iv_base() (.5)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<64, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::iv_base()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::operator[](int) const' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::set(int, int)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<64, true>()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<2, false>::assign_uint64(unsigned long long)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::operator[](int) const' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<33, true>()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'void ac_private::iv_base<2, false>::bit_adjust<34, true>()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'void ac_float<25, 2, 8, (ac_q_mode)0>::adjust<8>(ac_int<8, true>, bool, bool)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' (./../ac_types/include/ac_float.h:310:0)
+INFO: [HLS 214-178] Inlining function 'ac_fixed<25, 2, true, (ac_q_mode)0, (ac_o_mode)0>::ac_fixed()' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' (./../ac_types/include/ac_float.h:380:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::iv_base() (.5)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' (./../ac_types/include/ac_float.h:380:0)
+INFO: [HLS 214-178] Inlining function 'ac_private::iv_base<1, false>::set(int, int)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' (./../ac_types/include/ac_float.h:380:0)
+INFO: [HLS 214-178] Inlining function 'ac_float<64, 32, 7, (ac_q_mode)0>::ac_float(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_int<7, true> const&, bool)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' (./../ac_types/include/ac_float.h:380:0)
+INFO: [HLS 214-178] Inlining function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, 7, (ac_q_mode)0>(ac_float<64, 32, 7, (ac_q_mode)0> const&, bool, bool)' into 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' (./../ac_types/include/ac_float.h:380:0)
+INFO: [HLS 214-178] Inlining function 'ac_float<25, 2, 8, (ac_q_mode)0>::ac_float<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, bool)' into 'void convert<ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>, ac_float<25, 2, 8, (ac_q_mode)0> >(ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0> const&, ac_float<25, 2, 8, (ac_q_mode)0>&)' (./fixed_to_float.h:5:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'flopo' with compact=bit mode in 128-bits (fixed_to_float.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.81 seconds. CPU system time: 0.46 seconds. Elapsed time: 4.37 seconds; current allocated memory: 762.789 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 762.898 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 767.820 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 773.055 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_2139_1' (../ac_types/include/ac_int.h:676) in function 'convert<ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>, ac_float<25, 2, 8, (ac_q_mode)0> >' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../ac_types/include/ac_int.h:2142:34) in function 'convert<ac_fixed<64, 32, true, (ac_q_mode)0, (ac_o_mode)0>, ac_float<25, 2, 8, (ac_q_mode)0> >'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.07 seconds; current allocated memory: 800.164 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 815.715 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fixed_to_float_top' ...
+WARNING: [SYN 201-103] Legalizing function name 'convert<ac_fixed,ac_float<25,2,8,0>>_Pipeline_VITIS_LOOP_213' to 'convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213'.
+WARNING: [SYN 201-103] Legalizing function name 'convert<ac_fixed,ac_float<25,2,8,0>>' to 'convert_ac_fixed_ac_float_25_2_8_0_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_2139_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_2139_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 815.715 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 815.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convert_ac_fixed_ac_float_25_2_8_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 815.715 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 815.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fixed_to_float_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 815.715 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 815.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convert_ac_fixed_ac_float_25_2_8_0_Pipeline_VITIS_LOOP_213'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 815.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convert_ac_fixed_ac_float_25_2_8_0_s' 
+INFO: [HLS 200-10]

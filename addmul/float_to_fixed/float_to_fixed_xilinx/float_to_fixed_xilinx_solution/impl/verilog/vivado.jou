@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Mar 31 13:37:26 2023
+# Process ID: 3582287
+# Current directory: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog
+# Command line: vivado -mode batch -source run_vivado.tcl
+# Log file: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/vivado.log
+# Journal file: /home/nghielme/PycharmProjects/thesis-project/addmul/float_to_fixed/float_to_fixed_xilinx/float_to_fixed_xilinx_solution/impl/verilog/vivado.jou
+# Running On: yavin, OS: Linux, CPU Frequency: 1702.973 MHz, CPU Physical cores: 8, Host memory: 67273 MB
+#-----------------------------------------------------------
+source run_vivado.tcl

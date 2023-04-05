@@ -1,0 +1,7 @@
+Running: xsim.dir/float_to_fixed_top/xsimk -simmode gui -wdb float_to_fixed_top.wdb -simrunnum 0 -socket 45059
+Design successfully loaded
+Design Loading Memory Usage: 22724 KB (Peak: 22724 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 105428 KB (Peak: 161992 KB)
+Simulation CPU Usage: 10 ms

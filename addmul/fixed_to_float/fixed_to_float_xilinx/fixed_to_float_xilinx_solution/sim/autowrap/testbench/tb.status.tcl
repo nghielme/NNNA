@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/nghielme/PycharmProjects/thesis-project/addmul/fixed_to_float/fixed_to_float_xilinx/fixed_to_float_xilinx_solution/./sim/autowrap/testbench/fixed_to_float.cpp_pre.cpp.tb.cpp
